@@ -8,9 +8,9 @@
 ![Shared Folder](https://raw.githubusercontent.com/chyld/devops/master/images/vm3.png)
 
 ### Virtual Box Host Adapter and Configuration
-![Host Adapter](https://raw.githubusercontent.com/chyld/devops/master/images/vm4.png)
-![Host Adapter 1](https://raw.githubusercontent.com/chyld/devops/master/images/vm5.png)
-![Host Adapter 2](https://raw.githubusercontent.com/chyld/devops/master/images/vm6.png)
+- ![Host Adapter](https://raw.githubusercontent.com/chyld/devops/master/images/vm4.png)
+- ![Host Adapter 1](https://raw.githubusercontent.com/chyld/devops/master/images/vm5.png)
+- ![Host Adapter 2](https://raw.githubusercontent.com/chyld/devops/master/images/vm6.png)
 
 ### Virtual Box Extensions
 ![Extensions](https://raw.githubusercontent.com/chyld/devops/master/images/vm7.png)
