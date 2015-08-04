@@ -1,3 +1,24 @@
+### Virtual Box Setup
+![VirtualBox](https://raw.githubusercontent.com/chyld/devops/master/images/vm1.png)
+
+### Virtual Box Network
+![Network](https://raw.githubusercontent.com/chyld/devops/master/images/vm2.png)
+
+### Virtual Box Shared Folders
+![Shared Folder](https://raw.githubusercontent.com/chyld/devops/master/images/vm3.png)
+
+### Virtual Box Host Adapter and Configuration
+![Host Adapter](https://raw.githubusercontent.com/chyld/devops/master/images/vm4.png)
+
+##### Host Adapter Config 1
+![Host Adapter 1](https://raw.githubusercontent.com/chyld/devops/master/images/vm5.png)
+
+##### Host Adapter Config 2
+![Host Adapter 2](https://raw.githubusercontent.com/chyld/devops/master/images/vm6.png)
+
+### Virtual Box Extensions
+![Extensions](https://raw.githubusercontent.com/chyld/devops/master/images/vm7.png)
+
 ### Virtual Box Guest Additions
 
 ```
