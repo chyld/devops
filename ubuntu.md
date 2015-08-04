@@ -1,6 +1,19 @@
+### Virtual Box Guest Additions
+
+```
+sudo mount /dev/cdrom /media/cdrom
+cd /media/cdrom
+sudo ./VBoxLinuxAdditions.run
+sudo reboot
+
+sudo usermod -a -G vboxsf chyld
+cd ~
+ln -s /media/sf_Temp temp
+```  
+
 ### Static Network Adapter
 
-```sh
+```
 ifconfig
 sudo vi /etc/network/interfaces
 ```
@@ -22,7 +35,7 @@ broadcast 192.168.56.255
 
 ### Git Install
 
-```sh
+```
 mkdir download
 cd download/
 wget https://www.kernel.org/pub/software/scm/git/git-2.5.0.tar.gz
