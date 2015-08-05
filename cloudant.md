@@ -40,3 +40,15 @@ Create document
 ```
 curl https://account.cloudant.com/beta -X POST -H "Content-Type: application/json" -d '{"name":"bob", "age":20}'
 ```
+
+Get document
+
+```
+curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195 -X
+```
+
+Update document
+
+```
+curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195 -X PUT -H "Content-Type: application/json" -d '{"_rev": ______, "name":"bob", "age":20}'
+```
