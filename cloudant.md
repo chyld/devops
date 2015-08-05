@@ -1,5 +1,7 @@
 # Cloudant
 
+## Databases
+
 Create database beta with 2 replicas and 32 partitions
 
 ```
@@ -29,4 +31,12 @@ Delete database
 
 ```
 curl https://account.cloudant.com/beta -X DELETE
+```
+
+## Documents
+
+Create document
+
+```
+curl https://account.cloudant.com/beta -X POST -H "Content-Type: application/json" -d '{"name":"bob", "age":20}'
 ```
