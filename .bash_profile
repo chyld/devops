@@ -10,12 +10,23 @@ txtcyn='\[\e[0;36m\]' # Cyan
 txtwht='\[\e[0;37m\]' # White
 txtrst='\[\e[0m\]'    # Text Reset
 
+branch()
+{
+  git branch 2> /dev/null | awk '/*/ {print "{" $2 "}";}'
+}
+
+status()
+{
+  git status --porcelain 2> /dev/null | wc | awk '{if($1 > 0)print"+";}'
+}
+
 alias b="cd .."
 alias l="ls -al"
 alias c="clear"
 
 export EDITOR=vim
 export GIT_PATH=/usr/local/git/bin
-export PATH=$GIT_PATH:$PATH
-export PS1="$txtred\u$txtcyn@$txtylw\h $txtgrn\w$txtblk >$txtrst "
+export NODE_PATH=/usr/local/node/bin
+export PATH=$GIT_PATH:$NODE_PATH:$PATH
+export PS1="$txtcyn\u$txtred@$txtcyn\h $txtred\w $txtblk\$(status)$txtgrn\$(branch)$txtblk:$txtrst "
 
