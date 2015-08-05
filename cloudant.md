@@ -50,5 +50,11 @@ curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195 -X
 Update document
 
 ```
-curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195 -X PUT -H "Content-Type: application/json" -d '{"_rev": ______, "name":"bob", "age":20}'
+curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195 -X PUT -H "Content-Type: application/json" -d '{"_rev": ___, "name":"bob", "age":20}'
+```
+
+Delete document
+
+```
+curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195?rev=___ -X DELETE -H
 ```
