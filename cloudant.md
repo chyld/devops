@@ -73,7 +73,7 @@ Create a JSON doc called my-data.json
   "name": "sally",
   "age": 3,
   "_attachments":{
-    "small":{
+    "small.jpg":{
     "content_type":"image/jpeg",
     "data": "/9j/4AAQSkZJRgABAQ3JJPQc84eE8paThL//2Q=="
     }
@@ -84,5 +84,11 @@ Create a JSON doc called my-data.json
 Create a new document with attached file
 
 ```
-curl https://account.cloudant.com/beta" -X POST -H "Content-Type: application/json" -d @my-data.json
+curl https://account.cloudant.com/beta -X POST -H "Content-Type: application/json" -d @my-data.json
+```
+
+Upload a new attachment on an existing document
+
+```
+curl https://account.cloudant.com/beta/doc_id/attachment_name?rev=___ -X PUT -H "Content-Type: image/jpeg" --data-binary @my-file.jpg 
 ```
