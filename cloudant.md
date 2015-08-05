@@ -58,3 +58,31 @@ Delete document
 ```
 curl https://account.cloudant.com/beta/da423f838b486a098d9b98e027bed195?rev=___ -X DELETE -H
 ```
+
+## Attachments
+
+Base 64 encode a file, no wrap
+```
+base64 small.jpg -w 0
+```
+
+Create a JSON doc called my-data.json
+
+```js
+{
+  "name": "sally",
+  "age": 3,
+  "_attachments":{
+    "small":{
+    "content_type":"image/jpeg",
+    "data": "/9j/4AAQSkZJRgABAQ3JJPQc84eE8paThL//2Q=="
+    }
+  }
+}
+```
+
+Create a new document with attached file
+
+```
+curl https://account.cloudant.com/beta" -X POST -H "Content-Type: application/json" -d @my-data.json
+```
