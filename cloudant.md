@@ -93,7 +93,7 @@ Upload a new attachment on an existing document
 curl https://account.cloudant.com/beta/doc_id/attachment_name?rev=___ -X PUT -H "Content-Type: image/jpeg" --data-binary @my-file.jpg 
 ```
 
-### JavaScript API
+### Database API
 
 - https://github.com/dscape/nano/blob/master/lib/nano.js
 - https://github.com/cloudant/nodejs-cloudant/blob/master/cloudant.js
@@ -137,5 +137,48 @@ cloudant {
   get_virtual_hosts: [Function],
   add_virtual_host: [Function],
   delete_virtual_host: [Function]
+}
+```
+
+### Document API
+
+```js
+{ info: [Function],
+  replicate: [Function],
+  compact: [Function],
+  changes: [Function],
+  follow: [Function],
+  auth: [Function: auth],
+  session: [Function: session],
+  insert: [Function: insertDoc],
+  get: [Function: getDoc],
+  head: [Function: headDoc],
+  copy: [Function: copyDoc],
+  destroy: [Function: destroyDoc],
+  bulk: [Function: bulksDoc],
+  list: [Function: listDoc],
+  fetch: [Function: fetchDocs],
+  fetchRevs: [Function: fetchRevs],
+  config:
+   { url: '',
+     db: 'superdb' },
+  multipart:
+   { insert: [Function: insertMultipart],
+     get: [Function: getMultipart] },
+  attachment:
+   { insert: [Function: insertAtt],
+     get: [Function: getAtt],
+     destroy: [Function: destroyAtt] },
+  show: [Function: showDoc],
+  atomic: [Function: updateWithHandler],
+  updateWithHandler: [Function: updateWithHandler],
+  search: [Function: viewSearch],
+  spatial: [Function: viewSpatial],
+  view: { [Function: viewDocs] compact: [Function] },
+  viewWithList: [Function: viewWithList],
+  get_security: [Function],
+  set_security: [Function],
+  index: { [Function] del: [Function] },
+  find: [Function] 
 }
 ```
