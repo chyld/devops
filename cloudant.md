@@ -93,6 +93,8 @@ Upload a new attachment on an existing document
 curl https://account.cloudant.com/beta/doc_id/attachment_name?rev=___ -X PUT -H "Content-Type: image/jpeg" --data-binary @my-file.jpg 
 ```
 
+## API
+
 ### Database API
 
 - https://github.com/dscape/nano/blob/master/lib/nano.js
