@@ -95,6 +95,9 @@ curl https://account.cloudant.com/beta/doc_id/attachment_name?rev=___ -X PUT -H 
 
 ### JavaScript API
 
+https://github.com/dscape/nano/blob/master/lib/nano.js
+https://github.com/cloudant/nodejs-cloudant/blob/master/cloudant.js
+
 ```js
 cloudant {
   config:
