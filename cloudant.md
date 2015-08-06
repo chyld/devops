@@ -92,3 +92,47 @@ Upload a new attachment on an existing document
 ```
 curl https://account.cloudant.com/beta/doc_id/attachment_name?rev=___ -X PUT -H "Content-Type: image/jpeg" --data-binary @my-file.jpg 
 ```
+
+### JavaScript API
+
+```js
+cloudant {
+  config:
+    { url: '',
+      requestDefaults: { headers: [Object], gzip: true },
+      log: { [Function: disabled] enabled: false, namespace: 'nano' } 
+    },
+  db:
+   { create: [Function: createDb],
+     get: [Function: getDb],
+     destroy: [Function: destroyDb],
+     list: [Function: listDbs],
+     use: [Function],
+     scope: [Function: docModule],
+     compact: [Function: compactDb],
+     replicate: [Function: replicateDb],
+     changes: [Function: changesDb],
+     follow: [Function: followDb],
+     followUpdates: [Function: followUpdates],
+     updates: [Function: updates]
+    },
+  use: [Function],
+  scope: [Function: docModule],
+  request: [Function: relax],
+  relax: [Function: relax],
+  dinosaur: [Function: relax],
+  auth: [Function: auth],
+  session: [Function: session],
+  updates: [Function: updates],
+  followUpdates: [Function: followUpdates],
+  _use: [Function: docModule],
+  ping: [Function: ping],
+  get_cors: [Function],
+  set_cors: [Function],
+  set_permissions: [Function],
+  generate_api_key: [Function],
+  get_virtual_hosts: [Function],
+  add_virtual_host: [Function],
+  delete_virtual_host: [Function]
+}
+```
