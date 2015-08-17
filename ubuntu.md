@@ -71,6 +71,14 @@ ll /usr/local/bin
 pip2 install httpie
 ```
 
+### Node Install
+
+```
+wget https://nodejs.org/dist/v0.12.7/node-v0.12.7-linux-x64.tar.gz
+tar -xzvf node-v0.12.7-linux-x64.tar.gz
+sudo mv node-v0.12.7-linux-x64 /usr/local/node
+```
+
 ### Git Install
 
 ```
