@@ -79,6 +79,10 @@ tar -xzvf node-v0.12.7-linux-x64.tar.gz
 sudo mv node-v0.12.7-linux-x64 /usr/local/node
 ```
 
+### Ruby Install
+
+http://rvm.io/rvm/install
+
 ### Git Install
 
 ```
