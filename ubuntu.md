@@ -72,3 +72,23 @@ sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libexpat1-d
 make prefix=/usr/local/git all doc info ;
 sudo make prefix=/usr/local/git install install-doc install-html install-info ;
 ```
+
+### CouchDB Install
+
+```
+sudo apt-get install software-properties-common -y
+sudo apt-get install python-software-properties -y
+sudo add-apt-repository ppa:couchdb/stable -y
+sudo apt-get update -y
+sudo apt-get remove couchdb couchdb-bin couchdb-common -yf
+sudo apt-get install -V couchdb
+sudo stop couchdb
+sudo vi /etc/couchdb/local.ini # bind_address=0.0.0.0
+sudo reboot
+```
+
+### HTTPie Install
+
+```
+sudo apt-get install httpie
+```
