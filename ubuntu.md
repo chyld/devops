@@ -56,6 +56,21 @@ netmask 255.255.255.0
 broadcast 192.168.56.255
 ```
 
+### Python Install
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo python3 get-pip.py
+
+pip2 list
+pip3 list
+
+ll /usr/local/bin
+
+pip2 install httpie
+```
+
 ### Git Install
 
 ```
