@@ -30,6 +30,8 @@ sudo reboot
 sudo usermod -a -G vboxsf chyld
 cd ~
 ln -s /media/sf_Temp temp
+- or -
+sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Code /home/chyld/code
 ```  
 
 ### Static Network Adapter
