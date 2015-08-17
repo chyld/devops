@@ -23,10 +23,13 @@ status()
 alias b="cd .."
 alias l="ls -al"
 alias c="clear"
+alias mnt="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Code /home/chyld/code"
 
 export EDITOR=vim
 export GIT_PATH=/usr/local/git/bin
 export NODE_PATH=/usr/local/node/bin
 export PATH=$GIT_PATH:$NODE_PATH:$PATH
 export PS1="$txtcyn\u$txtred@$txtcyn\h $txtred\w $txtblk\$(status)$txtgrn\$(branch)$txtblk:$txtrst "
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
