@@ -6,3 +6,5 @@
 [user]
   email = chyld.medford@gmail.com
   name = Chyld Medford
+[push]
+  default = simple
