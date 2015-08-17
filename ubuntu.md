@@ -115,9 +115,3 @@ sudo stop couchdb
 sudo vi /etc/couchdb/local.ini # bind_address=0.0.0.0
 sudo reboot
 ```
-
-### HTTPie Install
-
-```
-sudo apt-get install httpie
-```
