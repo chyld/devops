@@ -115,3 +115,5 @@ sudo stop couchdb
 sudo vi /etc/couchdb/local.ini # bind_address=0.0.0.0
 sudo reboot
 ```
+
+http://192.168.56.2:5984/_utils/index.html
