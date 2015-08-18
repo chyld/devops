@@ -24,6 +24,7 @@ alias b="cd .."
 alias l="ls -al"
 alias c="clear"
 alias mnt="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Code /home/chyld/code"
+alias code="cd ~/code"
 
 export EDITOR=vim
 export GIT_PATH=/usr/local/git/bin
