@@ -68,7 +68,7 @@ pip3 list
 
 ll /usr/local/bin
 
-pip2 install httpie
+sudo pip2 install httpie
 ```
 
 ### Node Install
