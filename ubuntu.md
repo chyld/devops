@@ -81,7 +81,15 @@ sudo mv node-v0.12.7-linux-x64 /usr/local/node
 
 ### Ruby Install
 
+```
+sudo apt-get install curl
+```
+
 http://rvm.io/rvm/install
+
+```
+gem install pry
+```
 
 ### Git Install
 
