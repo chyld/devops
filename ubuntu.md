@@ -125,3 +125,8 @@ sudo reboot
 ```
 
 http://192.168.56.2:5984/_utils/index.html
+
+### GUI Applications
+
+- Atom
+- Chrome
