@@ -189,3 +189,5 @@ sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-not
 - Install Numix Theme, Icons, Wallpaper
 - REBOOT
 - Add dotfiles, vim, tmux
+- Add SourceCodePro font (Atom/Terminal)
+
