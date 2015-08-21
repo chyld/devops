@@ -136,3 +136,19 @@ http://192.168.56.2:5984/_utils/index.html
 ### Themes
 
 - https://numixproject.org/
+
+### Ubuntu Desktop
+
+- Install VM
+- sudo apt-get install update
+- sudo apt-get install upgrade
+- Install VMWare Tools
+- Install Python PIP 2/3
+- Install Node
+- Install Ruby & Rails
+- Install CouchDB
+- a
+- b
+- c
+- Disable logoff mode
+- 
