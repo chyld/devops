@@ -130,3 +130,5 @@ http://192.168.56.2:5984/_utils/index.html
 
 - Atom
 - Chrome
+- CompizConfigSettingsManager
+- UnityTweakTool
