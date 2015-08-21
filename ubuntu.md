@@ -172,7 +172,20 @@ http://192.168.56.2:5984/_utils/index.html
 - REBOOT
 - Install CouchDB
 - Install Git (Quick Version)
-- b
-- c
-- Disable logoff mode
-- 
+- REBOOT
+- Install Atom, Chrome, Unity Tweak Tool
+- Pin Apps to Launcher
+- Change Icon Size
+- Add workspaces
+- Turn off auto logoff
+- Add wallpaper
+- Disable Launcher & Search Keyboard Shortcuts
+- Add Panel Transparency
+- Install Numix Theme, Icons, Wallpaper
+- REBOOT
+
+
+
+sudo apt-add-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-notd
