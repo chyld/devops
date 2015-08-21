@@ -93,6 +93,27 @@ gem install pry
 
 ### Git Install
 
+Quick - No Docs
+
+```
+mkdir download
+cd download/
+wget https://www.kernel.org/pub/software/scm/git/git-2.5.0.tar.gz
+tar -xzvf git-2.5.0.tar.gz
+cd git-2.5.0/
+cat INSTALL
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev
+
+make prefix=/usr/local/git all
+sudo make prefix=/usr/local/git install
+```
+
+Long - With Docs
+
 ```
 mkdir download
 cd download/
@@ -142,12 +163,15 @@ http://192.168.56.2:5984/_utils/index.html
 - Install VM
 - sudo apt-get install update
 - sudo apt-get install upgrade
+- REBOOT
 - Install VMWare Tools
+- REBOOT
 - Install Python PIP 2/3
 - Install Node
 - Install Ruby & Rails
+- REBOOT
 - Install CouchDB
-- a
+- Install Git (Quick Version)
 - b
 - c
 - Disable logoff mode
