@@ -151,12 +151,17 @@ http://192.168.56.2:5984/_utils/index.html
 
 - Atom
 - Chrome
-- CompizConfigSettingsManager
 - UnityTweakTool
 
 ### Themes
 
 - https://numixproject.org/
+
+```
+sudo apt-add-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-notd
+```
 
 ### Ubuntu Desktop
 
@@ -183,9 +188,4 @@ http://192.168.56.2:5984/_utils/index.html
 - Add Panel Transparency
 - Install Numix Theme, Icons, Wallpaper
 - REBOOT
-
-
-
-sudo apt-add-repository ppa:numix/ppa
-sudo apt-get update
-sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-notd
+- Add dotfiles, vim, tmux
