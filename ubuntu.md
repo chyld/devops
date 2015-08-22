@@ -190,4 +190,5 @@ sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-not
 - REBOOT
 - Add dotfiles, vim, tmux
 - Add SourceCodePro font (Atom/Terminal)
-
+- https://github.com/chriskempson/base16-gnome-terminal
+- http://ciembor.github.io/4bit/#
