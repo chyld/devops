@@ -194,6 +194,7 @@ sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-not
 - http://ciembor.github.io/4bit/#
 - Cloud Foundry CLI
 - Atom themes & plugins
+- MQLight
 
 ### Ruby File for adding Gnome Color Schemes
 
