@@ -12,7 +12,7 @@ txtrst='\[\e[0m\]'    # Text Reset
 
 branch()
 {
-  git branch 2> /dev/null | awk '/*/ {print "{" $2 "}";}'
+  git branch 2> /dev/null | awk '/*/ {print "{" $2 "} ";}'
 }
 
 status()
@@ -30,6 +30,6 @@ export GIT_PATH=/usr/local/git/bin
 export NODE_PATH=/usr/local/node/bin
 export MQLIGHT_PATH=/usr/local/mqlight
 export PATH=$GIT_PATH:$NODE_PATH:$MQLIGHT_PATH:$PATH
-export PS1="$txtylw\u$txtred@$txtylw\h $txtwht\w $txtblk\$(status)$txtgrn\$(branch)$txtblk:$txtrst "
+export PS1="$txtylw\u$txtred@$txtylw\h $txtwht\w $txtred\$(status)$txtgrn\$(branch)$txtylw>$txtrst "
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
