@@ -68,7 +68,8 @@ pip3 list
 
 ll /usr/local/bin
 
-sudo pip2 install httpie
+sudo apt-get install libevent-dev python-dev
+sudo pip2 install httpie boom
 ```
 
 ### Node Install
