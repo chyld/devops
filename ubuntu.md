@@ -196,6 +196,8 @@ sudo apt-get install numix-gtk-theme numix-icon-theme-circle numix-wallpaper-not
 - Atom themes & plugins
 - Atom auto-save, themes, icons, linter, linter-jscs
 - MQLight
+- Docker
+- sudo usermod -aG docker chyld
 
 ### Ruby File for adding Gnome Color Schemes
 
