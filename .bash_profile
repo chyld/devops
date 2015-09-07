@@ -30,7 +30,9 @@ export GIT_PATH=/usr/local/git/bin
 export NODE_PATH=/usr/local/node/bin
 export MQLIGHT_PATH=/usr/local/mqlight
 export GO_PATH=/usr/local/go/bin
-export PATH=$GIT_PATH:$NODE_PATH:$MQLIGHT_PATH:$GO_PATH:$PATH
+export ETCD_PATH=/usr/local/etcd
+export PATH=$GIT_PATH:$NODE_PATH:$MQLIGHT_PATH:$GO_PATH:$ETCD_PATH:$PATH
 export PS1="$txtylw\u$txtred@$txtylw\h $txtwht\w $txtred\$(status)$txtgrn\$(branch)$txtylw>$txtrst "
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
