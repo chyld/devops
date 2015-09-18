@@ -1,0 +1,16 @@
+"*":
+  "exception-reporting":
+    userId: "11e69ec7-a86e-9ef2-a652-0ef6df764cd1"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Code Pro, Droid Sans Mono, Droid Sans Fallback"
+    fontSize: 15
+  autosave:
+    enabled: true
