@@ -68,6 +68,8 @@ make
 make test
 sudo make install
 
+change permissions on python2 and 3 directories to chyld:chyld
+
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
