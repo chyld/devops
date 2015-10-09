@@ -62,6 +62,12 @@ broadcast 192.168.56.255
 ### Python Install
 
 ```
+download python 2 and 3 source code
+./configure --prefix=/usr/local/python2or3
+make
+make test
+sudo make install
+
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
