@@ -62,17 +62,24 @@ broadcast 192.168.56.255
 ### Python Install
 
 ```
+sudo apt-get install build-essential tk8.6-dev tcl8.6-dev libgdbm-dev libssl-dev liblzma-dev zlib1g-dev libncurses5-dev libreadline6-dev libbz2-dev bzip2 libsqlite3-dev
+
+make /usr/local/python2 and 3 --- set permissions to chyld:chyld
+
+download python 2 and 3 source code
+./configure --prefix=/usr/local/python2or3
+make
+make test
+make install
+
 wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
-sudo python3 get-pip.py
+python2 get-pip.py
+python3 get-pip.py
 
 pip2 list
 pip3 list
 
-ll /usr/local/bin
-
-sudo apt-get install libevent-dev python-dev
-sudo pip2 install httpie boom
+sudo pip2 install httpie
 ```
 
 ### Node Install
