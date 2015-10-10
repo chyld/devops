@@ -70,8 +70,7 @@ download python 2 and 3 source code
 ./configure --prefix=/usr/local/python2or3
 make
 make test
-sudo make install
-
+make install
 
 wget https://bootstrap.pypa.io/get-pip.py
 python2 get-pip.py
