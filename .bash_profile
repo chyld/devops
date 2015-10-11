@@ -27,6 +27,8 @@ alias code="cd ~/Code"
 alias p2="python2"
 alias p3="python3"
 
+export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
+
 export EDITOR=vim
 export GIT_PATH=/usr/local/git/bin
 export NODE_PATH=/usr/local/node/bin
