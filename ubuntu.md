@@ -91,6 +91,7 @@ conda install numpy
 conda install ipython
 conda install jupyter
 conda list
+http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf
 ```
 
 ### Node Install
