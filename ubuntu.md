@@ -79,7 +79,8 @@ python3 get-pip.py
 pip2 list
 pip3 list
 
-sudo pip2 install httpie
+pip2 install httpie
+pip3 install jupyter
 ```
 
 ### Node Install
