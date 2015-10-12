@@ -85,6 +85,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 conda create -n py35 python=3.5
 source activate py35
+source deactivate
 conda install scipy
 conda install numpy
 conda install ipython
