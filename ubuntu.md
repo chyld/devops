@@ -79,8 +79,7 @@ python3 get-pip.py
 pip2 list
 pip3 list
 
-pip2 install httpie
-pip3 install jupyter
+pip3 install httpie
 
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -89,6 +88,7 @@ source activate py35
 conda install scipy
 conda install numpy
 conda install ipython
+conda install jupyter
 conda list
 ```
 
