@@ -102,6 +102,7 @@ conda info -e
 pyroot
 conda update conda (only in root env)
 py35
-pip install httpie
+pip install httpie pdbpp
 conda install scipy
 conda install jupyter
+
