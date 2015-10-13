@@ -25,6 +25,10 @@ alias l="ls -al"
 alias c="clear"
 alias code="cd ~/Code"
 
+alias pyroot="source activate root"
+alias py35="source activate py35"
+alias py27="source activate py27"
+
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 
 export EDITOR=vim
