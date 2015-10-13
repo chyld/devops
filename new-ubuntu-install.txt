@@ -1,0 +1,107 @@
+Install base image
+
+Remove extra taskbar icons
+Disable screensaver: Brightness & Lock
+Pin terminal icon
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot
+
+sudo apt-get install open-vm-tools
+sudo apt-get install open-vm-tools-desktop
+sudo reboot
+
+mkdir ~/.local/install
+use ~/Downloads
+
+GIT
+https://www.kernel.org/pub/software/scm/git/
+wget & extract
+sudo apt-get install build-essential libssl-dev
+sudo apt-get install libcurl4-openssl-dev libexpat1-dev
+make prefix=/home/chyld/.local/install/git all
+make prefix=/home/chyld/.local/install/git install
+
+NODE
+https://nodejs.org/en/download/
+wget & extract to ~/.local/install/node
+
+GO
+https://golang.org/dl/
+wget & extract to ~/.local/install/go
+
+RUBY
+http://rvm.io/rvm/install
+sudo apt-get install curl
+install public key (on site)
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+PYTHON
+http://conda.pydata.org/miniconda.html
+wget <conda-file.sh>
+do not modify .bashrc, update .bash_profile path
+bash Miniconda3-latest-Linux-x86_64.sh
+conda create -n py35 python=3.5
+conda create -n py27 python=2.7
+
+CLOUD FOUNDRY
+https://github.com/cloudfoundry/cli/releases
+
+ATOM
+https://atom.io/
+
+CHROME
+https://www.google.com/chrome/browser/desktop/
+
+UNITY TWEAK TOOL
+https://apps.ubuntu.com/cat/applications/unity-tweak-tool/
+
+REBOOT
+
+Pin Icons & Reduce Size
+Enable Panel Transparency
+Disable HUD Launcher
+
+NUMIX THEMES
+sudo apt-add-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+sudo apt-get install numix-wallpaper-notd
+
+Change Theme, Icons & Background
+
+SOURCE CODE PRO
+https://github.com/adobe-fonts/source-code-pro/releases
+download to ~/.fonts
+
+GNOME TERMINAL
+git clone https://github.com/chriskempson/base16-gnome-terminal
+copy https://gist.github.com/chyld/5ac114ad77c6ce17b1fa
+ruby temp.rb
+configure terminal as login shell
+add source code pro font to terminal
+
+DOTFILES
+sudo apt-get install vim
+https://github.com/VundleVim/Vundle.vim
+sudo apt-get install htop tree tmux
+gem install pry
+
+ATOM
+Source Code Pro
+Font Size 14
+pigments
+color-picker
+file-icons
+atom-material-syntax
+atom-material-ui
+
+CONDA & PYTHON
+conda info -e
+pyroot
+conda update conda (only in root env)
+py35
+pip install httpie
+conda install scipy
+conda install jupyter
