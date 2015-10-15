@@ -118,3 +118,5 @@ CHROME EXTENSION
 * LiveHTTPHeaders
 * Postman
 * Cookies (mixesoft.com)
+
+Add chrome application shortcuts
