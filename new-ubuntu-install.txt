@@ -118,5 +118,6 @@ CHROME EXTENSION
 * LiveHTTPHeaders
 * Postman
 * Cookies (mixesoft.com)
+* React Developer Tools
 
 Add chrome application shortcuts
