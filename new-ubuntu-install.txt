@@ -106,3 +106,15 @@ pip install httpie pdbpp
 conda install scipy
 conda install jupyter
 
+CHROME EXTENSION
+* Google Art Project
+* JSON Formatter (callumlocke.co.uk)
+* Wappalyzer
+- BuiltWith
+* ZenHub
+- WebDeveloper
+- EditThisCookie
+- Click&Clean (mixesoft.com)
+* LiveHTTPHeaders
+* Postman
+* Cookies (mixesoft.com)
