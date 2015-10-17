@@ -96,6 +96,7 @@ color-picker
 file-icons
 atom-material-syntax
 atom-material-ui
+react
 
 CONDA & PYTHON
 conda info -e
