@@ -57,6 +57,8 @@ https://www.google.com/chrome/browser/desktop/
 UNITY TWEAK TOOL
 https://apps.ubuntu.com/cat/applications/unity-tweak-tool/
 
+GIMP
+
 REBOOT
 
 Pin Icons & Reduce Size
