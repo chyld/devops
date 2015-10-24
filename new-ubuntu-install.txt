@@ -42,6 +42,7 @@ http://conda.pydata.org/miniconda.html
 wget <conda-file.sh>
 do not modify .bashrc, update .bash_profile path
 bash Miniconda3-latest-Linux-x86_64.sh
+install in ~/.local/install/miniconda3
 conda create -n py35 python=3.5
 conda create -n py27 python=2.7
 
