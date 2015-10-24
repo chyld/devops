@@ -109,6 +109,8 @@ py35
 pip install httpie pdbpp
 conda install scipy
 conda install jupyter
+conda install pandas
+conda install scikit-learn
 
 CHROME EXTENSION
 * Google Art Project
