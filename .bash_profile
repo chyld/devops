@@ -29,15 +29,16 @@ alias pyroot="source activate root"
 alias py35="source activate py35"
 alias py27="source activate py27"
 
-export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
-
-export EDITOR=vim
 export LOCAL=$HOME/.local/install
 export GIT_PATH=$LOCAL/git/bin
 export NODE_PATH=$LOCAL/node/bin
 export GO_PATH=$LOCAL/go/bin
 export CONDA_PATH=$LOCAL/miniconda3/bin
 export RVM_PATH=$HOME/.rvm/bin
+
+export EDITOR=vim
+export GOROOT=$LOCAL/go
+export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 
 export PATH=$GIT_PATH:$NODE_PATH:$GO_PATH:$CONDA_PATH:$RVM_PATH:$PATH
 export PS1="$txtylw\u$txtred@$txtylw\h $txtwht\w $txtred\$(status)$txtgrn\$(branch)$txtylw>$txtrst "
