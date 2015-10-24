@@ -42,6 +42,7 @@ http://conda.pydata.org/miniconda.html
 wget <conda-file.sh>
 do not modify .bashrc, update .bash_profile path
 bash Miniconda3-latest-Linux-x86_64.sh
+install in ~/.local/install/miniconda3
 conda create -n py35 python=3.5
 conda create -n py27 python=2.7
 
@@ -96,9 +97,9 @@ Font Size 14
 pigments
 color-picker
 file-icons
-atom-material-syntax
-atom-material-ui
 react
+angular
+themes
 
 CONDA & PYTHON
 conda info -e
@@ -108,6 +109,9 @@ py35
 pip install httpie pdbpp
 conda install scipy
 conda install jupyter
+conda install pandas
+conda install scikit-learn
+conda install matplotlib
 
 CHROME EXTENSION
 * Google Art Project
