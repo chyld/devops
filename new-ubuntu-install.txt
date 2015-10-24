@@ -111,6 +111,7 @@ conda install scipy
 conda install jupyter
 conda install pandas
 conda install scikit-learn
+conda install matplotlib
 
 CHROME EXTENSION
 * Google Art Project
