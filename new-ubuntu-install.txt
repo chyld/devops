@@ -122,5 +122,6 @@ CHROME EXTENSION
 * Postman
 * Cookies (mixesoft.com)
 * React Developer Tools
+* AngularJS Batarang
 
 Add chrome application shortcuts
