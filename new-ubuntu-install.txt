@@ -97,9 +97,9 @@ Font Size 14
 pigments
 color-picker
 file-icons
-atom-material-syntax
-atom-material-ui
 react
+angular
+themes
 
 CONDA & PYTHON
 conda info -e
