@@ -130,3 +130,11 @@ CHROME EXTENSION
 * AngularJS Batarang
 
 Add chrome application shortcuts
+
+POSTGRES
+sudo apt-get install postgresql-9.4
+bin:  /usr/lib/postgresql/9.4/bin
+data: /var/lib/postgresql/9.4/main
+sudo su - postgres
+psql
+create database tmp1;
