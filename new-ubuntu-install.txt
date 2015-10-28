@@ -128,6 +128,7 @@ CHROME EXTENSION
 * Cookies (mixesoft.com)
 * React Developer Tools
 * AngularJS Batarang
+* Chrome Logger (server logging in browser)
 
 Add chrome application shortcuts
 
