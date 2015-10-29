@@ -129,6 +129,7 @@ CHROME EXTENSION
 * React Developer Tools
 * AngularJS Batarang
 * Chrome Logger (server logging in browser)
+* FireShot Screen Capture
 
 Add chrome application shortcuts
 
