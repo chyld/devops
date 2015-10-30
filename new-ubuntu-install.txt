@@ -101,6 +101,7 @@ react
 angular
 themes
 autoclose-html
+atom-beautify
 
 CONDA & PYTHON
 conda info -e
