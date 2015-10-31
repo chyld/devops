@@ -12,3 +12,4 @@
   helper = cache --timeout=86400
 [core]
   editor = atom --wait
+  autocrlf = input # true for windows
