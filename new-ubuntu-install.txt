@@ -142,3 +142,8 @@ data: /var/lib/postgresql/9.4/main
 sudo su - postgres
 psql
 create database tmp1;
+
+NUMIX ICON THEME
+sudo apt-add-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-icon-theme-circle
