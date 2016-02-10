@@ -1,2 +1,11 @@
 sudo apt-get update
 sudo apt-get upgrade
+mkdir downloads; cd downloads
+
+***GIT***
+wget https://www.kernel.org/pub/software/scm/git/git-2.7.1.tar.gz
+tar -xzvf git-2.7.1.tar.gz
+cd git-2.7.1/
+sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev gettext
+make prefix=/home/ubuntu/.local/apps/git all
+make prefix=/home/ubuntu/.local/apps/git install
