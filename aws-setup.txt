@@ -27,3 +27,10 @@ bash Miniconda3-latest-Linux-x86_64.sh
 ***GENERAL***
 sudo apt-get install htop tree
 
+***CONDA***
+conda create -n py35 python=3.5
+source activate py35
+source deactivate
+conda install jupyter numpy scipy sympy
+
+
