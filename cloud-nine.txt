@@ -32,6 +32,7 @@ vi ~/.bash_aliases
 alias b="cd .."
 alias c="clear"
 alias code="cd ~/workspace"
+alias jup="jupyter notebook --no-browser --port 8082 --ip=0.0.0.0"
 
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
