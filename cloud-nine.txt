@@ -1,0 +1,33 @@
+mkdir downloads && cd downloads
+git clone https://github.com/chyld/devops
+
+### node ###
+nvm ls # shows all installed node versions
+nvm install 5.6
+nvm alias default 5.6
+
+### python ###
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+conda list
+conda install jupyter numpy scipy sympy matplotlib
+
+### jupyter ###
+jupyter notebook --no-browser --port=8081 --ip=0.0.0.0
+https://_____-chyld.c9users.io:8081
+
+### cloud foundry ###
+https://github.com/cloudfoundry/cli/releases
+Debian 64bit installer
+wget https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
+mv <downloaded-file> cf.deb
+sudo dpkg -i cf.deb
+
+### custom ###
+change theme
+vi ~/.bash_aliases
+alias b="cd .."
+alias c="clear"
+alias code="cd ~/workspace"
+
+cp ~/downloads/.gitconfig ~
