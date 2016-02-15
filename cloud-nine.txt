@@ -35,3 +35,6 @@ alias code="cd ~/workspace"
 
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
+
+cd ~/downloads
+rm *
