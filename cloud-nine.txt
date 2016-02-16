@@ -12,7 +12,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 conda list
 conda install jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn
-pip install pika
+pip install pika httpie
 
 ### jupyter ###
 jupyter notebook --no-browser --port=8081 --ip=0.0.0.0
