@@ -25,6 +25,12 @@ wget https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=gi
 mv <downloaded-file> cf.deb
 sudo dpkg -i cf.deb
 
+### rabbit mq ###
+https://www.rabbitmq.com/download.html
+cd ~/downloads
+wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.6.0-1_all.deb
+sudo dpkg -i rabbitmq.deb
+
 ### miscellaneous ###
 change theme
 
