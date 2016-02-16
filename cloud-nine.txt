@@ -22,8 +22,7 @@ https://_____-chyld.c9users.io:8081
 cd ~/downloads
 https://github.com/cloudfoundry/cli/releases
 Debian 64bit installer
-wget https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
-mv <downloaded-file> cf.deb
+wget -O cf.deb https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
 sudo dpkg -i cf.deb
 
 ### rabbit mq ###
