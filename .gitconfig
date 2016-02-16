@@ -11,5 +11,7 @@
 [credential]
   helper = cache --timeout=86400
 [core]
-  editor = atom --wait
+  editor = vim
   autocrlf = input # true for windows
+[color]
+  ui = true
