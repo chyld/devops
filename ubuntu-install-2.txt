@@ -1,0 +1,90 @@
+Install Ubuntu
+Disable Screen Saver
+Remove Extra Icons from Toolbar
+Add terminal icon to Toolbar
+Reboot
+sudo apt-get update
+sudo apt-get upgrade
+Reboot
+Install VMWare tools
+  - sudo apt-get install open-vm-tools
+  - sudo apt-get install open-vm-tools-desktop
+Reboot
+Install Python
+Install Node
+Install Rails
+Install Git
+Install CouchDB
+Reboot
+Install MQLight
+Install Docker
+  - wget -qO- https://get.docker.com/ | sh
+  - sudo usermod -aG docker chyld
+Reboot
+Install Cloud Foundry
+Install Atom
+Install Chrome
+Install Unity Tweak Tool
+Reboot
+Pin Icons to Toolbar
+Reduce Icon Size
+Add Workspaces
+Disable HUD from Command Key
+Panel Transparency
+Install Numix
+  - Theme
+  - Icons
+  - Wallpaper
+Source Code Pro
+  - ~.fonts/
+Download Gnome Terminal Themes & Add
+Modify Theme to use Source Code Pro
+Get dotfiles
+  - https://github.com/chyld/devops
+  - Install Vundle
+
+
+color-piker
+pigments
+atom-material-syntax
+atom-material-ui
+Enable Auto Save
+file-icons
+linter
+linter-jshint
+language-jade
+Enable Source Code Pro
+Select Material Theme
+Dockerfile syntax plugin
+
+
+Clean Up Delete Files
+
+mkdir Code
+
+Add CouchDB & MQLight bookmark to Chrome
+
+Rearrage icons on Toolbar
+
+apt-get install tmux htop
+
+get Docker wallpaper
+
+set termimal to transparent
+
+sudo apt-get install tree htop tmux
+
+Install Go
+https://golang.org/dl/
+
+Install Etcd
+https://github.com/coreos/etcd/releases
+
+Install GCloud
+https://cloud.google.com/sdk/#nix
+
+
+
+Snapshot
+
+Create Full Clone
