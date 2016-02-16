@@ -1,6 +1,3 @@
-### Updated Ubuntu Install
-https://gist.github.com/chyld/efd0e43044323d1d2905
-
 ### Virtual Box Setup
 ![VirtualBox](https://raw.githubusercontent.com/chyld/devops/master/images/vm1.png)
 
