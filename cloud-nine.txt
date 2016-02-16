@@ -42,6 +42,7 @@ alias jup="jupyter notebook --no-browser --port 8082 --ip=0.0.0.0"
 alias qs="sudo rabbitmqctl list_queues"
 
 cd ~
+rm .gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
 
 cd ~/downloads
