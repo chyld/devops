@@ -48,9 +48,11 @@ wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
 cd ~/downloads
 rm *
 
-******************************************************************************************************
+*******************************************************************************************************
+AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS
+*******************************************************************************************************
 
-### aws rabbit mq ###
+### RABBIT MQ ###
 sudo apt-get install erlang-nox
 wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.6.0-1_all.deb
 sudo dpkg -i rabbitmq.deb
@@ -70,4 +72,6 @@ open firewall port
 http://IP_ADDRESS:15672
 guest/guest
 
-******************************************************************************************************
+*******************************************************************************************************
+AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS AWS
+*******************************************************************************************************
