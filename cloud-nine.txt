@@ -58,7 +58,7 @@ wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.
 sudo dpkg -i rabbitmq.deb
 
 sudo rabbitmq-plugins enable rabbitmq_management
-sudo rabbitmq-plugins enable rabbitmq_management_visualizer
+sudo rabbitmq-plugins enable rabbitmq_management_visualiser
 sudo rabbitmq-plugins list
 
 sudo vi /etc/rabbitmq/rabbitmq.config
