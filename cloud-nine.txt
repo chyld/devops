@@ -47,3 +47,22 @@ wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
 
 cd ~/downloads
 rm *
+
+### aws rabbit mq ###
+sudo apt-get install erlang-nox
+wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.6.0-1_all.deb
+sudo dpkg -i rabbitmq.deb
+
+sudo rabbitmq-plugins enable rabbitmq_management
+sudo rabbitmq-plugins enable rabbitmq_management_visualizer
+sudo rabbitmq-plugins list
+
+sudo vi /etc/rabbitmq/rabbitmq.config
+[{rabbit, [{loopback_users, []}]}].
+
+sudo reboot
+
+sudo rabbitmqctl status
+
+http://54.153.126.217:15672
+guest/guest
