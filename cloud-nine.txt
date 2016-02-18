@@ -69,3 +69,5 @@ sudo rabbitmqctl status
 open firewall port
 http://IP_ADDRESS:15672
 guest/guest
+
+******************************************************************************************************
