@@ -66,6 +66,20 @@ psql
 create database ubuntu;
 select * from pg_shadow;
 
+cd ~/downloads
+wget http://download.redis.io/releases/redis-3.0.7.tar.gz
+tar & cd
+make
+mv ~/.local/redis
+Port           : 6379
+Config file    : /etc/redis/6379.conf
+Log file       : /var/log/redis_6379.log
+Data dir       : /var/lib/redis/6379
+Executable     : /home/ubuntu/downloads/redis-3.0.7/src/redis-server
+Cli Executable : /home/ubuntu/downloads/redis-3.0.7/src/redis-cli
+
+
+
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/.tmux.conf
