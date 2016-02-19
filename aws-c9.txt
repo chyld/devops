@@ -1,1 +1,14 @@
+mkdir ~/downloads
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential libssl-dev
 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+restart shell
+nvm install 5.6
+nvm alias default 5.6
+
+cd ~/downloads
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+/home/ubuntu/.miniconda3
