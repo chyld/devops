@@ -50,8 +50,10 @@ wget https://www.kernel.org/pub/software/scm/git/git-2.7.1.tar.gz
 tar -xvf git-2.7.1.tar.gz
 cd git-2.7.1/
 sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev gettext
-make prefix=/home/ubuntu/.local/apps/git all
-make prefix=/home/ubuntu/.local/apps/git install
+make prefix=/home/ubuntu/.local/git all
+make prefix=/home/ubuntu/.local/git install
 
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
+wget https://raw.githubusercontent.com/chyld/devops/master/.tmux.conf
+mkdir ~/code
