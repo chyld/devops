@@ -1,29 +1,46 @@
+====================================================================================================
+**** BASICS ***
 cd ~
 mkdir ~/downloads
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install build-essential libssl-dev
 
+====================================================================================================
+**** NODE ***
 cd ~
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 restart shell
 nvm install 5.6
 nvm alias default 5.6
 
+====================================================================================================
+**** PYTHON ***
 cd ~/downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
-/home/ubuntu/.miniconda3
+/home/ubuntu/.pvm # python version manager
+restart shell
 conda install jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn
 pip install pika httpie
 conda list
 
+====================================================================================================
+**** RAILS ***
+cd ~
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+====================================================================================================
+**** CLOUD FOUNDRY ***
 cd ~/downloads
 https://github.com/cloudfoundry/cli/releases
 wget -O cf.deb https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
 sudo dpkg -i cf.deb
 
-cd ~
+====================================================================================================
+**** RABBITMQ ***
+cd ~/downloads
 sudo apt-get install erlang-nox
 wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.6.0-1_all.deb
 sudo dpkg -i rabbitmq.deb
@@ -38,13 +55,19 @@ open firewall port
 http://IP_ADDRESS:15672
 guest/guest
 
+====================================================================================================
+**** GENERAL ***
 cd ~
 sudo apt-get install htop tree
 
+====================================================================================================
+**** GO ***
 cd ~/downloads
 wget https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
 tar & mv ~/.local/go
 
+====================================================================================================
+**** GIT ***
 cd ~/downloads
 wget https://www.kernel.org/pub/software/scm/git/git-2.7.1.tar.gz
 tar -xvf git-2.7.1.tar.gz
@@ -53,6 +76,8 @@ sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libexpat1-d
 make prefix=/home/ubuntu/.local/git all
 make prefix=/home/ubuntu/.local/git install
 
+====================================================================================================
+**** POSTGRES ***
 cd ~
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 sudo apt-get install wget ca-certificates
@@ -66,21 +91,31 @@ psql
 create database ubuntu;
 select * from pg_shadow;
 
+====================================================================================================
+**** REDIS ***
 cd ~/downloads
 wget http://download.redis.io/releases/redis-3.0.7.tar.gz
 tar & cd
 make
 mv ~/.local/redis
+sudo /home/ubuntu/.local/redis/utils/install_server.sh
+Please select the redis executable path [] /home/ubuntu/.local/redis/src/redis-server
+Selected config:
 Port           : 6379
 Config file    : /etc/redis/6379.conf
 Log file       : /var/log/redis_6379.log
 Data dir       : /var/lib/redis/6379
-Executable     : /home/ubuntu/downloads/redis-3.0.7/src/redis-server
-Cli Executable : /home/ubuntu/downloads/redis-3.0.7/src/redis-cli
+Executable     : /home/ubuntu/.local/redis/src/redis-server
+Cli Executable : /home/ubuntu/.local/redis/src/redis-cli
+sudo reboot
 
-
-
+====================================================================================================
+**** DOTFILES ***
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/.tmux.conf
+wget https://raw.githubusercontent.com/chyld/devops/master/.vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+:PluginInstall
+
 mkdir ~/code
