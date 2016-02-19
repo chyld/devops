@@ -20,3 +20,17 @@ cd ~/downloads
 https://github.com/cloudfoundry/cli/releases
 wget -O cf.deb https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
 sudo dpkg -i cf.deb
+
+sudo apt-get install erlang-nox
+wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server_3.6.0-1_all.deb
+sudo dpkg -i rabbitmq.deb
+sudo rabbitmq-plugins enable rabbitmq_management
+sudo rabbitmq-plugins enable rabbitmq_management_visualiser
+sudo rabbitmq-plugins list
+sudo vi /etc/rabbitmq/rabbitmq.config
+[{rabbit, [{loopback_users, []}]}].
+sudo reboot
+sudo rabbitmqctl status
+open firewall port
+http://IP_ADDRESS:15672
+guest/guest
