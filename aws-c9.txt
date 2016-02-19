@@ -12,3 +12,11 @@ cd ~/downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 /home/ubuntu/.miniconda3
+conda install jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn
+pip install pika httpie
+conda list
+
+cd ~/downloads
+https://github.com/cloudfoundry/cli/releases
+wget -O cf.deb https://cli.run.pivotal.io/stable?release=debian64&version=6.15.0&source=github-rel
+sudo dpkg -i cf.deb
