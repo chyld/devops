@@ -64,6 +64,7 @@ sudo su - postgres
 createuser --interactive ubuntu
 psql
 create database ubuntu;
+select * from pg_shadow;
 
 cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/.gitconfig
