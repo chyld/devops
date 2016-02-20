@@ -92,6 +92,10 @@ create database ubuntu;
 ALTER USER ubuntu WITH PASSWORD 'joy';
 select * from pg_shadow;
 
+sudo apt-get install ptop # watch incoming connections
+sudo su - postgres
+pg_top
+
 ====================================================================================================
 **** REDIS ***
 cd ~/downloads
