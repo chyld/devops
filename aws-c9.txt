@@ -89,6 +89,7 @@ sudo su - postgres
 createuser --interactive ubuntu
 psql
 create database ubuntu;
+ALTER USER ubuntu WITH PASSWORD 'joy';
 select * from pg_shadow;
 
 ====================================================================================================
