@@ -95,6 +95,7 @@ select * from pg_shadow;
 sudo apt-get install ptop # watch incoming connections
 sudo su - postgres
 pg_top
+select * from pg_stat_activity where datname = 'mydatabasename'
 
 ====================================================================================================
 **** REDIS ***
