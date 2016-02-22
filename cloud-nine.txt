@@ -33,6 +33,7 @@ sudo dpkg -i rabbitmq.deb
 
 ### miscellaneous ###
 change theme
+change custom font (source code pro) - both terminal and editor
 
 vi ~/.bash_aliases
 alias b="cd .."
