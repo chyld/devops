@@ -2,9 +2,6 @@
 
 mkdir ~/downloads
 
-cd ~/workspace
-rm README.md
-
 cd ~
 rm .bash_aliases .gitconfig .gitignore
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-ec2/.bash_aliases
@@ -25,4 +22,3 @@ printf "\n\n\n"
 echo "edit ~/.gitconfig"
 echo "delete the devops directory"
 echo "exit the terminal and restart"
-
