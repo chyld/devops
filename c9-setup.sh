@@ -14,7 +14,7 @@ source ~/.profile
 nvm install 5.7
 nvm alias default 5.7
 nvm use 5.7
-npm install -g nodemon mocha
+npm install -g nodemon mocha gulp
 
 sudo pip install httpie
 
