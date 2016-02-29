@@ -17,4 +17,5 @@ sudo pip install httpie
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 sudo mv cf /bin
 
+echo "edit ~/.gitconfig, then"
 echo "exit the terminal and restart"
