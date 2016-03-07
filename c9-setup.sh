@@ -21,4 +21,5 @@ sudo pip install httpie
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 sudo mv cf /bin
 
-exit
+echo "Done!"
+echo "Exit Terminal and Restart"
