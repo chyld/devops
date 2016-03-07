@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt-get update
+sudo apt-get install -y apache2-utils
+
 mkdir ~/downloads
 
 cd ~
@@ -18,7 +21,4 @@ sudo pip install httpie
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 sudo mv cf /bin
 
-printf "\n\n\n"
-echo "edit ~/.gitconfig"
-echo "delete the devops directory"
-echo "exit the terminal and restart"
+exit
