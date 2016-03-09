@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GIT=2.7.2
-NODE=5.7
+NODE=5.8
 
 # CURL & APACHE BENCH
 sudo apt-get update
