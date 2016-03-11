@@ -34,7 +34,7 @@ source ~/.bash_profile
 nvm install ${NODE}
 nvm alias default ${NODE}
 nvm use ${NODE}
-npm install -g nodemon mocha gulp
+npm install -g nodemon mocha gulp localtunnel
 
 # HTTPIE
 sudo pip install httpie
