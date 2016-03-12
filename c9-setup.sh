@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT=2.7.2
+GIT=2.7.3
 NODE=5.8
 
 # CURL & APACHE BENCH
