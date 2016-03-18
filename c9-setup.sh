@@ -51,7 +51,7 @@ rm Miniconda3-latest-Linux-x86_64.sh
 
 # HTTPIE
 cd ~
-sudo pip install httpie
+pip install httpie
 
 # CLOUD FOUNDRY
 cd ~/downloads
