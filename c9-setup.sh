@@ -41,6 +41,7 @@ cd ~
 nvm install ${NODE}
 nvm alias default ${NODE}
 nvm use ${NODE}
+echo Node Location: $(which node)
 npm install -g nodemon mocha gulp localtunnel
 
 # PYTHON
@@ -48,10 +49,7 @@ cd ~/downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 rm Miniconda3-latest-Linux-x86_64.sh
-source ~/.bash_profile
-
-# HTTPIE
-cd ~
+echo Conda Location: $(which conda)
 pip install httpie
 
 # CLOUD FOUNDRY
