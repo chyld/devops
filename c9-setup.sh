@@ -46,7 +46,7 @@ npm install -g nodemon mocha gulp localtunnel
 # PYTHON
 cd ~/downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/miniconda
+bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 rm Miniconda3-latest-Linux-x86_64.sh
 
 # HTTPIE
@@ -58,6 +58,7 @@ cd ~/downloads
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 sudo mv cf /bin
 
+### DONE
 echo "*************************************************************************"
 echo "*************************************************************************"
 echo "*************************************************************************"
