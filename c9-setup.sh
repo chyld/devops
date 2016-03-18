@@ -1,22 +1,28 @@
 #!/bin/bash
 
-GIT=2.7.3
-NODE=5.8
+GIT=2.7.4
+NODE=5.9
+
+# DOWNLOAD DIRECTORY
+mkdir ~/downloads
 
 # CURL & APACHE BENCH
+cd ~
 sudo apt-get update
 sudo apt-get install -y apache2-utils libcurl4-openssl-dev
 
 # GIT
-mkdir ~/downloads && cd ~/downloads
+cd ~/downloads
 wget https://www.kernel.org/pub/software/scm/git/git-${GIT}.tar.xz
 tar -xvf git-${GIT}.tar.xz
 cd ~/downloads/git-${GIT}
 make prefix=/home/ubuntu/.local/git all
 make prefix=/home/ubuntu/.local/git install
-cd ~/downloads && rm -rf git*
+cd ~/downloads
+rm -rf git*
 
 # WHISK
+cd ~/downloads
 wget -O whisk.tar.gz https://new-console.ng.bluemix.net/openwhisk/cli/download
 sudo pip install whisk.tar.gz
 rm whisk*
@@ -31,17 +37,33 @@ source ~/.profile
 source ~/.bash_profile
 
 # NODE
+cd ~
 nvm install ${NODE}
 nvm alias default ${NODE}
 nvm use ${NODE}
 npm install -g nodemon mocha gulp localtunnel
 
+# PYTHON
+cd ~/downloads
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/miniconda
+rm Miniconda3-latest-Linux-x86_64.sh
+
 # HTTPIE
+cd ~
 sudo pip install httpie
 
 # CLOUD FOUNDRY
+cd ~/downloads
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 sudo mv cf /bin
 
+echo "*************************************************************************"
+echo "*************************************************************************"
+echo "*************************************************************************"
 echo "Done!"
 echo "Exit Terminal and Restart"
+echo "REMEMBER TO EDIT THE ~/.gitconfig"
+echo "*************************************************************************"
+echo "*************************************************************************"
+echo "*************************************************************************"
