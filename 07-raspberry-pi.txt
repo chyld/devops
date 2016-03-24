@@ -46,7 +46,7 @@ bash Miniconda3-latest-Linux-armv7l.sh
 -> /home/pi/.local/conda
 exit
 conda install pip ipython
-pip install gpiozero flask flask-restful
+pip install gpiozero flask flask-restful httpie
 conda list
 
 cd ~/downloads
