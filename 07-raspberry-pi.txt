@@ -38,7 +38,7 @@ sudo apt-get install rpi-update
 sudo rpi-update
 sudo reboot
 
-sudo apt-get install vim htop tree
+sudo apt-get install vim htop tree tmux
 mkdir code downloads
 cd ~/downloads
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
@@ -46,7 +46,7 @@ bash Miniconda3-latest-Linux-armv7l.sh
 -> /home/pi/.local/conda
 exit
 conda install pip ipython
-pip install gpiozero flask
+pip install gpiozero flask flask-restful
 conda list
 
 cd ~/downloads
