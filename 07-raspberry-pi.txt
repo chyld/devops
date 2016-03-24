@@ -45,7 +45,7 @@ wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
 bash Miniconda3-latest-Linux-armv7l.sh
 -> /home/pi/.local/conda
 exit
-conda install pip
+conda install pip ipython
 pip install gpiozero
 conda list
 
