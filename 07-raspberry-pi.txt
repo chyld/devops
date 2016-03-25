@@ -38,7 +38,7 @@ sudo apt-get install rpi-update
 sudo rpi-update
 sudo reboot
 
-sudo apt-get install vim htop tree tmux
+sudo apt-get install vim htop tree tmux apache2-utils libcurl4-openssl-dev
 mkdir code downloads
 cd ~/downloads
 wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
