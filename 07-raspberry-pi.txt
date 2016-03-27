@@ -57,6 +57,8 @@ nvm install 5.9
 sudo apt-get install git
 
 
+
+sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
 wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.38.tar.xz
 ./configure
 make
