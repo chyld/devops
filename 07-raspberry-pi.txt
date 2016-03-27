@@ -55,3 +55,21 @@ exit
 nvm install 5.9
 
 sudo apt-get install git
+
+
+
+
+
+pkg-config
+libboost-python-dev
+libboost-thread-dev
+libbluetooth-dev >= 4.101
+libglib2.0-dev
+python-dev
+
+pip i PyBluez
+pip i gattlib
+
+sudo usermod -G bluetooth -a pi
+
+pi-bluetooth bluez bluez-firmware
