@@ -57,6 +57,11 @@ nvm install 5.9
 sudo apt-get install git
 
 
+wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.38.tar.xz
+./configure
+make
+sudo make install
+
 
 
 
