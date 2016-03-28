@@ -50,3 +50,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | b
 nvm install 5.9
 
 sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+
+sudo apt-get install libglib2.0-dev libdbus-1-dev libical-dev libreadline-dev
+wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.38.tar.xz
+./configure
+make
+sudo make install
