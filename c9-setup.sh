@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT=2.7.4
+GIT=2.8.0
 NODE=5.9
 
 # DOWNLOAD DIRECTORY
