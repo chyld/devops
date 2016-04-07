@@ -42,7 +42,7 @@ nvm install ${NODE}
 nvm alias default ${NODE}
 nvm use ${NODE}
 echo Node Location: $(which node)
-npm install -g nodemon mocha gulp localtunnel
+npm install -g nodemon mocha gulp localtunnel jsdoc http-server
 
 # PYTHON
 cd ~/downloads
