@@ -42,7 +42,7 @@ nvm install ${NODE}
 nvm alias default ${NODE}
 nvm use ${NODE}
 echo Node Location: $(which node)
-npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine
+npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli
 
 # PYTHON
 cd ~/downloads
