@@ -17,6 +17,9 @@ download chrome
 download vscode
 
 sudo dpkg -i chrome.deb
+sudo apt-get install -f # fix unmet dependencies
+sudo dpkg -i chrome.deb # reinstall
+
 sudo dpkg -i vscode.deb
 
 pin terminal, vscode, chrome to launcher
