@@ -28,3 +28,11 @@ pin terminal, vscode, chrome to launcher
 
 # nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+nvm install 6
+
+# fonts
+https://github.com/adobe-fonts/source-code-pro/releases
+mv to ~/.fonts
+
+sudo reboot
+snapshot
