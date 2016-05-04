@@ -34,5 +34,5 @@ nvm install 6
 https://github.com/adobe-fonts/source-code-pro/releases
 mv to ~/.fonts
 
-sudo reboot
+sudo poweroff
 snapshot
