@@ -1,1 +1,22 @@
-hello
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo reboot
+
+sudo apt-get install open-vm-tools
+sudo apt-get install open-vm-tools-desktop
+
+sudo reboot
+
+wallpaper
+icon size
+screensaver
+
+sudo apt-get install git
+download chrome
+download vscode
+
+sudo dpkg -i chrome.deb
+sudo dpkg -i vscode.deb
+
+pin terminal, vscode, chrome to launcher
