@@ -22,4 +22,6 @@ sudo dpkg -i chrome.deb # reinstall
 
 sudo dpkg -i vscode.deb
 
+sudo reboot
+
 pin terminal, vscode, chrome to launcher
