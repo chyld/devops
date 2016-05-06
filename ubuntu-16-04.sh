@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# SYSTEM
+sudo apt-get install -y vim tmux tree htop
+
 #DIRECTORIES
 mkdir ~/Code
 mkdir ~/Temp
