@@ -34,5 +34,9 @@ nvm install 6
 https://github.com/adobe-fonts/source-code-pro/releases
 mv to ~/.fonts
 
+# terminal
+set source code pro - size 11 - font
+set terminal to login shell and test
+
 sudo poweroff
 snapshot

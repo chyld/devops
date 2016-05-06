@@ -2,6 +2,7 @@
 
 #DIRECTORIES
 mkdir ~/Code
+mkdir ~/Temp
 
 # DOTFILES
 cd ~
