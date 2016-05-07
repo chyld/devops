@@ -32,7 +32,7 @@ cd ~/Downloads
 wget https://nodejs.org/dist/v${NODE}/node-v${NODE}-linux-x64.tar.xz
 tar -xvf node-v${NODE}-linux-x64.tar.xz 
 mv node-v${NODE}-linux-x64 ~/.local/node
-npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
+npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript babel-cli
 
 # PYTHON
 cd ~/Downloads
