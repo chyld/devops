@@ -6,7 +6,7 @@ NODE=6.1
 # SYSTEM
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y vim tmux tree htop
+sudo apt-get install -y vim tmux tree htop build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev
 
 #DIRECTORIES
 mkdir ~/Code
@@ -18,6 +18,14 @@ wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_profile
 source ~/.bash_profile
+
+# GIT
+cd ~/Downloads
+wget https://www.kernel.org/pub/software/scm/git/git-${GIT}.tar.xz
+tar -xvf git-${GIT}.tar.xz
+cd ~/Downloads/git-${GIT}
+make prefix=/home/chyld/.local/git all
+make prefix=/home/chyld/.local/git install
 
 # NODE
 # cd ~
