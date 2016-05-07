@@ -1,6 +1,11 @@
 #!/bin/bash
 
+GIT=2.8.2
+NODE=6.1
+
 # SYSTEM
+sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install -y vim tmux tree htop
 
 #DIRECTORIES
@@ -15,7 +20,11 @@ wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/
 source ~/.bash_profile
 
 # NODE
-npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
+# cd ~
+# nvm install ${NODE}
+# nvm alias default ${NODE}
+# nvm use ${NODE}
+# npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
 
 # PYTHON
 cd ~/Downloads
