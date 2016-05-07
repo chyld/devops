@@ -31,18 +31,18 @@ sudo reboot
 
 + snapshot vm
 
-
-
-
-
-
-
-
 download chrome
 download vscode
 
 sudo dpkg -i chrome.deb
-sudo apt-get install -f # fix unmet dependencies
-sudo dpkg -i chrome.deb # reinstall
+sudo apt-get install -f
+sudo dpkg -i chrome.deb
+
+sudo dpkg -i vscode.deb
+sudo apt-get install -f
 sudo dpkg -i vscode.deb
 
+pin vscode + chrome to launcher
+set chrome homepage to google
+
++ snapshot vm
