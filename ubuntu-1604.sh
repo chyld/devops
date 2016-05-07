@@ -1,8 +1,7 @@
 #!/bin/bash
 
 GIT=2.8.2
-NODE=6.1
-NVM=0.31.0
+NODE=6.1.0
 
 # SYSTEM
 sudo apt-get update
@@ -29,9 +28,9 @@ make prefix=/home/chyld/.local/git install
 
 # NODE
 cd ~/Downloads
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v${NVM}/install.sh | bash
-source ~/.bash_profile
-nvm install ${NODE}
+wget https://nodejs.org/dist/v${NODE}/node-v${NODE}-linux-x64.tar.xz
+tar -xvf node-v${NODE}-linux-x64.tar.xz 
+mv node-v${NODE}-linux-x64 ~/.local/node
 npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
 
 # PYTHON
@@ -40,3 +39,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 pip install httpie
 conda install jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn
+
+# CLEANUP
+cd ~/Downloads
+rm -rf *
