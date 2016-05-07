@@ -18,7 +18,6 @@ cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_aliases
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_profile
-source ~/.bash_profile
 
 # GIT
 cd ~/Downloads
@@ -31,6 +30,7 @@ make prefix=/home/chyld/.local/git install
 # NODE
 cd ~/Downloads
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v${NVM}/install.sh | bash
+source ~/.bash_profile
 nvm install ${NODE}
 npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
 
