@@ -17,6 +17,7 @@ pin terminal to launcher
 set terminal to run as login shell
 download source code pro font
 set terminal to use font
+set firefox homepage to google
 
 # fonts
 https://github.com/adobe-fonts/source-code-pro/releases
