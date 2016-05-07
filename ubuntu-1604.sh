@@ -2,6 +2,7 @@
 
 GIT=2.8.2
 NODE=6.1
+NVM=0.31.0
 
 # SYSTEM
 sudo apt-get update
@@ -28,11 +29,10 @@ make prefix=/home/chyld/.local/git all
 make prefix=/home/chyld/.local/git install
 
 # NODE
-# cd ~
-# nvm install ${NODE}
-# nvm alias default ${NODE}
-# nvm use ${NODE}
-# npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
+cd ~/Downloads
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v${NVM}/install.sh | bash
+nvm install ${NODE}
+npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript
 
 # PYTHON
 cd ~/Downloads
