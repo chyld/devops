@@ -17,6 +17,7 @@ cd ~
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_aliases
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_profile
+wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.tmux.conf
 source ~/.bash_profile
 
 # GIT
