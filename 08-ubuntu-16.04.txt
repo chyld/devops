@@ -56,6 +56,7 @@ set chrome homepage to google
 
 
 Unity Tweak Tool
+Change Panel Transparency to 100%
 
 https://github.com/horst3180/Arc-theme
 https://numixproject.org/
