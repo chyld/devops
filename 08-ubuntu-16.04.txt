@@ -54,7 +54,7 @@ set chrome homepage to google
 
 
 
-
+Gnome Tweak Tool
 Unity Tweak Tool
 Change Panel Transparency to 100%
 
