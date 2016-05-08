@@ -1,14 +1,14 @@
 source ~/.bashrc
 source ~/.profile
 
-txtblk='\[\e[0;30m\]' # Black
-txtred='\[\e[0;31m\]' # Red
-txtgrn='\[\e[0;32m\]' # Green
-txtylw='\[\e[0;33m\]' # Yellow
-txtblu='\[\e[0;34m\]' # Blue
-txtpur='\[\e[0;35m\]' # Purple
-txtcyn='\[\e[0;36m\]' # Cyan
-txtwht='\[\e[0;37m\]' # White
+txt0='\[\e[0;30m\]'
+txt1='\[\e[0;31m\]'
+txt2='\[\e[0;32m\]'
+txt3='\[\e[0;33m\]'
+txt4='\[\e[0;34m\]'
+txt5='\[\e[0;35m\]'
+txt6='\[\e[0;36m\]'
+txt7='\[\e[0;37m\]'
 txtrst='\[\e[0m\]'    # Text Reset
 
 branch()
@@ -27,4 +27,4 @@ GIT_PATH=$LOCAL/git/bin
 CONDA_PATH=$LOCAL/conda/bin
 
 export PATH=$NODE_PATH:$GIT_PATH:$CONDA_PATH:$PATH
-export PS1="$txtylw\u$txtred@$txtylw\h $txtwht\w $txtred\$(status)$txtgrn\$(branch)$txtylw>$txtrst "
+export PS1="$txt3\u$txt7@$txt2\h $txt4\w $txt1\$(status)$txt5\$(branch)$txt3>$txtrst "
