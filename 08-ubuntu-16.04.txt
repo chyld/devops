@@ -67,3 +67,4 @@ Startup Applications -> Use to start Plank on Boot
 CTRL + Right Click -> Preferences
 
 wallpaper // http://imgur.com/U46FRjH&hhvbSf2&vjjeunV
+https://github.com/base16-builder/base16-builder
