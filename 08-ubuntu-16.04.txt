@@ -51,3 +51,14 @@ pin vscode + chrome + atom to launcher
 set chrome homepage to google
 
 + snapshot vm
+
+
+
+
+Unity Tweak Tool
+https://github.com/horst3180/Arc-theme
+https://numixproject.org/
+https://snwh.org/paper
+http://wiki.go-docky.com/index.php?title=Plank:Installing#Packages
+Startup Applications -> Use to start Plank on Boot
+
