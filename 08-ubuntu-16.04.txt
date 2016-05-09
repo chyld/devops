@@ -1,22 +1,49 @@
+# REBOOT AS NEEDED #
+
 + snapshot vm
 
 sudo apt-get update
 sudo apt-get upgrade
-
-sudo reboot
+sudo apt-get install dist-upgrade
 
 sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
 
-sudo reboot
+sudo add-apt-repository ppa:gnome3-team/gnome3 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+https://wiki.ubuntu.com/UbuntuGNOME/Developers # for stable and unstable releases
+
++ snapshot vm
+
+set Firefox home to Google
+Download: Chrome, VSCode, Atom, Source Code Pro Fonts
+Double Click each .deb file to install
+Unzip Font, place in ~/.fonts folder
+set Chrome home to Google
+
+https://github.com/adobe-fonts/source-code-pro/releases
+http://sourcefoundry.org/hack/
+sudo apt-get install xfonts-terminus
+https://fontlibrary.org/en/font/fantasque-sans-mono
+http://quoteunquoteapps.com/courierprime/
+http://input.fontbureau.com/
+http://www.myfonts.com/fonts/jan-fromm/camingo-code/
+https://github.com/google/fonts
+https://github.com/mozilla/Fira
+https://github.com/tonsky/FiraCode
+https://github.com/i-tu/Hasklig
+http://www.dafont.com/code-new-roman.font
+https://github.com/nathco/Office-Code-Pro
+https://pcaro.es/p/hermit/
+
 
 customize general desktop settings
 icon size
 screensaver
 
-# fonts
-https://github.com/adobe-fonts/source-code-pro/releases
-mv to ~/.fonts
 
 # terminal
 pin terminal to launcher
