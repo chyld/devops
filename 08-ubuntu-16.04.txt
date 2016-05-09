@@ -38,7 +38,7 @@ https://github.com/i-tu/Hasklig
 http://www.dafont.com/code-new-roman.font
 https://github.com/nathco/Office-Code-Pro
 https://pcaro.es/p/hermit/
-
+http://programmingfonts.org/list
 
 customize general desktop settings
 icon size
