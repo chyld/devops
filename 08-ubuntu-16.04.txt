@@ -18,86 +18,40 @@ https://wiki.ubuntu.com/UbuntuGNOME/Developers # for stable and unstable release
 
 + snapshot vm
 
+Download: Chrome, VSCode, Atom; Double Click to Install
 set Firefox home to Google
-Download: Chrome, VSCode, Atom, Source Code Pro Fonts
-Double Click each .deb file to install
-Unzip Font, place in ~/.fonts folder
 set Chrome home to Google
-
-https://github.com/adobe-fonts/source-code-pro/releases
-http://sourcefoundry.org/hack/
-sudo apt-get install xfonts-terminus
-https://fontlibrary.org/en/font/fantasque-sans-mono
-http://quoteunquoteapps.com/courierprime/
-http://input.fontbureau.com/
-http://www.myfonts.com/fonts/jan-fromm/camingo-code/
-https://github.com/google/fonts
-https://github.com/mozilla/Fira
-https://github.com/tonsky/FiraCode
-https://github.com/i-tu/Hasklig
-http://www.dafont.com/code-new-roman.font
-https://github.com/nathco/Office-Code-Pro
-https://pcaro.es/p/hermit/
-http://programmingfonts.org/list
-
-customize general desktop settings
-icon size
-screensaver
-
-
-# terminal
-pin terminal to launcher
-set terminal profile name to master
-set terminal to run as login shell
-set terminal to use font
-
-# browser
-set firefox homepage to google
-
-sudo reboot
-
-+ snapshot vm
-
-download chrome
-download vscode
-download atom
-
-sudo dpkg -i chrome.deb
-sudo apt-get install -f
-sudo dpkg -i chrome.deb
-
-sudo dpkg -i vscode.deb
-sudo apt-get install -f
-sudo dpkg -i vscode.deb
-
-sudo dpkg -i atom.deb
-sudo apt-get install -f
-sudo dpkg -i atom.deb
-
-pin vscode + chrome + atom to launcher
-set chrome homepage to google
-
-+ snapshot vm
-
-
-
-Gnome Tweak Tool
-Unity Tweak Tool
-Change Panel Transparency to 100%
+Clone https://github.com/braver/fonts to ~/.fonts
+Only use "resources" directory - delete everything else
+Use http://app.programmingfonts.org/ to View Fonts
+Settings -> Power
 
 https://github.com/horst3180/Arc-theme
+http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme
+Add the repo key!
+
 https://numixproject.org/
-https://snwh.org/paper
-https://snwh.org/moka
+http://me4oslav.deviantart.com/art/Numix-Circle-Linux-Desktop-Icon-Theme-414741466
 
-http://wiki.go-docky.com/index.php?title=Plank:Installing#Packages
-Startup Applications -> Use to start Plank on Boot
-CTRL + Right Click -> Preferences
+Tweak Tool - BEGIN
+Theme : Arc-Dark
+Icons : Numix-Circle
+Shell Theme : Arc-Dark
+Extensions -> User Themes
+Extensions -> Alternate Tab
+Extensions -> Places Status Indicator
+Extensions -> Workspace Indicator
+Add Min and Max Buttons
+Tweak Tool - END
 
-wallpaper // http://imgur.com/U46FRjH&hhvbSf2&vjjeunV
-https://github.com/base16-builder/base16-builder
-http://terminal.sexy/  # <-- the best, export and execute, done!
+Add/Remove Icons from the Favorites (Left Vertical Bar)
 
-https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-https://extensions.gnome.org/
-https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation
+# terminal
+Preferences -> NO : Show Menubar for new Terminals
+Preferences -> Open new Terminal in Tab
+http://terminal.sexy/; Export; Download; Make executable;
+Profile -> Run command as login shell
+Set Font Family and Size
+
++ snapshot vm
+
