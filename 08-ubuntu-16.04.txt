@@ -4,17 +4,15 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install dist-upgrade
 
 sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
 
-sudo add-apt-repository ppa:gnome3-team/gnome3 
+# sudo add-apt-repository ppa:gnome3-team/gnome3 
+sudo add-apt repository ppa:gnome3-team/gnome3-staging
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-
-https://wiki.ubuntu.com/UbuntuGNOME/Developers # for stable and unstable releases
 
 + snapshot vm
 
