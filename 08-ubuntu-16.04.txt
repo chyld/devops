@@ -36,7 +36,11 @@ Profile -> Run command as login shell
 STYLE
 
 https://github.com/horst3180/Arc-theme
+
 https://numixproject.org/
+sudo apt-add-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-icon-theme-circle
 
 Tweak Tool:
 Theme : Arc-Dark
