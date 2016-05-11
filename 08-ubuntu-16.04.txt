@@ -58,5 +58,5 @@ Adwaita
 Right click on Chrome's titlebar and select "Use System Titlebar & Borders"
 
 Terminal Set Font Family and Size
-Set Background
+Set Background Wallpaper
 Atom - Theme + Font
