@@ -54,6 +54,8 @@ Cursors: Paper
 Shell Theme : Arc-Dark
 
 Chrome - go to Chrome Store get Gnome 3 Theme and Enable
+Adwaita
+Right click on Chrome's titlebar and select "Use System Titlebar & Borders"
 
 Terminal Set Font Family and Size
 Set Background
