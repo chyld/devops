@@ -49,7 +49,10 @@ sudo apt-get install numix-icon-theme-circle
 Tweak Tool:
 Theme : Arc-Dark
 Icons : Numix-Circle
+Cursors: Paper
 Shell Theme : Arc-Dark
+
+Chrome - go to Chrome Store get Gnome 3 Theme and Enable
 
 Terminal Set Font Family and Size
 Set Background
