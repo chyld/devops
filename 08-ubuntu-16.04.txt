@@ -24,6 +24,7 @@ Extensions -> Alternate Tab
 Extensions -> Places Status Indicator
 Extensions -> Workspace Indicator
 Add Min and Max Buttons
+Make 3 Static Workspaces
 
 TERMINAL
 Preferences -> NO : Show Menubar for new Terminals
