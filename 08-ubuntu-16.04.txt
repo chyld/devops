@@ -1,21 +1,14 @@
 # REBOOT AS NEEDED #
 
-+ snapshot vm
-
+GENERAL
 sudo apt-get update
 sudo apt-get upgrade
-
 sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
 
-# sudo add-apt-repository ppa:gnome3-team/gnome3 
-sudo add-apt-repository ppa:gnome3-team/gnome3-staging
-sudo apt-get update
-sudo apt-get upgrade
-# sudo apt-get dist-upgrade
-
 + snapshot vm
 
+APPLICATIONS
 Download: Chrome, VSCode, Atom; Double Click to Install
 set Firefox home to Google
 set Chrome home to Google
@@ -23,33 +16,33 @@ Clone https://github.com/braver/fonts to ~/.fonts
 Only use "resources" directory - delete everything else
 Use http://app.programmingfonts.org/ to View Fonts
 Settings -> Power
+Add/Remove Icons from the Favorites (Left Vertical Bar)
 
-https://github.com/horst3180/Arc-theme
-http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme
-Add the repo key!
-
-https://numixproject.org/
-http://me4oslav.deviantart.com/art/Numix-Circle-Linux-Desktop-Icon-Theme-414741466
-
-Tweak Tool - BEGIN
-Theme : Arc-Dark
-Icons : Numix-Circle
-Shell Theme : Arc-Dark
+TWEAK TOOL
 Extensions -> User Themes
 Extensions -> Alternate Tab
 Extensions -> Places Status Indicator
 Extensions -> Workspace Indicator
 Add Min and Max Buttons
-Tweak Tool - END
 
-Add/Remove Icons from the Favorites (Left Vertical Bar)
-
-# terminal
+TERMINAL
 Preferences -> NO : Show Menubar for new Terminals
 Preferences -> Open new Terminal in Tab
 http://terminal.sexy/; Export; Download; Make executable;
 Profile -> Run command as login shell
-Set Font Family and Size
 
 + snapshot vm
 
+STYLE
+
+https://github.com/horst3180/Arc-theme
+https://numixproject.org/
+
+Tweak Tool:
+Theme : Arc-Dark
+Icons : Numix-Circle
+Shell Theme : Arc-Dark
+
+Terminal Set Font Family and Size
+Set Background
+Atom - Theme + Font
