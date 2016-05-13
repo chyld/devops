@@ -9,14 +9,19 @@ sudo apt-get install open-vm-tools-desktop
 + snapshot vm
 
 APPLICATIONS
-Download: Chrome, VSCode, Atom, Sublime; Double Click to Install
-set Firefox home to Google
-set Chrome home to Google
+Disable Power Save Feature
+Download: Chrome, VSCode, Atom, Sublime Text 3; Double Click to Install
+Set Chrome, Firefox home to Google
 Clone https://github.com/braver/fonts to ~/.fonts
 Only use "resources" directory - delete everything else
 Use http://app.programmingfonts.org/ to View Fonts
-Settings -> Power
 Add/Remove Icons from the Favorites (Left Vertical Bar)
+Open all 3 Editors from the Terminal as Test
+
+
+
+
+
 
 TWEAK TOOL
 Extensions -> User Themes
