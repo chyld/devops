@@ -81,34 +81,6 @@ dconf-editor
 /usr/share/icons
 https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
 
-
 ~/.config/dconf$ dconf dump /com/gexperts/Terminix/ > myfile.txt
-
-
-
-
-
-http://askubuntu.com/questions/26056/where-are-gnome-keyboard-shortcuts-stored/217310
-
-
-up vote
-2
-down vote
-How to backup dconf settings like keyboard shortcuts
-
-Dump them all to a file:
-dconf dump / >~/.config/dconf/user.conf
-Open that file on a text editor and select the settings that you care about:
-
-editor /tmp/dconf.conf
-If you use Vim, you will want this syntax highlight.
-
-You will soon ask yourself what is <Primary>.
-If you don't know the name of the setting, but know how to modify it from a GUI like unity-control-center, run:
-
-dconf watch /
-and then modify them. The exact setting will then appear on the terminal.
-When you want to restore those settings, run:
-dconf load / <~/.config/dconf/user.conf
-To finish things up, you can Git track that file to never lose it. https://github.com/technicalpickles/homesick is my current favorite method.
-Tested on Ubuntu 15.10. Tip adapted from: http://catern.com/2014/12/21/plain-text-configuration-gnome.html
+~/.config/dconf$ dconf reset -f /com/gexperts/Terminix/
+~/.config/dconf$ dconf load /com/gexperts/Terminix/ < myfile.txt
