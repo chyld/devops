@@ -82,6 +82,9 @@ dconf-editor
 https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
 
 
+~/.config/dconf$ dconf dump /com/gexperts/Terminix/ > myfile.txt
+
+
 
 
 
