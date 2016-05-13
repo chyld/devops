@@ -79,3 +79,4 @@ Atom : Monokai Theme
 dconf-editor
 /usr/share/applications
 /usr/share/icons
+https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
