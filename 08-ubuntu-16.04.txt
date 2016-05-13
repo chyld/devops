@@ -67,6 +67,6 @@ Profile:
 * http://terminal.sexy/; Export JSON; Edit chyld.json
 * Change color theme
 
-Terminal Set Font Family and Size
+Terminal Set Font Family and Size -> Camingo : 11pt
 Set Background Wallpaper
 Atom - Theme + Font
