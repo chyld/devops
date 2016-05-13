@@ -50,23 +50,22 @@ Shell Theme : Arc-Dark
 
 + snapshot vm
 
-
-
-
-
-
-
-
-
-TERMINAL
-Preferences -> NO : Show Menubar for new Terminals
-Preferences -> Open new Terminal in Tab
-http://terminal.sexy/; Export; Download; Make executable;
-Profile -> Run command as login shell
-
-
-
-
+***CODE***
+https://github.com/gnunn1/terminix/releases
+sudo unzip terminix.zip -d /
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+terminix && add to dash
+Terminix Preferences:
+* Autohide mouse when typing
+* Warn on unsafe paste
+* Terminal Style : None
+* Theme : Dark
+Profile:
+* Run command as login shell
+* No - Show Scrollbar
+* cp /usr/share/terminix/schemes/file.json to chyld.json
+* http://terminal.sexy/; Export JSON; Edit chyld.json
+* Change color theme
 
 Terminal Set Font Family and Size
 Set Background Wallpaper
