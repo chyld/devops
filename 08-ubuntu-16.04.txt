@@ -8,7 +8,7 @@ sudo apt-get install open-vm-tools-desktop
 
 + snapshot vm
 
-APPLICATIONS
+***APPLICATIONS***
 Disable Power Save Feature
 Download: Chrome, VSCode, Atom, Sublime Text 3; Double Click to Install
 Set Chrome, Firefox home to Google
@@ -18,29 +18,12 @@ Use http://app.programmingfonts.org/ to View Fonts
 Add/Remove Icons from the Favorites (Left Vertical Bar)
 Open all 3 Editors from the Terminal as Test
 Chrome Store - Gnome 3 Theme
+Right click on Chrome's titlebar and select "Use System Titlebar & Borders"
 Hide all Menus on Browsers, Editors and Terminals
-
-
-
-
-TWEAK TOOL
-Extensions -> User Themes
-Extensions -> Alternate Tab
-Extensions -> Places Status Indicator
-Extensions -> Workspace Indicator
-Add Min and Max Buttons
-Make 3 Static Workspaces
-
-TERMINAL
-Preferences -> NO : Show Menubar for new Terminals
-Preferences -> Open new Terminal in Tab
-http://terminal.sexy/; Export; Download; Make executable;
-Profile -> Run command as login shell
 
 + snapshot vm
 
-STYLE
-
+***STYLE***
 https://github.com/horst3180/Arc-theme
 
 sudo add-apt-repository ppa:snwh/pulp
@@ -52,15 +35,38 @@ sudo apt-add-repository ppa:numix/ppa
 sudo apt-get update
 sudo apt-get install numix-icon-theme-circle
 
-Tweak Tool:
+TWEAK TOOL
+Extensions -> User Themes
+Extensions -> Alternate Tab
+Extensions -> Places Status Indicator
+Extensions -> Workspace Indicator
+Extensions -> Dash to Dock (on Website) + Configure
+Add Min and Max Buttons
+Make 3 Static Workspaces
 Theme : Arc-Dark
 Icons : Numix-Circle
 Cursors: Paper
 Shell Theme : Arc-Dark
 
-Chrome - go to Chrome Store get Gnome 3 Theme and Enable
-Adwaita
-Right click on Chrome's titlebar and select "Use System Titlebar & Borders"
++ snapshot vm
+
+
+
+
+
+
+
+
+
+TERMINAL
+Preferences -> NO : Show Menubar for new Terminals
+Preferences -> Open new Terminal in Tab
+http://terminal.sexy/; Export; Download; Make executable;
+Profile -> Run command as login shell
+
+
+
+
 
 Terminal Set Font Family and Size
 Set Background Wallpaper
