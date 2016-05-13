@@ -17,7 +17,7 @@ Only use "resources" directory - delete everything else
 Use http://app.programmingfonts.org/ to View Fonts
 Add/Remove Icons from the Favorites (Left Vertical Bar)
 Open all 3 Editors from the Terminal as Test
-
+Chrome Store - Gnome 3 Theme
 
 
 
