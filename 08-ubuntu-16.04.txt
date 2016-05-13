@@ -9,7 +9,7 @@ sudo apt-get install open-vm-tools-desktop
 + snapshot vm
 
 APPLICATIONS
-Download: Chrome, VSCode, Atom; Double Click to Install
+Download: Chrome, VSCode, Atom, Sublime; Double Click to Install
 set Firefox home to Google
 set Chrome home to Google
 Clone https://github.com/braver/fonts to ~/.fonts
