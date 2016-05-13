@@ -72,3 +72,10 @@ Terminal Set Font Family and Size -> Camingo : 11pt
 Atom : Source Code Pro : 15pt
 Atom : file-icons plugin
 Atom : Monokai Theme
+
+
+
+
+dconf-editor
+/usr/share/applications
+/usr/share/icons
