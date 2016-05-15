@@ -1,18 +1,21 @@
 # REBOOT AS NEEDED #
 
-GENERAL
+
+***GENERAL***
+ps -ef | grep dpkg # make sure dpkg is not already running
 sudo apt-get update
-sudo apt-get upgrade
 sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
-
+sudo apt-get upgrade
 + snapshot vm
+
 
 ***APPLICATIONS***
 Disable Power Save Feature
-Download: Chrome, VSCode, Atom, Sublime Text 3; Double Click to Install
+Download: Chrome, VSCode, Atom, Sublime Text 3; Double Click to Install; Use ps -ef | grep dpkg to see when install finished
 Set Chrome, Firefox home to Google
 Clone https://github.com/braver/fonts to ~/.fonts
+https://github.com/supermarin/YosemiteSanFranciscoFont
 Only use "resources" directory - delete everything else
 Use http://app.programmingfonts.org/ to View Fonts
 Add/Remove Icons from the Favorites (Left Vertical Bar)
@@ -20,8 +23,8 @@ Open all 3 Editors from the Terminal as Test
 Chrome Store - Gnome 3 Theme
 Right click on Chrome's titlebar and select "Use System Titlebar & Borders"
 Hide all Menus on Browsers, Editors and Terminals
-
 + snapshot vm
+
 
 ***STYLE***
 https://github.com/horst3180/Arc-theme
