@@ -42,6 +42,11 @@ bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 pip install httpie
 conda install -y jupyter # numpy scipy sympy matplotlib pandas unicodecsv seaborn numexpr
 
+# CONFIGURATION
+cd ~/Downloads
+wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/terminix/2016-05-14.txt
+dconf load /com/gexperts/Terminix/ < 2016-05-14.txt
+
 # CLEANUP
 cd ~/Downloads
 rm -rf *
