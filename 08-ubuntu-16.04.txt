@@ -27,6 +27,14 @@ Use http://app.programmingfonts.org/ to View Fonts
 
 
 ***STYLE***
+https://github.com/gnunn1/terminix/releases
+$ sudo unzip terminix.zip -d /
+$ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+$ sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # change icon to utilities-terminal
+$ # reboot gnome FN + ALT + F2 -> r -> ENTER
+Add to Launcher
+* http://terminal.sexy/
+
 https://github.com/horst3180/Arc-theme
 
 sudo add-apt-repository ppa:snwh/pulp
@@ -50,25 +58,24 @@ Theme : Arc-Dark
 Icons : Numix-Circle
 Cursors: Paper
 Shell Theme : Arc-Dark
-
+Fonts -> Window Titles -> SFNS Display Bold, 10pt
+Fonts -> Interface -> SFNS Display Bold, 10pt
 + snapshot vm
 
+
+
+
+
+
+
+
+
+
+
 ***CODE***
-https://github.com/gnunn1/terminix/releases
-sudo unzip terminix.zip -d /
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-terminix && add to dash
-Terminix Preferences:
-* Autohide mouse when typing
-* Warn on unsafe paste
-* Terminal Style : None
-* Theme : Dark
-Profile:
-* Run command as login shell
-* No - Show Scrollbar
-* cp /usr/share/terminix/schemes/file.json to chyld.json
-* http://terminal.sexy/; Export JSON; Edit chyld.json
-* Change color theme
+
+
+
 
 Set Background Wallpaper
 Terminal Set Font Family and Size -> Camingo : 11pt
