@@ -63,29 +63,14 @@ Fonts -> Interface -> SFNS Display Bold, 10pt
 + snapshot vm
 
 
-
-
-
-
-
-
-
-
-
 ***CODE***
-
-
-
-
 Set Background Wallpaper
-Terminal Set Font Family and Size -> Camingo : 11pt
 Atom : Source Code Pro : 15pt
 Atom : file-icons plugin
 Atom : Monokai Theme
 
 
-
-
+=================================== MISCELLANEOUS INFORMATION ***
 dconf-editor
 /usr/share/applications
 /usr/share/icons
