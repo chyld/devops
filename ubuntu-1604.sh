@@ -6,7 +6,7 @@ NODE=6.1.0
 # SYSTEM
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y vim tmux tree htop build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev
+sudo apt-get install -y screenfetch vim tmux tree htop build-essential libssl-dev libcurl4-openssl-dev libexpat1-dev
 
 #DIRECTORIES
 mkdir ~/Code
