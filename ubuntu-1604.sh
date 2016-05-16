@@ -45,10 +45,17 @@ conda install -y jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn 
 
 # CONFIGURATION
 cd ~/Downloads
+# terminix
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/terminix/2016-05-14.txt
 dconf load /com/gexperts/Terminix/ < 2016-05-14.txt
+# vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+# atom
+apm install git-time-machine pigments file-icons monokai
+wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/config.cson
+wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/snippets.cson
+mv *.cson ~/.atom
 
 # CLEANUP
 cd ~/Downloads
