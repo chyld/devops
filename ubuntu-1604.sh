@@ -40,7 +40,7 @@ cd ~/Downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 pip install httpie
-conda install -y jupyter # numpy scipy sympy matplotlib pandas unicodecsv seaborn numexpr
+conda install -y jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn numexpr
 
 # CONFIGURATION
 cd ~/Downloads
