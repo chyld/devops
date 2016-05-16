@@ -1,0 +1,4 @@
+'.source.js':
+  'Console Log':
+    'prefix': 'xlog'
+    'body': """console.log('***> $1:', $1);$2"""
