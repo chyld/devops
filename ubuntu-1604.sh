@@ -47,6 +47,7 @@ conda install -y jupyter numpy scipy sympy matplotlib pandas unicodecsv seaborn 
 cd ~/Downloads
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/terminix/2016-05-14.txt
 dconf load /com/gexperts/Terminix/ < 2016-05-14.txt
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # CLEANUP
 cd ~/Downloads
