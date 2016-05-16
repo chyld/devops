@@ -18,6 +18,7 @@ wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.bash_profile
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.tmux.conf
+wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/ubuntu-1604/.vimrc
 source ~/.bash_profile
 
 # GIT
