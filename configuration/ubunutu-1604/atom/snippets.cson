@@ -2,3 +2,8 @@
   'Console Log':
     'prefix': 'xlog'
     'body': """console.log('***> $1:', $1);$2"""
+
+'.source.python':
+  'Print':
+    'prefix': 'xprt'
+    'body': """print('***> $1: {0}'.format($1))$2"""
