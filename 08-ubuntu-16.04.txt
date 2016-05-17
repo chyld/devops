@@ -65,9 +65,6 @@ Fonts -> Interface -> SFNS Display Bold, 10pt
 
 ***CODE***
 Set Background Wallpaper
-Atom : Source Code Pro : 15pt
-Atom : file-icons plugin
-Atom : Monokai Theme
 
 NEOWIN +++
 
