@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GIT=2.8.2
-NODE=6.1.0
+NODE=6.2.0
 
 # SYSTEM
 sudo apt-get update
@@ -52,9 +52,10 @@ dconf load /com/gexperts/Terminix/ < 2016-05-14.txt
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 # atom
-apm install git-time-machine pigments file-icons monokai
+apm install git-time-machine pigments file-icons monokai file-icons flex-tool-bar
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/config.cson
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/snippets.cson
+wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/toolbar.cson
 mv *.cson ~/.atom
 
 # CLEANUP
