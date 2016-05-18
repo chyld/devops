@@ -1,5 +1,33 @@
 [
   {
+    type: "url"
+    icon: "octoface"
+    url: "https://github.com/chyld?tab=repositories"
+    tooltip: "Github"
+  }
+  {
+    type: "url"
+    icon: "google"
+    iconset: "fa"
+    url: "https://google.com"
+    tooltip: "Google"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "close"
+    iconset: "fa"
+    style:
+      color: "#ff0066"
+    callback: "core:close"
+    tooltip: "Close File"
+  }
+  {
+    type: "spacer"
+  }
+  {
     type: "button"
     icon: "file-text-o"
     iconset: "fa"
@@ -44,10 +72,30 @@
   }
   {
     type: "button"
+    icon: "key"
+    style:
+      color: "#66ff00"
+    callback: "application:open-your-config"
+    tooltip: "Open Config"
+  }
+  {
+    type: "button"
+    icon: "database"
+    iconset: "fa"
+    style:
+      color: "#66ff00"
+    callback: "application:open-your-snippets"
+    tooltip: "Open Snippets"
+  }
+  {
+    type: "button"
     icon: "book"
     style:
       color: "#66ff00"
     callback: "flex-tool-bar:edit-config-file"
     tooltip: "Edit Tool Bar"
+  }
+  {
+    type: "spacer"
   }
 ]
