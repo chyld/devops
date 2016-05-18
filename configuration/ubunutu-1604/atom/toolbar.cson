@@ -1,0 +1,53 @@
+[
+  {
+    type: "button"
+    icon: "file-text-o"
+    iconset: "fa"
+    callback: "application:new-file"
+    tooltip: "New File"
+  }
+  {
+    type: "button"
+    icon: "folder-open-o"
+    iconset: "fa"
+    callback: "application:open-file"
+    tooltip: "Open File"
+  }
+  {
+    type: "button"
+    icon: "save"
+    iconset: "fa"
+    callback: "core:save"
+    tooltip: "Save File"
+  }
+  {
+    type: "button"
+    icon: "adjust"
+    iconset: "fa"
+    callback: "tree-view:toggle"
+    tooltip: "Tree View Toggle"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "gear"
+    style:
+      color: "#ff6600"
+    iconset: "fa"
+    callback: "application:show-settings"
+    tooltip: "Show Settings"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "book"
+    style:
+      color: "#66ff00"
+    callback: "flex-tool-bar:edit-config-file"
+    tooltip: "Edit Tool Bar"
+  }
+]

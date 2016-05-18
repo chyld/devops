@@ -10,5 +10,7 @@
     fontSize: 15
   "exception-reporting":
     userId: "10db2f7b-0d7d-06c6-10ca-74a95b3cbbe0"
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
