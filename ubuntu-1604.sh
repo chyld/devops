@@ -40,7 +40,7 @@ npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar
 cd ~/Downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
-pip install httpie
+pip install httpie ipdb
 conda install -y jupyter numpy scipy sympy pandas statsmodels numexpr scikit-learn unicodecsv csvkit seaborn bokeh matplotlib
 
 # CONFIGURATION
