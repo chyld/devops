@@ -57,6 +57,10 @@ wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/snippets.cson
 wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/atom/toolbar.cson
 mv *.cson ~/.atom
+# ipython
+mkdir -p ~/.ipython/profile_default/startup
+wget https://raw.githubusercontent.com/chyld/devops/master/configuration/ubunutu-1604/ipython/01-autoreload.ipy
+mv *.ipy ~/.ipython/profile_default/startup
 
 # CLEANUP
 cd ~/Downloads
