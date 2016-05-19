@@ -26,5 +26,6 @@ NODE_PATH=$LOCAL/node/bin
 GIT_PATH=$LOCAL/git/bin
 CONDA_PATH=$LOCAL/conda/bin
 
+export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 export PATH=$NODE_PATH:$GIT_PATH:$CONDA_PATH:$PATH
 export PS1="$txt3\u$txt7@$txt2\h $txt4\w $txt1\$(status)$txt5\$(branch)$txt3>$txtrst "
