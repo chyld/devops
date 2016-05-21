@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GIT=2.8.1
-NODE=6.0
+GIT=2.8.3
+NODE=6.2
 
 # DOWNLOAD DIRECTORY
 mkdir ~/downloads
