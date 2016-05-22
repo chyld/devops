@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT=2.8.2
+GIT=2.8.3
 NODE=6.2.0
 
 # SYSTEM
