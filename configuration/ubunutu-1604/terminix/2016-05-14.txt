@@ -5,6 +5,11 @@ auto-hide-mouse=true
 terminal-title-style='none'
 theme-variant='dark'
 
+[keybindings]
+terminal-copy='<Primary>c'
+terminal-paste='<Primary>v'
+terminal-reset-and-clear='<Super>k'
+
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 foreground-color='#F8F8F2'
 visible-name='Default'
