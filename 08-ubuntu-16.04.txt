@@ -35,7 +35,6 @@ chrome, firefox, terminix, atom, vscode, sublime, file manager, tweak tool, sett
 
 
 ## STYLE
-
 https://github.com/horst3180/Arc-theme
 
 sudo add-apt-repository ppa:snwh/pulp
