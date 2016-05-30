@@ -9,4 +9,6 @@ http://i3wm.org/docs/repositories.html
 reboot
 choose i3
 
-cmd+enter -> new terminal
+cmd+enter # new terminal
+xrandr # view capabilities
+xrandr --output Virtual1 --mode 1280x800 # set resolution
