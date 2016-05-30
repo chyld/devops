@@ -19,21 +19,24 @@ Start up all Editors and Browsers
 Pin all favorites to Menu
 Remove the menus from all the Editors and Browsers
 # fonts #
-Clone https://github.com/braver/fonts to ~/.fonts
-Cloje https://github.com/supermarin/YosemiteSanFranciscoFont to ~/.fonts
-Only use "resources" directory - delete everything else
+Clone https://github.com/braver/fonts to ~/.fonts # only resources sub-folder
+Clone https://github.com/supermarin/YosemiteSanFranciscoFont to ~/.fonts # only 4 main .ttf files
 Use http://app.programmingfonts.org/ to View Fonts
-+ snapshot vm
-
-
-***STYLE***
+# terminix
 https://github.com/gnunn1/terminix/releases
 $ sudo unzip terminix.zip -d /
 $ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 $ sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # change icon to utilities-terminal
 $ # reboot gnome FN + ALT + F2 -> r -> ENTER
-Add to Launcher
-* http://terminal.sexy/
+* http://terminal.sexy/ # terminal color schemes
+# icons in dock
+chrome, firefox, terminix, atom, vscode, sublime, file manager, tweak tool, settings
+
+
+
+
+
+
 
 https://github.com/horst3180/Arc-theme
 
