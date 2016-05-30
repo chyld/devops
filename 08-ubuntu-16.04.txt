@@ -64,7 +64,23 @@ Cursors: Paper
 Shell Theme : Arc-Dark
 Fonts -> Window Titles -> SFNS Display Bold, 10pt
 Fonts -> Interface -> SFNS Display Bold, 10pt
+
+/usr/share/icons/Numix-Circle/48x48/apps
+sudo rm code.svg atom.svg
+sudo rm /usr/share/icons/Numix-Circle/icon-theme.cache
+sudo gtk-update-icon-cache -f /usr/share/icons/Numix-Circle
+
+sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # final-term -> icon
+sudo vi /usr/share/applications/firefox.desktop # firewall -> icon
 + snapshot vm
+
+
+
+
+
+
+
+
 
 
 ***CODE***
