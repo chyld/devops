@@ -1,7 +1,7 @@
 # REBOOT AS NEEDED #
 
 
-***GENERAL***
+## GENERAL
 ps -ef | grep dpkg # make sure dpkg is not already running
 sudo apt-get update
 sudo apt-get upgrade
@@ -10,7 +10,7 @@ sudo apt-get install open-vm-tools-desktop
 + snapshot vm
 
 
-***APPLICATIONS***
+## APPLICATIONS
 Disable Power Save Feature
 Download: Chrome, VSCode, Atom, Sublime Text 3; Double Click to Install; Use ps -ef | grep dpkg to see when install finished
 Set Chrome, Firefox home to Google
@@ -30,13 +30,11 @@ $ sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # change icon to
 $ # reboot gnome FN + ALT + F2 -> r -> ENTER
 * http://terminal.sexy/ # terminal color schemes
 # icons in dock
-chrome, firefox, terminix, atom, vscode, sublime, file manager, tweak tool, settings
+chrome, firefox, terminix, atom, vscode, sublime, file manager, tweak tool, settings, calculator (advanced)
++ snapshot vm
 
 
-
-
-
-
+## STYLE
 
 https://github.com/horst3180/Arc-theme
 
@@ -44,7 +42,10 @@ sudo add-apt-repository ppa:snwh/pulp
 sudo apt-get update
 sudo apt-get install paper-icon-theme paper-gtk-theme
 
-https://numixproject.org/
+sudo add-apt-repository ppa:moka/daily
+sudo apt-get update
+sudo apt-get install moka-icon-theme
+
 sudo apt-add-repository ppa:numix/ppa
 sudo apt-get update
 sudo apt-get install numix-icon-theme-circle
