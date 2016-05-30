@@ -73,27 +73,3 @@ sudo gtk-update-icon-cache -f /usr/share/icons/Numix-Circle
 sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # final-term -> icon
 sudo vi /usr/share/applications/firefox.desktop # firewall -> icon
 + snapshot vm
-
-
-
-
-
-
-
-
-
-
-***CODE***
-Set Background Wallpaper
-
-NEOWIN +++
-
-=================================== MISCELLANEOUS INFORMATION ***
-dconf-editor
-/usr/share/applications
-/usr/share/icons
-https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
-
-~/.config/dconf$ dconf dump /com/gexperts/Terminix/ > myfile.txt
-~/.config/dconf$ dconf reset -f /com/gexperts/Terminix/
-~/.config/dconf$ dconf load /com/gexperts/Terminix/ < myfile.txt
