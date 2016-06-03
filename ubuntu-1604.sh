@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GIT=2.8.3
-NODE=6.2.0
+NODE=6.2.1
 
 # SYSTEM
 sudo apt-get update
