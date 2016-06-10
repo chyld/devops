@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT=2.8.3
+GIT=2.8.4
 NODE=6.2.1
 
 # SYSTEM
@@ -10,6 +10,7 @@ sudo apt-get install -y screenfetch vim tmux tree htop build-essential libssl-de
 
 #DIRECTORIES
 mkdir ~/Code
+mkdir ~/Data
 mkdir ~/Temp
 
 # DOTFILES
@@ -34,7 +35,8 @@ cd ~/Downloads
 wget https://nodejs.org/dist/v${NODE}/node-v${NODE}-linux-x64.tar.xz
 tar -xvf node-v${NODE}-linux-x64.tar.xz 
 mv node-v${NODE}-linux-x64 ~/.local/node
-npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript babel-cli
+# npm install -g nodemon mocha gulp localtunnel jsdoc http-server jasmine chokidar-cli typescript babel-cli
+npm install -g localtunnel http-server
 
 # PYTHON
 cd ~/Downloads
