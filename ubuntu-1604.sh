@@ -43,7 +43,13 @@ cd ~/Downloads
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.local/conda
 pip install httpie ipdb http-prompt
-# conda install -y jupyter numpy scipy sympy pandas statsmodels numexpr scikit-learn unicodecsv csvkit seaborn bokeh matplotlib
+conda install -y jupyter numpy scipy sympy pandas statsmodels numexpr scikit-learn unicodecsv csvkit seaborn bokeh matplotlib
+
+# ROBOMONGO
+cd ~/Downloads
+wget https://download.robomongo.org/0.9.0-rc8/linux/robomongo-0.9.0-rc8-linux-x86_64-c113244.tar.gz
+tar -xvf robomongo-0.9.0-rc8-linux-x86_64-c113244.tar.gz 
+mv robomongo-0.9.0-rc8-linux-x86_64-c113244 ~/.local/robomongo
 
 # DOCKER
 sudo apt-get install apt-transport-https ca-certificates
