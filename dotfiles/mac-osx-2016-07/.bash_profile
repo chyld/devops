@@ -30,9 +30,10 @@ CONDA_PATH=$LOCAL/conda/bin
 MONGODB_PATH=$LOCAL/mongodb/bin
 PY2_PATH=$LOCAL/conda/envs/py2/bin
 GRADLE_PATH=$GRADLE_HOME/bin
+MYSQL_PATH=/usr/local/mysql-5.7.14-osx10.11-x86_64/bin
 
 export EDITOR="atom -nw"
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
-export PATH=$NODE_PATH:$GIT_PATH:$MONGODB_PATH:$PY2_PATH:$GRADLE_PATH:$PATH
+export PATH=$NODE_PATH:$GIT_PATH:$MONGODB_PATH:$PY2_PATH:$GRADLE_PATH:$MYSQL_PATH:$PATH
 export PS1="$txt3\u$txt7@$txt2\h $txt4\w $txt1\$(status)$txt5\$(branch)$txt3>$txtrst "
 

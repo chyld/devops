@@ -13,5 +13,5 @@ alias temp="cd ~/Temp"
 alias dc="docker-compose"
 alias reload="source ~/.bash_profile"
 alias mongodb="docker run --name viper -d -p 27017:27017 -v /Users/chyld/Data/mongo:/data/db mongo"
-alias mysqldb="docker run --name titan -d -e MYSQL_ROOT_PASSWORD=p@ssw0rd -p 3306:3306 -v /Users/chyld/Data/mysql:/var/lib/mysql mysql"
+alias mysqldb="docker run --name titan -d -e MYSQL_ROOT_PASSWORD=p@ssw0rd -p 3306:3306 -v /Users/chyld/Data/mysql/data:/var/lib/mysql -v /Users/chyld/Data/mysql/logs:/var/log/mysql mysql"
 
