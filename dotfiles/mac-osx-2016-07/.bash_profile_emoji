@@ -29,4 +29,4 @@ GRADLE_PATH=$GRADLE_HOME/bin
 
 export EDITOR="atom -nw"
 export PATH=$NODE_PATH:$GRADLE_PATH:$PATH
-export PS1="$txt3\u🌀 $txt2\h $txt4\w $txt1\$(status)$txt5\$(branch)🚀 $txtrst "
+export PS1="$txt3\u🌀  $txt4\w $txt1\$(status)$txt5\$(branch)🚀 $txtrst "
