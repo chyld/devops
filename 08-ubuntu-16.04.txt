@@ -20,7 +20,6 @@ Pin all favorites to Menu
 Remove the menus from all the Editors and Browsers
 # fonts #
 Clone https://github.com/braver/fonts to ~/.fonts # only resources sub-folder
-Clone https://github.com/supermarin/YosemiteSanFranciscoFont to ~/.fonts # only 4 main .ttf files
 Use http://app.programmingfonts.org/ to View Fonts
 # terminix
 https://github.com/gnunn1/terminix/releases
