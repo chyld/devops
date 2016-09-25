@@ -32,7 +32,7 @@ source ~/.bash_profile
 
 # WHISK
 cd ~/.local
-git clone https://github.com/openwhisk/openwhisk-python-cli
+git clone https://github.com/openwhisk/openwhisk-python-cli openwhisk
 
 # NODE
 cd ~
