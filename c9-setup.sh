@@ -21,12 +21,6 @@ make prefix=/home/ubuntu/.local/git install
 cd ~/downloads
 rm -rf git*
 
-# WHISK
-cd ~/downloads
-wget -O whisk.tar.gz https://new-console.ng.bluemix.net/openwhisk/cli/download
-sudo pip install whisk.tar.gz
-rm whisk*
-
 # DOTFILES
 cd ~
 rm .bash_aliases .gitconfig .gitignore
@@ -35,6 +29,10 @@ wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/c9/.gitconfi
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/c9/.bash_profile
 source ~/.profile
 source ~/.bash_profile
+
+# WHISK
+cd ~/.local
+git clone https://github.com/openwhisk/openwhisk-python-cli
 
 # NODE
 cd ~
