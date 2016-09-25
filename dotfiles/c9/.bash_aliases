@@ -7,4 +7,5 @@ alias code="cd ~/workspace"
 alias down="cd ~/downloads"
 alias myip="curl http://ipecho.net/plain; echo"
 alias ps="ps -efH"
+alias w="python2 /home/ubuntu/.local/openwhisk/tools/cli/wsk"
 ###
