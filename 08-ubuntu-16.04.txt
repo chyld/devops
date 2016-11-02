@@ -71,3 +71,6 @@ sudo gtk-update-icon-cache -f /usr/share/icons/Numix-Circle
 sudo vi /usr/share/applications/com.gexperts.Terminix.desktop # final-term -> icon
 sudo vi /usr/share/applications/firefox.desktop # firewall -> icon
 + snapshot vm
+
+
+https://github.com/dylanaraps/neofetch
