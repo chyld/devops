@@ -1,6 +1,6 @@
 # use single quotes, no variable expansion or string interpolation
 
-alias sdo='cd ~/Code/devops && git acm "sync" && git push'
+alias sdo='cd ~/Code/devops && git acm "sync" && git push && cd ~'
 
 alias l='ls -pahlGF'
 alias ll='l'
