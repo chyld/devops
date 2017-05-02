@@ -28,3 +28,7 @@ export PATH=$ANACONDA_PATH:$NODE_PATH:$PATH
 
 # export PS1="\n$crimson[⌗ \!] $aliceblue\u@\h $crimson[✤ \A]$reset\n$gold\w $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
 export PS1="$crimson[\A] $gold(\w) $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
+
+
+source activate py2
+
