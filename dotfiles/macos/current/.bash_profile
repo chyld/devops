@@ -24,9 +24,10 @@ NODE_PATH=$LOCAL/node/bin
 
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 export HISTSIZE=100000
+export EDITOR=vim
 export PATH=$ANACONDA_PATH:$NODE_PATH:$PATH
 
 # export PS1="\n$crimson[⌗ \!] $aliceblue\u@\h $crimson[✤ \A]$reset\n$gold\w $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
-export PS1="$crimson(\A) $gold|\w| $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
+export PS1="$gold\w $aqua\$(dirsize) $snow\$(status)$fuchsia\$(branch)$greenyellow~$reset "
 
-source activate py2
+# source activate py2
