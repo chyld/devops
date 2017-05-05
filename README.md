@@ -2,4 +2,6 @@
 
 - linux
 - mac
+- scripts
+- dotfiles
 
