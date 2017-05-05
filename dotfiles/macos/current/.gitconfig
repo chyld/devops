@@ -1,6 +1,7 @@
 [alias]
   br = branch -av
   rt = remote -v
+  up = remote update
 [user]
   email = chyld.medford@gmail.com
   name = Chyld Medford
