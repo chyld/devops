@@ -30,6 +30,7 @@ NODE_PATH=$LOCAL/node/bin
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 export HISTSIZE=100000
 export EDITOR=vim
+export GOPATH=$HOME/Code/go
 
 # PATH also set in /etc/paths & /etc/paths.d
 export PATH=$ANACONDA_PATH:$NODE_PATH:$PATH
