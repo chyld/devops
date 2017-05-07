@@ -14,7 +14,7 @@ status()
 
 dirty()
 {
-  git branch -v 2> /dev/null | branch-sync
+  git branch -v 2> /dev/null | awk '{if($1 == "*") print $0}' | branch-sync
 }
 
 dirsize()
