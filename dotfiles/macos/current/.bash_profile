@@ -33,7 +33,7 @@ export EDITOR=vim
 export GOPATH=$HOME/Code/go
 
 # PATH also set in /etc/paths & /etc/paths.d
-export PATH=$ANACONDA_PATH:$NODE_PATH:$PATH
+export PATH=$ANACONDA_PATH:$NODE_PATH:$GOPATH/bin:$PATH
 
 # export PS1="\n$crimson[⌗ \!] $aliceblue\u@\h $crimson[✤ \A]$reset\n$gold\w $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
 export PS1="$gold[\w] $aqua\$(dirty)$snow\$(status)$fuchsia\$(branch)$greenyellow:$reset "
