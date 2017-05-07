@@ -9,12 +9,12 @@ branch()
 
 status()
 {
-  git status --porcelain 2> /dev/null | wc | awk '{if($1 > 0) print "*"}'
+  git status --porcelain 2> /dev/null | wc | awk '{if($1 > 0) print "# "}'
 }
 
 dirty()
 {
-  git branch -v 2> /dev/null | awk '{if($1 == "*") print $0 }' | grep -E ".*(ahead|behind)" | awk '{if($0) print "^"}'
+  git branch -v 2> /dev/null | branch-sync
 }
 
 dirsize()
@@ -36,6 +36,6 @@ export GOPATH=$HOME/Code/go
 export PATH=$ANACONDA_PATH:$NODE_PATH:$GOPATH/bin:$PATH
 
 # export PS1="\n$crimson[⌗ \!] $aliceblue\u@\h $crimson[✤ \A]$reset\n$gold\w $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
-export PS1="$gold[\w] $aqua\$(dirty)$snow\$(status)$fuchsia\$(branch)$greenyellow:$reset "
+export PS1="$gold[\w] $snow\$(status)$aqua\$(dirty)$fuchsia\$(branch)$greenyellow:$reset "
 
 # source activate py2
