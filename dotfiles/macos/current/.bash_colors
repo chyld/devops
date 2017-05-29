@@ -1,4 +1,5 @@
-# use \[ and \] to contain the sequence - prompt wraps correctly
+# use \[ and \] to contain the sequence
+# actually \\[  AND  \] - bash bug due to color and line wrapping issues
 # http://www.rapidtables.com/web/color/RGB_Color.htm
 # escape codes -> \e[ or \x1b[ or \033[
 # [SGR Code; 2; Reg; Green; Bluem]
@@ -16,52 +17,52 @@
 ### ------------------------------------------------------------------ ###
 
 # FOREGROUND
-crimson="\[\e[38;2;220;20;60m\]"
-orangered="\[\e[38;2;255;69;0m\]"
-gold="\[\e[38;2;255;215;0m\]"
-greenyellow="\[\e[38;2;173;255;47m\]"
-seagreen="\[\e[38;2;46;139;87m\]"
-teal="\[\e[38;2;0;128;128m\]"
-aqua="\[\e[38;2;0;255;255m\]"
-deepskyblue="\[\e[38;2;0;191;255m\]"
-blueviolet="\[\e[38;2;138;43;226m\]"
-purple="\[\e[38;2;128;0;128m\]"
-fuchsia="\[\e[38;2;255;0;255m\]"
-deeppink="\[\e[38;2;255;20;147m\]"
-cornsilk="\[\e[38;2;255;248;220m\]"
-aliceblue="\[\e[38;2;240;248;255m\]"
-honeydew="\[\e[38;2;240;255;240m\]"
-snow="\[\e[38;2;255;250;250m\]"
+crimson="\\[\e[38;2;220;20;60m\]"
+orangered="\\[\e[38;2;255;69;0m\]"
+gold="\\[\e[38;2;255;215;0m\]"
+greenyellow="\\[\e[38;2;173;255;47m\]"
+seagreen="\\[\e[38;2;46;139;87m\]"
+teal="\\[\e[38;2;0;128;128m\]"
+aqua="\\[\e[38;2;0;255;255m\]"
+deepskyblue="\\[\e[38;2;0;191;255m\]"
+blueviolet="\\[\e[38;2;138;43;226m\]"
+purple="\\[\e[38;2;128;0;128m\]"
+fuchsia="\\[\e[38;2;255;0;255m\]"
+deeppink="\\[\e[38;2;255;20;147m\]"
+cornsilk="\\[\e[38;2;255;248;220m\]"
+aliceblue="\\[\e[38;2;240;248;255m\]"
+honeydew="\\[\e[38;2;240;255;240m\]"
+snow="\\[\e[38;2;255;250;250m\]"
 
 # BACKGROUND
-r_crimson="\[\e[48;2;220;20;60m\]"
-r_orangered="\[\e[48;2;255;69;0m\]"
-r_gold="\[\e[48;2;255;215;0m\]"
-r_greenyellow="\[\e[48;2;173;255;47m\]"
-r_seagreen="\[\e[48;2;46;139;87m\]"
-r_teal="\[\e[48;2;0;128;128m\]"
-r_aqua="\[\e[48;2;0;255;255m\]"
-r_deepskyblue="\[\e[48;2;0;191;255m\]"
-r_blueviolet="\[\e[48;2;138;43;226m\]"
-r_purple="\[\e[48;2;128;0;128m\]"
-r_fuchsia="\[\e[48;2;255;0;255m\]"
-r_deeppink="\[\e[48;2;255;20;147m\]"
-r_cornsilk="\[\e[48;2;255;248;220m\]"
-r_aliceblue="\[\e[48;2;240;248;255m\]"
-r_honeydew="\[\e[48;2;240;255;240m\]"
-r_snow="\[\e[48;2;255;250;250m\]"
+r_crimson="\\[\e[48;2;220;20;60m\]"
+r_orangered="\\[\e[48;2;255;69;0m\]"
+r_gold="\\[\e[48;2;255;215;0m\]"
+r_greenyellow="\\[\e[48;2;173;255;47m\]"
+r_seagreen="\\[\e[48;2;46;139;87m\]"
+r_teal="\\[\e[48;2;0;128;128m\]"
+r_aqua="\\[\e[48;2;0;255;255m\]"
+r_deepskyblue="\\[\e[48;2;0;191;255m\]"
+r_blueviolet="\\[\e[48;2;138;43;226m\]"
+r_purple="\\[\e[48;2;128;0;128m\]"
+r_fuchsia="\\[\e[48;2;255;0;255m\]"
+r_deeppink="\\[\e[48;2;255;20;147m\]"
+r_cornsilk="\\[\e[48;2;255;248;220m\]"
+r_aliceblue="\\[\e[48;2;240;248;255m\]"
+r_honeydew="\\[\e[48;2;240;255;240m\]"
+r_snow="\\[\e[48;2;255;250;250m\]"
 
 # RESET
-reset="\[\e[0m\]"
+reset="\\[\e[0m\]"
 
 # BOLD
-bold="\[\e[1m\]"
+bold="\\[\e[1m\]"
 
 # DIM
-dim="\[\e[2m\]"
+dim="\\[\e[2m\]"
 
 # ITALICS
-italics="\[\e[3m\]"
+italics="\\[\e[3m\]"
 
 # UNDERLINE
-underline="\[\e[4m\]"
+underline="\\[\e[4m\]"
