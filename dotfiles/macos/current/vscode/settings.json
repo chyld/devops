@@ -1,0 +1,18 @@
+{
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 13,
+    "files.autoSave": "onFocusChange",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.detectIndentation": false,
+    "vsicons.dontShowNewVersionMessage": false,
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "[python]": {
+        "editor.tabSize": 4
+    }
+}
