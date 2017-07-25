@@ -3,6 +3,7 @@
 RUBY=2.4.1
 
 rvm install ${RUBY}
+rvm use ${RUBY}
 rvm gemset create alpha
 rvm use ${RUBY}@alpha --default
 gem install rails
@@ -11,6 +12,9 @@ cd ~
 rm .bash_aliases .gitconfig
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/c9/.bash_aliases
 wget https://raw.githubusercontent.com/chyld/devops/master/dotfiles/c9/.gitconfig
+
+cd ~/workspace
+rm *.sh
 
 echo "*************************************************************************"
 echo "*************************************************************************"
