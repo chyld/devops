@@ -7,6 +7,7 @@ alias ll='l'
 alias b='cd ..'
 alias c='clear'
 
+alias k='kubectl'
 alias d='docker'
 alias dc='docker-compose'
 alias dps='docker ps -a'
