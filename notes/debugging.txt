@@ -1,0 +1,16 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MAC + LINUX
+lsof -P -p $PID          # show open files by process
+lsof -P -i :$PORT        # identify process using a port
+lsof $FILENAME           # identify process writing to a file
+lsof -u $USERNAME        # show open files by user
+lsof -Pan -i tcp -i udp  # show all open ports
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+LINUX
+netstat -tunapl  # show open ports
+strace           # show syscalls from running process
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MAC
+ls /usr/bin/*.d         # DTrace scripts
+sudo dtruss -f -p $PID  # show syscalls from running process and children
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

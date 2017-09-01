@@ -7,9 +7,6 @@ alias ll='l'
 alias b='cd ..'
 alias c='clear'
 
-alias k='kubectl'
-alias d='docker'
-alias dc='docker-compose'
 alias dps='docker ps -a'
 alias dka='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 alias mysqldb='docker run --name titan -d -e MYSQL_ROOT_PASSWORD=pass1234 -p 3306:3306 -v /Users/chyld/Data/mysql/data:/var/lib/mysql -v /Users/chyld/Data/mysql/logs:/var/log/mysql mysql'
@@ -19,5 +16,11 @@ alias mongodb='docker run --name falcon -d -p 27017:27017 -v /Users/chyld/Data/m
 alias g='git'
 alias n='node'
 alias p='python'
+alias k='kubectl'
+alias d='docker'
+alias dc='docker-compose'
 
 alias ds="find . -name '.DS_Store' -type f -delete"
+
+# debugging
+alias debug='clear && cat ~/Code/devops/notes/debugging.txt'
