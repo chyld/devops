@@ -9,7 +9,7 @@
     "window.zoomLevel": 0,
     "editor.minimap.enabled": true,
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Hopscotch (TextMate Theme)",
     "workbench.startupEditor": "newUntitledFile",
     "editor.tabSize": 2,
     "[python]": {
