@@ -8,10 +8,12 @@ lsof -Pan -i tcp -i udp  # show all open ports
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 LINUX
 http://www.brendangregg.com/linuxperf.html
-netstat -tunapl  # show open ports
-strace           # show syscalls from running process
+netstat -tunapl    # show open ports
+strace             # show syscalls from running process
+strace -c ./myapp  # show count of all syscalls using during execution
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAC
 ls /usr/bin/*.d         # DTrace scripts
 sudo dtruss -f -p $PID  # show syscalls from running process and children
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
