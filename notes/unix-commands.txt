@@ -45,6 +45,7 @@ fallocate -l 1G test.img
 # show random data and convert to base 64
 cat /dev/urandom | base64
 cat /dev/urandom | base64 | head -n 1 # secure password generation
+cat /proc/sys/kernel/random/uuid      # get a random uuid
 
 # using brace substitution
 mkdir -p new_project/{img,js,css}
