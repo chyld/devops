@@ -16,4 +16,3 @@ MAC
 ls /usr/bin/*.d         # DTrace scripts
 sudo dtruss -f -p $PID  # show syscalls from running process and children
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-

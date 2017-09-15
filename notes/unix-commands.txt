@@ -1,0 +1,48 @@
+# run command every 2 seconds
+watch "date"
+
+# kill process using port
+sudo fuser -k 8000/tcp
+
+# limit memory usage for following commands
+ulimit -Sv 1000       # 1000 KBs = 1 MB
+ulimit -Sv unlimited  # Remove limit
+
+# rename files
+rename 's/\.bak$/.txt/' *.bak
+
+# find and delete files
+find . -name "*.gz" -delete
+
+# add a line number to output
+ls -al | nl
+
+# show file forward or backward
+cat file
+tac file
+
+# show top or bottom of file
+head file
+tail file
+
+# show time of program to execute
+/usr/bin/time -v ls -al
+
+# randomizing a file
+cat file.txt | sort -R | head
+shuf file.txt
+
+# create empty file
+touch file.txt
+fallocate -l 1G test.img
+
+# show random data and convert to base 64
+cat /dev/urandom | base64
+
+# using brace substitution
+mkdir -p new_project/{img,js,css}
+mv some_file.txt{,.old}
+
+# bash variables
+$RANDOM  # random number
+$SECONDS # number of seconds bash was started
