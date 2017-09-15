@@ -1,3 +1,9 @@
+# command locations
+/bin
+/sbin
+/usr/bin
+/usr/sbin
+
 # run command every 2 seconds
 watch "date"
 
@@ -38,6 +44,7 @@ fallocate -l 1G test.img
 
 # show random data and convert to base 64
 cat /dev/urandom | base64
+cat /dev/urandom | base64 | head -n 1 # secure password generation
 
 # using brace substitution
 mkdir -p new_project/{img,js,css}
@@ -46,3 +53,21 @@ mv some_file.txt{,.old}
 # bash variables
 $RANDOM  # random number
 $SECONDS # number of seconds bash was started
+
+# get ip address
+ip address
+ifconfig
+
+# sleep 3 seconds
+sleep 3
+
+# create a safe, temporary file
+tempfile # /tmp/file86v3Ge
+
+# calendar
+cal
+date
+
+# get env variables and modify file with envs present
+env
+envsubst
