@@ -78,3 +78,6 @@ envsubst
 
 # redirection
 date | tee -a log.txt
+
+# system logs
+dmesg # display bootup sequence
