@@ -77,4 +77,4 @@ env
 envsubst
 
 # redirection
-tee # branch input to double stdout
+date | tee -a log.txt
