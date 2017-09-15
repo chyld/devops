@@ -43,9 +43,12 @@ touch file.txt
 fallocate -l 1G test.img
 
 # show random data and convert to base 64
-cat /dev/urandom | base64
 cat /dev/urandom | base64 | head -n 1 # secure password generation
 cat /proc/sys/kernel/random/uuid      # get a random uuid
+cat /dev/urandom | base64    # b64
+cat /dev/urandom | base32    # b32
+cat /dev/urandom | hexdump   # hex
+cat /dev/urandom | xxd -b -c 50 # binary, 50 cols
 
 # using brace substitution
 mkdir -p new_project/{img,js,css}
