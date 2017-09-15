@@ -75,3 +75,6 @@ date
 # get env variables and modify file with envs present
 env
 envsubst
+
+# redirection
+tee # branch input to double stdout
