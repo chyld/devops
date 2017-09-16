@@ -2,7 +2,7 @@
 
 alias sdo='cd ~/Code/devops && git add . && git commit -am "sync" && git push; cd ~'
 
-alias l="LC_COLLATE=C ls -Alhp --color=auto --group-directories-first"
+alias l="ls -Alhp --color=auto"
 alias ll='l'
 alias b='cd ..'
 alias c='clear'
