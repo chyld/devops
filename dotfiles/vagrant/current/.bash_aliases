@@ -14,3 +14,11 @@ alias k='kubectl'
 alias d='docker'
 
 alias debug='clear && cat ~/Code/devops/notes/debugging.txt'
+
+# DOCKER ALIASES ---------------------------------------------------- #
+alias dka='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+alias dna='dka; docker system prune -f'
+alias dps='docker ps -a'
+alias pgsqldb='docker run --name raptor -d -e POSTGRES_PASSWORD=pass1234 -p 5432:5432 -v /home/ubuntu/Data/postgres/data:/var/lib/postgresql/data postgres'
+# DOCKER ALIASES ---------------------------------------------------- #
+
