@@ -15,6 +15,7 @@ alias pgsqldb='docker run --name raptor -d -e POSTGRES_PASSWORD=pass1234 -p 5432
 alias mongodb='docker run --name falcon -d -p 27017:27017 -v /Users/chyld/Data/mongodb/data:/data/db mongo'
 
 alias g='git'
+alias v='vagrant'
 alias n='node'
 alias p='python'
 alias k='kubectl'
