@@ -6,7 +6,7 @@ CONDA_URL=https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 LOCAL=$HOME/.local
 
 sudo apt-get update
-sudo apt-get install -y htop tree
+sudo apt-get install -y htop tree libltdl7
 
 # ------------------------------------------------------------------------------------------------------- #
 # https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package
