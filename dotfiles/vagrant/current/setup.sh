@@ -8,6 +8,16 @@ LOCAL=$HOME/.local
 sudo apt-get update
 sudo apt-get install -y htop tree
 
+# ------------------------------------------------------------------------------------------------------- #
+# https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package
+# https://download.docker.com/linux/ubuntu/dists/
+cd ~
+wget https://download.docker.com/linux/ubuntu/dists/zesty/pool/stable/amd64/docker-ce_17.06.2~ce-0~ubuntu_amd64.deb -O docker.deb
+sudo dpkg -i docker.deb
+sudo usermod -a -G docker $USER
+rm docker.deb
+# ------------------------------------------------------------------------------------------------------- #
+
 cd ~
 mkdir $LOCAL
 mkdir -p $HOME/{Code,Data}
