@@ -1,5 +1,6 @@
 Download ISO
 Edit settings -> do not share folders
+use username 'chyld' --- in scripts
 Install Ubuntu
 Install Parallels Tools
 Reboot ... wait for it, it will work
