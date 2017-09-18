@@ -8,3 +8,4 @@ Remove unused items from taskbar and Pin other ones
 Install Gnome Tweaks, Chrome, VSCode, Atom, Sublime, Hyper.is, Tilix
 Dock Icon size - 30
 Download minimalist wallpaper and set
+Install source code pro & fira code font - setup terminal & VSCode
