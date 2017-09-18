@@ -13,7 +13,7 @@ GO_PATH=$LOCAL/go/bin
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 export HISTSIZE=100000
 export EDITOR=vim
-export GOPATH=/vagrant/go
+export GOPATH=$HOME/Code/go
 export PATH=$CONDA_PATH:$NODE_PATH:$GO_PATH:$PATH
 export PS1="$fuchsia[\w] $aqua:$reset "
 
