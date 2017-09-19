@@ -2,7 +2,7 @@
 
 alias sdo='cd ~/System/devops && git add . && git commit -am "sync" && git push; cd ~'
 
-alias l="ls -Alhp --color=auto"
+alias l="LC_COLLATE=C ls -alph --color=auto"
 alias ll='l'
 alias b='cd ..'
 alias c='clear'
