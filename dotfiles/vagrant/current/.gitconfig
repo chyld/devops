@@ -2,6 +2,7 @@
   br = branch -av
   rt = remote -v
   up = remote update
+  acm = !git add . && git commit -m
 [user]
   email = chyld.medford@gmail.com
   name = Chyld Medford
