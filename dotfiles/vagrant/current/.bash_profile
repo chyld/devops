@@ -36,6 +36,6 @@ export HISTSIZE=100000
 export EDITOR=vim
 export GOPATH=/home/vagrant/macos/go
 export PATH=$CONDA_PATH:$NODE_PATH:$GO_PATH:$DEVOPS_PATH:$PATH
-export PS1="$fuchsia[${aqua}xenial $fuchsia\w] $snow\$(status)$orangered\$(dirty)$gold\$(branch)$greenyellow:$reset "
+export PS1="${aqua}xenial $fuchsia[\w] $snow\$(status)$orangered\$(dirty)$gold\$(branch)$greenyellow:$reset "
 ### ------------------------------------------------------------------ ###
 
