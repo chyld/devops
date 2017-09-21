@@ -5,9 +5,10 @@ NODE_URL=https://nodejs.org/dist/v8.5.0/node-v8.5.0-linux-x64.tar.xz
 CONDA_URL=https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 LOCAL=$HOME/.local
 
+sudo add-apt-repository -y ppa:jonathonf/vim
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
-sudo apt-get install -y git htop tree libltdl7 postgresql-client
+sudo apt-get install -y git htop tree libltdl7 postgresql-client vim
 
 # ------------------------------------------------------------------------------------------------------- #
 # https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package
@@ -35,10 +36,8 @@ cd ~
 ln -s ~/Code/devops/dotfiles/vagrant/current/.tmux.conf .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.vimrc .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.gitconfig .
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_aliases .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_profile .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_colors .
+
+vim +PlugInstall +qall
