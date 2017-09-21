@@ -29,7 +29,7 @@ LOCAL=$HOME/.local
 CONDA_PATH=$LOCAL/miniconda3/bin
 NODE_PATH=$LOCAL/node/bin
 GO_PATH=$LOCAL/go/bin
-DEVOPS_PATH=$HOME/System/devops/dotfiles/vagrant/current/bin
+DEVOPS_PATH=$HOME/Code/devops/dotfiles/vagrant/current/bin
 MACOS_GO_PATH=$HOME/macos/go/bin
 
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
@@ -39,4 +39,3 @@ export GOPATH=/home/vagrant/macos/go
 export PATH=/home/vagrant/Temp/vim/vim/src:$CONDA_PATH:$NODE_PATH:$GO_PATH:$DEVOPS_PATH:$MACOS_GO_PATH:$PATH
 export PS1="${aqua}${underline}xenial$reset $fuchsia[\w] $snow\$(status)$orangered\$(dirty)$gold\$(branch)$greenyellow:$reset "
 ### ------------------------------------------------------------------ ###
-

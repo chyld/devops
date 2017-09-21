@@ -1,6 +1,6 @@
 # use single quotes, no variable expansion or string interpolation
 
-alias sdo='cd ~/System/devops && git add . && git commit -am "sync" && git push; cd ~'
+alias sdo='cd ~/Code/devops && git add . && git commit -am "sync" && git push; cd ~'
 
 alias l="LC_COLLATE=C ls -alph --color=auto"
 alias ll='l'
@@ -13,7 +13,7 @@ alias p='python'
 alias k='kubectl'
 alias d='docker'
 
-alias debug='clear && cat ~/System/devops/notes/debugging.txt'
+alias debug='clear && cat ~/Code/devops/notes/debugging.txt'
 
 # DOCKER ALIASES ---------------------------------------------------- #
 alias dka='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'

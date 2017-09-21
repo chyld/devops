@@ -21,7 +21,7 @@ rm docker.deb
 
 cd ~
 mkdir $LOCAL
-mkdir -p $HOME/{System,Data}
+mkdir -p $HOME/{Code,Data}
 
 # git install // system
 curl ${GO_URL} | tar xz && mv go $LOCAL/go
@@ -29,16 +29,16 @@ curl ${NODE_URL} | tar xJ && mv node-v8.5.0-linux-x64 $LOCAL/node
 wget ${CONDA_URL} -O conda.sh && bash conda.sh -b -p $LOCAL/miniconda3
 rm conda.sh
 
-cd $HOME/System && git clone https://github.com/chyld/devops
+cd $HOME/Code && git clone https://github.com/chyld/devops
 cd ~
 
-ln -s ~/System/devops/dotfiles/vagrant/current/.tmux.conf .
-ln -s ~/System/devops/dotfiles/vagrant/current/.vimrc .
-ln -s ~/System/devops/dotfiles/vagrant/current/.gitconfig .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.tmux.conf .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.vimrc .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.gitconfig .
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
-ln -s ~/System/devops/dotfiles/vagrant/current/.bash_aliases .
-ln -s ~/System/devops/dotfiles/vagrant/current/.bash_profile .
-ln -s ~/System/devops/dotfiles/vagrant/current/.bash_colors .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_aliases .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_profile .
+ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_colors .
