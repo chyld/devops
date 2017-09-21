@@ -11,6 +11,7 @@ http://www.brendangregg.com/linuxperf.html
 netstat -tunapl    # show open ports
 strace             # show syscalls from running process
 strace -c ./myapp  # show count of all syscalls using during execution
+iftop              # show current in/out bound network activity
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 MAC
 ls /usr/bin/*.d         # DTrace scripts
