@@ -40,4 +40,5 @@ ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_aliases .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_profile .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_colors .
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
