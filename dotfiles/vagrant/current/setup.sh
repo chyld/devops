@@ -22,7 +22,7 @@ rm docker.deb
 
 cd ~
 mkdir $LOCAL
-mkdir -p $HOME/{Code,Data}
+mkdir -p $HOME/{Code,Data,Temp}
 mkdir -p $HOME/Code/go/{bin,pkg,src}
 
 # git install // system
@@ -41,6 +41,7 @@ ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_aliases .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_profile .
 ln -s ~/Code/devops/dotfiles/vagrant/current/.bash_colors .
 
+source $HOME/.bash_profile
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 vim +PlugInstall +qall
