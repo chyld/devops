@@ -14,6 +14,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
@@ -89,6 +90,7 @@ let g:go_fmt_command = "goimports"
 
 let g:rehash256 = 1
 let g:molokai_original = 1
+let g:airline_theme='badwolf'
 colorscheme molokai
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
@@ -97,6 +99,7 @@ colorscheme molokai
 
 let mapleader=","
 noremap <leader>n :NERDTreeToggle<cr>
+noremap <leader>f :CtrlP<cr>
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
