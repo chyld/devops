@@ -23,6 +23,7 @@ rm docker.deb
 cd ~
 mkdir $LOCAL
 mkdir -p $HOME/{Code,Data}
+mkdir -p $HOME/Code/go/{bin,pkg,src}
 
 # git install // system
 curl ${GO_URL} | tar xz && mv go $LOCAL/go
