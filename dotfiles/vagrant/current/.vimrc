@@ -91,6 +91,7 @@ let g:go_fmt_command = "goimports"
 let g:rehash256 = 1
 let g:molokai_original = 1
 let g:airline_theme='badwolf'
+let g:airline#extensions#tabline#enabled = 1
 colorscheme molokai
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
@@ -98,8 +99,15 @@ colorscheme molokai
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
 
 let mapleader=","
-noremap <leader>n :NERDTreeToggle<cr>
-noremap <leader>f :CtrlP<cr>
+noremap <leader>n :NERDTreeToggle<cr>                " Nerd toggle
+noremap <leader>f :CtrlP<cr>                         " Find files with Ctrl-P
+noremap <leader>b :CtrlPBuffer<cr>                   " Find buffers with Ctrl-P
+noremap <leader>h :sp<cr>                            " Split Horizontal
+noremap <leader>v :vsp<cr>                           " Split Vertical
+noremap <C-h> <C-w>h                                 " Window Move Left
+noremap <C-j> <C-w>j                                 " Window Move Down
+noremap <C-k> <C-w>k                                 " Window Move Up
+noremap <C-l> <C-w>l                                 " Window Move Right
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #

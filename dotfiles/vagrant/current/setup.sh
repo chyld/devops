@@ -49,3 +49,6 @@ for x in {1..5}
 do
   vim +PlugInstall +qall
 done
+
+conda install -y scipy numpy jupyter sympy pandas
+pip install httpie sklearn
