@@ -12,9 +12,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
 call plug#end()
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
@@ -59,7 +59,7 @@ set fileencoding=utf-8                           " keyboard
 " https://github.com/fatih/vim-go/blob/master/doc/vim-go.txt
 
 au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>u <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 
@@ -81,6 +81,16 @@ let g:go_highlight_variable_assignments = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
+
+" +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
+" +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
+" +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
+
+" https://github.com/w0rp/ale#3-installation
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 1
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #

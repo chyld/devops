@@ -9,7 +9,7 @@ LOCAL=$HOME/.local
 sudo add-apt-repository -y ppa:jonathonf/vim
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
-sudo apt-get install -y git htop tree libltdl7 postgresql-client vim
+sudo apt-get install -y git htop tree libltdl7 postgresql-client vim unzip
 
 # ------------------------------------------------------------------------------------------------------- #
 # https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package
@@ -62,3 +62,6 @@ done
 # data science
 conda install -y scipy numpy jupyter sympy pandas matplotlib seaborn bokeh statsmodels
 pip install httpie sklearn
+
+# node
+npm install -g prettier
