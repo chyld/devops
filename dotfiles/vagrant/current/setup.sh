@@ -64,4 +64,4 @@ conda install -y scipy numpy jupyter sympy pandas matplotlib seaborn bokeh stats
 pip install httpie sklearn
 
 # node
-npm install -g prettier
+npm install -g prettier create-react-app
