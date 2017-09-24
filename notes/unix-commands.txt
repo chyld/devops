@@ -84,3 +84,7 @@ dmesg # display bootup sequence
 
 # job control
 jobs, fg, bg ctrl-z, ctrl-c
+
+# system state
+https://nicolargo.github.io/glances/
+glances
