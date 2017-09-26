@@ -26,4 +26,3 @@ alias ds="find . -name '.DS_Store' -type f -delete"
 
 # debugging
 alias debug='clear && cat ~/Code/devops/notes/debugging.txt'
-

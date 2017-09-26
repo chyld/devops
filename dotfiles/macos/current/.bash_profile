@@ -24,20 +24,15 @@ dirsize()
 ### ------------------------------------------------------------------ ###
 
 LOCAL=$HOME/.local
-ANACONDA_PATH=$LOCAL/anaconda3/bin
+ANACONDA_PATH=$LOCAL/miniconda3/bin
 NODE_PATH=$LOCAL/node/bin
 RVM_PATH=$HOME/.rvm/bin
-NVIM_PATH=$LOCAL/nvim/bin
 
 export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
 export HISTSIZE=100000
 export EDITOR=vim
 export GOPATH=$HOME/Code/go
-
-# PATH also set in /etc/paths & /etc/paths.d
-export PATH=$ANACONDA_PATH:$NODE_PATH:$RVM_PATH:$NVIM_PATH:$GOPATH/bin:$PATH
-
-# export PS1="\n$crimson[⌗ \!] $aliceblue\u@\h $crimson[✤ \A]$reset\n$gold\w $aqua[\$(dirsize)] $snow\$(status)$fuchsia\$(branch)$gold:$reset "
+export PATH=$ANACONDA_PATH:$NODE_PATH:$RVM_PATH:$GOPATH/bin:$PATH
 export PS1="$gold[\w] $snow\$(status)$aqua\$(dirty)$fuchsia\$(branch)$greenyellow:$reset "
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
