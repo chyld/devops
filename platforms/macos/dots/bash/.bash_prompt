@@ -1,1 +1,1 @@
-export PS1="$fuchsia[\w] $snow\$(status)$aqua\$(dirty)$gold\$(branch)$greenyellow:$reset "
+export PS1="$deepskyblue[\w] $snow\$(status)$aqua\$(dirty)$deeppink\$(branch)$greenyellow:$reset "

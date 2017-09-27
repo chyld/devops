@@ -1,8 +1,8 @@
-cd ~/Code/devops/platforms/macos/dots/bash
-source .bash_aliases
-source .bash_colors
-source .bash_functions
-source .bash_environment
-source .bash_other
-source .bash_prompt
-cd ~
+DOTS=$HOME/Code/devops/platforms/macos/dots/bash
+
+source $DOTS/.bash_aliases
+source $DOTS/.bash_colors
+source $DOTS/.bash_functions
+source $DOTS/.bash_environment
+source $DOTS/.bash_other
+source $DOTS/.bash_prompt
