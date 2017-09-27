@@ -1,0 +1,10 @@
+LOCAL=$HOME/.local
+ANACONDA_PATH=$LOCAL/miniconda3/bin
+NODE_PATH=$LOCAL/node/bin
+RVM_PATH=$HOME/.rvm/bin
+
+export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
+export HISTSIZE=100000
+export EDITOR=vim
+export GOPATH=$HOME/Code/go
+export PATH=$ANACONDA_PATH:$NODE_PATH:$RVM_PATH:$GOPATH/bin:$PATH
