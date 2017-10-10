@@ -3,7 +3,7 @@
   rt = remote -v
   up = remote update
   acm = !git add . && git commit -m
-  s = status
+  s = status -sb
 [user]
   email = chyld.medford@gmail.com
   name = Chyld Medford
