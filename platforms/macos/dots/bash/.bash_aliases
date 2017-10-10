@@ -24,4 +24,5 @@ alias k='kubectl'
 alias d='docker'
 alias dc='docker-compose'
 
-alias debug='clear && cat ~/Code/devops/notes/debugging.txt'
+alias dbg='clear && cat ~/Code/devops/notes/debugging.txt'
+alias cmd='clear && cat ~/Code/devops/notes/commands.txt'
