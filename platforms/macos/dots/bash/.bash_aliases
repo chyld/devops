@@ -2,7 +2,8 @@
 
 alias sdo='cd ~/Code/devops && git acm "sync" && git push; cd ~'
 
-alias l='ls -pahlGF'
+alias l='exa -laBH'
+# alias l='ls -pahlGF'
 alias ll='l'
 alias b='cd ..'
 alias c='clear'
