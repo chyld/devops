@@ -24,7 +24,7 @@ set number                                       " turn on line numbering
 set backspace=indent,eol,start                   " allow backspacing over everything in insert mode
 set ruler                                        " show the cursor position all the time
 set autowrite                                    " save on buffer switch
-set noexpandtab                                  " use TABS, do not expand tab into spaces
+set expandtab                                    " use SPACES, do expand tabs into spaces
 set tabstop=2                                    " insert 2 spaces whenever the tab key is pressed
 set shiftwidth=2                                 " set indentation to 2 spaces
 set list listchars=tab:‣‧,trail:•                " show tabs & trailing spaces
