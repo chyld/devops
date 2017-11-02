@@ -1,1 +1,1 @@
-export PS1="$deepskyblue[\w] $snow\$(status)$aqua\$(dirty)$deeppink\$(branch)$greenyellow:$reset "
+export PS1="$gold$CONDA_DEFAULT_ENV:$deepskyblue[\w] $snow\$(status)$aqua\$(dirty)$deeppink\$(branch)$greenyellow:$reset "
