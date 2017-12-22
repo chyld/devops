@@ -5,6 +5,7 @@
 - https://github.com/ogham/exa
 - https://github.com/sharkdp/fd
 - https://github.com/junegunn/fzf
+- https://nicolargo.github.io/glances/
 
 # symbolic links
 
