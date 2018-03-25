@@ -1,0 +1,8 @@
+INSTALL=$HOME/.local/install
+
+ANACONDA_PATH=$HOME/miniconda3/bin
+NODE_PATH=$INSTALL/node/bin
+
+export PYTHONDONTWRITEBYTECODE=1 # suppress __pycache__
+export HISTSIZE=100000
+export PATH=$ANACONDA_PATH:$NODE_PATH:$PATH
