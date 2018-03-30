@@ -50,4 +50,4 @@ line0="\n\n# --------------------------------------------------$org\$(binary)$re
 line1="$reset#$yel \$(dirsize) $reset//$gry \D{%Y-%m-%d} $reset//$gry \u@\h\n"
 line2="$reset#$red \w $yel\$(branch)$red\$(status)$reset//$grn \$(remote)\n"
 line3="$reset#$blu [\#]: $reset"
-export PS1=$line0$line1$line2$line3
+export PS1=$line0$line2$line3
