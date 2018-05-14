@@ -50,4 +50,8 @@ copy .gitconfig
 edit .bash_profile
 ---
 sudo apt-get install tree
+---
+disable automatic screen brightness
+settings -> power
+---
 
