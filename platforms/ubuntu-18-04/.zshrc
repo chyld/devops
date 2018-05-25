@@ -6,7 +6,6 @@ alias g='git'
 # config
 DEFAULT_USER=chyld
 
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -17,6 +16,15 @@ DEFAULT_USER=chyld
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+
+# path
+conda_path=$HOME/.local/apps/miniconda3/bin
+node_path=$HOME/.local/apps/node/bin
+export PATH=$conda_path:$node_path:$PATH
+
+# ------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------ #
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

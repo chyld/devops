@@ -92,3 +92,11 @@ plugins: ["hypercwd", "hyper-materialshell", "hyperborder", "gitrocket", "space-
   * python
   * quokka.js
   * rainbow csv
+
+### vim
+
+```
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
