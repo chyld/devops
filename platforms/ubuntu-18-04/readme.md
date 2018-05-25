@@ -1,0 +1,67 @@
+# readme ubuntu
+
+### install
+- insert usb stick
+- reboot
+- disk space installation options
+  - /dev/sda3
+  - 300GB
+  - format ext4
+  - device for "boot loader installation" = /dev/sda3
+- after install press enter or CTRL+C to reboot
+
+### post-install
+- remove unused icons
+- move trash icon
+- pin chrome, firefox, finder, terminal, hyper, vscode, settings, software
+- sudo apt update & upgrade
+- wallpaper
+- icon resize
+- install chrome, hyper, vscode
+
+### git
+- sudo add-apt-repository ppa:git-core/ppa
+- sudo apt-get update
+- sudo apt-get install git
+
+### node
+- https://nodejs.org/en/download/current/
+- ~/.local/apps/node
+
+### miniconda
+- https://conda.io/miniconda.html
+- ~/.local/apps/miniconda3
+
+### apt
+- sudo apt install htop tree
+
+### optional switch control and command keys
+```
+switch command and control keys
+vi /usr/share/X11/xkb/symbols/pc
+change lines 25 to 31
+
+key <LFSH> {	[ Shift_L		]	};
+key <LCTL> {	[ Super_L		]	};
+key <LWIN> {	[ Control_L		]	};
+
+key <RTSH> {	[ Shift_R		]	};
+key <RCTL> {	[ Super_R		]	};
+key <RWIN> {	[ Control_R		]	};
+```
+
+### settings
+- disable automatic screen brightness
+- settings -> power
+
+
+
+
+
+
+
+
+---
+get vscode settings
+install plugins
+install firacode font in ~/.fonts directory
