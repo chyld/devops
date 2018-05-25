@@ -101,3 +101,12 @@ sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install vim
 ```
+
+### refind boot manager
+
+```
+sudo apt-add-repository ppa:rodsmith/refind
+sudo apt update
+sudo apt install refind
+reboot
+```
