@@ -61,6 +61,7 @@ key <RWIN> {	[ Control_R		]	};
 
 * disable automatic screen brightness
 * settings -> power
+* chrome : system title and border
 
 ### zsh
 
