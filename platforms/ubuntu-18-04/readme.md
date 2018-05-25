@@ -62,6 +62,7 @@ key <RWIN> {	[ Control_R		]	};
 - reboot (verify zsh)
 - download http://ohmyz.sh/
 - edit ~/.zshrc
+  - add aliases
   - DEFAULT_USER=chyld
   - ZSH_THEME="agnoster"
 - cd ~/.fonts
