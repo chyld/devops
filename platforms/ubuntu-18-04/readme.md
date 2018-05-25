@@ -55,7 +55,24 @@ key <RWIN> {	[ Control_R		]	};
 - settings -> power
 
 
+### zsh
+- sudo apt install zsh
+- chsh
+- /usr/bin/zsh
+- reboot (verify zsh)
+- download http://ohmyz.sh/
+- edit ~/.zshrc
+  - DEFAULT_USER=chyld
+  - ZSH_THEME="agnoster"
+- cd ~/.fonts
+- git clone https://github.com/powerline/fonts
+- hyper config (partial)
 
+```
+fontSize: 13,
+fontFamily: '"Fira Mono for Powerline", Menlo, ...'
+plugins: ["hypercwd", "hyper-materialshell", "hyperborder", "gitrocket", "space-pull"],
+```
 
 
 

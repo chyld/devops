@@ -1,0 +1,18 @@
+[alias]
+  br = branch -av
+  rt = remote -v
+  up = remote update
+  s = status -sb
+[user]
+  email = chyld.medford@gmail.com
+  name = Chyld Medford
+[push]
+  default = simple
+[credential]
+  helper = cache --timeout=86400
+[core]
+  editor = vim
+  autocrlf = input
+[color]
+  ui = true
+
