@@ -62,7 +62,8 @@
 
 ### apt
 
-* sudo apt install htop tree neofetch chrome-gnome-shell
+* sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential
+* pip install glances
 
 ### optional switch control and command keys
 
