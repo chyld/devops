@@ -1,0 +1,32 @@
+# ------------------------------------------------------------------- #
+{
+  "window.menuBarVisibility": "toggle",
+  "editor.fontSize": 14,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "python.formatting.autopep8Args": ["--max-line-length=200"],
+  "explorer.openEditors.visible": 0,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons"
+}
+# ------------------------------------------------------------------- #
+code --list-extensions
+
+CoenraadS.bracket-pair-colorizer
+SirTori.indenticator
+WallabyJs.quokka-vscode
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
+formulahendry.code-runner
+hnw.vscode-auto-open-markdown-preview
+mechatroner.rainbow-csv
+ms-python.python
+robertohuertasm.vscode-icons
+wayou.vscode-todo-highlight
+# ------------------------------------------------------------------- #
