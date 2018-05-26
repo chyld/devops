@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,6 +45,12 @@ set autoindent                                   " start new line at the same in
 set nobackup                                     " do not keep backup files, it's 70's style cluttering
 set noswapfile                                   " do not write annoying intermediate swap files
 set wrap!                                        " turn off word wrapping
+
+" --------------------------------------------------
+" --------------------------------------------------
+" --------------------------------------------------
+
+let g:airline_theme='simple'
 
 " --------------------------------------------------
 " --------------------------------------------------
