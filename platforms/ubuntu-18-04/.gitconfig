@@ -3,7 +3,7 @@
   rt  = remote -v
   up  = remote update
   s   = status -sb
-  acp = !git add . && git commit -am $1 && git push && clear && git status
+  acp = !git add . && git commit -am \"$1\" && git push && git status
   l   = !git --no-pager log --oneline --decorate --graph -10
 [user]
   email = chyld.medford@gmail.com
