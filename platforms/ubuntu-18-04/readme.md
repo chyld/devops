@@ -26,6 +26,20 @@
 * add Gnome Tweaks tool
 * https://extensions.gnome.org/extension/307/dash-to-dock/
 
+### change login screen
+
+* sudo cp hello.jpg to /usr/share/backgrounds/
+* sudo vi /etc/alternatives/gdm3.css
+
+```
+#lockDialogGroup {
+ background: #2c001e url(file:///usr/share/backgrounds/hello.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ }
+```
+
 ### git
 
 * sudo add-apt-repository ppa:git-core/ppa
