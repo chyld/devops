@@ -18,9 +18,13 @@
 * pin chrome, firefox, finder, terminal, hyper, vscode, settings, software
 * sudo apt update & upgrade
 * wallpaper
+* set lock screen wallpaper
 * icon resize
 * install chrome, hyper, vscode
 * set firefox homepage
+* change login avatar: Settings -> Details -> Users
+* add Gnome Tweaks tool
+* https://extensions.gnome.org/extension/307/dash-to-dock/
 
 ### git
 
@@ -40,7 +44,7 @@
 
 ### apt
 
-* sudo apt install htop tree neofetch
+* sudo apt install htop tree neofetch chrome-gnome-shell
 
 ### optional switch control and command keys
 
