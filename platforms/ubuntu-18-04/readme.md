@@ -25,6 +25,8 @@
 * change login avatar: Settings -> Details -> Users
 * add Gnome Tweaks tool
 * https://extensions.gnome.org/extension/307/dash-to-dock/
+* you cannot have 2 docks, so after configuring dash to dock, disable it, it remembers settings
+* hide trash can from desktop
 
 ### change login screen
 
