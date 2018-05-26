@@ -26,7 +26,11 @@ formulahendry.auto-rename-tag
 formulahendry.code-runner
 hnw.vscode-auto-open-markdown-preview
 mechatroner.rainbow-csv
+ms-python.anaconda-extension-pack
 ms-python.python
+njpwerner.autodocstring
+redhat.vscode-yaml
 robertohuertasm.vscode-icons
+shardulm94.trailing-spaces
 wayou.vscode-todo-highlight
 # ------------------------------------------------------------------- #
