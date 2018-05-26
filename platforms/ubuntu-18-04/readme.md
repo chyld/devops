@@ -20,6 +20,7 @@
 * wallpaper
 * icon resize
 * install chrome, hyper, vscode
+* set firefox homepage
 
 ### git
 
@@ -39,7 +40,7 @@
 
 ### apt
 
-* sudo apt install htop tree
+* sudo apt install htop tree neofetch
 
 ### optional switch control and command keys
 
