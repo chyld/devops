@@ -29,6 +29,7 @@
 * hide trash can from desktop
 * change border width of hyperborder to 2px
 * vi .hyper_plugins/node_modules/hyperborder/index.js
+* get 'hide top bar' gnome extension
 
 ### change login screen
 
@@ -62,7 +63,7 @@
 
 ### apt
 
-* sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential
+* sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux
 * pip install glances
 
 ### optional switch control and command keys
