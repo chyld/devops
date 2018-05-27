@@ -1,14 +1,16 @@
 # ------------------------------------------------------------------- #
 {
   "window.menuBarVisibility": "toggle",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
   "editor.formatOnSave": true,
-  "python.formatting.autopep8Args": ["--max-line-length=200"],
+  "python.formatting.autopep8Args": [
+    "--max-line-length=200"
+  ],
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "workbench.colorTheme": "Monokai",
