@@ -30,6 +30,10 @@
 * change border width of hyperborder to 2px
 * vi .hyper_plugins/node_modules/hyperborder/index.js
 * get 'hide top bar' gnome extension
+* change theme to arc-theme
+* use numix icons
+* paper icons and cursor https://snwh.org/paper/download
+* macos cursor https://github.com/keeferrourke/capitaine-cursors
 
 ### change login screen
 
@@ -63,7 +67,7 @@
 
 ### apt
 
-* sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux
+* sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux arc-theme numix-icon-theme
 * pip install glances
 
 ### optional switch control and command keys
