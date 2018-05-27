@@ -4,4 +4,5 @@
 - mac
 - scripts
 - dotfiles
+- guides
 
