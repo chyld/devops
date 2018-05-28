@@ -76,6 +76,7 @@
 * after installing miniconda to ~/.local/apps/miniconda3
 * cd lib/python3.6
 * chmod 500 site-packages
+* when opening vscode, remember to switch to the correct env, by clicking on bottom left icon
 
 ### optional switch control and command keys
 
