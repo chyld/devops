@@ -77,6 +77,8 @@
 * cd lib/python3.6
 * chmod 500 site-packages
 * when opening vscode, remember to switch to the correct env, by clicking on bottom left icon
+* when installing packages using conda, you can specify a channel, as below
+* conda install -c conda-forge jupyterlab
 
 ### optional switch control and command keys
 
