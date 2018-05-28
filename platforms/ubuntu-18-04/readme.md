@@ -70,6 +70,13 @@
 * sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux arc-theme numix-icon-theme
 * pip install glances
 
+### python
+
+* make base conda env read-only
+* after installing miniconda to ~/.local/apps/miniconda3
+* cd lib/python3.6
+* chmod 500 site-packages
+
 ### optional switch control and command keys
 
 ```
