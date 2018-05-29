@@ -23,12 +23,15 @@ code --list-extensions
 CoenraadS.bracket-pair-colorizer
 SirTori.indenticator
 WallabyJs.quokka-vscode
+dracula-theme.theme-dracula
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.code-runner
 hnw.vscode-auto-open-markdown-preview
+johnpapa.winteriscoming
 mechatroner.rainbow-csv
+monokai.theme-monokai-pro-vscode
 ms-python.anaconda-extension-pack
 ms-python.python
 njpwerner.autodocstring
@@ -37,3 +40,4 @@ robertohuertasm.vscode-icons
 shardulm94.trailing-spaces
 wayou.vscode-todo-highlight
 # ------------------------------------------------------------------- #
+
