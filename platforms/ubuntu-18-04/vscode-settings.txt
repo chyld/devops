@@ -12,6 +12,9 @@
   "python.formatting.autopep8Args": [
     "--max-line-length=200"
   ],
+  "files.trimTrailingWhitespace": true,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "workbench.colorTheme": "Monokai Pro",
@@ -23,6 +26,7 @@ code --list-extensions
 CoenraadS.bracket-pair-colorizer
 SirTori.indenticator
 WallabyJs.quokka-vscode
+aaron-bond.better-comments
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
@@ -35,9 +39,10 @@ monokai.theme-monokai-pro-vscode
 ms-python.anaconda-extension-pack
 ms-python.python
 njpwerner.autodocstring
+pnp.polacode
 redhat.vscode-yaml
 robertohuertasm.vscode-icons
 shardulm94.trailing-spaces
 wayou.vscode-todo-highlight
+wesbos.theme-cobalt2
 # ------------------------------------------------------------------- #
-
