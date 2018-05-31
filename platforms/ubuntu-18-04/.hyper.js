@@ -10,6 +10,12 @@ module.exports = {
       footerTransparent: false
     },
 
+    hyperBorder: {
+      borderColors: ["#ff33cc", "#00FD0A", "orange"],
+      borderWidth: "2px",
+      borderAngle: "120deg"
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "canary",
@@ -63,7 +69,7 @@ module.exports = {
 
     // if you're using a Linux setup which show native menus, set to false
     // default: `true` on Linux, `true` on Windows, ignored on macOS
-    showHamburgerMenu: "",
+    showHamburgerMenu: "true",
 
     // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -143,11 +149,12 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hypercwd",
-    "hyper-materialshell",
-    "hyperborder",
+    "hyper-papercolor",
     "gitrocket",
     "space-pull",
-    "hyper-statusline"
+    "hyper-statusline",
+    "hyperborder",
+    "hyper-tab-icons"
   ],
 
   // in development, you can create a directory under
