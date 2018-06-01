@@ -10,6 +10,9 @@ alias g='git'
 # config
 DEFAULT_USER=chyld
 
+# env vars
+export PYTHONDONTWRITEBYTECODE=1 # supress __pycache__
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
