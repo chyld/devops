@@ -11,7 +11,7 @@ module.exports = {
     },
 
     hyperBorder: {
-      borderColors: ["#ff33cc", "#00FD0A", "orange"],
+      borderColors: ["#ff33cc", "#00FD0A", "orange", "red"],
       borderWidth: "2px",
       borderAngle: "120deg"
     },
@@ -149,7 +149,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hypercwd",
-    "hyper-papercolor",
+    "hyperterm-monokai",
     "gitrocket",
     "space-pull",
     "hyper-statusline",
