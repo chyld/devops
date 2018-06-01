@@ -151,7 +151,6 @@ module.exports = {
     "hypercwd",
     "hyperterm-monokai",
     "gitrocket",
-    "space-pull",
     "hyper-statusline",
     "hyperborder",
     "hyper-tab-icons"
