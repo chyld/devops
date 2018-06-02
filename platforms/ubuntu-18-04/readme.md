@@ -35,6 +35,7 @@
 * paper icons and cursor https://snwh.org/paper/download
 * macos cursor https://github.com/keeferrourke/capitaine-cursors
 * sudo apt install tilix # customize profile settings
+* sudo apt install ranger # vim-based file explorer
 
 ### change login screen
 
