@@ -36,6 +36,7 @@
 * macos cursor https://github.com/keeferrourke/capitaine-cursors
 * sudo apt install tilix # customize profile settings
 * sudo apt install ranger # vim-based file explorer
+* sudo apt install neofetch figlet cmatrix lolcat # make it fun!
 
 ### change login screen
 
