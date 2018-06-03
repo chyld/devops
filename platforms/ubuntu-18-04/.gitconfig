@@ -1,5 +1,5 @@
 [alias]
-  br  = branch -av
+  br  = branch -avv
   rt  = remote -v
   up  = remote update
   s   = status -sb
