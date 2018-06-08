@@ -90,13 +90,15 @@ switch command and control keys
 vi /usr/share/X11/xkb/symbols/pc
 change lines 25 to 31
 
+make 2 control keys on the left, but normal keys on the right.
+
 key <LFSH> {	[ Shift_L		]	};
-key <LCTL> {	[ Super_L		]	};
+key <LCTL> {	[ Control_L		]	};
 key <LWIN> {	[ Control_L		]	};
 
 key <RTSH> {	[ Shift_R		]	};
-key <RCTL> {	[ Super_R		]	};
-key <RWIN> {	[ Control_R		]	};
+key <RCTL> {	[ Control_R		]	};
+key <RWIN> {	[ Super_R		]	};
 ```
 
 ### settings
