@@ -131,6 +131,7 @@ key <RWIN> {	[ Super_R		]	};
   - https://github.com/zsh-users/zsh-autosuggestions
   - update ~/.zshrc plugins section
 
+- theme https://denysdovhan.com/spaceship-prompt/
 - cd ~/.fonts
 - git clone https://github.com/powerline/fonts
 - hyper config (partial)
