@@ -25,13 +25,13 @@ code --list-extensions
 
 CoenraadS.bracket-pair-colorizer
 SirTori.indenticator
-WallabyJs.quokka-vscode
 aaron-bond.better-comments
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.code-runner
+goessner.mdmath
 hnw.vscode-auto-open-markdown-preview
 johnpapa.winteriscoming
 mechatroner.rainbow-csv
@@ -43,6 +43,8 @@ pnp.polacode
 redhat.vscode-yaml
 robertohuertasm.vscode-icons
 shardulm94.trailing-spaces
+WallabyJs.quokka-vscode
 wayou.vscode-todo-highlight
 wesbos.theme-cobalt2
 # ------------------------------------------------------------------- #
+
