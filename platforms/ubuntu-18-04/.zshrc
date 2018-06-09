@@ -85,6 +85,7 @@ export PATH=$conda_path:$node_path:$PATH
 plugins=(
   git
   zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
