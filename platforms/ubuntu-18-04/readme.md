@@ -118,9 +118,17 @@ key <RWIN> {	[ Super_R		]	};
 - reboot (verify zsh)
 - download http://ohmyz.sh/
 - edit ~/.zshrc
+
   - add aliases
   - DEFAULT_USER=chyld
   - ZSH_THEME="agnoster"
+
+- plugins
+
+  - /home/chyld/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  - https://github.com/zsh-users/zsh-syntax-highlighting
+  - update ~/.zshrc plugins section
+
 - cd ~/.fonts
 - git clone https://github.com/powerline/fonts
 - hyper config (partial)
