@@ -73,7 +73,7 @@
 
 ### apt
 
-- sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux arc-theme numix-icon-theme
+- sudo apt install htop tree neofetch chrome-gnome-shell iotop iftop build-essential tmux arc-theme numix-icon-theme sqlite3
 - pip install glances
 
 ### python
