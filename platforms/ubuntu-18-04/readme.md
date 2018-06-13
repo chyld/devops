@@ -40,6 +40,7 @@
 - theme https://www.gnome-look.org/p/1013698/ or https://www.opendesktop.org/p/1013698
 - download vimix-color-dark, extract and run sudo ./Install
 - copies files to /usr/share/themes
+- set static number of workspaces to 4
 
 ### change login screen
 
