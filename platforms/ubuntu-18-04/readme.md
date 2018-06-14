@@ -41,6 +41,12 @@
 - download vimix-color-dark, extract and run sudo ./Install
 - copies files to /usr/share/themes
 - set static number of workspaces to 4
+- sudo apt install alacarte # for editing and adding menu items in gnome
+- https://krita.org/en/
+- Download AppImage file and place into ~/Images
+- Make executable
+- Use 'alacarte' to make a menu item
+- Open file manager and place custom folders, code and images, onto the side
 
 ### change login screen
 
