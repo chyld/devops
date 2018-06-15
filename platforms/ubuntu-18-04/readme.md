@@ -46,6 +46,8 @@
 - Download AppImage file and place into ~/Images
 - Make executable
 - Use 'alacarte' to make a menu item
+- update the icon of krita in file manager and in menu properties
+- add launcher icon to dock
 - Open file manager and place custom folders, code and images, onto the side
 
 ### change login screen
