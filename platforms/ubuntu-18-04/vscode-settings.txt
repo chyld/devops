@@ -27,6 +27,8 @@ CoenraadS.bracket-pair-colorizer
 SirTori.indenticator
 aaron-bond.better-comments
 dracula-theme.theme-dracula
+eamodio.gitlens
+emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
@@ -39,6 +41,8 @@ monokai.theme-monokai-pro-vscode
 ms-python.anaconda-extension-pack
 ms-python.python
 njpwerner.autodocstring
+PeterJausovec.vscode-docker
+PKief.material-icon-theme
 pnp.polacode
 redhat.vscode-yaml
 robertohuertasm.vscode-icons
@@ -46,5 +50,5 @@ shardulm94.trailing-spaces
 WallabyJs.quokka-vscode
 wayou.vscode-todo-highlight
 wesbos.theme-cobalt2
-# ------------------------------------------------------------------- #
 
+# ------------------------------------------------------------------- #
