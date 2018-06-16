@@ -49,6 +49,11 @@
 - update the icon of krita in file manager and in menu properties
 - add launcher icon to dock
 - Open file manager and place custom folders, code and images, onto the side
+- install flatpak: https://flatpak.org/setup/Ubuntu/
+- reboot after installation
+- download gimp flatpak https://www.gimp.org/downloads/
+- install gimp
+- add gimp to menu
 
 ### change login screen
 
