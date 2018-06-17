@@ -2,10 +2,16 @@
 # ------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------ #
 
+# functions
+open_nautilus() {
+  nautilus "$1" 1> /dev/null 2>&1 &
+}
+
 # aliases
 alias c='clear'
 alias b='cd ..'
 alias g='git'
+alias n='open_nautilus'
 
 # config
 DEFAULT_USER=chyld
