@@ -54,6 +54,16 @@
 - download gimp flatpak https://www.gimp.org/downloads/
 - install gimp
 - add gimp to menu
+- use Transmission and Torrents
+- Enable Gnome "User Themes" extension
+- Download "macos" gnome theme "myriad" fonts and replace system fonts
+- Myriad Pro Bold and Myrid Pro Light
+- User directories for customizing
+  - ~/.themes
+  - ~/.fonts
+  - ~/.icons (for cursors too)
+- "n" to open nautilus on command line
+- sudo snap install vlc # to watch all videos
 
 ### change login screen
 
