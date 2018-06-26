@@ -5,6 +5,7 @@
 - An arctic, north-bluish color palette
 - https://github.com/arcticicestudio/nord
 - https://github.com/ryanoasis/nerd-fonts
+- git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 - https://github.com/ryanoasis/vim-devicons
 
 ### install
