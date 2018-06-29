@@ -73,6 +73,7 @@
   - ~/.icons (for cursors too)
 - "n" to open nautilus on command line
 - sudo snap install vlc # to watch all videos
+- use "software & updates" gui to add or remove ppa sources
 
 ### change login screen
 
