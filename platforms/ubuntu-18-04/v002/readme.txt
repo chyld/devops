@@ -118,6 +118,9 @@ install extension
 --etcher--
 make bootable usb drives
 https://etcher.io/
+move app_image to ~/.local/apps/images/etcher
+chmod +x app_image
+run and enable desktop integration # shows up in search
 
 
 --customization--
