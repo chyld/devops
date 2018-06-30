@@ -62,6 +62,16 @@ clone https://github.com/zsh-users/zsh-autosuggestions to /home/chyld/.oh-my-zsh
 ~/.zshrc
 git clone https://github.com/powerline/fonts to ~/.fonts/powerline
 gnome terminal: space mono 11 (font) tango dark (theme) hidden toolbar (in global config)
+# to change the padding on gnome terminal
+vi /home/chyld/.config/gtk-3.0/gtk.css
+======================================================
+VteTerminal,
+TerminalScreen,
+vte-terminal {
+    padding: 10px 10px 10px 10px;
+    -VteTerminal-inner-border: 10px 10px 10px 10px;
+}
+======================================================
 
 
 --python--
