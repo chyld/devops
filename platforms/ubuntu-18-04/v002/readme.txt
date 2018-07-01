@@ -170,6 +170,7 @@ gsettings set org.gnome.desktop.interface font-name 'Myriad Pro Light 11'
 
 --icons--
 macos sierra https://www.opendesktop.org/p/1210856/
+papirus https://www.opendesktop.org/p/1166289/
 
 --cusors--
 capitaine https://www.opendesktop.org/p/1148692/
