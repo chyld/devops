@@ -23,6 +23,9 @@ set tabstop=2
 " set indention to two spaces
 set shiftwidth=2
 
+" turn on line numbering
+set number
+
 " show trailing spaces
 set list listchars=tab:‣‧,trail:•
 
