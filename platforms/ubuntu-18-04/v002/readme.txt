@@ -48,10 +48,11 @@ sudo apt install git
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install vim
-https://github.com/VundleVim/Vundle.vim
-clone repo
+https://github.com/junegunn/vim-plug
+# install script for vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~/.vimrc
-:PluginInstall
+:PlugInstall
 
 
 --zsh--
@@ -88,7 +89,7 @@ https://nodejs.org/en/
 
 
 --system--
-sudo apt install tree htop build-essential neofetch tmux sqlite3
+sudo apt install tree htop build-essential neofetch tmux sqlite3 curl silversearcher-ag
 pip install -U httpie glances
 
 
