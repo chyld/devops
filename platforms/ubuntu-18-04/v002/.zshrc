@@ -110,6 +110,7 @@ alias c='clear'
 alias b='cd ..'
 alias g='git'
 alias n='open_nautilus'
+alias fvi='vi $(find . | fzf)'
 
 # uncomment to hide the user@host from prompt
 # DEFAULT_USER=chyld
