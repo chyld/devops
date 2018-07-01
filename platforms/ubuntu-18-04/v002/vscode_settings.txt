@@ -1,0 +1,40 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "window.menuBarVisibility": "toggle",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "python.formatting.autopep8Args": [
+    "--max-line-length=200"
+  ],
+  "files.trimTrailingWhitespace": true,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "explorer.openEditors.visible": 0,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+}
+
+extensions
+----------
+aaron-bond.better-comments
+CoenraadS.bracket-pair-colorizer
+eamodio.gitlens
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
+goessner.mdmath
+mechatroner.rainbow-csv
+monokai.theme-monokai-pro-vscode
+ms-python.python
+njpwerner.autodocstring
+PeterJausovec.vscode-docker
+pnp.polacode
+shardulm94.trailing-spaces

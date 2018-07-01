@@ -14,6 +14,15 @@ call plug#end()
 " do not wrap lines
 set nowrap
 
+" use spaces not tabs
+set expandtab
+
+" set a tab to two spaces
+set tabstop=2
+
+" set indention to two spaces
+set shiftwidth=2
+
 " show trailing spaces
 set list listchars=tab:‣‧,trail:•
 

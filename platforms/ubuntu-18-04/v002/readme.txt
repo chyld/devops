@@ -125,6 +125,23 @@ chmod +x app_image
 run and enable desktop integration # shows up in search
 
 
+--flatpack--
+https://flatpak.org/setup/Ubuntu/
+# follow all 4 steps, including reboot
+
+
+--gimp--
+https://www.gimp.org/downloads/
+# download the flatpack version
+# pin to dock
+
+
+--slack--
+# download *.deb from site
+# click
+# hide menu on app
+
+
 --customization--
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
@@ -165,6 +182,15 @@ wallpaper
 lock screen
 login screen
 user profile icon
+
+--lock screen--
+sudo vi /etc/alternatives/gdm3.css
+#lockDialogGroup {
+        background: #2c001e url(file:///home/chyld/Pictures/wallhaven-94707.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
