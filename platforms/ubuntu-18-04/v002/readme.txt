@@ -72,6 +72,7 @@ vte-terminal {
     -VteTerminal-inner-border: 10px 10px 10px 10px;
 }
 ======================================================
+gnome terminal themes: http://mayccoll.github.io/Gogh/
 
 
 --python--
