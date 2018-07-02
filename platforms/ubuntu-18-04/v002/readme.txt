@@ -89,8 +89,9 @@ https://nodejs.org/en/
 
 
 --system--
-sudo apt install tree htop build-essential neofetch tmux sqlite3 curl silversearcher-ag
+sudo apt install tree htop build-essential neofetch tmux sqlite3 curl silversearcher-ag iftop
 pip install -U httpie glances
+npm install -g gtop
 
 
 --extensions--
