@@ -169,8 +169,14 @@ gsettings set org.gnome.desktop.interface font-name 'Myriad Pro Light 11'
 
 
 --icons--
+large set of icon packs https://www.deviantart.com/zayronxio
 macos sierra https://www.opendesktop.org/p/1210856/
 papirus https://www.opendesktop.org/p/1166289/
+zafiro https://www.opendesktop.org/p/1209330/
+oranchelo https://www.opendesktop.org/p/1015801/
+la capitaine  https://krourke.org/projects/art/la-capitaine-icon-theme
+wildfire https://github.com/xenlism/wildfire
+luv https://github.com/Nitrux/luv-icon-theme
 
 --cusors--
 capitaine https://www.opendesktop.org/p/1148692/
