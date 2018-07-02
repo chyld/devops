@@ -114,7 +114,7 @@ alias fvi='vi $(find . | fzf)'
 alias aga='ag --hidden -i'
 
 # uncomment to hide the user@host from prompt
-# DEFAULT_USER=chyld
+DEFAULT_USER=chyld
 
 # env vars
 export PYTHONDONTWRITEBYTECODE=1 # supress __pycache__
