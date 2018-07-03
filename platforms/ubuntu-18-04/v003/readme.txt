@@ -1,40 +1,27 @@
+### LINUX MINT 19 CINNAMON
+
+
 sudo apt update
 sudo apt upgrade
+
+
+--settings--
+# there are a TON of system settings
+# go through all of them
 
 
 --firefox--
 configure firefox
 
 
---dock--
-remove icons from dock
-change size of dock
-add other icons to dock
-autohide dock
-put dock on bottom
-
-
---power--
-auto brightness OFF
-
-
 --chrome--
 download .deb and click
-title bar: use system
 
 
---gnome tweaks--
-install from software center
-remove trash from desktop
-make 5 static workspaces
-
-
---wallpaper--
-set wallpaper
-
-
---nautilus--
+--nemo--
 set folder bookmarks
+add plugins
+edit preferences
 
 
 --git--
@@ -61,6 +48,9 @@ https://ohmyz.sh/
 clone https://github.com/zsh-users/zsh-syntax-highlighting to /home/chyld/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 clone https://github.com/zsh-users/zsh-autosuggestions to /home/chyld/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ~/.zshrc
+
+
+--gnome terminal--
 git clone https://github.com/powerline/fonts to ~/.fonts/powerline
 gnome terminal: space mono 11 (font) tango dark (theme) hidden toolbar (in global config)
 # to change the padding on gnome terminal
@@ -76,6 +66,11 @@ vte-terminal {
 gnome terminal themes: http://mayccoll.github.io/Gogh/
 
 
+--hyper--
+download .deb file
+~/.hyper.js
+
+
 --python--
 https://conda.io/miniconda.html
 ~/.local/apps/miniconda3
@@ -89,16 +84,9 @@ https://nodejs.org/en/
 
 
 --system--
-sudo apt install tree htop build-essential neofetch tmux sqlite3 curl silversearcher-ag iftop
+sudo apt install tree htop build-essential neofetch tmux sqlite3 curl silversearcher-ag iftop asciinema
 pip install -U httpie glances
 npm install -g gtop
-
-
---extensions--
-sudo apt install chrome-gnome-shell
-https://extensions.gnome.org/
-* user themes
-* hide top bar
 
 
 --vscode--
@@ -106,11 +94,6 @@ download and click
 https://github.com/tonsky/FiraCode to ~/.fonts
 install extensions
 configure .json file
-
-
---hyper--
-download .deb file
-~/.hyper.js
 
 
 --virtualbox--
@@ -129,12 +112,6 @@ run and enable desktop integration # shows up in search
 --flatpack--
 https://flatpak.org/setup/Ubuntu/
 # follow all 4 steps, including reboot
-
-
---gimp--
-https://www.gimp.org/downloads/
-# download the flatpack version
-# pin to dock
 
 
 --slack--
@@ -191,18 +168,7 @@ Vimix-Gtk-Theme https://www.opendesktop.org/p/1013698/
 
 --background--
 wallpaper
-lock screen
-login screen
 user profile icon
-
---lock screen--
-sudo vi /etc/alternatives/gdm3.css
-#lockDialogGroup {
-        background: #2c001e url(file:///home/chyld/Pictures/wallhaven-94707.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-}
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
