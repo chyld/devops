@@ -111,7 +111,14 @@ run and enable desktop integration # shows up in search
 
 --flatpack--
 https://flatpak.org/setup/Ubuntu/
-# follow all 4 steps, including reboot
+# already installed
+
+
+--gimp--
+# download flatpak reference file
+flatpak install org.gimp.GIMP.flatpakref
+flatpak list
+flatpak run org.gimp.GIMP
 
 
 --slack--
