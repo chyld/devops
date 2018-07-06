@@ -131,6 +131,19 @@ flatpak run org.gimp.GIMP
 snap install spotify
 
 
+--obs-studio--
+sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+
+
+--openshot--
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt update
+sudo apt-get install openshot-qt
+
+
 --customization--
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
