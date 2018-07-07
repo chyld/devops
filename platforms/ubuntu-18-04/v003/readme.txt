@@ -149,6 +149,10 @@ download flatpack
 double click to install
 
 
+--simple screen recorder--
+sudo apt install simplescreenrecorder
+
+
 --customization--
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
