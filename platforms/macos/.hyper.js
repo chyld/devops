@@ -4,6 +4,10 @@
 
 module.exports = {
   config: {
+    hyperBorder: {
+      borderWidth: "1px"
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'canary',
@@ -12,13 +16,19 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Fira Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
 
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
+
+    // line height as a relative unit
+    lineHeight: 1,
+
+    // letter spacing as a relative unit
+    letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -51,9 +61,8 @@ module.exports = {
     // custom CSS to embed in the terminal window
     termCSS: '',
 
-    // set to `true` (without backticks and without quotes) if you're using a
-    // Linux setup that doesn't show native menus
-    // default: `false` on Linux, `true` on Windows, ignored on macOS
+    // if you're using a Linux setup which show native menus, set to false
+    // default: `true` on Linux, `true` on Windows, ignored on macOS
     showHamburgerMenu: '',
 
     // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
@@ -132,7 +141,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hypercwd', 'hyperterm-monokai'],
+  plugins: [
+    "hypercwd",
+    "hyperterm-monokai",
+    "hyperborder",
+    "hyper-tab-icons"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
