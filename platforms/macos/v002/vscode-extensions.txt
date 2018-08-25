@@ -1,0 +1,15 @@
+aaron-bond.better-comments
+alefragnani.Bookmarks
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dracula-theme.theme-dracula
+emmanuelbeziat.vscode-great-icons
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
+mechatroner.rainbow-csv
+monokai.theme-monokai-pro-vscode
+ms-python.python
+PeterJausovec.vscode-docker
+robertohuertasm.vscode-icons
+wayou.vscode-todo-highlight
