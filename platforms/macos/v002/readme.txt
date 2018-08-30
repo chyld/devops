@@ -30,5 +30,5 @@ Hyper - get config from github
       - vim plug
       - fzf
       - install homebrew
-      - brew install tree htop wget the_silver_searcher
+      - brew install bat tree htop wget the_silver_searcher
 
