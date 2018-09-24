@@ -146,8 +146,9 @@ module.exports = {
   // old plugins
   // "hyperterm-monokai"
   // "hyperborder"
+  // hyper-clean
 
-  plugins: ["hypercwd", "hyper-clean", "hyper-tab-icons"],
+  plugins: ["hypercwd", "hyperterm-monokai", "hyperborder", "hyper-tab-icons"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
