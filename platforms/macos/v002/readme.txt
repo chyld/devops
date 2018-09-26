@@ -1,4 +1,9 @@
-Prefs - trackpad, sound, bluetooth, dock, finder
+Prefs - trackpad, sound, bluetooth, dock, finder, accent color in General
+Prefs - hide top menu bar
+
+# font smoothing in terminal
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
 Amphetamine
 Chrome
 Google Account - Clear History
@@ -15,6 +20,8 @@ VSCode
   - fonts
   - get Dank Mono - delete .ttf font (dups)
   - config
+
+Install cmd apps to ~/.local/apps/
 
 Hyper - get config from github
       - git + gitconfig
