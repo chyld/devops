@@ -1,0 +1,6 @@
+CoenraadS.bracket-pair-colorizer
+esbenp.prettier-vscode
+monokai.theme-monokai-pro-vscode
+ms-python.python
+ms-vscode.cpptools
+PeterJausovec.vscode-docker
