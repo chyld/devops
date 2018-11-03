@@ -1,0 +1,301 @@
+﻿----------------------------------------------------
+This was ran on both VMWare Fusion and Parallels.
+There was too much UI lag on Parallels, due to a bad
+graphic driver. However the UI experience was much
+improved on VMWare Fusion.
+
+
+So that's what I'll be using below.
+
+
+  
+
+
+
+----------------------------------------------------
+VMWARE FUSION SETTINGS
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+----------------------------------------------------
+Install Mint
+sudo apt-get update
+sudo apt-get install open-vm-tools open-vm-tools-desktop
+Set "High DPI" in settings
+Go full screen
+sudo apt-get upgrade
+(may need to do complete shutdown)
+
+
+----------------------------------------------------
+Install Chrome
+Sign-in Google
+Download "wallpaper" on google drive - move to "Pictures"
+
+
+
+
+
+
+----------------------------------------------------
+Preferences
+Backgrounds (change - download from google drive)
+Themes (change all to minty dark - download icon and pointer)
+Account details
+Desktop (clean icons off screen)
+General - User interface scaling - Double (High DPI)
+Screensaver - Settings - Never
+
+
+----------------------------------------------------
+Other Installs
+Visual Studio Code
+Hyper Terminal
+(start up both)
+
+
+----------------------------------------------------
+SYSTEM
+sudo apt-get install htop tree build-essential neofetch tmux
+sudo apt-get install sqlite3 zsh silversearcher-ag
+
+
+----------------------------------------------------
+C++
+sudo apt-get install gcc-8 g++-8
+
+
+----------------------------------------------------
+GIT
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
+
+----------------------------------------------------
+VIM
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt-get update
+sudo apt-get install vim
+
+
+----------------------------------------------------
+CODE
+mkdir ~/Code and ~/Temp
+pin "Code" to File Manager
+cd Code; git clone https://github.com/chyld/devops
+
+
+
+
+
+
+
+
+----------------------------------------------------
+GIT CONFIG
+cp .gitconfig from <devops> to ~
+
+
+----------------------------------------------------
+VIM CONFIG
+# follow instructions
+https://github.com/junegunn/vim-plug
+cp .vimrc from <devops> to ~
+:PlugInstall
+
+
+----------------------------------------------------
+ZSH CONFIG
+zsh (first time prompts you - choose option 0)
+# follow instructions
+https://ohmyz.sh/
+(reboot to see new shell)
+cp .zshrc from <devops> to ~
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions
+
+
+----------------------------------------------------
+FONTS
+mkdir ~/.fonts
+git clone https://github.com/powerline/fonts powerline
+# download dank mono and place into ~/.fonts
+https://dank.sh/releases/
+
+
+----------------------------------------------------
+HYPER CONFIG
+cp .hyper.js from <devops> to ~
+
+
+----------------------------------------------------
+NODE INSTALL
+cd ~/.local/apps
+wget https://nodejs.org/dist/v11.0.0/node-v11.0.0-linux-x64.tar.xz
+tar -xvf node-v11.0.0-linux-x64.tar.xz
+mv node-v11.0.0-linux-x64 node
+rm node-v11.0.0-linux-x64.tar.xz
+
+
+
+
+
+
+----------------------------------------------------
+PYTHON INSTALL
+cd ~/.local/apps
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+chmod -R 500 miniconda3
+rm Miniconda3-latest-Linux-x86_64.sh
+conda create -n py37 python=3.7
+
+
+----------------------------------------------------
+GNOME TERMINAL CONFIG
+edit preferences
+space mono 11 (font)
+tango dark (theme) 
+hidden toolbar (in global config)
+
+
+# to change the padding on gnome terminal
+vi /home/chyld/.config/gtk-3.0/gtk.css
+======================================================
+VteTerminal,
+TerminalScreen,
+vte-terminal {
+    padding: 10px 10px 10px 10px;
+    -VteTerminal-inner-border: 10px 10px 10px 10px;
+}
+======================================================
+
+
+*** YOU MUST REBOOT TO SEE PADDING CHANGES ***
+
+
+gnome terminal themes:
+http://mayccoll.github.io/Gogh/
+or
+https://github.com/Mayccoll/Gogh
+
+
+----------------------------------------------------
+VSCODE CONFIG
+Hide Menu Bar
+Install Extensions
+Get configuration
+<get extension list and settings from devops repo>
+*** if running on a virtual machine, there are some extensions that heavily tax the CPU, so test new extensions before permanently adding them ***
+
+
+
+
+
+
+----------------------------------------------------
+VISUAL CUSTOMIZATION
+
+
+--icons--
+*** save to ~/.icons ***
+large set of icon packs https://www.deviantart.com/zayronxio
+macos sierra https://www.opendesktop.org/p/1210856/
+papirus https://www.opendesktop.org/p/1166289/
+zafiro https://www.opendesktop.org/p/1209330/
+oranchelo https://www.opendesktop.org/p/1015801/
+la capitaine  https://krourke.org/projects/art/la-capitaine-icon-theme
+wildfire https://github.com/xenlism/wildfire
+luv https://github.com/Nitrux/luv-icon-theme
+
+
+--cursors--
+*** save to ~/.icons ***
+capitaine https://www.opendesktop.org/p/1148692/
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+BOTTOM MENU BAR
+Right click on "start" icon - configure - panel
+Remove all icons to the right of "start" icon
+Also remove "menu" text and change default icon
+example:
+/home/chyld/.icons/la-capitaine-icon-theme/apps/scalable/alchemy.svg
+from the popup menu:
+* remove firefox, and other unused items
+* add chrome, hyper, vscode
+
+
+
+
+  
+
+
+
+
+
+
+
+----------------------------------------------------
+File Manager
+mkdir Code, then drag to left (bookmarks)
+View - Hide menu (use alt to show)
+View - Toggle Location Entry
+Edit - Preferences
+* Views - List View
+* Display - Date Format
+* Toolbar
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+POST SETUP
+You may want to snapshot or take a full clone backup of the VM image in case you need to go back
