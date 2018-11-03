@@ -15,6 +15,7 @@
   "python.formatting.autopep8Args": ["--max-line-length=200", "--aggressive"],
   "files.trimTrailingWhitespace": true,
   "explorer.openEditors.visible": 0,
-  "extensions.showRecommendationsOnlyOnDemand": true
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "window.menuBarVisibility": "toggle"
 }
 
