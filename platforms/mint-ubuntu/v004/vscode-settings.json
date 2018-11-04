@@ -16,6 +16,9 @@
   "files.trimTrailingWhitespace": true,
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+
+  "terminal.integrated.fontFamily": "'Fira Mono for Powerline'",
+  "terminal.integrated.fontSize": 12
 }
 
