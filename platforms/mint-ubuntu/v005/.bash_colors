@@ -3,7 +3,6 @@
 # ESC[ 48;2;<r>;<g>;<b> m Select RGB background color
 # \[  COLOR HERE  \]
 
-
 # COLORS
 
 c0="\[\e[38;2;0;255;255m\]"
