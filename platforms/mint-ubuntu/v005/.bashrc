@@ -139,7 +139,8 @@ status()
 }
 
 # aliases
-alias l='ls -alhF'
+alias l='exa -lFa --git'
+alias ll='exa -lFaT --git --level=3'
 alias c='clear'
 alias b='cd ..'
 alias g='git'
