@@ -154,7 +154,7 @@ APPS=$HOME/.local/apps
 # env vars
 export PYTHONDONTWRITEBYTECODE=1 # supress __pycache__
 export PATH=$APPS/node/bin:$APPS/miniconda3/bin:$APPS/clion-2018.2.6/bin:$PATH
-export PS1="$c0\u$e5 \h $u$c4\w$r $ca{\$(branch)$c3\$(status)$ca} $r$e3  "
+export PS1="$c0\u$e5 \h $u$c4\w$r $ca{\$(branch)}$c3\$(status)$ca $r$e3  "
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source activate py36
