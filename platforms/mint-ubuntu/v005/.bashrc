@@ -145,8 +145,6 @@ alias c='clear'
 alias b='cd ..'
 alias g='git'
 alias n='open_nautilus'
-alias fvi='vi $(find . | fzf)'
-alias aga='ag --hidden -i'
 
 # vars
 APPS=$HOME/.local/apps
