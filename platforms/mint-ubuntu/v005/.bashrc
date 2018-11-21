@@ -141,6 +141,7 @@ status()
 # aliases
 alias l='exa -lFa --git'
 alias ll='exa -lFaT --git --level=3'
+alias lll='exa -lFaT --git --level=5'
 alias c='clear'
 alias b='cd ..'
 alias g='git'
