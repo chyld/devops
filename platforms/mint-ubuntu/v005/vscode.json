@@ -1,0 +1,27 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+
+  "window.zoomLevel": 0,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pydocstyleEnabled": true,
+  "python.formatting.autopep8Args": ["--max-line-length=200", "--aggressive"],
+  "files.trimTrailingWhitespace": true,
+  "explorer.openEditors.visible": 0,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "window.menuBarVisibility": "toggle",
+
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.fontSize": 13
+}

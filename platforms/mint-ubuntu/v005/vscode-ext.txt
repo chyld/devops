@@ -1,0 +1,13 @@
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+mechatroner.rainbow-csv
+monokai.theme-monokai-pro-vscode
+ms-python.python
+ms-vscode.cpptools
+msjsdiag.debugger-for-chrome
+PeterJausovec.vscode-docker
+robertohuertasm.vscode-icons
+wayou.vscode-todo-highlight

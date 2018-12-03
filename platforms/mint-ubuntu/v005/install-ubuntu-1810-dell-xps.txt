@@ -34,16 +34,13 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install curl htop tree build-essential neofetch tmux
 $ sudo apt-get install sqlite3 zsh silversearcher-ag hwinfo
+$ sudo apt-get install ranger ripgrep
 
 
-
-
-
-
-
-
-
-
+bat: https://github.com/sharkdp/bat/releases
+fd : https://github.com/sharkdp/fd/releases
+exa: https://the.exa.website/ # move to /usr/local/bin/exa
+nnn: https://github.com/jarun/nnn/releases
 
 
 
@@ -116,10 +113,17 @@ git clone devops, terminal, captains-log to Code
 set nautilus to "list" view with 50% zoom
 
 
+*** CONFIG FILES - SYMLINKS ***
+
+
+  
+
+
+
 *** GIT CONFIG ***
 
 
-cp .gitconfig from <devops> to ~
+.gitconfig symlink
 
 
 *** VIM CONFIG ***
@@ -127,7 +131,7 @@ cp .gitconfig from <devops> to ~
 
 # follow instructions
 https://github.com/junegunn/vim-plug
-cp .vimrc from <devops> to ~
+.vimrc symlink
 :PlugInstall
 
 
@@ -141,15 +145,7 @@ https://dank.sh/releases/
 *** HYPER CONFIG ***
 
 
-cp .hyper.js from <devops> to ~
-
-
-
-
-
-
-
-
+.hyper.js symlink
 
 
 *** NODE ***
@@ -162,7 +158,7 @@ mv node-v11.0.0-linux-x64 node
 rm node-v11.0.0-linux-x64.tar.xz
 
 
-npm install -g eslint mocha jasmine jest localtunnel serve-static json-server
+npm install -g eslint mocha jasmine jest localtunnel serve json-server
 
 
 *** PYTHON ***
@@ -177,8 +173,9 @@ conda create -n py37 python=3.7
 conda create -n py36 python=3.6
 
 
-pip install httpie http-prompt
+pip install httpie http-prompt mypy
 conda install -y jupyter ipython numpy scipy sympy pandas scikit-learn matplotlib
+conda install -c conda-forge jupyterlab
 
 
 *** VSCODE CONFIG ***
@@ -207,9 +204,20 @@ tbd
 
 
 
+*** FONTS ***
 
 
+- download Gnome Tweak Tool
+- Change "Interface Text" font to "Ubuntu Regular 9"
 
+
+*** PRINTER ***
+
+
+Add by IP Address
+
+
+  
 
 
 
@@ -241,3 +249,13 @@ sudo vi /etc/hosts
 
 
 https://www.geekbench.com/download/
+
+
+
+
+
+
+*** CLION ***
+
+
+https://www.jetbrains.com/clion/
