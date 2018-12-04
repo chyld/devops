@@ -151,6 +151,8 @@ alias n='open_nautilus'
 APPS=$HOME/.local/apps
 
 # env vars
+export HISTSIZE=10000
+export HISTFILESIZE=20000
 export EDITOR=vim
 export VISUAL=$EDITOR
 export NNN_USE_EDITOR=1
@@ -158,9 +160,13 @@ export PYTHONDONTWRITEBYTECODE=1 # supress __pycache__
 export PATH=$APPS/node/bin:$APPS/miniconda3/bin:$APPS/clion-2018.2.6/bin:$PATH
 export PS1="$c0\u$e5 \h $u$c4\w$r $ca{\$(branch)}$c3\$(status)$ca $r$e3  "
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source ~/.fzf.bash
+# does not currently work when using hyper.is
+# https://github.com/cantino/mcfly
+# source ~/mcfly.bash
 source activate py36
 
 # ------------------------------------------------------------------ #
 # ------------------------------------------------------------------ #
 # ------------------------------------------------------------------ #
+
