@@ -10,4 +10,5 @@ ms-vscode.cpptools
 msjsdiag.debugger-for-chrome
 PeterJausovec.vscode-docker
 robertohuertasm.vscode-icons
+VisualStudioExptTeam.vscodeintellicode
 wayou.vscode-todo-highlight
