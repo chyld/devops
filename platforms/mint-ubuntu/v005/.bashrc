@@ -171,10 +171,3 @@ source activate py36
 # ------------------------------------------------------------------ #
 # ------------------------------------------------------------------ #
 
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/chyld/.local/apps/node/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /home/chyld/.local/apps/node/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/chyld/.local/apps/node/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/chyld/.local/apps/node/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
