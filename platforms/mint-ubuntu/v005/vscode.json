@@ -11,17 +11,22 @@
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
 
-  "window.zoomLevel": 0,
   "python.linting.pylintEnabled": true,
+  // https://github.com/DmytroLitvinov/awesome-flake8-extensions
+  "python.linting.flake8Enabled": true,
   "python.linting.pep8Enabled": true,
-  "python.linting.mypyEnabled": true,
-  "python.linting.pydocstyleEnabled": true,
+  // "python.linting.mypyEnabled": true,
+  // "python.linting.pydocstyleEnabled": true,
   "python.formatting.autopep8Args": ["--max-line-length=200", "--aggressive"],
+
+  "window.zoomLevel": 0,
   "files.trimTrailingWhitespace": true,
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "window.menuBarVisibility": "toggle",
 
   "terminal.integrated.fontFamily": "Dank Mono",
-  "terminal.integrated.fontSize": 13
+  "terminal.integrated.fontSize": 13,
+  "python.jediEnabled": false
 }
+
