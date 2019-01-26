@@ -146,3 +146,16 @@ source activate py37
 # ------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------ #
 
+# Set Spaceship ZSH as a prompt
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+autoload -U promptinit; promptinit
+prompt spaceship
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_PROMPT_SEPARATE_LINE=true
+SPACESHIP_DIR_TRUNC=0
+SPACESHIP_DIR_TRUNC_REPO=false
+
+# ------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------ #
+
