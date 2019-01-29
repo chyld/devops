@@ -122,6 +122,7 @@ alias b='cd ..'
 alias g='git'
 alias d='docker'
 alias vi='vim'
+alias runpg='docker run --name raptor -d -e POSTGRES_PASSWORD=pass1234 -p 5432:5432 -v /Users/chyld/Data/postgres/data:/var/lib/postgresql/data postgres'
 
 # uncomment to hide the user@host from prompt
 DEFAULT_USER=chyld
