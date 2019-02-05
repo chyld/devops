@@ -145,8 +145,14 @@ alias lll='exa -lFaT --git --level=5'
 alias h='history'
 alias c='clear'
 alias b='cd ..'
+alias d='docker'
 alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
 alias n='open_nautilus'
+alias cat='bat'
 
 # vars
 APPS=$HOME/.local/apps
