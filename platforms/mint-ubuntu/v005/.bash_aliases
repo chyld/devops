@@ -16,4 +16,5 @@ alias myip='http -b ipinfo.io/ip'
 alias jc="jupyter console"
 alias jq='jupyter qtconsole --style monokai &'
 alias jn="jupyter notebook"
+alias zf='z -I'                                  # use fzf to select from multiple matches
 
