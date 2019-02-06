@@ -13,3 +13,6 @@ alias gp='git push'
 alias n='open_nautilus'
 alias cat='bat'
 alias myip='http -b ipinfo.io/ip'
+alias jj1="jupyter console"
+alias jj2='jupyter qtconsole --style monokai &'
+alias jj3="jupyter notebook"
