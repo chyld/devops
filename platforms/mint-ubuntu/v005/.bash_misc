@@ -1,3 +1,7 @@
+shopt -s histappend # append to history file
+HISTSIZE=75000      # lines in memory
+HISTFILESIZE=150000 # lines in file
+
 # https://github.com/conda/conda/blob/master/CHANGELOG.md#440-2017-12-20
 . $APPS/miniconda3/etc/profile.d/conda.sh # --> "." means "source"
 conda activate py37
