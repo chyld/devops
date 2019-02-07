@@ -1,3 +1,1 @@
-# export PS1="$c0\u$c3+$c0\h $u$c4\w$r "
-export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
+# export PS1="$c0\u$c3+$c0\h $u$c4\w$r $ca{\$(branch)}$c3\$(status)$ca $r"
