@@ -4,19 +4,15 @@
 
 module.exports = {
   config: {
-    hyperBorder: {
-      borderWidth: "1px"
-    },
-
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'canary',
 
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"Dank Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Operator Mono Light", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -127,10 +123,19 @@ module.exports = {
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
-    // quickEdit: true,
+    quickEdit: false,
+
+    // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
+    // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
+    // (inside tmux or vim with mouse mode enabled for example).
+    macOptionSelectionMode: 'vertical',
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
+
+    // Whether to use the WebGL renderer. Set it to false to use canvas-based
+    // rendering (slower, but supports transparent backgrounds)
+    webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -143,9 +148,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hypercwd",
-    "hyperterm-monokai",
-    "hyperborder",
-    "hyper-tab-icons"
+    "hyperterm-gruvbox-dark",
+    "hyperminimal"
   ],
 
   // in development, you can create a directory under
@@ -158,4 +162,3 @@ module.exports = {
     // 'window:devtools': 'cmd+alt+o',
   },
 };
-
