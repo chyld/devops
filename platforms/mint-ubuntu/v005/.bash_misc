@@ -17,3 +17,6 @@ GIT_PROMPT_START="$c0\u$c3+$c0\h $u$c4\w$r"
 GIT_PROMPT_END="\n$ca:>$r "
 . $APPS/bash-git-prompt/gitprompt.sh
 
+# opam
+test -r /home/chyld/.opam/opam-init/init.sh && . /home/chyld/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
