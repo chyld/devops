@@ -1,0 +1,45 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
+
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Operator Mono Light",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.formatting.autopep8Args": ["--max-line-length=200", "--aggressive"],
+  "python.jediEnabled": false,
+
+  "window.zoomLevel": 0,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "native",
+  "terminal.integrated.fontFamily": "Operator Mono Light",
+  "terminal.integrated.fontSize": 15,
+
+  "files.trimTrailingWhitespace": true,
+  "explorer.openEditors.visible": 0,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "sync.gist": "c7e70c119d2222e796478797cd7f95df",
+
+  "editor.tabSize": 2,
+
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[restructuredtext]": {
+    "editor.tabSize": 3
+  },
+  "restructuredtext.linter.extraArgs": ["--ignore D001"],
+  "python.dataScience.sendSelectionToInteractiveWindow": true
+}
