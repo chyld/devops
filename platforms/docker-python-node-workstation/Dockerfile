@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt-get install -y \
 	wget curl htop tree build-essential neofetch tmux \
-	sqlite3 silversearcher-ag software-properties-common locales sudo unzip
+	sqlite3 silversearcher-ag software-properties-common locales sudo unzip tzdata
 
 # Locales
 RUN locale-gen en_US.UTF-8  
@@ -31,6 +31,9 @@ RUN wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd
 RUN wget https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip   && \
    	unzip exa-linux-x86_64-0.8.0.zip                                                        && \
    	mv exa-linux-x86_64 /usr/local/bin/exa
+
+# ENV TZ=America/Los_Angeles
+# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Create user
 RUN useradd -ms /bin/bash europa && usermod -aG sudo europa && echo "europa:europa" | chpasswd
@@ -63,8 +66,12 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  
 # Node
 RUN wget https://nodejs.org/dist/v11.12.0/node-v11.12.0-linux-x64.tar.xz    && \
 	tar -xf node-v11.12.0-linux-x64.tar.xz                                  && \
-	mv node-v11.12.0-linux-x64 /home/europa/.local/apps/node
+	mv node-v11.12.0-linux-x64 /home/europa/.local/apps/node                && \
+	rm node-v11.12.0-linux-x64.tar.xz
 
-# Final
-RUN source ~/.bashrc                   && \
-    conda create -n py37 python=3.7
+# Change shell from sh to bash
+SHELL ["/bin/bash", "--login", "-c"]
+
+# Setup
+RUN conda create -n py37 python=3.7 && \
+    mkdir code temp
