@@ -8,5 +8,3 @@ source ~/.bash_misc
 source ~/.bash_prompt
 
 source ~/.fzf.bash
-source ~/mcfly.bash
-

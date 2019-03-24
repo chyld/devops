@@ -29,14 +29,25 @@ RUN apt-get install ./bat_0.10.0_amd64.deb
 RUN useradd -ms /bin/bash europa && usermod -aG sudo europa && echo "europa:europa" | chpasswd
 USER europa
 WORKDIR /home/europa
-RUN wget https://raw.githubusercontent.com/chyld/devops/master/platforms/mint-ubuntu/v005/.gitconfig
-RUN wget https://raw.githubusercontent.com/chyld/devops/master/platforms/mint-ubuntu/v005/.tmux.conf
-RUN wget https://raw.githubusercontent.com/chyld/devops/master/platforms/mint-ubuntu/v005/.vimrc
-RUN curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-RUN vim -c ':PlugInstall' -c 'qa'
 
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-RUN bash Miniconda3-latest-Linux-x86_64.sh -p /home/europa/.local/apps/miniconda3 -b
-RUN chmod -R 500 /home/europa/.local/apps/miniconda3
+# Dotfiles
+RUN wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.gitconfig       && \
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.tmux.conf       && \	
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.vimrc           && \
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_aliases    && \	
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_colors     && \
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_env        && \	
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_functions  && \
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_misc       && \	
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bash_prompt     && \
+	wget https://raw.githubusercontent.com/chyld/devops/master/platforms/docker-python-node-workstation/.bashrc 
 
+# Vim
+RUN curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
+	vim -c ':PlugInstall' -c 'qa'
+
+# Python
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh         && \
+	bash Miniconda3-latest-Linux-x86_64.sh -p /home/europa/.local/apps/miniconda3 -b   && \
+	chmod -R 500 /home/europa/.local/apps/miniconda3                                   && \
+	rm Miniconda3-latest-Linux-x86_64.sh

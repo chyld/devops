@@ -5,18 +5,3 @@ HISTFILESIZE=150000 # lines in file
 # https://github.com/conda/conda/blob/master/CHANGELOG.md#440-2017-12-20
 . $APPS/miniconda3/etc/profile.d/conda.sh # --> "." means "source"
 conda activate py37
-
-# https://github.com/skywind3000/z.lua
-eval "$(lua /home/chyld/.local/apps/z.lua/z.lua --init bash enhanced once fzf)"
-
-# https://github.com/magicmonty/bash-git-prompt
-GIT_PROMPT_ONLY_IN_REPO=0
-GIT_PROMPT_SHOW_UPSTREAM=1
-GIT_PROMPT_SHOW_UNTRACKED_FILES=normal
-GIT_PROMPT_START="$c0\u$c3+$c0\h $u$c4\w$r"
-GIT_PROMPT_END="\n$ca:>$r "
-. $APPS/bash-git-prompt/gitprompt.sh
-
-# opam
-test -r /home/chyld/.opam/opam-init/init.sh && . /home/chyld/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
