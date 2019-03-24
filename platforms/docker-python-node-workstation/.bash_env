@@ -1,0 +1,4 @@
+export EDITOR=vim
+export VISUAL=$EDITOR
+export PYTHONDONTWRITEBYTECODE=1 # supress __pycache__
+export PATH=$APPS/node/bin:$PATH
