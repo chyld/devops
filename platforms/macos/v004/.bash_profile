@@ -8,8 +8,8 @@ source ~/.bash_colors
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
 
-alias l='exa -lFa --git'
-alias ll='exa -lFaT --git --level=3'
+alias l='exa -lF --git'
+alias ll='exa -lFa --git'
 alias h='history'
 alias c='clear'
 alias b='cd ..'
@@ -21,6 +21,8 @@ alias jq='jupyter qtconsole --style monokai &'
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias tb="nc termbin.com 9999"
+# fd
+# rg
 
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###

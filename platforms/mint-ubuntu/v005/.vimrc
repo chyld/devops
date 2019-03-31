@@ -45,7 +45,6 @@ set noswapfile                    " do not write annoying intermediate swap file
 
 set ruler                         " show line and column number in status
 set number                        " turn on line numbering
-set rnu                           " relative line numbering
 
 set incsearch                     " search as you type
 set hlsearch                      " highlight matches
