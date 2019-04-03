@@ -20,37 +20,14 @@ alias jq='jupyter qtconsole --style monokai &'
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias tb="nc termbin.com 9999"
-# fd
-# rg
+# fd, rg, tree, htop, wget
 
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
 
-# added by Miniconda3 4.5.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/chyld/.local/apps/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/Users/chyld/.local/apps/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/chyld/.local/apps/miniconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/Users/chyld/.local/apps/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-
-### ------------------------------------------------------------------------------------- ###
-### ------------------------------------------------------------------------------------- ###
-### ------------------------------------------------------------------------------------- ###
-
-export PATH=/Users/chyld/.local/apps/node/bin:$PATH
-conda activate py37
+APPS=/Users/chyld/.local/apps
+export PATH=$APPS/node/bin:$PATH
 
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
@@ -62,8 +39,21 @@ conda activate py37
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
 
-export PS1="$e3 $c0\u$c3+$c0\h $u$c4\w$r $ca>$r "
+GIT_PROMPT_ONLY_IN_REPO=0
+GIT_PROMPT_SHOW_UPSTREAM=1
+GIT_PROMPT_SHOW_UNTRACKED_FILES=normal
+GIT_PROMPT_START="$e3 $c0\u$c3+$c0\h $u$c4\w$r"
+GIT_PROMPT_END="\n$ca:>$r "
+. $APPS/bash-git-prompt/gitprompt.sh
 
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
+
+. "/Users/chyld/.local/apps/miniconda3/etc/profile.d/conda.sh"
+conda activate py37
+
+### ------------------------------------------------------------------------------------- ###
+### ------------------------------------------------------------------------------------- ###
+### ------------------------------------------------------------------------------------- ###
+
