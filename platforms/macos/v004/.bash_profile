@@ -20,7 +20,7 @@ alias jq='jupyter qtconsole --style monokai &'
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias tb="nc termbin.com 9999"
-# fd, rg, tree, htop, wget
+# fd, rg, tree, htop, wget, ag (the_silver_searcher)
 
 ### ------------------------------------------------------------------------------------- ###
 ### ------------------------------------------------------------------------------------- ###
