@@ -4,6 +4,8 @@ filetype plugin indent on
 syntax enable
 
 call plug#begin()
+Plug 'w0rp/ale'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/goyo.vim'
 Plug 'scrooloose/nerdtree'
@@ -72,6 +74,9 @@ noremap <leader>g :Goyo<cr>
 noremap <leader>f :FZF<cr>
 noremap <leader>b :Buffers<cr>
 noremap <leader>a :Ag<cr>
+
+" do not lint while typing
+let g:ale_lint_on_text_changed = 'never'
 
 " -----------------------------------------------------------------------------
 " FIN
