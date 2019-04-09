@@ -4,6 +4,7 @@ filetype plugin indent on
 syntax enable
 
 call plug#begin()
+Plug 'tpope/vim-surround'
 Plug 'junegunn/goyo.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
