@@ -4,7 +4,6 @@ filetype plugin indent on
 syntax enable
 
 call plug#begin()
-Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/goyo.vim'
