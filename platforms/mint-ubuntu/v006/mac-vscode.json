@@ -1,0 +1,23 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Gruvbox Dark (Soft)",
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "OperatorMono-Light",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "terminal.integrated.fontFamily": "OperatorMono-Light",
+    "terminal.integrated.fontSize": 14,
+    "files.trimTrailingWhitespace": true,
+    "explorer.openEditors.visible": 0,
+    "editor.tabSize": 2,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.tabSize": 4
+    }
+}
