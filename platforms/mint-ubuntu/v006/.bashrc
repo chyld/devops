@@ -26,20 +26,16 @@ HISTSIZE=75000      # lines in memory
 HISTFILESIZE=150000 # lines in file
 
 APPS=/home/chyld/.local/secret
-export PATH=$APPS/node/bin:/home/chyld/Code/git-prompt:$PATH
-# export PS1="$c0\u$c3+$c0\h $u$c4\w$r \$(git-prompt.js)"
-# export PS1="\u \w \$(git-prompt.js)"
-# export PS1="$c0\u$c3+$c0\h $u$c4\w$r "
+export PATH=$APPS/node/bin:$APPS/git-prompt:$PATH
 
 . ~/.fzf.bash
 . "/home/chyld/.local/secret/miniconda3/etc/profile.d/conda.sh"
-
+conda activate py37
 eval "$(lua /home/chyld/.local/secret/z.lua/z.lua --init bash enhanced once fzf)"
 
 set_bash_prompt(){
-  PS1="\u @ \h \w `git-prompt.js` "
+  PS1="$c0\u$c3@$c0\h $u$c4\w$r `git-prompt.js`$c0>$r "
 }
 
 PROMPT_COMMAND=set_bash_prompt
-conda activate py37
 
