@@ -1,0 +1,34 @@
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+alias l='exa -lFa --git'
+alias h='history'
+alias c='clear'
+alias b='cd ..'
+alias g='git'
+alias cat='bat'
+alias jc="jupyter console"
+alias jq='jupyter qtconsole --style monokai &'
+alias jn="jupyter notebook"
+alias jl="jupyter lab"
+
+BASE_LOCAL=/home/chyld/.local
+export PATH=$BASE_LOCAL/node/bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/chyld/.local/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/chyld/.local/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/chyld/.local/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/chyld/.local/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+conda activate py37
+
