@@ -1,0 +1,43 @@
+# https://en.wikipedia.org/wiki/ANSI_escape_code
+# ESC[ 38;2;<r>;<g>;<b> m Select RGB foreground color
+# ESC[ 48;2;<r>;<g>;<b> m Select RGB background color
+# \[  COLOR HERE  \]
+
+# COLORS
+
+c0="\[\e[38;2;0;255;255m\]"
+c1="\[\e[38;2;220;20;60m\]"
+c2="\[\e[38;2;255;69;0m\]"
+c3="\[\e[38;2;255;215;0m\]"
+c4="\[\e[38;2;173;255;47m\]"
+c5="\[\e[38;2;46;139;87m\]"
+c6="\[\e[38;2;0;128;128m\]"
+c7="\[\e[38;2;0;191;255m\]"
+c8="\[\e[38;2;138;43;226m\]"
+c9="\[\e[38;2;128;0;128m\]"
+ca="\[\e[38;2;255;0;255m\]"
+cb="\[\e[38;2;255;20;147m\]"
+cc="\[\e[38;2;255;248;220m\]"
+cd="\[\e[38;2;240;248;255m\]"
+ce="\[\e[38;2;240;255;240m\]"
+cf="\[\e[38;2;255;250;250m\]"
+
+# RESET
+r="\[\e[0m\]"
+
+# BOLD
+b="\[\e[1m\]"
+
+# ITALICS
+i="\[\e[3m\]"
+
+# UNDERLINE
+u="\[\e[4m\]"
+
+# ALL EMOJI MUST BE SAME SIZE OR GET WRAP ISSUES
+# EMOJI
+e1="🔶"
+e2="🚦"
+e3="🚀"
+e4="🛡"
+e5="🔸"
