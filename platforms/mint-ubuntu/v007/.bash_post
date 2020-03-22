@@ -17,9 +17,9 @@ alias b='cd ..'
 alias g='git'
 alias cat='bat'
 alias jc="jupyter console"
-alias jqt='jupyter qtconsole --style monokai &'
-alias jn="jupyter notebook"
-alias jl="jupyter lab"
+# alias jqt='jupyter qtconsole --style monokai &'
+# alias jn="jupyter notebook"
+# alias jl="jupyter lab"
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
