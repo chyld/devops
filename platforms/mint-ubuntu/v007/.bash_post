@@ -38,7 +38,9 @@ alias jc="jupyter console"
 # --------------------------------------------------------------------------------- #
 
 BASE_LOCAL=/home/chyld/.local
-export PATH=$BASE_LOCAL/node/bin:$PATH
+export DENO_INSTALL="/home/chyld/.deno"
+export NODE_INSTALL="$BASE_LOCAL/node"
+export PATH="$DENO_INSTALL/bin:$NODE_INSTALL/bin:$PATH"
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
