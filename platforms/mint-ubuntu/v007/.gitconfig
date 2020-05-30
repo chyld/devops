@@ -14,6 +14,9 @@
 [core]
   editor   = vim
   autocrlf = input
+  pager    = delta --dark --plus-color="#012800" --minus-color="#340001" --theme='Dracula'
 [color]
   ui = true
+[interactive]
+  diffFilter = delta --color-only
 
