@@ -30,6 +30,7 @@ alias g='git'
 alias cat='bat'
 alias jc='jupyter console'
 alias lg='lazygit'
+alias gf='git-fuzzy'
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
@@ -38,7 +39,8 @@ alias lg='lazygit'
 BASE_LOCAL=/home/chyld/.local
 export DENO_INSTALL="/home/chyld/.deno"
 export NODE_INSTALL="$BASE_LOCAL/node"
-export PATH="$DENO_INSTALL/bin:$NODE_INSTALL/bin:$PATH"
+export FUZZY_INSTALL="$BASE_LOCAL/git-fuzzy"
+export PATH="$DENO_INSTALL/bin:$NODE_INSTALL/bin:$FUZZY_INSTALL/bin:$PATH"
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
