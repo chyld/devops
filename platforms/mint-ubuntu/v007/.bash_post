@@ -31,6 +31,9 @@ alias cat='bat'
 alias jc='jupyter console'
 alias lg='lazygit'
 alias gf='git-fuzzy'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -Iv'
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
