@@ -11,6 +11,10 @@ call plug#begin("~/.vim/plugged")
   Plug 'morhetz/gruvbox'
   Plug 'scrooloose/nerdtree'
   Plug 'mhinz/vim-startify'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " BASICS
@@ -46,12 +50,22 @@ let mapleader=","
 let g:NERDTreeShowHidden = 1
 nnoremap <leader>n :NERDTreeToggle<cr>
 
-" SHORTCUTS
+" HIDDEN CHARACTERS
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 nnoremap <leader>lid :set list listchars=space:·,tab:»·,trail:•,eol:↲<cr> " list details
 nnoremap <leader>lib :set list listchars=tab:»·,trail:•<cr>               " list basics
+
+" FZF
+" ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
+nnoremap <leader>f :FZF<cr>                   " default
+nnoremap <leader>b :Buffers<cr>               " open buffers
+nnoremap <leader>a :Ag<cr>                    " use silver searcher
+nnoremap <leader>r :Rg<cr>                    " use rip grep
+nnoremap <leader>c :Colors<cr>                " switch color themes
 
 " END
 " ------------------------------------------------------------------------------
