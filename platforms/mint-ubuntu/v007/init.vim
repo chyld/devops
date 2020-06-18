@@ -15,6 +15,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'junegunn/fzf.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'mbbill/undotree'
 call plug#end()
 
 " BASICS
@@ -25,11 +26,19 @@ syntax enable                           " switches on syntax highlighting
 set termguicolors                       " enable 24-bit color
 set number                              " turn on line numbering
 set list listchars=tab:»·,trail:•       " default view for hidden characters
-set tabstop=2                           " 1 tab == 2 spaces
-set shiftwidth=2                        " indent to 2 spaces
-set expandtab                           " tabs to spaces
 set mouse=a                             " enable mouse
 set nowrap                              " do not wrap lines
+
+set tabstop=2                           " 1 tab == 2 spaces
+set softtabstop=2                       " make it soft
+set shiftwidth=2                        " indent to 2 spaces
+set expandtab                           " tabs to spaces
+set autoindent                          " copy indent from current line
+set smartindent                         " sweet, sweet indenting
+
+set incsearch                           " search as you type
+set hlsearch                            " highlight matches
+set smartcase                           " if search contains uppercase, then switches to case-sensitive search
 
 " COLORSCHEMES
 " ------------------------------------------------------------------------------
@@ -66,6 +75,12 @@ nnoremap <leader>b :Buffers<cr>               " open buffers
 nnoremap <leader>a :Ag<cr>                    " use silver searcher
 nnoremap <leader>r :Rg<cr>                    " use rip grep
 nnoremap <leader>c :Colors<cr>                " switch color themes
+
+" Undotree
+" ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
+nnoremap <leader>u :UndotreeToggle<cr>        " togle undo tree
 
 " END
 " ------------------------------------------------------------------------------
