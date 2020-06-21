@@ -59,28 +59,34 @@ let mapleader=" "
 let g:NERDTreeShowHidden = 1
 nnoremap <leader>n :NERDTreeToggle<cr>
 
+" ------------------------------------ +
+" WARNING :: DO NOT PUT COMMENTS AFTER KEY REMAP, BAD THINGS HAPPEN
+" ------------------------------------ +
+
 " HIDDEN CHARACTERS
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
-nnoremap <leader>lid :set list listchars=space:·,tab:»·,trail:•,eol:↲<cr> " list details
-nnoremap <leader>lib :set list listchars=tab:»·,trail:•<cr>               " list basics
+nnoremap <leader>lid :set list listchars=space:·,tab:»·,trail:•,eol:↲<cr>
+nnoremap <leader>lib :set list listchars=tab:»·,trail:•<cr>
 
 " FZF
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
-nnoremap <leader>f :FZF<cr>                   " default
-nnoremap <leader>b :Buffers<cr>               " open buffers
-nnoremap <leader>a :Ag<cr>                    " use silver searcher
-nnoremap <leader>r :Rg<cr>                    " use rip grep
-nnoremap <leader>c :Colors<cr>                " switch color themes
+" default fzf, open buffers, silver searcher, rip grep, color themes
+nnoremap <leader>f :Files<cr>
+nnoremap <leader>b :Buffers<cr>
+nnoremap <leader>a :Ag<cr>
+nnoremap <leader>r :Rg<cr>
+nnoremap <leader>c :Colors<cr>
+nnoremap <leader>g :GFiles?<cr>
 
 " Undotree
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
-nnoremap <leader>u :UndotreeToggle<cr>        " togle undo tree
+nnoremap <leader>u :UndotreeToggle<cr>
 
 " Movements
 " ------------------------------------------------------------------------------
