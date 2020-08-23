@@ -40,7 +40,6 @@ alias l='exa -lFa --git'
 alias h='history'
 alias c='clear'
 alias b='cd ..'
-alias g='git'
 alias d='docker'
 alias dc='docker-compose'
 alias cat='bat'
@@ -54,6 +53,8 @@ alias vi='nvim'
 alias w='curl wttr.in?M1qF'
 alias df='df -Th'
 alias o='xdg-open'
+alias g='git'
+alias gl='git log --oneline'
 
 # --------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------- #
