@@ -1,22 +1,9 @@
-[alias]
-  br  = branch -avv
-  rt  = remote -v
-  up  = remote update
-  s   = status -sb
-  l   = !git --no-pager log --oneline --decorate --graph -10
 [user]
   email = chyld.medford@gmail.com
   name  = Chyld Medford
 [push]
-  default = simple
+  default = current
 [credential]
   helper = cache --timeout=86400
 [core]
   editor   = vim
-  autocrlf = input
-  pager    = delta --dark --plus-color="#012800" --minus-color="#340001" --theme='Dracula'
-[color]
-  ui = true
-[interactive]
-  diffFilter = delta --color-only
-
