@@ -54,7 +54,6 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 alias vi='nvim.appimage'
-alias tmux='TERM=xterm tmux.appimage -2'
 alias w='curl wttr.in?M1qF'
 alias df='df -Th'
 alias o='xdg-open'
@@ -79,8 +78,7 @@ export DENO_INSTALL="/home/chyld/.deno"
 export NODE_INSTALL="$BASE_LOCAL/node"
 export FUZZY_INSTALL="$BASE_LOCAL/git-fuzzy"
 export NEOVIM_INSTALL="$BASE_LOCAL/neovim"
-export TMUX_INSTALL="$BASE_LOCAL/tmux"
-export PATH="$RUST_INSTALL/bin:$DENO_INSTALL/bin:$NODE_INSTALL/bin:$FUZZY_INSTALL/bin:$NEOVIM_INSTALL:$TMUX_INSTALL:$PATH"
+export PATH="$RUST_INSTALL/bin:$DENO_INSTALL/bin:$NODE_INSTALL/bin:$FUZZY_INSTALL/bin:$NEOVIM_INSTALL:$PATH"
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
