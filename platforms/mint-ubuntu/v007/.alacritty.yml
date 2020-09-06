@@ -1,27 +1,53 @@
+window:
+  decorations: full
+
+mouse:
+  hide_when_typing: true
+
 font:
-  size: 10
   normal:
     family: Fira Code Light
+  size: 9
+  offset:
+    x: -1
+    y: +0
 
 colors:
   primary:
-    background: '#fbf1c7'
-    foreground: '#3c3836'
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
+  cursor:
+    text: '0x44475a'
+    cursor: '0xf8f8f2'
+  selection:
+    text: '0xf8f8f2'
+    background: '0x44475a'
   normal:
-    black:   '#fbf1c7'
-    red:     '#cc241d'
-    green:   '#98971a'
-    yellow:  '#d79921'
-    blue:    '#458588'
-    magenta: '#b16286'
-    cyan:    '#689d6a'
-    white:   '#7c6f64'
+    black:   '0x000000'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbfbfbf'
   bright:
-    black:   '#928374'
-    red:     '#9d0006'
-    green:   '#79740e'
-    yellow:  '#b57614'
-    blue:    '#076678'
-    magenta: '#8f3f71'
-    cyan:    '#427b58'
-    white:   '#3c3836'
+    black:   '0x4d4d4d'
+    red:     '0xff6e67'
+    green:   '0x5af78e'
+    yellow:  '0xf4f99d'
+    blue:    '0xcaa9fa'
+    magenta: '0xff92d0'
+    cyan:    '0x9aedfe'
+    white:   '0xe6e6e6'
+  dim:
+    black:   '0x14151b'
+    red:     '0xff2222'
+    green:   '0x1ef956'
+    yellow:  '0xebf85b'
+    blue:    '0x4d5b86'
+    magenta: '0xff46b0'
+    cyan:    '0x59dffc'
+    white:   '0xe6e6d1'
+  indexed_colors: []
+
