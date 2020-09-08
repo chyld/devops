@@ -6,10 +6,12 @@ mouse:
 
 font:
   normal:
-    family: Fira Code Light
+    # Fira Code Light
+    # MesloLGS NF
+    family: "MesloLGS NF"
   size: 9
   offset:
-    x: -1
+    x: +0
     y: +0
 
 colors:
