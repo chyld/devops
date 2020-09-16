@@ -106,12 +106,39 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+jl() {
+  jupyter lab --no-browser --ip=0.0.0.0 --port="$1" --LabApp.token=''
+}
+
+jn() {
+  jupyter notebook --no-browser --ip=0.0.0.0 --port="$1" --NotebookApp.token=''
+}
+
+path() {
+  echo $PATH | tr ":" "\n" | nl
+}
+
 alias h="history"
 alias b="cd .."
 alias c="clear"
-alias g="git"
 alias l="lsd -A --group-dirs first"
 alias ll="lsd -Al --group-dirs first --blocks permission,user,size,name"
+alias cat='bat'
+alias jc='jupyter console'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -Iv'
+alias vi='nvim.appimage'
+alias df='df -Th'
+alias o='xdg-open'
+alias g="git"
+alias gl='git log --oneline'
+alias gs='git status'
+alias d='docker'
+alias dc='docker-compose'
+
+LOCAL_BIN=$HOME/.local/bin
+export PATH=$LOCAL_BIN:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
