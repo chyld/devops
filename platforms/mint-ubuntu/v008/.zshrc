@@ -167,3 +167,6 @@ conda activate pyIDT
 # uses FD to search ONLY files and symlinks, and excludes files in the .git directory
 export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
 
+# enable z.lua
+eval "$(lua /home/chyld/.local/z.lua/z.lua --init zsh enhanced once fzf)"
+
