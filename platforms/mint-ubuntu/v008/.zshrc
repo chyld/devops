@@ -138,7 +138,8 @@ alias d='docker'
 alias dc='docker-compose'
 
 LOCAL_BIN=$HOME/.local/bin
-export PATH=$LOCAL_BIN:$PATH
+NODE_BIN=$HOME/.local/node/bin
+export PATH=$LOCAL_BIN:$NODE_BIN:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
