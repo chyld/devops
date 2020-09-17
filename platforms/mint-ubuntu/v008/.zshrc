@@ -164,3 +164,6 @@ conda activate pyIDT
 # FZF install
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# uses FD to search ONLY files and symlinks, and excludes files in the .git directory
+export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
+
