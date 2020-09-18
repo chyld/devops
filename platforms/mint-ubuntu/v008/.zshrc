@@ -123,6 +123,7 @@ alias b="cd .."
 alias c="clear"
 alias l="lsd -A --group-dirs first"
 alias ll="lsd -Al --group-dirs first --blocks permission,user,size,name"
+alias tree="tree -a"
 alias cat='bat'  # \cat will overridde
 alias meow='/bin/cat'
 alias jc='jupyter console'
