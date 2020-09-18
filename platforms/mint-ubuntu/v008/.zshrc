@@ -118,6 +118,10 @@ jn() {
   jupyter notebook --no-browser --ip=0.0.0.0 --port="$1" --NotebookApp.token=''
 }
 
+jc() {
+  jupyter console
+}
+
 path() {
   echo $PATH | tr ":" "\n" | nl
 }
@@ -134,7 +138,6 @@ alias ll="lsd -Al --group-dirs first --blocks permission,user,size,name"
 alias tree="tree -a"
 alias cat='bat'  # \cat will overridde
 alias meow='/bin/cat'
-alias jc='jupyter console'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
@@ -147,6 +150,12 @@ alias gs='git status'
 alias gd="git diff"
 alias d='docker'
 alias dc='docker-compose'
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
+export EDITOR="code"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
