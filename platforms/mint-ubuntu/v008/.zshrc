@@ -136,6 +136,7 @@ alias o='xdg-open'
 alias g="git"
 alias gl='git log --oneline'
 alias gs='git status'
+alias gd="git diff"
 alias d='docker'
 alias dc='docker-compose'
 
@@ -175,4 +176,5 @@ eval "$(lua /home/chyld/.local/z.lua/z.lua --init zsh enhanced once fzf)"
 # configure LF
 source $HOME/.config/lf/lf_icons.sh
 source $HOME/.config/lf/lfcd.sh
+alias lfcd="lfcd 1> /dev/null"
 
