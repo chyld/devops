@@ -123,7 +123,8 @@ alias b="cd .."
 alias c="clear"
 alias l="lsd -A --group-dirs first"
 alias ll="lsd -Al --group-dirs first --blocks permission,user,size,name"
-alias cat='bat'
+alias cat='bat'  # \cat will overridde
+alias meow='/bin/cat'
 alias jc='jupyter console'
 alias cp='cp -iv'
 alias mv='mv -iv'
@@ -169,4 +170,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
 
 # enable z.lua
 eval "$(lua /home/chyld/.local/z.lua/z.lua --init zsh enhanced once fzf)"
+
+# configure LF
+source $HOME/.config/lf/lf_icons.sh
+source $HOME/.config/lf/lfcd.sh
 
