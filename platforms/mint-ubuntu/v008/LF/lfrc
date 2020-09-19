@@ -1,9 +1,16 @@
+set shell bash
 set hidden
 set icons
+set incsearch
+set color256
+
+map <enter> shell
 
 cmd open ${{
   case $(file --dereference --mime-type $f -b) in
-    text/*) $EDITOR $fx;;
+    text/*)          $EDITOR $fx;;
+    inode/x-empty)   $EDITOR $fx;;
+    application/csv) $EDITOR $fx;;
     *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
   esac
 }}
