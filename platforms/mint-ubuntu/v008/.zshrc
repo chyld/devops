@@ -149,6 +149,7 @@ alias g="git"
 alias gl='git log --oneline'
 alias gs='git status'
 alias gd="git diff"
+alias ga="git add --interactive"
 alias d='docker'
 alias dc='docker-compose'
 
@@ -157,6 +158,7 @@ alias dc='docker-compose'
 # ------------------------------------------------------------------------------------------------ #
 
 export EDITOR="code"
+export PYTHONDONTWRITEBYTECODE=1
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
