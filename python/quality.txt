@@ -1,3 +1,5 @@
 black
-nb_black
 pytest
+
+nb_black
+jupyterlab-python-file
