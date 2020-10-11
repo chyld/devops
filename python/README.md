@@ -8,3 +8,4 @@
 - $ conda activate gamma
 - $ pip install -r basics.txt
 - $ pip install -r extras.txt
+- $ conda env create -f environment.yml
