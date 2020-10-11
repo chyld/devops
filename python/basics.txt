@@ -1,11 +1,14 @@
 ipython
+jupyter-console
 jupyterlab
 notebook
 voila
 
 numpy
 pandas
+
 matplotlib
+seaborn
 
 scikit-learn
 scipy
