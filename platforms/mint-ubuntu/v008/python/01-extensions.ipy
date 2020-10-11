@@ -1,0 +1,6 @@
+# /home/chyld/.ipython/profile_default/startup/
+
+%load_ext lab_black
+%load_ext autoreload
+%autoreload 2
+
