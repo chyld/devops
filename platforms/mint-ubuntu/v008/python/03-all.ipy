@@ -1,0 +1,11 @@
+import pandas as pd
+import numpy as np
+import torch
+
+pd.set_option('precision', 2)
+torch.set_printoptions(precision=2, sci_mode=False)
+
+%precision 2
+%load_ext lab_black
+%load_ext autoreload
+%autoreload 2
