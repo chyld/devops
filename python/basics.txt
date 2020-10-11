@@ -1,5 +1,3 @@
-ipython
-jupyter-console
 jupyterlab
 notebook
 voila
