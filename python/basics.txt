@@ -8,3 +8,10 @@ pandas
 matplotlib
 
 scikit-learn
+scipy
+sympy
+statsmodels
+
+tensorflow
+torch
+torchvision
