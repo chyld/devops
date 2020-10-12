@@ -1,5 +1,5 @@
 jupyter labextension install @krassowski/jupyterlab-lsp
-jupyter labextension install @lckr/jupyterlab_variableinspector
 
 # not working yet ...
 # jupyter labextension install @karosc/jupyterlab_dracula
+# jupyter labextension install @lckr/jupyterlab_variableinspector
