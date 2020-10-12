@@ -62,3 +62,9 @@ Settings -> Advanced Settings Editor -> Notebook ->
 }
 
 ```
+
+Collapsible Headings
+
+```
+jupyter labextension install @aquirdturtle/collapsible_headings
+```
