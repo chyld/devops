@@ -17,10 +17,21 @@
 
 Dracula
 
-- `jupyter labextension install @karosc/jupyterlab_dracula`
-- Settings -> JupyterLab Theme -> Dracula
+```
+jupyter labextension install @karosc/jupyterlab_dracula
+Settings -> JupyterLab Theme -> Dracula
+```
 
 Variable Inspector
 
-- `jupyter labextension install @lckr/jupyterlab_variableinspector`
+```
+jupyter labextension install @lckr/jupyterlab_variableinspector
+```
 
+LSP
+
+```
+pip install jupyter-lsp
+jupyter labextension install @krassowski/jupyterlab-lsp
+pip install python-language-server[all]
+```
