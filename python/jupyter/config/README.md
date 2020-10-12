@@ -74,3 +74,11 @@ Python File
 ```
 jupyter labextension install jupyterlab-python-file
 ```
+
+Black Formatter
+
+```
+pip install black nb_black
+
+%load_ext lab_black
+```
