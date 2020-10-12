@@ -12,3 +12,11 @@
 
 - `jupyter labextension list`
 - `jupyter serverextension list`
+
+### Installs
+
+- `jupyter labextension install @karosc/jupyterlab_dracula`
+- Settings -> JupyterLab Theme -> Dracula
+
+- a
+- b
