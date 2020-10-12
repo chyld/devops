@@ -49,3 +49,16 @@ c.JupyterLabTemplates.template_dirs = ['/home/chyld/Code/devops/python/jupyter/t
 c.JupyterLabTemplates.include_default = False
 c.JupyterLabTemplates.include_core_paths = False
 ```
+
+Execute Time
+
+```
+jupyter labextension install jupyterlab-execute-time
+
+Settings -> Advanced Settings Editor -> Notebook -> 
+
+{
+    "recordTiming": true
+}
+
+```
