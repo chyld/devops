@@ -35,3 +35,17 @@ pip install jupyter-lsp
 jupyter labextension install @krassowski/jupyterlab-lsp
 pip install python-language-server[all]
 ```
+
+Templates
+
+```
+pip install jupyterlab_templates
+jupyter labextension install jupyterlab_templates
+jupyter serverextension enable --py jupyterlab_templates
+
+vi /home/chyld/.jupyter/jupyter_notebook_config.py
+
+c.JupyterLabTemplates.template_dirs = ['/home/chyld/Code/devops/python/jupyter/templates']
+c.JupyterLabTemplates.include_default = False
+c.JupyterLabTemplates.include_core_paths = False
+```
