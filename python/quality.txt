@@ -3,3 +3,5 @@ pytest
 
 nb_black
 jupyterlab-python-file
+jupyter-lsp
+python-language-server[all]
