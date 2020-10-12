@@ -5,3 +5,4 @@ jupyter labextension install @krassowski/jupyterlab-lsp
 # jupyter labextension install @lckr/jupyterlab_variableinspector
 # jupyter labextension install jupyterlab-drawio
 # https://github.com/jpmorganchase/jupyterlab_templates
+# https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor
