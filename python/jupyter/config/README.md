@@ -15,12 +15,12 @@
 
 ### Installs
 
+Dracula
+
 - `jupyter labextension install @karosc/jupyterlab_dracula`
 - Settings -> JupyterLab Theme -> Dracula
 
+Variable Inspector
 
-now
+- `jupyter labextension install @lckr/jupyterlab_variableinspector`
 
-
-- a
-- b
