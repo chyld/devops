@@ -3,3 +3,4 @@ jupyter labextension install @krassowski/jupyterlab-lsp
 # not working yet ...
 # jupyter labextension install @karosc/jupyterlab_dracula
 # jupyter labextension install @lckr/jupyterlab_variableinspector
+# jupyter labextension install jupyterlab-drawio
