@@ -68,3 +68,9 @@ Collapsible Headings
 ```
 jupyter labextension install @aquirdturtle/collapsible_headings
 ```
+
+Python File
+
+```
+jupyter labextension install jupyterlab-python-file
+```
