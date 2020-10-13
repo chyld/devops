@@ -82,3 +82,14 @@ pip install black nb_black
 
 %load_ext lab_black
 ```
+
+### Alternate Starter Code
+
+To have code auto loaded into a Jupyter Environment, add files to the following directory.
+
+```
+/home/chyld/.ipython/profile_default/startup/
+01-start.py
+02.go.ipy
+03.now.py
+```
