@@ -4,6 +4,7 @@ xarray
 
 matplotlib
 seaborn
+dash
 
 scikit-learn
 scipy
