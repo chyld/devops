@@ -11,6 +11,7 @@
 ### Jupyter Install
 
 - See `Jupyter Installation`
+- https://github.com/chyld/devops/tree/master/python/jupyter/config
 
 ### Package Install
 
