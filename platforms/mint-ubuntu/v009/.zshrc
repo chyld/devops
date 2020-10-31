@@ -52,6 +52,16 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+# monitor: change file events
+m() {
+  inotifywait -e delete,create,modify -m -r "$1"
+}
+
+# monitor all: read and write file events
+ma() {
+  inotifywait -e access,delete,create,modify -m -r "$1"
+}
+
 jl() {
   jupyter lab --no-browser --ip=0.0.0.0 --port="$1" --LabApp.token=''
 }
