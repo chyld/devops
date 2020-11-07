@@ -78,6 +78,12 @@ path() {
   echo $PATH | tr ":" "\n" | nl
 }
 
+play() {
+  # random=$(head -n 10 /dev/urandom | xxd -ps | head -n 1 | cut -c1-12)
+  random=$(mktemp -d -p .)
+  cd $random
+}
+
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -95,6 +101,7 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 alias nuke='ls -A1 | xargs rm -rf'
+alias p='play'
 alias vi='nvim.appimage'
 alias df='duf'
 alias o='xdg-open'
