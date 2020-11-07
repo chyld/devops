@@ -2,7 +2,7 @@
 
 - https://jupyter.org/install
 - version 3.0 doesn't work yet with extensions
-- `pip install jupyterlab==v3.0.0rc6` # look at recent tag https://github.com/jupyterlab/jupyterlab
+- `pip install jupyterlab==v3.0.0rc6` # look at recent tag https://github.com/jupyterlab/jupyterlab/releases
 - `pip install jupyterlab==2.2.8`
 - config directories
   - `~/.ipython`
