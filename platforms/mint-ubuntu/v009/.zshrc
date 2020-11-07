@@ -79,9 +79,9 @@ path() {
 }
 
 play() {
-  # random=$(head -n 10 /dev/urandom | xxd -ps | head -n 1 | cut -c1-12)
   random=$(mktemp -d -p .)
   cd $random
+  touch README.md
 }
 
 # ------------------------------------------------------------------------------------------------ #
