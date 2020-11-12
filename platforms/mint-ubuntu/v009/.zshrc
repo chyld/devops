@@ -107,6 +107,7 @@ path() {
 }
 
 play() {
+  c
   random=$(mktemp -d -p .)
   cd $random
   touch README.md
@@ -115,6 +116,7 @@ play() {
 alias p="play"
 
 help() {
+  c
   cd ~/Code/devops/docs
   glow readme.md
   l
