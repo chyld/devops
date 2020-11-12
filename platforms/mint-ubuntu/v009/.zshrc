@@ -108,6 +108,7 @@ path() {
 
 play() {
   c
+  cd ~/Temp
   random=$(mktemp -d -p .)
   cd $random
   touch README.md
