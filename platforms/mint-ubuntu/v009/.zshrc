@@ -189,6 +189,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
 
 source ~/.local/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.local/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.local/zsh/z.lua/z.lua.plugin.zsh
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
