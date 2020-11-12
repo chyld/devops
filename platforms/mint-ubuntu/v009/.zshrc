@@ -52,6 +52,34 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+alias b="cd .."
+alias c="clear"
+alias ls="lsd -A --group-dirs first"
+alias l="lsd -Al --group-dirs first --blocks permission,user,size,name"
+alias t="tree -a -I .git"
+alias cat='bat'  # use \cat to overridde
+alias meow='/bin/cat'
+alias tmux='tmux -2'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -Iv'
+alias nuke='ls -A1 | xargs rm -rf'
+alias vi='nvim.appimage'
+alias df='duf'
+alias o='xdg-open'
+alias g="git"
+alias gl='git log --oneline'
+alias gs='git status'
+alias gd="git diff"
+alias ga="git add --interactive"
+alias d='docker'
+alias dc='docker-compose'
+alias jt='jupyter_template.py'
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
 # monitor: change file events
 m() {
   inotifywait -e delete,create,modify -m -r "$1"
@@ -84,35 +112,15 @@ play() {
   touch README.md
 }
 
-# ------------------------------------------------------------------------------------------------ #
-# ------------------------------------------------------------------------------------------------ #
-# ------------------------------------------------------------------------------------------------ #
+alias p="play"
 
-alias h="history"
-alias b="cd .."
-alias c="clear"
-alias ls="lsd -A --group-dirs first"
-alias l="lsd -Al --group-dirs first --blocks permission,user,size,name"
-alias t="tree -a -I .git"
-alias cat='bat'  # use \cat to overridde
-alias meow='/bin/cat'
-alias tmux='tmux -2'
-alias cp='cp -iv'
-alias mv='mv -iv'
-alias rm='rm -Iv'
-alias nuke='ls -A1 | xargs rm -rf'
-alias p='play'
-alias vi='nvim.appimage'
-alias df='duf'
-alias o='xdg-open'
-alias g="git"
-alias gl='git log --oneline'
-alias gs='git status'
-alias gd="git diff"
-alias ga="git add --interactive"
-alias d='docker'
-alias dc='docker-compose'
-alias jt='jupyter_template.py'
+help() {
+  cd ~/Code/devops/docs
+  glow readme.md
+  l
+}
+
+alias h="help"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
