@@ -107,11 +107,25 @@ path() {
 }
 
 play() {
-  c
   cd ~/Temp
-  random=$(mktemp -d -p .)
+
+  if [ $# -eq 0 ] # counts function arguments
+    then
+      random=$(mktemp -d -p .)
+    else
+      random="$1"
+      mkdir "$random"
+  fi
+
   cd $random
-  touch README.md
+  git init
+  cp ~/Code/devops/templates/laboratory/README.md .
+  touch .gitignore
+  git add .
+  git commit -m "Initial Commit"
+  c
+  glow README.md
+  l
 }
 
 alias p="play"
