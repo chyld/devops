@@ -1,4 +1,4 @@
-# Experimental Template
+# A Laboratory Experiment
 
 ## Guide
 
