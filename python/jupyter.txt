@@ -1,2 +1,2 @@
-jupyterlab==v3.0.0rc7
+jupyterlab==v3.0.0rc8
 
