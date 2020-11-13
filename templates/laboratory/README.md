@@ -1,11 +1,14 @@
-# A Laboratory Experiment
+# The Laboratory
 
 ## Guide
 
-- A `README.md` file has been created for you
-- A `git` repository has been created for you
+The following assets have been created for you:
 
-*Enjoy* your new **laboratory**.
+- `.git`
+- `.gitignore`
+- `README.md`
+
+*Enjoy* your new **lab**.
 
 ---
 

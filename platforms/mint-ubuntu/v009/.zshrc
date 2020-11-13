@@ -109,11 +109,16 @@ path() {
 play() {
   cd ~/Temp
 
-  if [ $# -eq 0 ] # counts function arguments
+  if [ $# -eq 0 ] # were there zero arguments?
     then
       random=$(mktemp -d -p .)
     else
       random="$1"
+
+      if [ -d "$random" ]; then # does the "random" directory exist?
+        cd $random; c; l; return 1
+      fi
+
       mkdir "$random"
   fi
 
