@@ -130,7 +130,6 @@ play() {
   git commit -m "Initial Commit"
   c
   glow README.md
-  l
 }
 
 alias p="play"

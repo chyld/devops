@@ -1,14 +1,7 @@
-# The Laboratory
-
-## Guide
+# The Playground
 
 The following assets have been created for you:
 
-- `.git`
-- `.gitignore`
-- `README.md`
+- `.git`, `.gitignore`, `README.md`
 
-*Enjoy* your new **lab**.
-
----
-
+*Now*, create something **new**.
