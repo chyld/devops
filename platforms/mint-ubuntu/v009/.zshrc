@@ -74,7 +74,6 @@ alias gd="git diff"
 alias ga="git add --interactive"
 alias d='docker'
 alias dc='docker-compose'
-alias jt='jupyter_template.py'
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -107,35 +106,22 @@ path() {
 }
 
 play() {
-  cd ~/Temp
-
-  if [ $# -eq 0 ] # were there zero arguments?
-    then
-      random=$(mktemp -d -p .)
-    else
-      random="$1"
-
-      if [ -d "$random" ]; then # does the "random" directory exist?
-        cd $random; c; l; return 1
-      fi
-
-      mkdir "$random"
+  destination=$(play.py $1 $2)
+  retval=$?
+  cd $destination
+  if [ $retval -eq 2 ]; then
+    git init
+    git add .
+    git commit -m "first"
   fi
-
-  cd $random
-  git init
-  cp ~/Code/devops/templates/laboratory/README.md .
-  touch .gitignore
-  git add .
-  git commit -m "Initial Commit"
-  c
-  glow README.md
+  clear
+  l
 }
 
 alias p="play"
 
 help() {
-  c
+  clear
   cd ~/Code/devops/docs
   glow readme.md
   l
