@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # play.py <project> <template>
+# play.py (default or random) will autogenerate a directory name
 # this script is being called from a *bash* function
 # that is initialized in the ~/.zshrc file
 
@@ -21,7 +22,7 @@ template_dir = '/home/chyld/Code/devops/templates'
 play_dir = '/home/chyld/Play'
 
 # rename project if it was not supplied
-if project == 'default':
+if project in ['default', 'random']:
     project = 'tmp.' + uuid.uuid4().hex[-10:]
 
 # construct the destination directory
