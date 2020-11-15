@@ -1,7 +1,2 @@
-# THE Playground
+# GENERIC template
 
-The following assets have been created for you:
-
-- `.git`, `.gitignore`, `README.md`
-
----

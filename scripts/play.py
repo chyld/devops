@@ -22,7 +22,7 @@ template_dir = '/home/chyld/Code/devops/templates'
 play_dir = '/home/chyld/Play'
 
 # rename project if it was not supplied
-if project in ['default', 'random']:
+if project in ['default', 'random', 'r']:
     project = 'tmp.' + uuid.uuid4().hex[-10:]
 
 # construct the destination directory

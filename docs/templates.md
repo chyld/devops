@@ -5,7 +5,9 @@
 - `p` creates `~/Play/tmp.abcdef1234` with `generic` template
 - `p one` creates `~/Play/one` with `generic` template
 - `p two physics` creates `~/Play/two` with `physics` template
-- `p random node` creates `~/Play/tmp.abcdef1234` with `node` template
+- `p r node` creates `~/Play/tmp.abcdef1234` with `node` template
+- `p random python` creates `~/Play/tmp.abcdef1234` with `python` template
+- `p default jupyter` creates `~/Play/tmp.abcdef1234` with `jupyter` template
 
 ## Templates
 
