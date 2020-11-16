@@ -90,7 +90,12 @@ ma() {
 }
 
 jl() {
-  jupyter lab --ip=0.0.0.0 --port="$1" --LabApp.token='' 1>> stdout.log 2>> stderr.log & disown
+  if [ $# -eq 0 ]; then
+    port=$(port.py)
+  else
+    port=$1
+  fi
+  jupyter lab --ip=0.0.0.0 --port=$port --LabApp.token='' 1>> stdout.log 2>> stderr.log & disown
 }
 
 jn() {
@@ -129,8 +134,12 @@ help() {
 
 alias h="help"
 
-k() {
-  pkill -i -f $1
+kj() {
+  pkill -i -f jupyter-lab
+}
+
+fj() {
+  pgrep -ia -f jupyter-lab
 }
 
 # ------------------------------------------------------------------------------------------------ #
