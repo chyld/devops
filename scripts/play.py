@@ -8,6 +8,7 @@
 import os
 import sys
 import uuid
+import pandas as pd
 from shutil import copytree
 
 # fills in the list, just in case not enough arguments are provided
@@ -22,8 +23,11 @@ template_dir = '/home/chyld/Code/devops/templates'
 play_dir = '/home/chyld/Play'
 
 # rename project if it was not supplied
+df = pd.read_csv('elements.csv')
+element = df.Element.sample().str.lower().values[0]
+hx = uuid.uuid4().hex[-10:]
 if project in ['default', 'random', 'r']:
-    project = 'tmp.' + uuid.uuid4().hex[-10:]
+    project = f"tmp.{element}.{hx}"
 
 # construct the destination directory
 dst = f'{play_dir}/{project}'
@@ -44,4 +48,3 @@ copytree(src, dst)
 # send destination to bash and exit
 print(dst)
 exit(2)
-
