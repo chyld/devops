@@ -17,3 +17,7 @@
 - `physics`
 - `node`
 
+## Rename Templates
+
+- `r awesome` renames the current directory name to `awesome`
+

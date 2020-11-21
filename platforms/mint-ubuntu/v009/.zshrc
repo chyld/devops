@@ -125,6 +125,18 @@ play() {
 
 alias p="play"
 
+rename() {
+  destination=$(rename.py $1)
+  retval=$?
+  if [ $retval -eq 0 ]; then
+    cd $destination
+  fi
+  clear
+  l
+}
+
+alias r="rename"
+
 help() {
   clear
   cd ~/Code/devops/docs
