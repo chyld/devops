@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# play.py <project> <template>
+# play.py <template> <project>
 # play.py (default or random) will autogenerate a directory name
 # this script is being called from a *bash* function
 # that is initialized in the ~/.zshrc file
@@ -12,7 +12,7 @@ import pandas as pd
 from shutil import copytree
 
 # fills in the list, just in case not enough arguments are provided
-_, project, template, *_ = sys.argv + ['default', 'default']
+_, template, project, *_ = sys.argv + ['default', 'default']
 
 # change the directory to *this* directory
 abs_path = os.path.dirname(os.path.abspath(__file__))
