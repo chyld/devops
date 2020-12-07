@@ -76,6 +76,8 @@ alias d='docker'
 alias dc='docker-compose'
 alias dp='docker system prune -a'
 alias k='kubectl'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
