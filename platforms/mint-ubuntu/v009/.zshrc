@@ -74,6 +74,8 @@ alias gd="git diff"
 alias ga="git add --interactive"
 alias d='docker'
 alias dc='docker-compose'
+alias dp='docker system prune -a'
+alias k='kubectl'
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
