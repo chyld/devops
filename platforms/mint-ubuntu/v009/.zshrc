@@ -78,18 +78,19 @@ alias dp='docker system prune -a'
 alias k='kubectl'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias m='make'
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
 # monitor: change file events
-m() {
+monitor() {
   inotifywait -e delete,create,modify -m -r "$1"
 }
 
 # monitor all: read and write file events
-ma() {
+monitor+() {
   inotifywait -e access,delete,create,modify -m -r "$1"
 }
 
