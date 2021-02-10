@@ -15,6 +15,10 @@
 - `jupyter labextension list`
 - `jupyter serverextension list`
 
+### SQL
+
+- https://github.com/jupyter-xeus/xeus-sql
+
 ### Installs
 
 Dracula
