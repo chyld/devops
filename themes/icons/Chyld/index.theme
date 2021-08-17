@@ -3,19 +3,34 @@ Name=Chyld
 Comment=Customized icon theme.
 Inherits=Yaru
 
-Directories=48/places,48@2x/places
+Directories=64/places,64@2x/places,64/mimes,64@2x/mimes
 
-[48/places]
+[64/places]
 Context=Places
-Size=48
+Size=64
 MinSize=22
 MaxSize=512
 Type=Scalable
 
-[48@2x/places]
+[64@2x/places]
 Context=Places
 Scale=2
-Size=48
+Size=64
+MinSize=22
+MaxSize=512
+Type=Scalable
+
+[64/mimes]
+Context=MimeTypes
+Size=64
+MinSize=22
+MaxSize=512
+Type=Scalable
+
+[64@2x/mimes]
+Context=MimeTypes
+Scale=2
+Size=64
 MinSize=22
 MaxSize=512
 Type=Scalable
