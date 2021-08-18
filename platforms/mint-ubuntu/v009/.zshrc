@@ -55,7 +55,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias b="cd .."
 alias c="clear"
 alias ls="lsd -A --group-dirs first"
-alias l="lsd -Al --group-dirs first --blocks permission,user,size,name"
+alias ll="lsd -Al --group-dirs first --blocks permission,user,size,name"
+alias l="exa --icons -lGFab"
 alias t="tree -a -I .git"
 alias cat='bat'  # use \cat to overridde
 alias meow='/bin/cat'
