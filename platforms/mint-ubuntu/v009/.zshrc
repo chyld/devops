@@ -102,15 +102,7 @@ jl() {
   else
     port=$1
   fi
-  jupyter lab --ip=0.0.0.0 --port=$port --LabApp.token='' 1>> stdout.log 2>> stderr.log & disown
-}
-
-jn() {
-  jupyter notebook --no-browser --ip=0.0.0.0 --port="$1" --NotebookApp.token=''
-}
-
-jc() {
-  jupyter console
+  jupyter lab --no-browser --ip="0.0.0.0" --port="$port" --ServerApp.token=""
 }
 
 path() {
@@ -129,7 +121,6 @@ play() {
   clear
   l
 }
-
 alias p="play"
 
 rename() {
@@ -141,7 +132,6 @@ rename() {
   clear
   l
 }
-
 alias r="rename"
 
 help() {
@@ -150,16 +140,7 @@ help() {
   glow readme.md
   l
 }
-
 alias h="help"
-
-kj() {
-  pkill -i -f jupyter-lab
-}
-
-fj() {
-  pgrep -ia -f jupyter-lab
-}
 
 cl() {
   clear
