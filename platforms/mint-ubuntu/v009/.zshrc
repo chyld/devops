@@ -54,9 +54,9 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 alias b="cd .."
 alias c="clear"
-alias l="exa --icons -Fa"
-alias ll="exa --icons --git -FGla"
-alias lll="lsd -AF --group-dirs first"
+alias l="exa --icons -Fa" # also consider lsd
+alias ll="exa --icons --git -FGla" # also consider lsd
+alias lll="exa --icons --git -Fla" # also consider lsd
 alias t="tree -a -I .git"
 alias cat='bat'  # use \cat to overridde
 alias meow='/bin/cat'
@@ -144,15 +144,9 @@ help() {
 }
 alias h="help"
 
-cl() {
-  clear
-  l
-}
-
-cll() {
-  clear
-  ll
-}
+cl() { clear && l }
+cll() { clear && ll }
+clll() { clear && lll }
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
