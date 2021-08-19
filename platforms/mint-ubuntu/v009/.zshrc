@@ -122,7 +122,6 @@ play() {
   clear
   ll
   glow README.md
-  fortune
 }
 alias p="play"
 

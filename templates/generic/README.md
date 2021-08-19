@@ -1,4 +1,4 @@
 # GENERIC template
 
-This template can be used for any type of experimentation.
+The way to get started is to quit talking and begin doing. -Walt Disney
 
