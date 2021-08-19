@@ -120,7 +120,9 @@ play() {
     git commit -m "first"
   fi
   clear
-  l
+  ll
+  glow README.md
+  fortune
 }
 alias p="play"
 
