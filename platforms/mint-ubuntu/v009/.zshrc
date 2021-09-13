@@ -163,7 +163,8 @@ LOCAL_BIN=$HOME/.local/bin
 NODE_BIN=$HOME/.local/node/bin
 DATAGRIP_BIN=$HOME/.local/datagrip/bin
 SCRIPTS_BIN=$HOME/Code/devops/scripts
-export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH
+export DOTNET_ROOT=$HOME/.local/dotnet
+export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/dotnet
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
