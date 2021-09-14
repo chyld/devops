@@ -80,8 +80,8 @@ alias k='kubectl'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias m='make'
-alias dot='dotnet'
-alias dott='dotnet test --logger "console;verbosity=detailed"'
+alias dn='dotnet'
+alias dntest='dotnet test --logger "console;verbosity=detailed"'
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
