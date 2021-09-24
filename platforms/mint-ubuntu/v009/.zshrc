@@ -116,6 +116,7 @@ playdir() {
   clear
 }
 alias pd="playdir"
+alias pl="tree -L 2"
 
 # play() {
 #   destination=$(play.py $1 $2)
