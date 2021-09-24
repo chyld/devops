@@ -110,20 +110,27 @@ path() {
   echo $PATH | tr ":" "\n" | nl
 }
 
-play() {
-  destination=$(play.py $1 $2)
-  retval=$?
+playdir() {
+  destination=$(play-dir.py)
   cd $destination
-  if [ $retval -eq 2 ]; then
-    git init
-    git add .
-    git commit -m "first"
-  fi
   clear
-  ll
-  glow README.md
 }
-alias p="play"
+alias pd="playdir"
+
+# play() {
+#   destination=$(play.py $1 $2)
+#   retval=$?
+#   cd $destination
+#   if [ $retval -eq 2 ]; then
+#     git init
+#     git add .
+#     git commit -m "first"
+#   fi
+#   clear
+#  ll
+#  glow README.md
+#}
+#alias p="play"
 
 rename() {
   destination=$(rename.py $1)
