@@ -14,9 +14,10 @@ play_dir = '/home/chyld/Play'
 
 # get name of folder
 df = pd.read_csv('elements.csv')
-element = df.Element.sample().str.lower().values[0]
+element = df.Element.sample().values[0]
+symbol=df[df.Element == element].Symbol.values[0]
 hexid = uuid.uuid4().hex[-10:]
-project = f"play.{element}.{hexid}"
+project = f"{element.lower()}.{symbol.lower()}.{hexid}.play"
 
 # construct the destination directory
 dst = f'{play_dir}/{project}'
@@ -25,4 +26,3 @@ os.mkdir(dst)
 # send destination to bash and exit
 print(dst)
 exit(2)
-

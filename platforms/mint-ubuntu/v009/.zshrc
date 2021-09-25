@@ -115,6 +115,7 @@ playdir() {
   cd $destination
   clear
 }
+alias p="cd $HOME/Play"
 alias pd="playdir"
 alias pl="tree -L 2"
 
