@@ -110,14 +110,14 @@ path() {
   echo $PATH | tr ":" "\n" | nl
 }
 
-playdir() {
-  destination=$(play-dir.py)
+xdir() {
+  destination=$(x-dir.py)
   cd $destination
   clear
 }
-alias p="cd $HOME/Play"
-alias pd="playdir"
-alias pl="tree -L 2"
+alias x="cd $HOME/X"
+alias xd="xdir"
+alias xl="tree -L 2"
 
 # play() {
 #   destination=$(play.py $1 $2)

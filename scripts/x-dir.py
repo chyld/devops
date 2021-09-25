@@ -10,19 +10,20 @@ abs_path = os.path.dirname(os.path.abspath(__file__))
 os.chdir(abs_path)
 
 # base directories
-play_dir = '/home/chyld/Play'
+x_dir = '/home/chyld/X'
 
-# get name of folder
+# generate name of folder
 df = pd.read_csv('elements.csv')
 element = df.Element.sample().values[0]
 symbol=df[df.Element == element].Symbol.values[0]
 hexid = uuid.uuid4().hex[-10:]
-project = f"{element.lower()}.{symbol.lower()}.{hexid}.play"
+project_dir = f"{element.lower().strip()}-{symbol.lower().strip()}-{hexid}.x"
 
 # construct the destination directory
-dst = f'{play_dir}/{project}'
+dst = f'{x_dir}/{project_dir}'
 os.mkdir(dst)
 
 # send destination to bash and exit
 print(dst)
 exit(2)
+
