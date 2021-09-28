@@ -16,8 +16,9 @@ x_dir = '/home/chyld/X'
 df = pd.read_csv('elements.csv')
 element = df.Element.sample().values[0]
 symbol=df[df.Element == element].Symbol.values[0]
+atomic_number=df[df.Element == element].AtomicNumber.values[0]
 hexid = uuid.uuid4().hex[-10:]
-project_dir = f"{element.lower().strip()}-{symbol.lower().strip()}-{hexid}.x"
+project_dir = f"{element.lower().strip()}-{symbol.lower().strip()}-{atomic_number}-{hexid}.x"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
