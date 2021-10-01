@@ -117,7 +117,7 @@ xdir() {
 }
 alias x="cd $HOME/X"
 alias xd="xdir"
-alias xl="tree -L 2"
+alias xl="exa -RTl -L 2"
 
 # play() {
 #   destination=$(play.py $1 $2)
