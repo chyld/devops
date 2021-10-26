@@ -1,0 +1,7 @@
+numpy
+pandas
+
+jupyterlab
+
+flake8
+autopep8

@@ -1,7 +1,3 @@
-numpy
-pandas
-xarray
-
 matplotlib
 seaborn
 bokeh
@@ -11,8 +7,5 @@ scikit-learn
 scipy
 sympy
 statsmodels
-pyomo
 
 tensorflow
-torch
-torchvision

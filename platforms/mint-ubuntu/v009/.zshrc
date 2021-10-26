@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -42,11 +46,6 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -179,22 +178,10 @@ export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/d
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/chyld/.local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/chyld/.local/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/chyld/.local/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/chyld/.local/miniconda3/bin:$PATH"
-    fi
-fi
+eval "$__conda_setup"
 unset __conda_setup
-# <<< conda initialize <<<
-
-conda activate alpha
+conda activate lambda
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -207,10 +194,19 @@ export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 source ~/.local/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.local/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.local/zsh/ohmyzsh/lib/functions.zsh
+source ~/.local/zsh/ohmyzsh/plugins/web-search/web-search.plugin.zsh
 eval "$(zoxide init zsh)"
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
