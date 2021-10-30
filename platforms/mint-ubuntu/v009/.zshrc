@@ -115,7 +115,7 @@ xdir() {
 }
 alias x="cd $HOME/X"
 alias xd="xdir"
-alias xl="exa -RTl -L 2"
+alias xl="exa -RTl -L 2 -s created" # tree view 2 levels deep, show newest last
 
 # play() {
 #   destination=$(play.py $1 $2)
