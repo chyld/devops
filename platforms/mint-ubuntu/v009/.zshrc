@@ -112,7 +112,6 @@ path() {
 xdir() {
   destination=$(x-dir.py)
   cd $destination
-  clear
 }
 alias x="cd $HOME/X"
 alias xd="xdir"
