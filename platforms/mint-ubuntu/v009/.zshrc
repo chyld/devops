@@ -168,10 +168,11 @@ export PYTHONDONTWRITEBYTECODE=1
 
 LOCAL_BIN=$HOME/.local/bin
 NODE_BIN=$HOME/.local/node/bin
+PROCESSING_BIN=$HOME/.local/processing
 DATAGRIP_BIN=$HOME/.local/datagrip/bin
 SCRIPTS_BIN=$HOME/Code/devops/scripts
 export DOTNET_ROOT=$HOME/.local/dotnet
-export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/dotnet
+export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/dotnet:$PROCESSING_BIN
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
