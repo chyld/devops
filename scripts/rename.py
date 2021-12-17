@@ -23,4 +23,3 @@ if os.path.exists(new_dir):
 move(curr_dir, new_dir)
 print(new_dir)
 exit(0)
-
