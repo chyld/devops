@@ -68,6 +68,7 @@ alias vi='nvim.appimage'
 alias df='duf'
 alias o='xdg-open'
 alias g="git"
+alias gb="git branch -avv"
 alias gl='git log --oneline'
 alias gs='git status'
 alias gd="git diff"
