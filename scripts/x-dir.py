@@ -20,9 +20,9 @@ element = df.Element.sample().values[0]
 symbol = df[df.Element == element].Symbol.values[0].lower().strip()
 atomic_number = df[df.Element == element].AtomicNumber.values[0]
 element = element.lower().strip()
-hexid = uuid.uuid4().hex[-4:]
-current = datetime.now().strftime("%Y.%m%d")
-project_dir = f"{hexid}-{unicode}-{element}-{current}"
+hexid = uuid.uuid4().hex[-3:]
+current = datetime.now().strftime("%Y-%m%d")
+project_dir = f"{hexid}.{greek}-{element}-{current}"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
