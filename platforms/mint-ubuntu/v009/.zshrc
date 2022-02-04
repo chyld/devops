@@ -116,8 +116,9 @@ xcreate() {
 }
 alias x="cd $HOME/X"
 alias xc="xcreate"
-alias  xl="exa -RTla -L 1 -s created" # tree view 0 levels deep, show newest last
-alias xll="exa -RTla -L 2 -s created" # tree view 2 levels deep, show newest last
+alias xl="exa -Ga -s created --icons" # grid view
+alias xll="exa -RTla -L 1 -s created --icons" # tree view 0 levels deep, show newest last
+alias xlll="exa -RTla -L 2 -s created --icons" # tree view 2 levels deep, show newest last
 
 # play() {
 #   destination=$(play.py $1 $2)
