@@ -110,12 +110,12 @@ path() {
   echo $PATH | tr ":" "\n" | nl
 }
 
-xdir() {
+xcreate() {
   destination=$(x-dir.py)
   cd $destination
 }
 alias x="cd $HOME/X"
-alias xd="xdir"
+alias xc="xcreate"
 alias xl="exa -RTla -L 2 -s created" # tree view 2 levels deep, show newest last
 
 # play() {
