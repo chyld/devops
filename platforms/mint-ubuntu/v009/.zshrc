@@ -119,6 +119,8 @@ alias xc="xcreate"
 alias xl="exa -Ga -s created --icons" # grid view
 alias xll="exa -RTla -L 2 -s created --icons" # tree view 2 levels deep, show newest last
 
+alias cpds="copy-data-science.py"
+
 # play() {
 #   destination=$(play.py $1 $2)
 #   retval=$?
