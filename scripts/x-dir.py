@@ -14,15 +14,15 @@ os.chdir(abs_path)
 x_dir = '/home/chyld/X'
 
 # generate name of folder
-df = pd.read_csv('elements.csv')
-greek, unicode = pd.read_csv('greek.txt').sample().values.flatten()[0].split('-')
-element = df.Element.sample().values[0]
-symbol = df[df.Element == element].Symbol.values[0].lower().strip()
-atomic_number = df[df.Element == element].AtomicNumber.values[0]
-element = element.lower().strip()
+greek, unicode = pd.read_csv('data/greek.txt').sample().values.flatten()[0].split('-')
+adjective = pd.read_csv('data/adjectives.txt', header=None)[0].sample().values[0].strip()
+scientist = pd.read_csv('data/scientists.txt', header=None)[0].sample().values[0].strip()
+element = pd.read_csv('data/elements.csv').Element.sample().values[0].lower().strip()
 hexid = uuid.uuid4().hex[-3:]
 current = datetime.now().strftime("%Y-%m%d")
-project_dir = f"{hexid}.{greek}-{element}-{current}"
+
+# put it all together
+project_dir = f"{adjective}-{scientist}-{current}.{hexid}"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
