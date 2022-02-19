@@ -3,3 +3,4 @@ pyomo
 torch
 torchvision
 xgboost
+rich
