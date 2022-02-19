@@ -2,3 +2,4 @@ xarray
 pyomo
 torch
 torchvision
+xgboost
