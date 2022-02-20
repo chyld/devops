@@ -18,11 +18,12 @@ greek, unicode = pd.read_csv('data/greek.txt').sample().values.flatten()[0].spli
 adjective = pd.read_csv('data/adjectives.txt', header=None)[0].sample().values[0].strip()
 scientist = pd.read_csv('data/scientists.txt', header=None)[0].sample().values[0].strip()
 element = pd.read_csv('data/elements.csv').Element.sample().values[0].lower().strip()
-hexid = uuid.uuid4().hex[-3:]
+name = pd.read_csv('data/baby-names.csv').name.sample().values[0].lower().strip()
+hexid = uuid.uuid4().hex[-4:]
 current = datetime.now().strftime("%Y-%m%d")
 
 # put it all together
-project_dir = f"{adjective}-{scientist}-{current}.{hexid}"
+project_dir = f"{adjective}-{name}-{current}.{hexid}"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
