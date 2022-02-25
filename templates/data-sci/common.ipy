@@ -28,7 +28,7 @@ from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 import xgboost as xgb
 
 # enable reload of changed files
-%load_ext autoreload
+%reload_ext autoreload
 %autoreload 2
 
 # plot inline
@@ -39,4 +39,4 @@ from rich.console import Console
 from rich import inspect
 con = Console()
 ins = partial(inspect, methods=True)
-%load_ext rich
+%reload_ext rich
