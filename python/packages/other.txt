@@ -4,3 +4,4 @@ torch
 torchvision
 xgboost
 rich
+shap
