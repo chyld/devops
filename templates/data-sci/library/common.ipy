@@ -13,7 +13,7 @@ import seaborn as sns
 import plotly.express as px
 
 # preprocessing
-from sklearn.preprocessing import PolynomialFeatures, StandardScaler, MinMaxScaler
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler, MinMaxScaler, OneHotEncoder
 
 # model selection
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV, cross_val_score
