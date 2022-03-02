@@ -53,10 +53,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias b="cd .."
 alias c="clear"
-alias l="exa --icons -Fa" # also consider lsd
-alias ll="exa --icons --git -Fla" # also consider lsd
-alias lll="exa --icons --git -FGla" # also consider lsd
+alias l="exa --icons -Fa" # also consider lsd, pls
+# alias ll="exa --icons --git -Fla" # also consider lsd, pls
+alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git" # also consider lsd, pls
+alias lll="exa --icons --git -FGla" # also consider lsd, pls
 alias t="tree -a -I .git"
+
 alias cat='bat'  # use \cat to overridde
 alias meow='/bin/cat'
 alias tmux='tmux -2'
