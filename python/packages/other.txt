@@ -5,3 +5,4 @@ torchvision
 xgboost
 rich
 shap
+pillow
