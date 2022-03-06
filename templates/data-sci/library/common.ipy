@@ -28,6 +28,9 @@ from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from xgboost import XGBClassifier, XGBRegressor
 
+# model explainability
+import shap
+
 # enable reload of changed files
 %reload_ext autoreload
 %autoreload 2
