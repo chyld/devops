@@ -122,8 +122,8 @@ alias xl="exa -Ga -s created --icons" # grid view
 alias xll="exa -RTla -L 2 -s created --icons" # tree view 2 levels deep, show newest last
 
 alias cpds="copy-data-science.py"
-alias fcp="fd -H .ipynb_checkpoints"
-alias rcp="fd -H .ipynb_checkpoints | xargs -I @@ rm -rf @@"
+alias fcp="fd -HI ipynb_checkpoints"
+alias rcp="fd -HI ipynb_checkpoints | xargs -I @@ rm -rf @@"
 
 # play() {
 #   destination=$(play.py $1 $2)
