@@ -15,6 +15,9 @@ import plotly.express as px
 # preprocessing
 from sklearn.preprocessing import PolynomialFeatures, StandardScaler, MinMaxScaler, OneHotEncoder
 
+# feature selection
+from sklearn.feature_selection import SelectKBest, SelectPercentile, chi2
+
 # model selection
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV, cross_val_score
 from sklearn.metrics import (r2_score, mean_squared_error, accuracy_score, precision_score, recall_score,
