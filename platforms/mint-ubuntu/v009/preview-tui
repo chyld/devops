@@ -213,9 +213,9 @@ fifo_pager() {
     rm "$tmpfifopath"
 } 2>/dev/null
 
-# chyld
 # Binary file: show file info inside the pager
 print_bin_info() {
+        # chyld
         # hexyl "$1"
         xxd -c 8 -l 225 "$1"
 } 2>/dev/null
@@ -245,6 +245,12 @@ handle_ext() {
         epub) generate_preview "$cols" "$lines" "$1" "epub" ;;
         pdf) generate_preview "$cols" "$lines" "$1" "pdf" ;;
         gz|bz2) fifo_pager tar -tvf "$1" ;;
+
+        # chyld
+        # ipynb) jupyter nbconvert --stdout --to markdown "$1" | pygmentize -l md ;;
+        # ipynb) jut --head 3 "$1" ;;
+        ipynb) fifo_pager nbpreview -endc --cs truecolor "$1" ;;
+
         md) if exists glow; then
                 fifo_pager glow -s dark "$1"
             elif exists lowdown; then
@@ -317,6 +323,7 @@ preview_file() {
     else
         handle_mime "$1" "$mimetype" "$ext"
     fi
+
 } 2>/dev/null
 
 generate_preview() {
