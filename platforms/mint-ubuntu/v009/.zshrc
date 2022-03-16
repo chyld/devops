@@ -58,7 +58,7 @@ alias c="clear"
 alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git" # also consider lsd, pls
 alias lll="exa --icons --git -FGla" # also consider lsd, pls
 alias t="tree -a -I .git"
-alias l="nnn -dH -Pr"
+alias l="nnn -H -Pr"
 
 alias cat='bat'  # use \cat to overridde
 alias meow='/bin/cat'
