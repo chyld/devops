@@ -53,11 +53,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias b="cd .."
 alias c="clear"
-alias l="exa --icons -Fa" # also consider lsd, pls
+# alias l="exa --icons -Fa" # also consider lsd, pls
 # alias ll="exa --icons --git -Fla" # also consider lsd, pls
 alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git" # also consider lsd, pls
 alias lll="exa --icons --git -FGla" # also consider lsd, pls
 alias t="tree -a -I .git"
+alias l="nnn -dH -Pr"
 
 alias cat='bat'  # use \cat to overridde
 alias meow='/bin/cat'
@@ -178,9 +179,10 @@ LOCAL_BIN=$HOME/.local/bin
 NODE_BIN=$HOME/.local/node/bin
 PROCESSING_BIN=$HOME/.local/processing
 DATAGRIP_BIN=$HOME/.local/datagrip/bin
+NNN_BIN=$HOME/.local/nnn
 SCRIPTS_BIN=$HOME/Code/devops/scripts
 export DOTNET_ROOT=$HOME/.local/dotnet
-export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/dotnet:$PROCESSING_BIN
+export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/dotnet:$PROCESSING_BIN:$NNN_BIN
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -197,6 +199,13 @@ conda activate omega
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
+export NNN_PLUG='v:imgview;p:preview-tabbed;r:preview-tui'
+export NNN_FIFO=/tmp/nnn.fifo
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
