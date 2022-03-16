@@ -122,7 +122,9 @@ start_preview() {
                 -e "NNN_PREVIEWDIR=$NNN_PREVIEWDIR" -e "NNN_PREVIEWHEIGHT=$NNN_PREVIEWHEIGHT" \
                 -e "FIFO_UEBERZUG=$FIFO_UEBERZUG" -e "QLPATH=$2" -d"$DSPLIT" "$0" "$1" ;;
         kitty) # Setting the layout for the new window. It will be restored after the script ends.
-            kitty @ goto-layout splits
+            # chyld
+            # kitty @ goto-layout splits
+            kitty @ goto-layout fat
             # Trying to use kitty's integrated window management as the split window. All
             # environmental variables that will be used in the new window must be explicitly passed.
             kitty @ launch --no-response --title "nnn preview" --keep-focus \
@@ -216,8 +218,8 @@ fifo_pager() {
 # Binary file: show file info inside the pager
 print_bin_info() {
         # chyld
-        # hexyl "$1"
-        xxd -c 8 -l 225 "$1"
+        hexyl "$1"
+        # xxd -c 8 -l 225 "$1"
 } 2>/dev/null
 
 handle_mime() {
