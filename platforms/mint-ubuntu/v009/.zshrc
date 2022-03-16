@@ -191,7 +191,7 @@ export PATH=$LOCAL_BIN:$NODE_BIN:$DATAGRIP_BIN:$SCRIPTS_BIN:$PATH:$HOME/.local/d
 __conda_setup="$('/home/chyld/.local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 eval "$__conda_setup"
 unset __conda_setup
-conda activate omega
+conda activate gamma
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
