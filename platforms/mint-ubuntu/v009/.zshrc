@@ -215,6 +215,7 @@ source ~/.local/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.local/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/zsh/ohmyzsh/lib/functions.zsh
 source ~/.local/zsh/ohmyzsh/plugins/web-search/web-search.plugin.zsh
+source ~/.local/zsh/fzf-tab/fzf-tab.plugin.zsh
 eval "$(zoxide init zsh)"
 
 # ------------------------------------------------------------------------------------------------ #
