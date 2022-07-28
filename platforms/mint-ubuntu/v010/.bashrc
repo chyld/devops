@@ -122,17 +122,13 @@ fi
 
 SCRIPTS_BIN=$HOME/Code/devops/scripts
 NODE_BIN=$HOME/.local/node/bin
-export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN
+NVIM_BIN=$HOME/.local/nvim
+export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN:$NVIM_BIN
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-jl() {
-    jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token=""
-}
-
-# +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 # x, xc, xl (go, create, view)
 
 xc() {
@@ -142,7 +138,14 @@ xc() {
 
 alias x="cd $HOME/X"
 alias xl="exa -RTla -L 2 -s created --icons"
-# +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
+jl() {
+    jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token=""
+}
 
 alias c="clear"
 alias b="cd .."
@@ -152,6 +155,7 @@ alias cat="bat"
 alias t="tree -a -I .git"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias vi="nvim.appimage"
 
 alias l="exa --icons --git -la"
 alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git"
