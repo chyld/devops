@@ -129,6 +129,9 @@ alias b="cd .."
 alias rcp="find -name .ipynb_checkpoints | xargs -I @@ rm -rf @@"
 alias g="git"
 alias cll="clear && ls -al"
+alias cat="bat"
+alias l="exa --icons --git -la"
+alias t="tree -a -I .git"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
