@@ -1,0 +1,14 @@
+[user]
+  email   = chyld.medford@gmail.com
+  name    = Chyld Medford
+[push]
+  default = current
+[credential]
+  helper  = cache --timeout=86400
+[core]
+  editor  = vim
+[pull]
+  rebase = false
+[init]
+  defaultBranch = master
+
