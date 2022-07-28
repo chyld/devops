@@ -23,7 +23,7 @@ hexid = uuid.uuid4().hex[-4:]
 current = datetime.now().strftime("%Y-%m%d")
 
 # put it all together
-project_dir = f"{adjective}-{name}-{current}.{hexid}"
+project_dir = f"{adjective}.{greek}-{element}.{current}.{hexid}"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
