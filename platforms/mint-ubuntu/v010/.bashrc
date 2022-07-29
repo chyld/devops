@@ -143,6 +143,10 @@ alias xl="exa -RTla -L 2 -s created --icons"
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+# ::: Notes :::
+# jl 3333 (to start jupyter lab on port 3333, write log files to disk, and do not hangup or quit if the terminal exits)
+# jupyter lab list (to view all running instances)
+# File -> ShutDown (to exit, from GUI)
 jl() {
     nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> a.log 2> b.log &
 }
