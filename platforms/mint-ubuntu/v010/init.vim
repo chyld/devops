@@ -58,13 +58,14 @@ END
 " Tree shortcut keys
 nnoremap <leader>t :NvimTreeToggle<CR>
 
+" <C-x>, <C-v>, <C-t> for opening in split, vsplit, new tab
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" Cycle through windows and tabs
+" Cycle using arrow keys, through windows and tabs
 nmap <silent> <A-Left> :wincmd p<CR>
 nmap <silent> <A-Right> :wincmd w<CR>
 nmap <silent> <A-Up> :tabnext<CR>
