@@ -135,6 +135,9 @@ xc() {
   destination=$(x-dir.py)
   cd $destination
   touch README.md
+  git init
+  git add README.md
+  git commit -m "Auto generated from xc"
 }
 
 alias x="cd $HOME/X"
@@ -153,6 +156,8 @@ jl() {
     sleep 3
     jupyter lab list
 }
+
+alias jll="jupyter lab list"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
