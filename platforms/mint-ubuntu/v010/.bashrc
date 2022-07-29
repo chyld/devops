@@ -144,7 +144,7 @@ alias xl="exa -RTla -L 2 -s created --icons"
 # ------------------------------------------------------------------------------------------------ #
 
 jl() {
-    jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token=""
+    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> a.log 2> b.log &
 }
 
 alias c="clear"
