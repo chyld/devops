@@ -3,11 +3,18 @@
 " ------------------------------------------------------------------------------
 " ------------------------------------------------------------------------------
 
+" plugins stored in ~/.vim/plugged
+" you can delete directory and reinstall if needed
 call plug#begin("~/.vim/plugged")
-  Plug 'kyazdani42/nvim-web-devicons' # icons
-  Plug 'kyazdani42/nvim-tree.lua'     # file tree view
-  Plug 'nvim-lualine/lualine.nvim'    # status line
-  Plug 'morhetz/gruvbox'              # color theme
+  Plug 'kyazdani42/nvim-web-devicons' " icons
+  Plug 'kyazdani42/nvim-tree.lua'     " file tree view
+  Plug 'nvim-lualine/lualine.nvim'    " status line
+  Plug 'morhetz/gruvbox'              " color theme
+  " telescope and dependencies
+  " :checkhealth telescope
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " it may error, just exit and do :PlugUpdate
 call plug#end()
 
 " CONFIG
@@ -50,6 +57,12 @@ END
 
 " Tree shortcut keys
 nnoremap <leader>t :NvimTreeToggle<CR>
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Cycle through windows and tabs
 nmap <silent> <A-Left> :wincmd p<CR>
