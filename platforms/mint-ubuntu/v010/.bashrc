@@ -134,22 +134,29 @@ export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN:$NVIM_BIN
 xc() {
   destination=$(x-dir.py)
   cd $destination
+  touch README.md
 }
 
 alias x="cd $HOME/X"
-alias xl="exa -RTla -L 2 -s created --icons"
+alias xl="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-# ::: Notes :::
-# jl 3333 (to start jupyter lab on port 3333, write log files to disk, and do not hangup or quit if the terminal exits)
+# jl 3333 (to start jupyter lab on port 3333)
 # jupyter lab list (to view all running instances)
 # File -> ShutDown (to exit, from GUI)
+
 jl() {
-    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> a.log 2> b.log &
+    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> "$1"-a.log 2> "$1"-b.log &
+    sleep 3
+    jupyter lab list
 }
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
 
 alias c="clear"
 alias b="cd .."
@@ -160,6 +167,7 @@ alias t="tree -a -I .git"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias vi="nvim.appimage"
+alias dots="cd /home/chyld/Code/devops/platforms/mint-ubuntu/v010"
 
 alias l="exa --icons --git -la"
 alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git"
