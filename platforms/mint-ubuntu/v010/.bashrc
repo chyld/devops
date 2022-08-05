@@ -152,9 +152,14 @@ alias xl="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-ti
 # File -> ShutDown (to exit, from GUI)
 
 jl() {
-    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> "$1"-a.log 2> "$1"-b.log &
-    sleep 3
-    jupyter lab list
+    if [ $# -eq 0 ] # counting the number of arguments to the function
+        then
+            echo "No arguments provided"
+        else
+            nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> "$1"-a.log 2> "$1"-b.log &
+            sleep 3
+            jupyter lab list
+        fi
 }
 
 alias jll="jupyter lab list"
