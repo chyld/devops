@@ -147,6 +147,40 @@ alias xl="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-ti
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+# view any env variable in any process
+
+view_env_variables() {
+    cat /proc/"$1"/environ | tr '\0' '\n'
+}
+
+# usage, monitor ., or monitor /usr
+# this will watch read, write, modify, delete file access - recursively
+# a wonderful debugging tool to see what files are being used by a process
+
+monitor() {
+  inotifywait -e access,delete,create,modify -m -r "$1"
+}
+
+# make the path look nice
+
+path() {
+  echo $PATH | tr ":" "\n" | nl
+}
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
+# notice the () not {} around the body of this function
+# this will run this function in a subshell
+# and not pollute the current env with LD_LIBRARY_PATH which can cause problems
+# this env variable is required to use tensorflow gpu
+
+jltf() (
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+    jl "$1"
+)
+
 # jl 3333 (to start jupyter lab on port 3333)
 # jupyter lab list (to view all running instances)
 # File -> ShutDown (to exit, from GUI)
