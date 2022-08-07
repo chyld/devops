@@ -206,6 +206,7 @@ alias c="clear"
 alias b="cd .."
 alias rcp="find -name .ipynb_checkpoints | xargs -I @@ rm -rf @@"
 alias g="git"
+alias d="docker"
 alias cat="bat"
 alias t="tree -a -I .git"
 alias pbcopy='xclip -selection clipboard'

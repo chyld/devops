@@ -19,11 +19,11 @@ adjective = pd.read_csv('data/adjectives.txt', header=None)[0].sample().values[0
 scientist = pd.read_csv('data/scientists.txt', header=None)[0].sample().values[0].strip()
 element = pd.read_csv('data/elements.csv').Element.sample().values[0].lower().strip()
 name = pd.read_csv('data/baby-names.csv').name.sample().values[0].lower().strip()
-hexid = uuid.uuid4().hex[-4:]
+hexid = uuid.uuid4().hex[-3:]
 current = datetime.now().strftime("%Y-%m%d")
 
 # put it all together
-project_dir = f"{adjective}.{greek}-{element}.{current}.{hexid}"
+project_dir = f"{adjective}-{element}-{current}.{hexid}"
 
 # construct the destination directory
 dst = f'{x_dir}/{project_dir}'
