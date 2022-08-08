@@ -141,7 +141,8 @@ xc() {
 }
 
 alias x="cd $HOME/X"
-alias xl="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
+alias xl="exa -RTla --icons --level 1 --sort created -b"
+alias xll="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
