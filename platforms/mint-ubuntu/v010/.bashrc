@@ -121,9 +121,10 @@ fi
 # ------------------------------------------------------------------------------------------------ #
 
 SCRIPTS_BIN=$HOME/Code/devops/scripts
+LOCAL_BIN=$HOME/.local/bin
 NODE_BIN=$HOME/.local/node/bin
 NVIM_BIN=$HOME/.local/nvim
-export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN:$NVIM_BIN
+export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN:$NVIM_BIN:$LOCAL_BIN
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -141,8 +142,8 @@ xc() {
 }
 
 alias x="cd $HOME/X"
-alias xl="exa -RTla --icons --level 1 --sort created -b"
-alias xll="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
+alias xl="x && exa -RTla --icons --level 1 --sort created -b"
+alias xll="x && exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -150,7 +151,7 @@ alias xll="exa -RTla --icons --level 2 --sort created -b --no-permissions --no-t
 
 # view any env variable in any process
 
-view_env_variables() {
+view_env_variables_by_process() {
     cat /proc/"$1"/environ | tr '\0' '\n'
 }
 
@@ -203,10 +204,18 @@ alias jll="jupyter lab list"
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+alias g="git"
+alias gs="git status"
+alias gr="git reset HEAD --hard && git clean -fd"
+alias gl="git log --oneline --color --graph"
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+
 alias c="clear"
 alias b="cd .."
 alias rcp="find -name .ipynb_checkpoints | xargs -I @@ rm -rf @@"
-alias g="git"
 alias d="docker"
 alias cat="bat"
 alias t="tree -a -I .git"
