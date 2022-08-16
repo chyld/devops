@@ -191,8 +191,14 @@ jl() {
     port="$1"
     port_len=$(echo "const s = '$port'; console.log(s.length);" | node)
 
+    # the python script has to be prefixed with a tab (not space) or it will not work
     if [ $port_len -eq 0 ]; then
-        port=$(echo "import random as r; n = r.randint(2000,10_000 - 1); print(n);" | python)
+		port=$(python <<- EOF
+			from scipy.stats import randint
+			n = randint(2_000, 10_000).rvs()
+			print(n)
+		EOF
+		)
     fi
 
     echo "Starting jupyter lab on port: $port"
