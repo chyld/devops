@@ -166,7 +166,13 @@ monitor() {
 # make the path look nice
 
 path() {
-  echo $PATH | tr ":" "\n" | nl
+    # prefix the script with tabs, not spaces
+    # notice the (pipe) on the next line, this allows the output of the lua program to be piped to nl
+	lua <<- EOF |
+		s = string.gsub("$PATH", ":", "\n")
+		print(s)
+	EOF
+    nl
 }
 
 # ------------------------------------------------------------------------------------------------ #
@@ -191,7 +197,7 @@ jl() {
     port="$1"
     port_len=$(echo "const s = '$port'; console.log(s.length);" | node)
 
-    # the python script has to be prefixed with a tab (not space) or it will not work
+    # the python script has to be prefixed with tabs (not spaces) or it will not work
     if [ $port_len -eq 0 ]; then
 		port=$(python <<- EOF
 			from scipy.stats import randint
