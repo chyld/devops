@@ -188,14 +188,17 @@ jltf() (
 # File -> ShutDown (to exit, from GUI)
 
 jl() {
-    if [ $# -eq 0 ] # counting the number of arguments to the function
-        then
-            echo "No arguments provided"
-        else
-            nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$1" --ServerApp.token="" 1> "$1"-a.log 2> "$1"-b.log &
-            sleep 3
-            jupyter lab list
-        fi
+    port="$1"
+    port_len=$(echo "const s = '$port'; console.log(s.length);" | node)
+
+    if [ $port_len -eq 0 ]; then
+        port=$(echo "import random as r; n = r.randint(2000,10_000 - 1); print(n);" | python)
+    fi
+
+    echo "Starting jupyter lab on port: $port"
+    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$port" --ServerApp.token="" 1> "$port"-a.log 2> "$port"-b.log &
+    sleep 3
+    jupyter lab list
 }
 
 alias jll="jupyter lab list"
@@ -206,8 +209,11 @@ alias jll="jupyter lab list"
 
 alias g="git"
 alias gs="git status"
-alias gr="git reset HEAD --hard && git clean -fd"
+alias grh="git reset HEAD --hard && git clean -fd"
 alias gl="git log --oneline --color --graph"
+alias gsa="git stash --all"
+alias gsl="git stash list"
+alias gsc="git stash clear"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
@@ -218,6 +224,7 @@ alias b="cd .."
 alias rcp="find -name .ipynb_checkpoints | xargs -I @@ rm -rf @@"
 alias d="docker"
 alias cat="bat"
+alias cut="tuc"
 alias t="tree -a -I .git"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
