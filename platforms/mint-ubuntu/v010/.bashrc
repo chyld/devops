@@ -207,10 +207,14 @@ jl() {
 		)
     fi
 
-    echo "Starting jupyter lab on port: $port"
+    echo "Starting jupyter lab on port $port. Use jll to see a list of running servers."
     nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$port" --ServerApp.token="" 1> "$port"-a.log 2> "$port"-b.log &
-    sleep 3
-    jupyter lab list
+}
+
+# kill all instances of jupyter lab
+
+jlkill() {
+    ps -ux | rg -v rg | rg jupyter-lab | tuc -e '\s+' -f 2 | xargs -I @@ kill -s SIGKILL @@
 }
 
 alias jll="jupyter lab list"
