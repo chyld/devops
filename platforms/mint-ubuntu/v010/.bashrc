@@ -247,8 +247,8 @@ alias pbpaste='xclip -selection clipboard -o'
 alias vi="nvim.appimage"
 alias dots="cd /home/chyld/Code/devops/platforms/mint-ubuntu/v010"
 
-alias l="exa --icons --git -la"
-alias ll="pls -i nerd -a -d type -d perms -d user -d size -d git"
+alias l="exa --icons --git -a"
+alias ll="exa --icons --git -la"
 alias cl="c && l"
 alias cll="c && ll"
 
