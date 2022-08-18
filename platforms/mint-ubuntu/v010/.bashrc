@@ -130,7 +130,7 @@ export PATH=$PATH:$SCRIPTS_BIN:$NODE_BIN:$NVIM_BIN:$LOCAL_BIN
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-# x, xc, xl (go, create, view)
+# xc, xw, x, xl, xll
 
 xc() {
   destination=$(x-dir.py)
@@ -139,6 +139,14 @@ xc() {
   git init
   git add README.md
   git commit -m "Auto generated from xc"
+}
+
+xw() {
+    num="${1:-1}" # set num to $1 if exists, else set to 1 (default)
+    cd $HOME/X
+    lastdir=$(exa -1 --sort created | tail -n $num | head -n 1)
+    cd $lastdir
+    clear
 }
 
 alias x="cd $HOME/X"
@@ -246,6 +254,10 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias vi="nvim.appimage"
 alias dots="cd /home/chyld/Code/devops/platforms/mint-ubuntu/v010"
+
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------------ #
 
 alias l="exa --icons --git -a"
 alias ll="exa --icons --git -la"
