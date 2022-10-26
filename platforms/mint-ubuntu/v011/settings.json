@@ -1,0 +1,47 @@
+{
+  "workbench.startupEditor": "none",
+
+  "window.title": "${activeEditorShort}",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+
+  "files.trimTrailingWhitespace": true,
+  "breadcrumbs.enabled": true,
+  "dev.containers.dockerPath": "podman",
+
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "FiraCode NF",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#ff33cc",
+    "editorLineNumber.activeForeground": "#33ffcc"
+  },
+
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.flake8Enabled": true,
+  "python.formatting.blackArgs": [],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  "prettier.tabWidth": 2,
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

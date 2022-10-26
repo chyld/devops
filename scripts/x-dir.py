@@ -11,7 +11,8 @@ abs_path = os.path.dirname(os.path.abspath(__file__))
 os.chdir(abs_path)
 
 # base directories
-x_dir = '/home/chyld/X'
+home = os.environ['HOME']
+x_dir = f'{home}/X'
 
 # generate name of folder
 greek, unicode = pd.read_csv('data/greek.txt').sample().values.flatten()[0].split('-')

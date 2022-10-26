@@ -1,0 +1,53 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$lua\
+$nodejs\
+$python\
+$conda\
+$character"""
+
+[hostname]
+ssh_only = false
+format = "[]($style) [$hostname]($style) "
+style = "#33ffcc"
+
+[directory]
+truncation_length = 100
+format = "[]($style) [$path]($style) "
+style = "#ff33cc"
+
+[git_branch]
+always_show_remote = true
+style = "white"
+
+[git_commit]
+only_detached = false
+commit_hash_length = 4
+style = "white"
+
+[character]
+success_symbol = "\n[::](#ccff33)"
+error_symbol = "[✗](bold red)"
+
+[conda]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[python]
+symbol = " "
+
