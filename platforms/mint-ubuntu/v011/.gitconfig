@@ -9,6 +9,3 @@
   rebase = false
 [init]
   defaultBranch = master
-[credential]
-  helper  = cache --timeout=86400
-
