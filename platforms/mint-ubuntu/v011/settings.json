@@ -25,6 +25,7 @@
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
   "python.formatting.blackArgs": [],
   "[python]": {
     "editor.formatOnSave": true,
