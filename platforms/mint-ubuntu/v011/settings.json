@@ -4,6 +4,7 @@
   "window.title": "${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
+  "window.restoreWindows": "none",
 
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": true,
