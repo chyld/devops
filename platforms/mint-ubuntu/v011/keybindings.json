@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "shift+meta+,",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "shift+meta+.",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  }
+]

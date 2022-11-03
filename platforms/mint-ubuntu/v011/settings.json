@@ -1,10 +1,9 @@
 {
-  "workbench.startupEditor": "none",
-
-  "window.title": "${activeEditorShort}",
+  // "window.title": "${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "none",
+  "window.commandCenter": true,
 
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": true,
@@ -16,6 +15,9 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
 
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Dracula Soft",
   "workbench.colorCustomizations": {
