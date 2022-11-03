@@ -25,6 +25,8 @@
     "editorLineNumber.activeForeground": "#33ffcc"
   },
 
+  "terminal.integrated.defaultLocation": "editor", // ctrl + shift + backtic
+
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.linting.flake8Enabled": true,
