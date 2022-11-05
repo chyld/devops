@@ -7,7 +7,7 @@
 
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": true,
-  "dev.containers.dockerPath": "podman",
+  "dev.containers.dockerPath": "docker",
 
   "editor.renderLineHighlight": "none",
   "editor.minimap.enabled": false,
