@@ -87,3 +87,47 @@ alias xll="x && exa -RTla --icons --level 2 --sort created -b --no-permissions -
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
+
+# notice the () not {} around the body of this function
+# this will run this function in a subshell
+# and not pollute the current env with LD_LIBRARY_PATH which can cause problems
+# this env variable is required to use tensorflow gpu
+
+jltf() (
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+    jl "$1"
+)
+
+# jl 3333 (to start jupyter lab on port 3333)
+# jupyter lab list (to view all running instances)
+# File -> ShutDown (to exit, from GUI)
+
+jl() {
+    port="$1"
+    port_len=$(echo "const s = '$port'; console.log(s.length);" | node)
+
+    # the python script has to be prefixed with tabs (not spaces) or it will not work
+    if [ $port_len -eq 0 ]; then
+		port=$(python <<- EOF
+			from scipy.stats import randint
+			n = randint(2_000, 10_000).rvs()
+			print(n)
+		EOF
+		)
+    fi
+
+    echo "Starting jupyter lab on port $port. Use jll to see a list of running servers."
+    nohup jupyter lab --no-browser --ip="0.0.0.0" --port="$port" --ServerApp.token="" 1> "$port"-a.log 2> "$port"-b.log &
+}
+
+# kill all instances of jupyter lab
+
+jlkill() {
+    ps -ux | rg -v rg | rg jupyter-lab | tuc -e '\s+' -f 2 | xargs -I @@ kill -s SIGKILL @@
+}
+
+alias jll="jupyter lab list"
+
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
