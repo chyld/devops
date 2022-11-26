@@ -16,6 +16,12 @@ export PATH=$scriptsbin:$nodebin:$PATH
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
 
+alias dots="cd $HOME/Code/devops/platforms/mint-ubuntu/v012"
+
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+
 alias c="clear"
 alias b="cd .."
 alias l="exa --icons --git -aF"
@@ -55,6 +61,36 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 alias ca="conda activate"
+
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+
+# view any env variable in any process
+
+view_env_variables_by_process_id() {
+    cat /proc/"$1"/environ | tr '\0' '\n'
+}
+
+# usage, monitor ., or monitor /usr
+# this will watch read, write, modify, delete file access - recursively
+# a wonderful debugging tool to see what files are being used by a process
+
+monitor() {
+  inotifywait -e access,delete,create,modify -m -r "$1"
+}
+
+# make the path look nice
+
+path() {
+    # prefix the script with tabs, not spaces
+    # notice the (pipe) on the next line, this allows the output of the lua program to be piped to nl
+	lua <<- EOF |
+		s = string.gsub("$PATH", ":", "\n")
+		print(s)
+	EOF
+    nl
+}
 
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
