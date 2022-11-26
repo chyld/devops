@@ -59,3 +59,31 @@ alias ca="conda activate"
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
+
+xc() {
+    destination=$(x-dir.py)
+    cd $destination
+    touch README.md
+    git init
+    git add README.md
+    git commit -m "Auto generated from xc"
+    clear
+    ll
+}
+
+xw() {
+    num="${1:-1}" # set num to $1 if exists, else set to 1 (default)
+    cd $HOME/X
+    lastdir=$(exa -1 --sort created | tail -n $num | head -n 1)
+    cd $lastdir
+    clear
+    ll
+}
+
+alias x="cd $HOME/X"
+alias xl="x && exa -RTla --icons --level 1 --sort created -b"
+alias xll="x && exa -RTla --icons --level 2 --sort created -b --no-permissions --no-time --no-user"
+
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
