@@ -109,14 +109,17 @@ path() {
 # ---------------------------------------------------------------------------- #
 
 xc() {
-    destination=$(x-dir.py)
-    cd $destination
-    touch README.md
-    git init
-    git add README.md
-    git commit -m "Auto generated from xc"
-    clear
-    ll
+    destination=$(x-dir.py) # should be a 2
+    retval=$?               # capture the return value before it changes
+    if [ $retval -eq 2 ]; then
+        cd $destination
+        touch README.md
+        git init
+        git add README.md
+        git commit -m "Auto generated from xc"
+        clear
+        ll
+    fi
 }
 
 xw() {
