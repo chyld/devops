@@ -9,5 +9,8 @@ return require("packer").startup(function(use)
     }
     use 'nanozuki/tabby.nvim'
     use "EdenEast/nightfox.nvim"
+    use {'stevearc/dressing.nvim'}
+    use({ 'mrjones2014/legendary.nvim' })
+    use { "williamboman/mason.nvim" }
 end)
 
