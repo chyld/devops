@@ -11,6 +11,11 @@ return require("packer").startup(function(use)
     use "EdenEast/nightfox.nvim"
     use {'stevearc/dressing.nvim'}
     use({ 'mrjones2014/legendary.nvim' })
-    use { "williamboman/mason.nvim" }
+
+    use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+   }
 end)
 
