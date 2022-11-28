@@ -25,7 +25,7 @@ alias t="tree -a -I .git"
 alias du="duf"
 alias vi="nvim"
 alias dots="cd $HOME/Code/devops/platforms/mint-ubuntu/v012"
-alias go="cd $HOME/X/macos"
+alias mac="cd $HOME/macOS"
 
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
