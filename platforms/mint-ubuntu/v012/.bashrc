@@ -69,6 +69,16 @@ unset __conda_setup
 
 alias ca="conda activate"
 
+activate_conda_environment() {
+    does_exist=$(conda env list | grep -i frodo)
+
+    if [ ! -z "$does_exist" ]; then
+        conda activate frodo
+    fi
+}
+
+activate_conda_environment
+
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
@@ -112,7 +122,6 @@ xc() {
         git init
         git add README.md
         git commit -m "Auto generated from xc"
-        clear
         ll
     fi
 }
