@@ -131,7 +131,6 @@ xw() {
     cd $HOME/X
     lastdir=$(exa -1 --sort created | tail -n $num | head -n 1)
     cd $lastdir
-    clear
     ll
 }
 
