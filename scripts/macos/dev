@@ -1,0 +1,22 @@
+#!/bin/bash
+# dev <container-name> <volume-name>
+# note: if the volume does not exist it will be auto created
+
+if [ $# -eq 0 ]; then
+    echo "Missing container and volume name"
+    exit 1
+fi
+
+name=$1
+volume=$2
+
+does_exist=$(docker ps -a --format '{{ .Names }}' | grep -i "$name")
+
+if [ -z "$does_exist" ]
+	then
+		docker run -it -p 3000-3009:3000-3009 --name "$name" -v "$volume":/home/chyld/X -v $(pwd):/home/chyld/macOS prometheus:latest
+	else
+		docker start "$name" 1> /dev/null
+		docker attach "$name"
+fi
+
