@@ -1,4 +1,32 @@
 #!/bin/bash
 
-docker run --rm -it -p 3000-3009:3000-3009 -v $(pwd):/home/chyld/macOS prometheus:latest
+# ------------------------------------------------------------------------------
+# usage: go <port>
+#
+# notes:
+# auto creates a temporary volume for data sharing between containers
+# ------------------------------------------------------------------------------
+
+port=$1
+
+if [ -z "$port" ]; then
+  port=3333
+fi
+
+does_port_exist=$(docker ps -a --format '{{ .Ports }}' | grep -i "$port")
+
+if [ -n "$does_port_exist" ]; then
+  echo "port $port already in use"
+  exit 1
+fi
+
+docker run --rm -it -p "$port":"$port"   \
+  -v "$(pwd)":/home/chyld/mount          \
+  -v /Users/chyld:/home/chyld/macOS      \
+  -v ephemeral:/home/chyld/X             \
+  prometheus:latest
+
+# # #
+# #
+#
 

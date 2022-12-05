@@ -3,10 +3,13 @@ FROM archlinux:latest
 ENV TZ America/Los_Angeles
 
 RUN pacman -Sy --noconfirm
-RUN pacman -S  --noconfirm shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua xclip fzf glow duf bpytop lazygit openssh
+RUN pacman -S  --noconfirm sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua xclip fzf glow duf bpytop lazygit openssh
 RUN pacman -S  --noconfirm --needed base-devel
 
-RUN useradd -ms /bin/bash chyld
+RUN useradd -ms /bin/bash chyld \
+    && echo "chyld:chyld" | chpasswd \
+    && echo 'chyld  ALL=(ALL:ALL) ALL' >> /etc/sudoers
+
 USER chyld
 WORKDIR /home/chyld
 
@@ -28,13 +31,15 @@ RUN rm .bash_profile .bashrc \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.bash_profile . \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.bashrc . \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.gitconfig . \
+    && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.tmux.conf . \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/starship.toml ~/.config
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN npm install -g eslint
+RUN npm install -g eslint zx tldr
 
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
+   && conda activate frodo \
    && conda install -y jupyterlab -c conda-forge \
    && pip install pylint black httpie pandas numpy matplotlib scikit-learn scipy sympy statsmodels
 
@@ -45,7 +50,10 @@ RUN cargo install tuc --features regex \
 RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
 	&& nvim --headless -c 'autocmd User PackerComplete quitall' \
 	&& nvim --headless -c "TSInstallSync python javascript typescript lua bash" +qa \
-	&& nvim --headless -c 'MasonInstall bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js' +qa
+	&& nvim --headless -c 'MasonInstall bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+
+RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
+    && ~/.tmux/plugins/tpm/bin/install_plugins
 
 #
 # END OF SCRIPT
@@ -55,5 +63,4 @@ RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
 #   && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/nvim ~/.config \
 #   && nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' \
 #   && nvim --headless -c 'MasonInstall bash-language-server lua-language-server typescript-language-server pyright' +qa
-
 
