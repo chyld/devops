@@ -22,6 +22,11 @@ vim.opt.scrolloff = 5
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
 
+-- disable netrw at the very start of your init.lua (strongly advised)
+-- https://github.com/nvim-tree/nvim-tree.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 --vim.cmd("colorscheme nightfox")
 --require('lualine').setup {
 --   options = { theme = 'molokai' }
