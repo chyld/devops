@@ -1,4 +1,4 @@
 require('lualine').setup({
-   options = { theme = 'molokai' }
+   options = { theme = 'dracula' }
 })
 
