@@ -21,7 +21,6 @@ if [ -n "$does_port_exist" ]; then
 fi
 
 docker run --rm -it -p "$port":"$port"   \
-  -v "$(pwd)":/home/chyld/mount          \
   -v /Users/chyld:/home/chyld/macOS      \
   -v ephemeral:/home/chyld/X             \
   prometheus:latest

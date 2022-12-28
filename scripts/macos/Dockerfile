@@ -3,7 +3,7 @@ FROM archlinux:latest
 ENV TZ America/Los_Angeles
 
 RUN pacman -Sy --noconfirm
-RUN pacman -S  --noconfirm sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua xclip fzf glow duf bpytop lazygit openssh
+RUN pacman -S  --noconfirm ncdu sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua xclip fzf glow duf bpytop lazygit openssh
 RUN pacman -S  --noconfirm --needed base-devel
 
 RUN useradd -ms /bin/bash chyld \
@@ -15,11 +15,11 @@ WORKDIR /home/chyld
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
-RUN wget https://nodejs.org/dist/v19.1.0/node-v19.1.0-linux-x64.tar.xz \
-    && tar -xf node-v19.1.0-linux-x64.tar.xz   \
+RUN wget https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-x64.tar.xz \
+    && tar -xf node-v19.2.0-linux-x64.tar.xz   \
     && mkdir -p ~/.local                       \
-    && mv node-v19.1.0-linux-x64 ~/.local/node \
-    && rm node-v19.1.0-linux-x64.tar.xz
+    && mv node-v19.2.0-linux-x64 ~/.local/node \
+    && rm node*.tar.xz
 
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     && bash Miniconda3-latest-Linux-x86_64.sh -b -p /home/chyld/.local/miniconda3 \
@@ -39,18 +39,23 @@ SHELL ["/bin/bash", "--login", "-c"]
 RUN npm install -g eslint zx tldr
 
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
-   && conda activate frodo \
-   && conda install -y jupyterlab -c conda-forge \
-   && pip install pylint black httpie pandas numpy matplotlib scikit-learn scipy sympy statsmodels
+    && conda activate frodo \
+    && conda install -y jupyterlab -c conda-forge \
+    && pip install pylint black httpie pandas numpy matplotlib seaborn scikit-learn lazypredict scipy sympy statsmodels
 
 RUN cargo install tuc --features regex \
-   && cargo install atuin \
-   && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
+    && cargo install atuin \
+    && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
 
-RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
-	&& nvim --headless -c 'autocmd User PackerComplete quitall' \
-	&& nvim --headless -c "TSInstallSync python javascript typescript lua bash" +qa \
-	&& nvim --headless -c 'MasonInstall bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+#RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
+#	&& nvim --headless -c 'autocmd User PackerComplete quitall' \
+#	&& nvim --headless -c "TSInstallSync python javascript typescript lua bash" +qa \
+#	&& nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+
+RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim \
+    && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/nvim ~/.config \
+    && nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' \
+    && nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
 
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
     && ~/.tmux/plugins/tpm/bin/install_plugins
@@ -58,9 +63,4 @@ RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
 #
 # END OF SCRIPT
 # # #
-
-#RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim \
-#   && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/nvim ~/.config \
-#   && nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' \
-#   && nvim --headless -c 'MasonInstall bash-language-server lua-language-server typescript-language-server pyright' +qa
 
