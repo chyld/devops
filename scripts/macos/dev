@@ -1,22 +1,43 @@
 #!/bin/bash
-# dev <container-name> <volume-name>
-# note: if the volume does not exist it will be auto created
 
-if [ $# -eq 0 ]; then
-    echo "Missing container and volume name"
-    exit 1
+# ------------------------------------------------------------------------------
+# usage: dev <port> <name>
+#
+# ------------------------------------------------------------------------------
+
+port=$1
+name=$2
+
+if [ -z "$port" ]; then
+  echo "no port"
+  exit 1
 fi
 
-name=$1
-volume=$2
-
-does_exist=$(docker ps -a --format '{{ .Names }}' | grep -i "$name")
-
-if [ -z "$does_exist" ]
-	then
-		docker run -it -p 3000-3009:3000-3009 --name "$name" -v "$volume":/home/chyld/X -v $(pwd):/home/chyld/macOS prometheus:latest
-	else
-		docker start "$name" 1> /dev/null
-		docker attach "$name"
+if [ -z "$name" ]; then
+  echo "no name"
+  exit 1
 fi
+
+does_port_exist=$(docker ps -a --format '{{ .Ports }}' | grep -i "$port")
+
+if [ -n "$does_port_exist" ]; then
+  echo "port $port already in use"
+  exit 1
+fi
+
+# ./dev 3333 alpha
+# if you do not use "-it" then the container will stop
+# else if you do use "-it" then the container will continue to run
+
+docker run -p "$port":"$port"            \
+  --name "$name"                         \
+  -v /Users/chyld:/home/chyld/macOS      \
+  -v ephemeral:/home/chyld/X             \
+  -it                                    \
+  -d                                     \
+  prometheus:latest
+
+# # #
+# #
+#
 

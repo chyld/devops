@@ -1,0 +1,115 @@
+{
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.insertSpaces": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+
+  // guides ONLY for brackets, like {} and []
+  // does not work in python or shell because functions, etc do not use brackets
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": "always",
+
+  "window.restoreWindows": "none",
+  "window.commandCenter": true,
+  "outline.collapseItems": "alwaysCollapse",
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both",
+  "terminal.integrated.shellIntegration.history": 100,
+
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#ff33cc",
+    "editorLineNumber.activeForeground": "#33ffcc"
+  },
+
+  "peacock.affectTitleBar": true,
+  "peacock.affectActivityBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectSideBarBorder": false,
+  "peacock.affectPanelBorder": false,
+  "peacock.affectTabActiveBorder": false,
+
+  // SHELL SCRIPTS
+  // ==============================================================
+
+  "[shellscript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 2
+  },
+
+  // TS, JS, JSON
+  // ==============================================================
+  // .prettierrc.json --- root directory
+  // .eslintrc        --- root directory via eslint --init
+
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  // LUA
+  // ==============================================================
+
+  "Lua.telemetry.enable": true,
+  "[lua]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "sumneko.lua",
+    "editor.tabSize": 2
+  },
+
+  // PYTHON
+  // ==============================================================
+
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--disable=missing-function-docstring,invalid-name,missing-module-docstring"
+  ],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  }
+
+  // ==============================================================
+  // ==============================================================
+  // ==============================================================
+}
