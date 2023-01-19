@@ -41,7 +41,7 @@ RUN npm install -g eslint zx tldr
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && conda activate frodo \
     && conda install -y jupyterlab -c conda-forge \
-    && pip install pytest pylint black httpie pandas numpy matplotlib seaborn scikit-learn lazypredict scipy sympy statsmodels
+    && pip install ruff pytest pylint black httpie pandas numpy matplotlib seaborn scikit-learn lazypredict scipy sympy statsmodels
 
 RUN cargo install tuc --features regex \
     && cargo install atuin \
