@@ -41,26 +41,27 @@ RUN npm install -g eslint zx tldr
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && conda activate frodo \
     && conda install -y jupyterlab -c conda-forge \
-    && pip install ruff pytest pylint black httpie pandas numpy matplotlib seaborn scikit-learn lazypredict scipy sympy statsmodels
+    && pip install ruff pytest black httpie pandas numpy matplotlib seaborn scikit-learn scipy sympy statsmodels \
+    && conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 
 RUN cargo install tuc --features regex \
     && cargo install atuin \
     && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
 
-RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
-
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
     && ~/.tmux/plugins/tpm/bin/install_plugins
 
-#RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
-#  && nvim --headless -c 'autocmd User PackerComplete quitall' \
-#  && nvim --headless -c "TSInstallSync python javascript typescript lua bash" +qa \
-#  && nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+# RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
 
-#RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim \
-#  && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/nvim ~/.config \
-#  && nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' \
-#  && nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+# RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
+#   && nvim --headless -c 'autocmd User PackerComplete quitall' \
+#   && nvim --headless -c "TSInstallSync python javascript typescript lua bash" +qa \
+#   && nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
+
+# RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim \
+#   && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/nvim ~/.config \
+#   && nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' \
+#   && nvim --headless -c 'MasonInstall dockerfile-language-server bash-language-server lua-language-server typescript-language-server pyright prettier quick-lint-js pylint black shellcheck' +qa
 
 #
 # #
