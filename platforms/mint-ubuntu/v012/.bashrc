@@ -26,8 +26,6 @@ alias du="duf"
 alias vi="nvim"
 alias dots="cd $HOME/Code/devops/platforms/mint-ubuntu/v012"
 alias mac="cd $HOME/macOS"
-alias vsconfig="cd '$HOME/macOS/Library/Application Support/Code/User'"
-alias vsremote="cd '$HOME/macOS/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs'"
 # (e)dit - opens a fzf search window for all files, select a file, open in neovim
 alias e="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 
@@ -113,7 +111,14 @@ path() {
     nl
 }
 
-# backup current vs code settings
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
+
+# vs code helpers
+
+alias vsconfig="cd '$HOME/macOS/Library/Application Support/Code/User'"
+alias vsremote="cd '$HOME/macOS/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs'"
 
 vsbackup() {
  ls -al "$HOME/macOS/.vscode/extensions" > "$HOME/Code/devops/platforms/mint-ubuntu/v012/vscode/local.txt"
