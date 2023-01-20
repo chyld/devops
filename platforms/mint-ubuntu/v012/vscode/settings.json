@@ -88,7 +88,6 @@
   // LUA
   // ==============================================================
 
-  "Lua.telemetry.enable": true,
   "[lua]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "sumneko.lua",
@@ -100,13 +99,14 @@
 
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintArgs": [
-    "--disable=missing-function-docstring,invalid-name,missing-module-docstring"
-  ],
+
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnType": true
   }
 
   // ==============================================================

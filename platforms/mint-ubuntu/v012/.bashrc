@@ -113,6 +113,14 @@ path() {
     nl
 }
 
+# backup current vs code settings
+
+vsbackup() {
+ ls -al "$HOME/macOS/.vscode/extensions" > "$HOME/Code/devops/platforms/mint-ubuntu/v012/vscode/local.txt"
+ cp "$HOME/macOS/Library/Application Support/Code/User/settings.json" "$HOME/Code/devops/platforms/mint-ubuntu/v012/vscode"
+ cp "$HOME/macOS/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs"/* "$HOME/Code/devops/platforms/mint-ubuntu/v012/vscode"
+}
+
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #

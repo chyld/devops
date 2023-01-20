@@ -1,0 +1,11 @@
+{
+  "workspaceFolder": "",
+  "extensions": [
+	"charliermarsh.ruff",
+	"esbenp.prettier-vscode",
+	"foxundermoon.shell-format",
+	"ms-python.python",
+	"sumneko.lua"
+]
+}
+
