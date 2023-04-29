@@ -45,14 +45,13 @@ RUN conda create -y --name frodo python=3.11 -c conda-forge \
 
 RUN cargo install tuc --features regex \
     && cargo install atuin \
+    && cargo install erdtree \
     && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
 
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
     && ~/.tmux/plugins/tpm/bin/install_plugins
 
-# check this out! --- https://github.com/solidiquis/erdtree
-
-# RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
+RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 # RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim \
 #   && nvim --headless -c 'autocmd User PackerComplete quitall' \
