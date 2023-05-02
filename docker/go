@@ -1,26 +1,15 @@
 #!/bin/bash
 
-# ------------------------------------------------------------------------------
-# usage: go <port>
-#
-# notes:
-# auto creates a temporary volume for data sharing between containers
-# ------------------------------------------------------------------------------
-
 port=$1
 
 if [ -z "$port" ]; then
   port=3333
 fi
 
-does_port_exist=$(docker ps -a --format '{{ .Ports }}' | grep -i "$port")
+# i am removing "--rm" so that i can have the option of
+# keeping the container if i want it later
 
-if [ -n "$does_port_exist" ]; then
-  echo "port $port already in use"
-  exit 1
-fi
-
-docker run --rm -it -p "$port":"$port"   \
+docker run -it -p "$port":"$port"   \
   -v /Users/chyld:/home/chyld/macOS      \
   -v ephemeral:/home/chyld/X             \
   prometheus:latest
@@ -28,4 +17,3 @@ docker run --rm -it -p "$port":"$port"   \
 # # #
 # #
 #
-
