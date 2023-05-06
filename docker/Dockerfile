@@ -36,7 +36,7 @@ RUN rm .bash_profile .bashrc \
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN npm install -g eslint zx tldr
+RUN npm install -g eslint zx tldr @angular/cli
 
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && conda activate frodo \
