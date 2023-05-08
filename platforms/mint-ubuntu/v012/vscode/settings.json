@@ -15,10 +15,6 @@
   // does not work in python or shell because functions, etc do not use brackets
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "editor.guides.bracketPairsHorizontal": "active",
-  "editor.guides.highlightActiveBracketPair": true,
-  "editor.guides.indentation": true,
-  "editor.guides.highlightActiveIndentation": "always",
 
   "window.restoreWindows": "none",
   "window.commandCenter": true,
@@ -34,15 +30,15 @@
 
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.colorCustomizations": {
     "editorLineNumber.foreground": "#ff33cc",
     "editorLineNumber.activeForeground": "#33ffcc"
   },
 
   "peacock.affectTitleBar": true,
-  "peacock.affectActivityBar": true,
-  "peacock.affectStatusBar": true,
+  "peacock.affectActivityBar": false,
+  "peacock.affectStatusBar": false,
   "peacock.affectSideBarBorder": false,
   "peacock.affectPanelBorder": false,
   "peacock.affectTabActiveBorder": false,
@@ -85,6 +81,18 @@
     "editor.tabSize": 2
   },
 
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
   // LUA
   // ==============================================================
 
@@ -98,15 +106,11 @@
   // ==============================================================
 
   "python.languageServer": "Pylance",
-  "python.formatting.provider": "black",
 
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.tabSize": 4,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
-    "editor.formatOnType": true
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
   }
 
   // ==============================================================

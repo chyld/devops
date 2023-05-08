@@ -1,18 +1,17 @@
 {
-  "workspaceFolder": "/home/chyld/X/festive-polonium-2023-0119.2be",
-  "extensions": [
-	"charliermarsh.ruff",
-	"esbenp.prettier-vscode",
-	"foxundermoon.shell-format",
-	"ms-python.isort",
-	"ms-python.python",
-	"ms-python.vscode-pylance",
-	"ms-toolsai.jupyter",
-	"ms-toolsai.jupyter-keymap",
-	"ms-toolsai.jupyter-renderers",
-	"ms-toolsai.vscode-jupyter-cell-tags",
-	"ms-toolsai.vscode-jupyter-slideshow",
-	"sumneko.lua"
-]
+	"workspaceFolder": "/home/chyld/X/shorturl/client",
+	"extensions": [
+		"amazonwebservices.aws-toolkit-vscode",
+		"esbenp.prettier-vscode",
+		"foxundermoon.shell-format",
+		"ms-python.black-formatter",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"ms-toolsai.jupyter",
+		"ms-toolsai.jupyter-keymap",
+		"ms-toolsai.jupyter-renderers",
+		"ms-toolsai.vscode-jupyter-cell-tags",
+		"ms-toolsai.vscode-jupyter-slideshow",
+		"sumneko.lua"
+	]
 }
-
