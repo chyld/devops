@@ -28,6 +28,7 @@ alias dots="cd $HOME/Code/devops/platforms/mint-ubuntu/v012"
 alias mac="cd $HOME/macOS"
 # (e)dit - opens a fzf search window for all files, select a file, open in neovim
 alias e="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+# (sg) fast code search, lint, rewrite : https://github.com/ast-grep/ast-grep
 
 # ---------------------------------------------------------------------------- #
 # ---------------------------------------------------------------------------- #
