@@ -15,10 +15,10 @@ WORKDIR /home/chyld
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
-RUN wget https://nodejs.org/dist/v20.0.0/node-v20.0.0-linux-x64.tar.xz \
-    && tar -xf node-v20.0.0-linux-x64.tar.xz   \
+RUN wget https://nodejs.org/dist/v20.2.0/node-v20.2.0-linux-x64.tar.xz \
+    && tar -xf node-v20.2.0-linux-x64.tar.xz   \
     && mkdir -p ~/.local                       \
-    && mv node-v20.0.0-linux-x64 ~/.local/node \
+    && mv node-v20.2.0-linux-x64 ~/.local/node \
     && rm node*.tar.xz
 
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
