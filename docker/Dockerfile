@@ -47,6 +47,7 @@ RUN conda create -y --name frodo python=3.11 -c conda-forge \
 RUN cargo install tuc --features regex \
     && cargo install atuin \
     && cargo install erdtree \
+    && cargo install ast-grep \
     && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
 
 RUN wget https://download.visualstudio.microsoft.com/download/pr/ebfd0bf8-79bd-480a-9e81-0b217463738d/9adc6bf0614ce02670101e278a2d8555/dotnet-sdk-7.0.203-linux-x64.tar.gz \
