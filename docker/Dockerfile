@@ -50,9 +50,9 @@ RUN cargo install tuc --features regex \
     && cargo install ast-grep \
     && curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
 
-RUN wget https://download.visualstudio.microsoft.com/download/pr/ebfd0bf8-79bd-480a-9e81-0b217463738d/9adc6bf0614ce02670101e278a2d8555/dotnet-sdk-7.0.203-linux-x64.tar.gz \
-    && mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-7.0.203-linux-x64.tar.gz -C $HOME/dotnet \
-    && rm dotnet-sdk-7.0.203-linux-x64.tar.gz
+# RUN wget https://download.visualstudio.microsoft.com/download/pr/ebfd0bf8-79bd-480a-9e81-0b217463738d/9adc6bf0614ce02670101e278a2d8555/dotnet-sdk-7.0.203-linux-x64.tar.gz \
+#    && mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-7.0.203-linux-x64.tar.gz -C $HOME/dotnet \
+#    && rm dotnet-sdk-7.0.203-linux-x64.tar.gz
 
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
     && ~/.tmux/plugins/tpm/bin/install_plugins
@@ -72,4 +72,3 @@ RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
 #
 # #
 # # #
-
