@@ -4,7 +4,7 @@ ENV TZ America/Los_Angeles
 
 RUN pacman -Syu --noconfirm
 RUN pacman -S   --noconfirm base-devel
-RUN pacman -S   --noconfirm just ncdu sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua luarocks xclip fzf glow duf bpytop lazygit openssh
+RUN pacman -S   --noconfirm tuc just ncdu sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua luarocks xclip fzf glow duf bpytop lazygit openssh
 
 RUN useradd -ms /bin/bash chyld \
     && echo "chyld:chyld" | chpasswd \
@@ -34,6 +34,8 @@ RUN rm .bash_profile .bashrc \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/starship.toml ~/.config
 
 SHELL ["/bin/bash", "--login", "-c"]
+
+RUN npm install -g zx tldr
 
 RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && conda activate frodo \
