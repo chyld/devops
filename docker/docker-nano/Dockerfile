@@ -4,7 +4,7 @@ ENV TZ America/Los_Angeles
 
 RUN pacman -Syu --noconfirm
 RUN pacman -S   --noconfirm base-devel
-RUN pacman -S   --noconfirm tuc-bin just ncdu sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua luarocks xclip fzf glow duf bpytop lazygit openssh
+RUN pacman -S   --noconfirm just ncdu sqlite watchexec tmux shellcheck starship cowsay wget git unzip neovim vim ripgrep fd bat hexyl htop tree inetutils exa inotify-tools lua luarocks xclip fzf glow duf bpytop lazygit openssh
 
 RUN useradd -ms /bin/bash chyld \
     && echo "chyld:chyld" | chpasswd \
