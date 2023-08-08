@@ -28,7 +28,7 @@ RUN mkdir X Code .config && cd Code && git clone --depth 1 https://github.com/ch
 
 RUN rm .bash_profile .bashrc \ 
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.bash_profile . \
-    && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.bashrc . \
+    && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.bashrc-nano .bashrc \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.gitconfig . \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/.tmux.conf . \
     && ln -s ~/Code/devops/platforms/mint-ubuntu/v012/starship.toml ~/.config
