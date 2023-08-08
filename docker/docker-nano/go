@@ -1,0 +1,14 @@
+#!/bin/bash
+
+port=$1
+
+if [ -z "$port" ]; then
+  port=3333
+fi
+
+docker run -it -p "$port":"$port"        \
+  -v ephemeral:/home/chyld/X             \
+  nano:latest
+
+# # #
+
