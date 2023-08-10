@@ -43,5 +43,7 @@ RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && pip install pandas numpy matplotlib \
     && pip install httpie
 
-###
+RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
+    && ~/.tmux/plugins/tpm/bin/install_plugins
 
+###
