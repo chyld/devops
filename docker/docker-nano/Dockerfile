@@ -41,6 +41,7 @@ RUN conda create -y --name frodo python=3.11 -c conda-forge \
     && conda activate frodo \
     && conda install -y jupyterlab -c conda-forge \
     && pip install pandas numpy matplotlib \
+    && pip install latexify_py@git+https://github.com/google/latexify_py \
     && pip install httpie
 
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
