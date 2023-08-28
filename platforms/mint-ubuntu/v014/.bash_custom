@@ -1,0 +1,58 @@
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/chyld/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/chyld/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/chyld/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/chyld/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+BIN_PATH=$HOME/.bin
+NVIM_PATH=$HOME/.bin/nvim/bin
+NODE_PATH=$HOME/.bin/node/bin
+SCRIPTS_PATH=$HOME/Code/devops/scripts
+export PATH=$BIN_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
+
+alias eb="vi ~/.bash_custom"
+alias sb="source ~/.bash_custom"
+alias c="clear"
+alias b="cd .."
+alias vi="nvim"
+alias vim="nvim"
+alias g="git"
+alias gs="git status"
+alias jl="jupyter lab"
+alias l="exa --icons --git -a"
+alias ll="exa --icons --git -al"
+alias cl="c;l"
+alias cll="c;ll"
+
+x() {
+    cd ~/Xplore
+}
+
+xc() {
+    destination=$(xplore.py)   # destination reads stdout from xplore.py
+    retval=$?                  # capture the return value before it changes
+    if [ $retval -eq 3 ]; then # should be 3
+        cd $destination
+        touch README.md
+        cp $HOME/Code/devops/templates/physics.ipynb .
+        git init
+        git add . 
+        git commit -m "Commit Zero"
+	git log
+        ll
+    fi
+}
+
+conda activate prometheus
+
+eval "$(starship init bash)"
+
