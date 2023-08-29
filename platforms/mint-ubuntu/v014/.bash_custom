@@ -1,13 +1,13 @@
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/chyld/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/chyld/.bin/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/chyld/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/chyld/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/chyld/.bin/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/chyld/.bin/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/chyld/miniconda3/bin:$PATH"
+        export PATH="/home/chyld/.bin/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -21,10 +21,12 @@ export PATH=$BIN_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
 
 alias eb="vi ~/.bash_custom"
 alias sb="source ~/.bash_custom"
+alias dev="cd ~/Code/devops"
 alias c="clear"
 alias b="cd .."
 alias vi="nvim"
 alias vim="nvim"
+alias cat="bat"
 alias g="git"
 alias gs="git status"
 alias jl="jupyter lab"
@@ -33,9 +35,32 @@ alias ll="exa --icons --git -al"
 alias cl="c;l"
 alias cll="c;ll"
 
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+
+path() {
+    # i setup a keybinding in vscode to manually insert tabs
+    # <<-EOF will auto strip out any tabs before sending to python
+    # the python process is reading args + code via stdin
+    path_multi_line=$(python - "$PATH" <<-EOF
+		import sys
+		get_path_from_bash = sys.argv[1]
+		post_processed = '\n'.join(get_path_from_bash.split(':'))
+		print(post_processed)
+EOF
+)
+    echo "$path_multi_line" | nl
+}
+
 x() {
     cd ~/Xplore
 }
+
+xl() (
+    cd ~/Xplore
+    exa -Ta --level 2 --icons --sort created
+)
 
 xc() {
     destination=$(xplore.py)   # destination reads stdout from xplore.py
@@ -45,14 +70,17 @@ xc() {
         touch README.md
         cp $HOME/Code/devops/templates/physics.ipynb .
         git init
-        git add . 
+        git add .
         git commit -m "Commit Zero"
-	git log
+        git log
         ll
     fi
 }
 
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+
 conda activate prometheus
 
 eval "$(starship init bash)"
-
