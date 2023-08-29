@@ -32,6 +32,7 @@ alias vim="nvim"
 alias cat="bat"
 alias g="git"
 alias gs="git status"
+alias gd="git diff"
 alias jl="jupyter lab"
 alias l="exa --icons --git -a"
 alias ll="exa --icons --git -al"
@@ -42,8 +43,20 @@ alias cll="c;ll"
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
+sd() {
+    # synd dot files to github
+    current_dir=$(pwd)
+    cd ~/Code/devops
+    git status
+    git add .
+    git commit -am "auto sync"
+    git push
+    cd "$current_dir"
+}
+
 path() {
     # i setup a keybinding in vscode to manually insert tabs
+    # in nvim, "control + v, then tab" will force a tab insert
     # <<-EOF will auto strip out any tabs before sending to python
     # the python process is reading args + code via stdin
     path_multi_line=$(python - "$PATH" <<-EOF
@@ -51,8 +64,8 @@ path() {
 		get_path_from_bash = sys.argv[1]
 		post_processed = '\n'.join(get_path_from_bash.split(':'))
 		print(post_processed)
-EOF
-)
+		EOF
+    )
     echo "$path_multi_line" | nl
 }
 
