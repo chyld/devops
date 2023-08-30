@@ -43,16 +43,26 @@ alias cll="c;ll"
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
+# NOTE ABOUT MIXING LANGUAGES
+#
+# if you want to embed a langugae like python, js or lua in a bash function,
+# then you should prefix your code with tabs, \t. when this runs, due
+# to the "<<-EOF", bash will strip out all the tabs BEFORE it sends it
+# to the language server. this keeps the code here nice looking.
+#
+# i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
+# in nvim, "control + v, then tab" will force a tab insert
+
 view_env_variables_by_process_id() {
     pid=$1
     cat /proc/"$pid"/environ | tr '\0' '\n' > env.txt
 
     $(python - "$PATH" <<-EOF
 		with open("env.txt", "r") as file:
-    		lines = file.readlines()
+		    lines = file.readlines() # leave the final spaces, do not strip out
 		modified_lines = [line.replace("=", ",", 1) for line in lines]
 		with open("env.csv", "w") as file:
-    		file.writelines(modified_lines)
+		    file.writelines(modified_lines) # leave the final spaces, do not strip out
 		EOF
     )
 
@@ -71,10 +81,6 @@ sd() {
 }
 
 path() {
-    # i setup a keybinding in vscode to manually insert tabs
-    # in nvim, "control + v, then tab" will force a tab insert
-    # <<-EOF will auto strip out any tabs before sending to python
-    # the python process is reading args + code via stdin
     path_multi_line=$(python - "$PATH" <<-EOF
 		import sys
 		get_path_from_bash = sys.argv[1]
