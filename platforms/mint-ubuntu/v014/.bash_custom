@@ -105,7 +105,7 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
-        touch README.md main.py index.js
+        touch README.md alpha.py beta.js gamma.lua
         cp $HOME/Code/devops/templates/physics.ipynb .
         git init
         git add .
