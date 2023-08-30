@@ -43,6 +43,11 @@ alias cll="c;ll"
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
+view_env_variables_by_process_id() {
+    pid=$1
+    cat /proc/"$pid"/environ | tr '\0' '\n'
+}
+
 sd() {
     # synd dot files to github
     current_dir=$(pwd)
