@@ -51,6 +51,10 @@ alias cll="c;ll"
 # to the language server. this keeps the code here nice looking.
 # You can still add spaces to your code, but only after your baseline tabs.
 #
+# all processes have to read from files, but the inline code does not have a filename,
+# so it is read in via stdin, which is a pseudo-file, the "python -", means read the file
+# on stdin.
+#
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
 
