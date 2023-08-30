@@ -49,6 +49,7 @@ alias cll="c;ll"
 # then you should prefix your code with tabs, \t. when this runs, due
 # to the "<<-EOF", bash will strip out all the tabs BEFORE it sends it
 # to the language server. this keeps the code here nice looking.
+# You can still add spaces to your code, but only after your baseline tabs.
 #
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
