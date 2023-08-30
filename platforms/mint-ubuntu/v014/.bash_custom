@@ -45,7 +45,18 @@ alias cll="c;ll"
 
 view_env_variables_by_process_id() {
     pid=$1
-    cat /proc/"$pid"/environ | tr '\0' '\n'
+    cat /proc/"$pid"/environ | tr '\0' '\n' > env.txt
+
+    $(python - "$PATH" <<-EOF
+		with open("env.txt", "r") as file:
+    		lines = file.readlines()
+		modified_lines = [line.replace("=", ",", 1) for line in lines]
+		with open("env.csv", "w") as file:
+    		file.writelines(modified_lines)
+		EOF
+    )
+
+    cat env.csv
 }
 
 sd() {
@@ -78,10 +89,10 @@ x() {
     cd ~/Xplore
 }
 
-xl() (
+xl() {
     cd ~/Xplore
     exa -Ta --level 2 --icons --sort created
-)
+}
 
 xc() {
     destination=$(xplore.py)   # destination reads stdout from xplore.py
