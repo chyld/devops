@@ -1,3 +1,7 @@
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/chyld/.bin/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -13,11 +17,19 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+
 BIN_PATH=$HOME/.bin
 NVIM_PATH=$HOME/.bin/nvim/bin
 NODE_PATH=$HOME/.bin/node/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
 export PATH=$BIN_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
+
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
 
 alias eb="vi ~/.bash_custom" # edit bash
 alias sb="source ~/.bash_custom" # source bash
@@ -62,7 +74,7 @@ view_env_variables_by_process_id() {
     pid=$1
     cat /proc/"$pid"/environ | tr '\0' '\n' > env.txt
 
-    $(python - "$PATH" <<-EOF
+    $(python - <<-EOF
 		with open("env.txt", "r") as file:
 		    lines = file.readlines() # leave the final spaces, do not strip out
 		modified_lines = [line.replace("=", ",", 1) for line in lines]
@@ -86,9 +98,9 @@ sd() {
 }
 
 path() {
-    path_multi_line=$(python - "$PATH" <<-EOF
-		import sys
-		get_path_from_bash = sys.argv[1]
+    path_multi_line=$(python - "$PATH" <<-EOF # passing $PATH in, not needed
+		import sys                            # not needed, using bash variable expansion
+		get_path_from_bash = "$PATH"          # sys.argv[1] not needed, $PATH is expanded by bash before script is run
 		post_processed = '\n'.join(get_path_from_bash.split(':'))
 		print(post_processed)
 		EOF
@@ -127,3 +139,8 @@ xc() {
 conda activate prometheus
 
 eval "$(starship init bash)"
+
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
+
