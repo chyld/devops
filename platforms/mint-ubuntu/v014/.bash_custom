@@ -22,10 +22,11 @@ unset __conda_setup
 # ---------------------------------------------------------------------- #
 
 BIN_PATH=$HOME/.bin
+BTOP_PATH=$HOME/.bin/btop/bin
 NVIM_PATH=$HOME/.bin/nvim/bin
 NODE_PATH=$HOME/.bin/node/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
-export PATH=$BIN_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
+export PATH=$BIN_PATH:$BTOP_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
