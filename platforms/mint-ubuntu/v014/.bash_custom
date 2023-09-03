@@ -37,6 +37,7 @@ alias sb="source ~/.bash_custom" # source bash
 alias dev="cd ~/Code/devops" # devops
 alias dots="cd ~/Code/devops/platforms/mint-ubuntu/v014" # dot files
 alias nv="cd ~/.config/nvim" # neovim
+alias bin="cd ~/.bin"
 alias c="clear"
 alias b="cd .." # go back
 alias t="tree -a -I .git"
