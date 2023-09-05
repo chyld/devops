@@ -49,10 +49,12 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias jl="jupyter lab"
-alias l="lsd -a" # "exa --icons --git -a"
+alias l="lsd -a --group-directories-first" # "exa --icons --git -a"
 alias ll="exa --icons --git -al"
 alias cl="c;l"
 alias cll="c;ll"
+alias pbcopy="wl-copy"
+alias pbpaste="wl-paste"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
@@ -117,7 +119,7 @@ x() {
 
 xl() {
     cd ~/Xplore
-    exa -Ta --level 2 --icons --sort created
+    lsd --tree --depth 2 -ar --sort time --group-directories-first # exa -Ta --level 2 --icons --sort created
 }
 
 xc() {
