@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Fotor
+Exec=/usr/bin/google-chrome https://www.fotor.com/photo-editor-app/editor/basic
+Icon=/home/chyld/.icons/Reversal-black/apps/scalable/2xclient.svg
+
