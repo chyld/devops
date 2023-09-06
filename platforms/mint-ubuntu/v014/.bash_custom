@@ -27,6 +27,7 @@ NVIM_PATH=$HOME/.bin/nvim/bin
 NODE_PATH=$HOME/.bin/node/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
 export PATH=$BIN_PATH:$BTOP_PATH:$NVIM_PATH:$NODE_PATH:$SCRIPTS_PATH:$PATH
+export FZF_DEFAULT_COMMAND='fd --type f --type l --hidden --exclude .git'
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
@@ -74,6 +75,12 @@ alias pbpaste="wl-paste"
 #
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
+
+vis() {
+    # vi(s)earch
+    # fuzzy search files with preview and then load into neovim
+    vi $(fzf --height 30% --border --layout=reverse --preview='bat -n --color=always {}')
+}
 
 view_env_variables_by_process_id() {
     pid=$1
