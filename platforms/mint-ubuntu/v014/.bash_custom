@@ -80,7 +80,7 @@ alias rg="rg --hidden"
 vis() {
     # vi(s)earch
     # fuzzy search files with preview and then load into neovim
-    vi $(fzf --height 30% --border --layout=reverse --preview='bat -n --color=always {}')
+    vi $(fzf --layout=reverse --preview='bat -n --color=always {}')
 }
 
 view_env_variables_by_process_id() {
