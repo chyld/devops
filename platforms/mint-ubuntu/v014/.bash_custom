@@ -139,33 +139,34 @@ xc() {
             --foreground "#ff33cc" --border-foreground "#ccff33" --border normal \
             --align center --width 30 --margin "1 2" --padding "1 2" \
             'Xplore Project Creator'
-        template=$(gum choose "blank" "physics" "p5js" "python" "javascript" "typescript" "lua")
+        # https://www.nerdfonts.com/cheat-sheet
+        template=$(gum choose "󰅬  blank" "󰈸  physics" "󰺵  p5js" "  python" "  javascript" "  typescript" "  lua")
         touch README.md
-        case $template in
-            "blank")
+        case "$template" in
+            *blank)
                 # nothing here
                 ;;
-            "physics")
+            *physics)
                 cp $HOME/Code/devops/templates/physics/physics.ipynb .
                 ;;
-            "p5js")
+            *p5js)
                 cp $HOME/Code/devops/templates/p5js/* .
                 ;;
-            "python")
+            *python)
                 fake_names 3 py
                 ;;
-            "javascript")
+            *javascript)
                 npm init -y
                 fake_names 3 js
                 ;;
-            "typescript")
+            *typescript)
                 echo "node_modules" > .gitignore
                 npm init -y
                 npm install typescript --save-dev
                 npx tsc --init
                 fake_names 3 ts
                 ;;
-            "lua")
+            *lua)
                 fake_names 3 lua
                 ;;
         esac
