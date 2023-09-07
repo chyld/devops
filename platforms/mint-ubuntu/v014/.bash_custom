@@ -135,8 +135,19 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
-        touch README.md alpha.py beta.js gamma.lua delta.ts
-        cp $HOME/Code/devops/templates/physics.ipynb .
+        template=$(gum choose "none" "physics" "p5js")
+        touch README.md
+        case $template in
+            "none")
+                # nothing here
+                ;;
+            "physics")
+                cp $HOME/Code/devops/templates/physics/physics.ipynb .
+                ;;
+            "p5js")
+                cp $HOME/Code/devops/templates/p5js/* .
+                ;;
+        esac
         git init
         git add .
         git commit -m "Commit Zero"
