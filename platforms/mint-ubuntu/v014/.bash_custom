@@ -135,7 +135,7 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
-        template=$(gum choose "none" "physics" "p5js")
+        template=$(gum choose "none" "physics" "p5js" "python" "javascript")
         touch README.md
         case $template in
             "none")
@@ -146,6 +146,12 @@ xc() {
                 ;;
             "p5js")
                 cp $HOME/Code/devops/templates/p5js/* .
+                ;;
+            "python")
+                touch {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu}.py
+                ;;
+            "javascript")
+                touch {mercury,venus,earth,mars,jupiter,saturn,uranus,neptune,pluto}.js
                 ;;
         esac
         git init
