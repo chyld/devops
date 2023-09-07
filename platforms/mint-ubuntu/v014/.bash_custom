@@ -135,7 +135,7 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
-        template=$(gum choose "none" "physics" "p5js" "python" "javascript" "lua")
+        template=$(gum choose "none" "physics" "p5js" "python" "javascript" "typescript" "lua")
         touch README.md
         case $template in
             "none")
@@ -153,6 +153,13 @@ xc() {
             "javascript")
                 npm init -y
                 fake_names 3 js
+                ;;
+            "typescript")
+                echo "node_modules" > .gitignore
+                npm init -y
+                npm install typescript --save-dev
+                npx tsc --init
+                fake_names 3 ts
                 ;;
             "lua")
                 fake_names 3 lua
