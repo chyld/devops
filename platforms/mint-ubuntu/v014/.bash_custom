@@ -135,6 +135,10 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
+        gum style \
+            --foreground "#ff33cc" --border-foreground "#ccff33" --border normal \
+            --align center --width 30 --margin "1 2" --padding "1 2" \
+            'Xplore Project Creator'
         template=$(gum choose "none" "physics" "p5js" "python" "javascript" "typescript" "lua")
         touch README.md
         case $template in
