@@ -135,7 +135,7 @@ xc() {
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
         cd $destination
-        template=$(gum choose "none" "physics" "p5js" "python" "javascript")
+        template=$(gum choose "none" "physics" "p5js" "python" "javascript" "lua")
         touch README.md
         case $template in
             "none")
@@ -148,10 +148,14 @@ xc() {
                 cp $HOME/Code/devops/templates/p5js/* .
                 ;;
             "python")
-                touch {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu}.py
+                fake_names 3 py
                 ;;
             "javascript")
-                touch {mercury,venus,earth,mars,jupiter,saturn,uranus,neptune,pluto}.js
+                npm init -y
+                fake_names 3 js
+                ;;
+            "lua")
+                fake_names 3 lua
                 ;;
         esac
         git init
@@ -160,6 +164,17 @@ xc() {
         git log
         ll
     fi
+}
+
+fake_names() {
+    count=$1
+    extension=$2
+    names=$(faker -r=$count last_name_female)
+    for name in $names; do
+        no_space="${name// /}"           # Remove all spaces
+        no_upper="${no_space,,}"         # Convert to lowercase
+        touch "${no_upper}"."${extension}"
+    done
 }
 
 # ---------------------------------------------------------------------- #
