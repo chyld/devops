@@ -12,7 +12,7 @@ os.chdir(abs_path)
 
 # base directories
 home = os.environ['HOME']
-base_dir = f'{home}/Xplore'
+base_dir = f'{home}/Xplore/Temp'
 
 # generate name of folder
 greek = pd.read_csv('data/greek.txt', header=None).sample().values[0][0].strip()

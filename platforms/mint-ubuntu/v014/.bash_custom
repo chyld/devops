@@ -126,11 +126,23 @@ x() {
 }
 
 xl() {
+    # x-list
     cd ~/Xplore
     lsd --tree --depth 2 -ar --sort time --group-directories-first # exa -Ta --level 2 --icons --sort created
 }
 
+xs() {
+    # x-save
+    curr=$(pwd)
+    dest=$(echo $curr | sed 's|/Temp/|/Save/|')
+    cd ~/Xplore
+    mv "$curr" "$dest"
+    cd "$dest"
+    echo "dir moved to: $(pwd)"
+}
+
 xc() {
+    # x-create
     destination=$(xplore.py)   # destination reads stdout from xplore.py
     retval=$?                  # capture the return value before it changes
     if [ $retval -eq 3 ]; then # should be 3
