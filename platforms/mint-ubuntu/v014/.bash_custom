@@ -156,6 +156,7 @@ xc() {
                 fake_names 3 py
                 ;;
             *javascript)
+                echo "node_modules" > .gitignore
                 npm init -y
                 fake_names 3 js
                 ;;
