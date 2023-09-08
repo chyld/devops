@@ -56,7 +56,7 @@ alias cl="c;l"
 alias cll="c;ll"
 alias pbcopy="wl-copy"
 alias pbpaste="wl-paste"
-alias rg="rg --hidden --ignore-case"
+alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
