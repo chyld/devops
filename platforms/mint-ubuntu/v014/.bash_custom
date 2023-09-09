@@ -203,7 +203,7 @@ xc() {
 fake_names() {
     count=$1
     extension=$2
-    names=$(faker -r=$count last_name_female)
+    names=$(faker -r=$count color_name)
     for name in $names; do
         no_space="${name// /}"           # Remove all spaces
         no_upper="${no_space,,}"         # Convert to lowercase
