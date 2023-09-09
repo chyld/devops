@@ -136,6 +136,12 @@ xl() {
     lsd --tree --depth 2 -ar --sort time --group-directories-first # exa -Ta --level 2 --icons --sort created
 }
 
+xll() {
+    # x-list
+    cd ~/Xplore
+    lsd --tree --depth 3 -ar --sort time --group-directories-first # exa -Ta --level 3 --icons --sort created
+}
+
 xs() {
     # x-save
     curr=$(pwd)
