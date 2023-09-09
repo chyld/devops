@@ -5,5 +5,6 @@
 - xll : directory listing, detailed
 - xc  : create a new project
 - xs  : save a temp project
-- xh  : view this help
+- xrt : remove temp files
+- xh  : view help
 
