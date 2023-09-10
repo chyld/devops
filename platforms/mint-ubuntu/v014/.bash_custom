@@ -77,6 +77,15 @@ alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
 
+
+cdf() {
+    # cdf(ast)
+    # do a fuzzy search before changing directory
+    local dir
+    dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules | fzf)
+    cd "$dir"
+}
+
 vis() {
     # vi(s)earch
     # fuzzy search files with preview and then load into neovim
