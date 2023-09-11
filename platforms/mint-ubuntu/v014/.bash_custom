@@ -78,8 +78,8 @@ alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 # in nvim, "control + v, then tab" will force a tab insert
 
 
-cdf() {
-    # cdf(ast)
+z() {
+    # cd fast diretory
     # do a fuzzy search before changing directory
     local dir
     dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules | fzf)
