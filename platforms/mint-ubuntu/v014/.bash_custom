@@ -82,8 +82,13 @@ z() {
     # cd fast diretory
     # do a fuzzy search before changing directory
     local dir
-    dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules | fzf)
-    cd "$dir"
+    local args="$@"
+    dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules \
+          | fzf --filter "$args" \
+          | head -n 1)
+    if [ -n "$dir" ]; then
+        cd "$dir"
+    fi
 }
 
 vis() {
