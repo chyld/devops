@@ -84,7 +84,7 @@ z() {
     local dir
     local args="$*" # capture all the args separated by a space, also $@
     dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules \
-          | fzf --filter "$args" \ # cannot use "rg" because it does not do fuzzy searches
+          | fzf --filter "$args" \
           | head -n 1)
     if [ -n "$dir" ]; then # if "dir" is not empty, perform "cd" operation
         cd "$dir"
