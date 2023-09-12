@@ -82,13 +82,16 @@ z() {
     # cd fast diretory
     # do a fuzzy search before changing directory
     local dir
-    local args="$@"
+    local args="$*" # capture all the args separated by a space, also $@
     dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules \
-          | fzf --filter "$args" \
+          | fzf --filter "$args" \ # cannot use "rg" because it does not do fuzzy searches
           | head -n 1)
-    if [ -n "$dir" ]; then
+    if [ -n "$dir" ]; then # if "dir" is not empty, perform "cd" operation
         cd "$dir"
     fi
+
+    # to view raw string use printf
+    # printf '%q\n' "$args"
 }
 
 vis() {
