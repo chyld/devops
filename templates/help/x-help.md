@@ -5,8 +5,8 @@
 - xll : directory listing, detailed
 - xc  : create a new project
 - xs  : save a temp project
-- xrt : remove temp files
-- xh  : view help
+- xp  : purge temp projects
+- xh  : help
 
 ## Additional Commands
 

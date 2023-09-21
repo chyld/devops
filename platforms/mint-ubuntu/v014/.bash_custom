@@ -159,8 +159,8 @@ xll() {
     lsd --tree --depth 3 -ar --sort time --group-directories-first # exa -Ta --level 3 --icons --sort created
 }
 
-xrt() {
-    # x-remove-temp
+xp() {
+    # x-purge (temp files)
     rm -rf ~/Xplore/Temp/*
 }
 
