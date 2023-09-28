@@ -4,14 +4,14 @@
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/chyld/.bin/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/chyld/.bin/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/chyld/.bin/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/chyld/.bin/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/home/chyld/.bin/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/chyld/.bin/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/chyld/.bin/miniconda/bin:$PATH"
+        export PATH="/home/chyld/.bin/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -189,9 +189,14 @@ xc() {
             --align center --width 30 --margin "1 2" --padding "1 2" \
             'Xplore Project Creator'
         # https://www.nerdfonts.com/cheat-sheet
-        template=$(gum choose "󰅬  blank" "󰈸  physics" "󰺵  p5js" "  python" "  javascript" "  typescript" "  lua")
+        template=$(gum choose "  nogit" "󰅬  blank" "󰈸  physics" "󰺵  p5js" "  python" "  javascript" "  typescript" "  lua")
         touch README.md
         case "$template" in
+            *nogit)
+                # exit, do not want repo
+                rm README.md
+                return
+                ;;
             *blank)
                 # nothing here
                 ;;
