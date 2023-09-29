@@ -77,6 +77,13 @@ alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
 
+np() {
+    nautilus ~/Pictures 1> /dev/null 2> /dev/null &
+}
+
+nd() {
+    nautilus ~/Downloads 1> /dev/null 2> /dev/null &
+}
 
 z() {
     # cd fast diretory
@@ -117,6 +124,8 @@ view_env_variables_by_process_id() {
 }
 
 sd() {
+    # copy git password to clipboard
+    cat ~/.gitpass | pbcopy
     # synd dot files to github
     current_dir=$(pwd)
     cd ~/Code/devops
