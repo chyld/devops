@@ -77,8 +77,9 @@ alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 # i setup a keybinding in vscode to manually insert tabs (control, option, command, t)
 # in nvim, "control + v, then tab" will force a tab insert
 
-bc {
-    # bash colors, terminal theme
+tc() {
+    # terminal colors
+    open https://gogh-co.github.io/Gogh/
     bash -c "$(wget -qO- https://git.io/vQgMr)"
 }
 
