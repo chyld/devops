@@ -205,7 +205,7 @@ xc() {
             --align center --width 30 --margin "1 2" --padding "1 2" \
             'Xplore Project Creator'
         # https://www.nerdfonts.com/cheat-sheet
-        template=$(gum choose "  nogit" "󰅬  blank" "󰈸  physics" "󰺵  p5js" "  python" "  javascript" "  typescript" "  lua")
+        template=$(gum choose "  nogit" "󰅬  minimalist" "󰈸  physics" "󰺵  p5js" "  virtual python" "  python" "  javascript" "  typescript" "  lua")
         touch README.md
         case "$template" in
             *nogit)
@@ -213,7 +213,7 @@ xc() {
                 rm README.md
                 return
                 ;;
-            *blank)
+            *minimalist)
                 # nothing here
                 ;;
             *physics)
@@ -221,6 +221,12 @@ xc() {
                 ;;
             *p5js)
                 cp $HOME/Code/devops/templates/p5js/* .
+                ;;
+            *virtual*)
+                fake_names 3 py
+                python -m venv .venv --prompt planck
+                source .venv/bin/activate
+                echo ".venv" > .gitignore
                 ;;
             *python)
                 fake_names 3 py
