@@ -1,6 +1,6 @@
 # devops
 
-![devops](devops.jpeg)
+![devops](devops.png)
 
 **devops** is a curated collection of configuration files and scripts tailored for Linux enthusiasts and power users.
 
