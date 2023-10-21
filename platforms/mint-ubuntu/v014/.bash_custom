@@ -26,8 +26,9 @@ BTOP_PATH=$HOME/.bin/btop/bin
 NVIM_PATH=$HOME/.bin/nvim/bin
 NODE_PATH=$HOME/.bin/node/bin
 EXA_PATH=$HOME/.bin/exa/bin
+KITTY_PATH=$HOME/.bin/kitty/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
-export PATH=$BIN_PATH:$BTOP_PATH:$NVIM_PATH:$NODE_PATH:$EXA_PATH:$SCRIPTS_PATH:$PATH
+export PATH=$BIN_PATH:$BTOP_PATH:$NVIM_PATH:$NODE_PATH:$EXA_PATH:$KITTY_PATH:$SCRIPTS_PATH:$PATH
 export FZF_DEFAULT_COMMAND='fd --type file --type symlink --unrestricted --exclude .git --exclude node_modules'
 
 # ---------------------------------------------------------------------- #
