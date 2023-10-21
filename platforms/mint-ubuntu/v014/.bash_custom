@@ -227,6 +227,8 @@ xc() {
                 python -m venv .venv --prompt planck
                 source .venv/bin/activate
                 echo ".venv" > .gitignore
+                which python
+                pip list
                 ;;
             *python)
                 fake_names 3 py
