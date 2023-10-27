@@ -61,6 +61,7 @@ alias pbcopy="wl-copy"
 alias pbpaste="wl-paste"
 alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
+alias sa="sudo apt"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
