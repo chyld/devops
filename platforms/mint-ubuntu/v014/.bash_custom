@@ -36,6 +36,7 @@ export FZF_DEFAULT_COMMAND='fd --type file --type symlink --unrestricted --exclu
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
+alias jf="cd ~/jellyfin/media"
 alias eb="vi ~/.bash_custom" # edit bash
 alias sb="source ~/.bash_custom" # source bash
 alias dev="cd ~/Code/devops" # devops
@@ -61,7 +62,6 @@ alias pbcopy="wl-copy"
 alias pbpaste="wl-paste"
 alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
-alias sa="sudo apt"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
