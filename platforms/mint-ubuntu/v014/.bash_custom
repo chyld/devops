@@ -55,8 +55,6 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias jl="jupyter lab"
-alias pbcopy="wl-copy"
-alias pbpaste="wl-paste"
 alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
 
@@ -144,7 +142,7 @@ view_env_variables_by_process_id() {
 
 sd() {
     # copy git password to clipboard
-    cat ~/.gitpass | pbcopy
+    cat ~/.gitpass | wl-copy
     # synd dot files to github
     current_dir=$(pwd)
     cd ~/Code/devops
