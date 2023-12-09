@@ -274,8 +274,11 @@ source ~/.fzf.bash
 # ---------------------------------------------------------------------- #
 
 # if $TMUX is empty, then create a new session
+# but if you open a new terminal it will not be set, so you can have
+# tmux active in multiple terminals
+
 if [ -z "$TMUX" ]; then
-    tmux new -s default
+    tmux new-session
 fi
 
 # ---------------------------------------------------------------------- #
