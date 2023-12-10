@@ -52,3 +52,14 @@ wesbos.theme-cobalt2
      5	RobbOwen.synthwave-vscode
      6	teabyii.ayu
      7	wesbos.theme-cobalt2
+=========================
+     1	charliermarsh.ruff
+     2	esbenp.prettier-vscode
+     3	foxundermoon.shell-format
+     4	johnpapa.vscode-peacock
+     5	ms-python.python
+     6	ms-python.vscode-pylance
+     7	PKief.material-icon-theme
+     8	RobbOwen.synthwave-vscode
+     9	teabyii.ayu
+    10	wesbos.theme-cobalt2
