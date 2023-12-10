@@ -4,7 +4,7 @@
 
 BIN_PATH=$HOME/.bin
 NODE_PATH=$HOME/.bin/node/bin
-CODE_PATH=$HOME/.bin/VSCode-linux-x64
+CODE_PATH=$HOME/.bin/vscode/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
 export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$PATH
 export FZF_DEFAULT_COMMAND=''
