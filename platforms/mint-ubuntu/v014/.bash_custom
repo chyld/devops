@@ -7,16 +7,14 @@ NODE_PATH=$HOME/.bin/node/bin
 CODE_PATH=$HOME/.bin/VSCode-linux-x64
 SCRIPTS_PATH=$HOME/Code/devops/scripts
 export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$PATH
-export FZF_DEFAULT_COMMAND='fd --type file --type symlink --unrestricted --exclude .git --exclude node_modules'
+export FZF_DEFAULT_COMMAND=''
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
-alias jf="cd ~/jellyfin/media"
 alias dev="cd ~/Code/devops" # devops
 alias dots="cd ~/Code/devops/platforms/mint-ubuntu/v014" # dot files
-alias nv="cd ~/.config/nvim" # neovim
 alias bin="cd ~/.bin"
 alias dl="cd ~/Downloads"
 alias hy="cd /mnt/hydrogen"
@@ -28,7 +26,6 @@ alias b="cd .." # go back
 
 alias eb="vi ~/.bash_custom" # edit bash
 alias c="clear"
-alias t="tree -a -I .git"
 alias vi="nvim"
 alias vim="nvim"
 alias cat="bat"
@@ -36,19 +33,21 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias jl="jupyter lab"
-alias rg="rg --hidden --ignore-case --glob '!node_modules' --glob '!.git'"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
+alias fonts="fc-list : family | sort | uniq"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
-alias  l="lsd -A   --group-directories-first"
-alias ll="lsd -Alg --group-directories-first --date '+%Y-%m-%d %H:%M:%S' --blocks permission,user,size,date,git,name"
-alias  k="lsd -Alg --group-directories-first --tree --blocks size,git,name --ignore-glob .git --ignore-glob __pycache__ --ignore-glob node_modules"
-alias cl="c;l"
-alias cll="c;ll"
-alias ck="c;k"
+alias     l="lsd -A   --group-directories-first"
+alias    ll="eza -la --icons=always --group-directories-first --git-repos --git"
+alias   lll="eza -la --icons=always --group-directories-first --git-repos --git --total-size"
+alias  llll="lsd -Alg --group-directories-first --tree --blocks size,git,name --ignore-glob .git --ignore-glob __pycache__ --ignore-glob node_modules"
+alias    cl="c;l"
+alias   cll="c;ll"
+alias  clll="c;lll"
+alias cllll="c;llll"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
@@ -263,7 +262,7 @@ fake_names() {
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
 
-conda activate pandora
+conda activate prometheus
 
 eval "$(starship init bash)"
 
