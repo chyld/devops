@@ -44,3 +44,11 @@ PKief.material-icon-theme
 RobbOwen.synthwave-vscode
 teabyii.ayu
 wesbos.theme-cobalt2
+=========================
+     1	esbenp.prettier-vscode
+     2	foxundermoon.shell-format
+     3	johnpapa.vscode-peacock
+     4	PKief.material-icon-theme
+     5	RobbOwen.synthwave-vscode
+     6	teabyii.ayu
+     7	wesbos.theme-cobalt2
