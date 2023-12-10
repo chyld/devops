@@ -123,6 +123,8 @@ view_env_variables_by_process_id() {
 sd() {
     # copy git password to clipboard
     cat ~/.gitpass | wl-copy
+    # update vscode extensions
+    code --list-extensions > ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
     # synd dot files to github
     current_dir=$(pwd)
     cd ~/Code/devops

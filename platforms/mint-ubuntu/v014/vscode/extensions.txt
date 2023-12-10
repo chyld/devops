@@ -1,0 +1,7 @@
+esbenp.prettier-vscode
+foxundermoon.shell-format
+johnpapa.vscode-peacock
+PKief.material-icon-theme
+RobbOwen.synthwave-vscode
+teabyii.ayu
+wesbos.theme-cobalt2
