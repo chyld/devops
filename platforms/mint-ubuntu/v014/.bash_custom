@@ -148,6 +148,11 @@ path() {
     echo "$path_multi_line" | nl
 }
 
+h() {
+    # help
+    glow ~/Code/devops/templates/help/linux.md
+}
+
 xh() {
     # x-help
     glow ~/Code/devops/templates/help/x-help.md
