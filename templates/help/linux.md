@@ -20,5 +20,5 @@
 
 ## video
 
-- mpv <filename>                # play a file
+- mpv [filename]                # play a file
 
