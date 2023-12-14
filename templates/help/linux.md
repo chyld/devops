@@ -1,4 +1,4 @@
-# linux help
+# linux notes
 
 ## utilities
 
