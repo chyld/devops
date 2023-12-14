@@ -292,3 +292,16 @@ Thu Dec 14 02:10:41 PM PST 2023
      9	RobbOwen.synthwave-vscode
     10	teabyii.ayu
     11	wesbos.theme-cobalt2
+=========================
+Thu Dec 14 02:10:49 PM PST 2023
+     1	amazonwebservices.aws-toolkit-vscode
+     2	charliermarsh.ruff
+     3	esbenp.prettier-vscode
+     4	foxundermoon.shell-format
+     5	johnpapa.vscode-peacock
+     6	ms-python.python
+     7	ms-python.vscode-pylance
+     8	PKief.material-icon-theme
+     9	RobbOwen.synthwave-vscode
+    10	teabyii.ayu
+    11	wesbos.theme-cobalt2
