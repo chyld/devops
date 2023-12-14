@@ -25,4 +25,6 @@
 ## misc
 
 - https://github.com/charmbracelet/huh # tui form builder
+- gum                           # interactive shell script builder
+
 
