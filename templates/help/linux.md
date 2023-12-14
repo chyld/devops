@@ -12,6 +12,7 @@
 - watch/watchexec/entr          # file watcher
 - xargs                         # command line construction
 - strace                        # monitor open files by process
+- gum                           # interactive shell script builder
 
 ## bash
 
@@ -22,11 +23,6 @@
 ## video
 
 - mpv [filename]                # play a file
-
-## misc
-
-- https://github.com/charmbracelet/huh # tui form builder
-- gum                           # interactive shell script builder
 
 ## scripts
 
