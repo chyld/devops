@@ -11,6 +11,7 @@
 - delta                         # diff viewer
 - watch/watchexec/entr          # file watcher
 - xargs                         # command line construction
+- strace                        # monitor open files by process
 
 ## bash
 
