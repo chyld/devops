@@ -22,3 +22,7 @@
 
 - mpv [filename]                # play a file
 
+## misc
+
+- https://github.com/charmbracelet/huh # tui form builder
+
