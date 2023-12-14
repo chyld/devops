@@ -28,4 +28,8 @@
 - https://github.com/charmbracelet/huh # tui form builder
 - gum                           # interactive shell script builder
 
+## scripts
+
+- list all the files in a directory (including subdirectories) and sort by datetime
+- `find . -type f -exec ls -l --time-style=long-iso {} + | sort -k 6,7`
 
