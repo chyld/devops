@@ -153,6 +153,11 @@ h() {
     glow ~/Code/devops/templates/help/linux.md
 }
 
+eh() {
+    # edit help
+    vi ~/Code/devops/templates/help/linux.md
+}
+
 xh() {
     # x-help
     glow ~/Code/devops/templates/help/x-help.md
