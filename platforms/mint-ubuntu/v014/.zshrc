@@ -36,6 +36,7 @@ alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
 alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
 alias mountnfs="sudo mount -t nfs 192.168.1.10:/mnt/datastore/hydrogen /home/chyld/Share"
+alias umountnfs="sudo umount /home/chyld/Share"
 
 # ---------------------------------------------------------------------- #
 # ---------------------------------------------------------------------- #
