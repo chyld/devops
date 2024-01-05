@@ -1,19 +1,16 @@
 # Xplore Commands
 
+## Primary
+
 - x   : change to project directory
-- xl  : directory listing, short
-- xll : directory listing, detailed
 - xc  : create a new project
+- xf  : fuzzy find a project
+- xl  : directory listing, short
+
+## Secondary
+
+- xll : directory listing, detailed
 - xs  : save a temp project
-- xp  : purge temp projects
+- xp  : purge all temp projects
 - xh  : help
-
-## Additional Commands
-
-- z   : fuzzy directory switcher
-- vis : vim + fuzzy file finder
-- sd  : sync dot files
-- fd  : fuzzy finder
-- rg  : fast grep search
-- fzf : interactive search
 

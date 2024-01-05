@@ -111,13 +111,15 @@ eh() {
     vi ~/Code/devops/templates/help/linux.md
 }
 
-xh() {
-    # x-help
-    glow ~/Code/devops/templates/help/x-help.md
-}
+# --------------------------------------------------------------------------------------------- #
 
 x() {
     cd ~/Xplore
+}
+
+xh() {
+    # x-help
+    glow ~/Code/devops/templates/help/x-help.md
 }
 
 xl() {
@@ -135,6 +137,18 @@ xll() {
 xp() {
     # x-purge
     rm -rf ~/Xplore/Temp/*
+}
+
+xf() {
+    # x-find
+    local dir
+    local args="$*" # capture all the args separated by a space, also $@
+    dir=$(fd --type directory --unrestricted --exclude .git --exclude node_modules \
+          | fzf --filter "$args" \
+          | head -n 1)
+    if [ -n "$dir" ]; then # perform "cd" operation if $dir is found
+        cd "$dir"
+    fi
 }
 
 xs() {
@@ -180,7 +194,7 @@ xc() {
                 cp $HOME/Code/devops/templates/p5js/* .
                 ;;
             *virtual*)
-                fake_names 3 py
+                xh_faker 3 py
                 python -m venv .venv --prompt planck
                 source .venv/bin/activate
                 echo ".venv" > .gitignore
@@ -188,22 +202,22 @@ xc() {
                 pip list
                 ;;
             *python)
-                fake_names 3 py
+                xh_faker 3 py
                 ;;
             *javascript)
                 echo "node_modules" > .gitignore
                 npm init -y
-                fake_names 3 js
+                xh_faker 3 js
                 ;;
             *typescript)
                 echo "node_modules" > .gitignore
                 npm init -y
                 npm install typescript --save-dev
                 npx tsc --init
-                fake_names 3 ts
+                xh_faker 3 ts
                 ;;
             *lua)
-                fake_names 3 lua
+                xh_faker 3 lua
                 ;;
         esac
         git init
@@ -214,14 +228,14 @@ xc() {
     fi
 }
 
-fake_names() {
+xh_faker() {
+    # x-helper faker
     count=$1
     extension=$2
-    names=$(faker -r=$count color_name)
-    for name in $names; do
-        no_space="${name// /}"           # Remove all spaces
-        no_upper="${no_space,,}"         # Convert to lowercase
-        touch "${no_upper}"."${extension}"
+    names=($(faker -r=$count color_name)) # turns a string into an array
+    for name in $names; do                # loop over array
+        name=$(echo $name:l | LC_ALL=C tr -cd '[:alpha:]') # lowercase, only ascii characters
+        touch "$name.$extension"
     done
 }
 
