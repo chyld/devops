@@ -75,19 +75,29 @@ alias cllll="c;llll"
 # --------------------------------------------------------------------------------------------- #
 
 sd() {
-    # copy git password to clipboard
-    cat ~/.gitpass | wl-copy
-    # update vscode extensions
-    echo "=========================" >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
-    date >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
-    code --list-extensions | nl >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
-    # synd dot files to github
+    # Check git status first and proceed only if dirty
     current_dir=$(pwd)
     cd ~/Code/devops
-    git status
-    git add .
-    git commit -am "auto sync"
-    git push
+
+    # If git status shows changes, then proceed
+    if ! git diff-index --quiet HEAD --; then
+        # copy git password to clipboard
+        cat ~/.gitpass | wl-copy
+
+        # update vscode extensions
+        echo "=========================" >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
+        date >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
+        code --list-extensions | nl >> ~/Code/devops/platforms/mint-ubuntu/v014/vscode/extensions.txt
+
+        # sync dot files to github
+        git status
+        git add .
+        git commit -am "auto sync"
+        git push
+    else
+        echo "Git repository is clean. No actions performed."
+    fi
+
     cd "$current_dir"
 }
 
