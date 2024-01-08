@@ -35,3 +35,7 @@
 
 - you can drag a file OUTSIDE of vscode, to create a new window
 
+## imagemagick
+
+convert file.webp file.jpg
+
