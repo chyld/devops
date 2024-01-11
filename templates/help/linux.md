@@ -30,12 +30,9 @@
 - `find . -type f -exec ls -l --time-style=long-iso {} + | sort -k 6,7`
 - convert webm to mp4 using x264 video and aac audio codecs
 - `ffmpeg -i input.webm -c:v libx264 -c:a aac output.mp4`
+- `convert hello.png goodbye.jpg` # image format conversion
 
 ## vscode
 
 - you can drag a file OUTSIDE of vscode, to create a new window
-
-## imagemagick
-
-convert file.webp file.jpg
 
