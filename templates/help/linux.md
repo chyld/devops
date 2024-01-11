@@ -4,7 +4,7 @@
 
 - git                           # source control
 - find/fd                       # find files
-- grep/rg                       # search within files
+- grep/rg/ug                    # search within files
 - fzf                           # fuzzy finder
 - top/htop/btop                 # process monitor
 - hexyl                         # hex viewer
