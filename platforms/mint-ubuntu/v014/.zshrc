@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------- #
 
 HISTFILE=~/.histfile
-HISTSIZE=1000 # history in memory
-SAVEHIST=1000 # history in file
+HISTSIZE=99000 # history in memory
+SAVEHIST=99000 # history in file
 setopt autocd beep extendedglob nomatch notify
 bindkey -v # setup VI keybindings
 zstyle :compinstall filename '/home/chyld/.zshrc'
