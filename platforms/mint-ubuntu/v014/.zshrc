@@ -253,7 +253,6 @@ xh_faker() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 conda activate prometheus
-eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
 
 # --------------------------------------------------------------------------------------------- #
