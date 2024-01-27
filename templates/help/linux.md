@@ -25,6 +25,12 @@
 
 - mpv [filename]                # play a file
 
+## tmux
+
+- clipboard is integrated with the system
+- to copy (press p-[, space to start selection, press enter to copy)
+- to paste (press p-])
+
 ## scripts
 
 - list all the files in a directory (including subdirectories) and sort by datetime
