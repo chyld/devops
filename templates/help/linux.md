@@ -30,6 +30,7 @@
 - clipboard is integrated with the system
 - to copy (press p-[, space to start selection, press enter to copy)
 - to paste (press p-])
+- you can also use VI search features to find what you are looking for
 
 ## scripts
 
