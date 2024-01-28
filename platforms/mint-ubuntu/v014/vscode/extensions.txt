@@ -635,3 +635,14 @@ Sat Jan 27 03:06:53 PM PST 2024
      7	ms-python.vscode-pylance
      8	PKief.material-icon-theme
      9	RobbOwen.synthwave-vscode
+=========================
+Sun Jan 28 01:06:10 AM PST 2024
+     1	amazonwebservices.aws-toolkit-vscode
+     2	charliermarsh.ruff
+     3	esbenp.prettier-vscode
+     4	foxundermoon.shell-format
+     5	johnpapa.vscode-peacock
+     6	ms-python.python
+     7	ms-python.vscode-pylance
+     8	PKief.material-icon-theme
+     9	RobbOwen.synthwave-vscode
