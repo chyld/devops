@@ -34,6 +34,7 @@
 
 ## scripts
 
+- `rsync -avz (source) (destination)`
 - list all the files in a directory (including subdirectories) and sort by datetime
 - `find . -type f -exec ls -l --time-style=long-iso {} + | sort -k 6,7`
 - convert webm to mp4 using x264 video and aac audio codecs
