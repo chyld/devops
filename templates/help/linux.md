@@ -14,6 +14,7 @@
 - strace                        # monitor open files by process
 - gum                           # interactive shell script builder
 - stat                          # show all file statistics
+- lazygit                       # manage git repositories
 
 ## bash
 
