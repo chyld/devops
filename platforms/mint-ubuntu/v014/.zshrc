@@ -4,10 +4,16 @@ HISTFILE=~/.histfile
 HISTSIZE=99000       # history in memory
 SAVEHIST=99000       # history in file
 setopt share_history autocd beep extendedglob nomatch notify
-bindkey -v # setup VI keybindings
+bindkey -v           # setup VI keybindings
 zstyle :compinstall filename '/home/chyld/.zshrc'
 autoload -Uz compinit
 compinit
+
+export ZSH_CUSTOM=$HOME/.zsh
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/plugins/zsh_codex/zsh_codex.plugin.zsh
+bindkey '^X' create_completion # the codex created this function, now i am just binding to it
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -259,9 +265,10 @@ source $HOME/.cargo/env
 
 # --------------------------------------------------------------------------------------------- #
 
-if [ -z "$TMUX" ]; then # $TMUX is ONLY set when it is active.
-    tmux new-session
-fi
+# breaks warp terminal
+# if [ -z "$TMUX" ]; then # $TMUX is ONLY set when it is active.
+#     tmux new-session
+# fi
 
 # --------------------------------------------------------------------------------------------- #
 

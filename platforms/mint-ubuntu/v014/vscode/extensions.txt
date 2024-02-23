@@ -717,3 +717,15 @@ Fri Feb 23 09:22:23 AM PST 2024
      8	ms-python.vscode-pylance
      9	pkief.material-icon-theme
     10	robbowen.synthwave-vscode
+=========================
+Fri Feb 23 10:34:01 AM PST 2024
+     1	amazonwebservices.aws-toolkit-vscode
+     2	charliermarsh.ruff
+     3	esbenp.prettier-vscode
+     4	foxundermoon.shell-format
+     5	johnpapa.vscode-peacock
+     6	ms-python.debugpy
+     7	ms-python.python
+     8	ms-python.vscode-pylance
+     9	pkief.material-icon-theme
+    10	robbowen.synthwave-vscode
