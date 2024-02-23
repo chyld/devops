@@ -3,8 +3,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=99000       # history in memory
 SAVEHIST=99000       # history in file
-setopt SHARE_HISTORY # Share command history data.
-setopt autocd beep extendedglob nomatch notify
+setopt share_history autocd beep extendedglob nomatch notify
 bindkey -v # setup VI keybindings
 zstyle :compinstall filename '/home/chyld/.zshrc'
 autoload -Uz compinit
