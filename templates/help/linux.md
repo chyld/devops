@@ -20,7 +20,9 @@
 
 - var=("red" "blue" "green")    # an array
 - var=$(ls)                     # launch a subshell and return the results
-- echo $var or echo ${var}      # dereference a variable
+- var="$(ls)"                   # NOT NEEDED. Output of command substitution will ALWAYS be treated as a single string.
+- echo "$var"                   # use double quotes around, dereference a variable
+- echo "${var:1}world"          # use double quotes around - better for string concatenation and string manipulation 
 
 ## video
 

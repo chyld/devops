@@ -65,6 +65,9 @@
             "source.organizeImports": "explicit"
         },
         "editor.tabSize": 4
+    },
+    "aws.suppressPrompts": {
+        "codeWhispererConnectionExpired": true
     }
     // -------------------------------------------------
     // -------------------------------------------------
