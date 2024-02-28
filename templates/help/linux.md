@@ -23,6 +23,8 @@
 - var="$(ls)"                   # NOT NEEDED. Output of command substitution will ALWAYS be treated as a single string.
 - echo "$var"                   # use double quotes around, dereference a variable
 - echo "${var:1}world"          # use double quotes around - better for string concatenation and string manipulation 
+- fn() {...}                    # define a function
+- fn() (...)                    # function will run in a subshell
 
 ## video
 
