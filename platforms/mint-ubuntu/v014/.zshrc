@@ -9,11 +9,8 @@ zstyle :compinstall filename '/home/chyld/.zshrc'
 autoload -Uz compinit
 compinit
 
-export ZSH_CUSTOM=$HOME/.zsh
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/plugins/zsh_ollama/zsh_ollama.plugin.zsh
-bindkey '^X' ollama_completion
 
 # --------------------------------------------------------------------------------------------- #
 
