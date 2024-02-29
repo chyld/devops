@@ -9,6 +9,8 @@ zstyle :compinstall filename '/home/chyld/.zshrc'
 autoload -Uz compinit
 compinit
 
+# --------------------------------------------------------------------------------------------- #
+
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.bin/sage.sh/sage.sh
@@ -63,8 +65,6 @@ alias jl="jupyter lab"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
 alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
-alias mountnfs="sudo mount -t nfs 192.168.1.10:/mnt/datastore/hydrogen /home/chyld/Share"
-alias umountnfs="sudo umount /home/chyld/Share"
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -258,9 +258,8 @@ xh_faker() {
 # --------------------------------------------------------------------------------------------- #
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-conda activate alpha
+conda activate prometheus
 eval "$(starship init zsh)"
-source $HOME/.cargo/env
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -270,4 +269,3 @@ fi
 
 # --------------------------------------------------------------------------------------------- #
 
-. "$HOME/.cargo/env"
