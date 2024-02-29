@@ -11,6 +11,7 @@ compinit
 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.bin/sage.sh/sage.sh
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -35,7 +36,8 @@ BIN_PATH=$HOME/.bin
 NODE_PATH=$HOME/.bin/node/bin
 CODE_PATH=$HOME/.bin/vscode/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
-export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$PATH
+SAGE_PATH=$BIN_PATH/sage.sh
+export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$SAGE_PATH:$PATH
 export FZF_DEFAULT_COMMAND=''
 
 # --------------------------------------------------------------------------------------------- #
