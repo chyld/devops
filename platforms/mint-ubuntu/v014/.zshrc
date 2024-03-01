@@ -42,6 +42,7 @@ SAGE_PATH=$BIN_PATH/sage.sh
 export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$SAGE_PATH:$PATH
 export FZF_DEFAULT_COMMAND=''
 export OPENAI_API_KEY=$(cat ~/.openai)
+export EDITOR=nvim
 
 # --------------------------------------------------------------------------------------------- #
 
