@@ -8,13 +8,14 @@
 - fzf                           # fuzzy finder
 - top/htop/btop                 # process monitor
 - hexyl                         # hex viewer
-- delta                         # diff viewer
 - watch/watchexec/entr          # file watcher
 - xargs                         # command line construction
 - strace                        # monitor open files by process
 - gum                           # interactive shell script builder
 - stat                          # show all file statistics
 - lazygit                       # manage git repositories
+- ss                            # get code help at the terminal
+- mods                          # just chat with a LLM
 
 ## bash
 
