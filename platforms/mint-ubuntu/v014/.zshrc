@@ -83,7 +83,6 @@ alias cllll="c;llll"
 # --------------------------------------------------------------------------------------------- #
 
 sd() {
-    # Check git status first and proceed only if dirty
     current_dir=$(pwd)
     cd ~/Code/devops
 
