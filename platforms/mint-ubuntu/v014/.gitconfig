@@ -8,5 +8,5 @@
 [init]
   defaultBranch = master
 [credential]
-  helper  = cache --timeout=86400
+  helper = store
 
