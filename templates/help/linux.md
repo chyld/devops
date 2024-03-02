@@ -52,3 +52,16 @@
 
 - you can drag a file OUTSIDE of vscode, to create a new window
 
+## bash scripting
+
+shellcheck demo.sh
+set -x  # add this at the top of your scripts, excellent debugging
+"$var" or "${var}" # quote variables
+export dog=3 vs dog=3 # env vs shell variables
+$0, $1, $2, $@ # args to a script, last is an array of args
+bash demo.sh vs source demo.sh # runs in a subprocess vs same process
+'' vs "" # no expand vs expand
+*, ?, [abc] # 0+ chars vs 1 char vs (a b or c)
+wc < file.txt # stdin
+cmd 1> file.txt 2>&1 # send stdout and stderr to file.txt
+
