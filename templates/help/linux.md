@@ -26,6 +26,7 @@
 - echo "${var:1}world"          # use double quotes around - better for string concatenation and string manipulation 
 - fn() {...}                    # define a function
 - fn() (...)                    # function will run in a subshell
+- set -x                        # put at the top of every bash script, excellent for debugging
 
 ## video
 
