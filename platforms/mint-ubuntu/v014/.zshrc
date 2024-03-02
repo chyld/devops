@@ -193,16 +193,20 @@ xc() {
             --align center --width 30 --margin "1 2" --padding "1 2" \
             'Xplore Project Creator'
         # https://www.nerdfonts.com/cheat-sheet
-        template=$(gum choose "  nogit" "󰅬  readme" "󰈸  physics" "󰺵  p5js" "  virtual python" "  python" "  javascript" "  typescript" "  lua")
+        template=$(gum choose "  bare" "󰅬  readme" "󰅩  bash" "󰈸  physics" "󰺵  p5js" "  virtual python" "  python" "  javascript" "  typescript" "  lua")
         touch README.md
         case "$template" in
-            *nogit)
+            *bare)
                 # exit, do not want repo
                 rm README.md
                 return
                 ;;
             *readme)
                 # nothing here
+                ;;
+            *bash)
+                cp $HOME/Code/devops/templates/bash/script.sh .
+                echo "shellcheck ./script.sh" >> README.md
                 ;;
             *physics)
                 cp $HOME/Code/devops/templates/physics/physics.ipynb .
@@ -242,6 +246,8 @@ xc() {
         git commit -m "Commit Zero"
         git log
         ll
+        cat README.md
+        echo "\n\npwd: $(pwd)"
     fi
 }
 
