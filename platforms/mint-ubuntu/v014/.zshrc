@@ -201,6 +201,7 @@ xc() {
         # https://www.nerdfonts.com/cheat-sheet
         template=$(gum choose "  bare" "󰅬  readme" "󰅩  bash" "󰈸  physics" "󰺵  p5js" "  virtual python" "  python" "  javascript" "  typescript" "  lua")
         touch README.md
+        post_processing(){} # creating a blank definition here, can be over-ridden later
         case "$template" in
             *bare)
                 # exit, do not want repo
@@ -213,6 +214,10 @@ xc() {
             *bash)
                 cp $HOME/Code/devops/templates/bash/script.sh .
                 echo "shellcheck ./script.sh" >> README.md
+                post_processing(){
+                    shellcheck script.sh
+                    echo "shellcheck script.sh"
+                }
                 ;;
             *physics)
                 cp $HOME/Code/devops/templates/physics/physics.ipynb .
@@ -254,6 +259,7 @@ xc() {
         ll
         cat README.md
         echo "\n\npwd: $(pwd)"
+        post_processing
     fi
 }
 
