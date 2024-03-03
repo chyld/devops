@@ -19,6 +19,7 @@
 
 ## bash
 
+```
 - var=("red" "blue" "green")    # an array
 - var=$(ls)                     # launch a subshell and return the results
 - var="$(ls)"                   # NOT NEEDED. Output of command substitution will ALWAYS be treated as a single string.
@@ -27,6 +28,7 @@
 - fn() {...}                    # define a function
 - fn() (...)                    # function will run in a subshell
 - set -x                        # put at the top of every bash script, excellent for debugging
+```
 
 ## video
 
@@ -41,12 +43,14 @@
 
 ## scripts
 
+```
 - `rsync -avz (source) (destination)`
 - list all the files in a directory (including subdirectories) and sort by datetime
 - `find . -type f -exec ls -l --time-style=long-iso {} + | sort -k 6,7`
 - convert webm to mp4 using x264 video and aac audio codecs
 - `ffmpeg -i input.webm -c:v libx264 -c:a aac output.mp4`
 - `convert hello.png goodbye.jpg` # image format conversion
+```
 
 ## vscode
 
@@ -54,6 +58,7 @@
 
 ## bash scripting
 
+```
 shellcheck demo.sh
 set -x  # add this at the top of your scripts, excellent debugging
 "$var" or "${var}" # quote variables
@@ -64,4 +69,5 @@ bash demo.sh vs source demo.sh # runs in a subprocess vs same process
 *, ?, [abc] # 0+ chars vs 1 char vs (a b or c)
 wc < file.txt # stdin
 cmd 1> file.txt 2>&1 # send stdout and stderr to file.txt
+```
 
