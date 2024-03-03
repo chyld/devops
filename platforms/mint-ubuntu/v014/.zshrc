@@ -82,6 +82,12 @@ alias cllll="c;llll"
 
 # --------------------------------------------------------------------------------------------- #
 
+ccc() {
+    # wayland copy file to clipboard
+    local filename="$1"
+    cat "$filename" | wl-copy
+}
+
 sd() {
     current_dir=$(pwd)
     cd ~/Code/devops
