@@ -87,7 +87,7 @@ td() {
     local colors=("blue" "green" "yellow" "orange" "purple" "red" "peach" "pink" "teal" "lavender" "beige" "crimson" "coral" "indigo" "olive" "magenta" "ivory", "cobalt" "amber" "mint")
     local index=$((RANDOM % ${#colors[@]}))
     local color=${colors[$index]}
-    local hex=$(head -c 10 /dev/urandom | xxd -p)
+    local hex=$(head -c 3 /dev/urandom | xxd -p)
     local name="${color}-${hex}"
     mkdir "$name"
     echo -e "Directory:\033[0;32m $name \033[0mcreated"
