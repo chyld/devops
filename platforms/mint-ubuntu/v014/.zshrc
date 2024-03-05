@@ -67,6 +67,7 @@ alias jl="jupyter lab"
 alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
 alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
+alias ccc="wl-copy"
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -91,12 +92,6 @@ td() {
     local name="${color}-${hex}"
     mkdir "$name"
     echo -e "Directory:\033[0;32m $name \033[0mcreated"
-}
-
-ccc() {
-    # wayland copy file to clipboard
-    local filename="$1"
-    cat "$filename" | wl-copy
 }
 
 sd() {
@@ -135,25 +130,10 @@ path() {
     echo "$path_multi_line" | nl
 }
 
-h() {
-    # help
-    glow ~/Code/devops/templates/help/linux.md
-}
-
-eh() {
-    # edit help
-    vi ~/Code/devops/templates/help/linux.md
-}
-
 # --------------------------------------------------------------------------------------------- #
 
 x() {
     cd ~/Xplore
-}
-
-xh() {
-    # x-help
-    glow ~/Code/devops/templates/help/x-help.md
 }
 
 xl() {
