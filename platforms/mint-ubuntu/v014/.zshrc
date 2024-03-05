@@ -84,7 +84,7 @@ alias cllll="c;llll"
 
 td() {
     # temp directory - create
-    local colors=("blue" "green" "yellow" "orange" "purple" "red" "peach" "pink" "teal" "lavender" "beige" "crimson" "coral" "indigo" "olive" "magenta" "ivory", "cobalt" "amber" "mint")
+    local colors=("blue" "green" "yellow" "orange" "purple" "red" "peach" "pink" "teal" "lavender" "beige" "crimson" "coral" "indigo" "olive" "magenta" "ivory" "cobalt" "amber" "mint")
     local index=$((RANDOM % ${#colors[@]}))
     local color=${colors[$index]}
     local hex=$(head -c 2 /dev/urandom | xxd -p)
