@@ -69,7 +69,7 @@ alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
 alias ccc="wl-copy"
 alias h="cd $HOME/Projekts/Docusaurus/website/docs/crimson"
-alias eh="vi $HOME/Projekts/Docusaurus/website/scratch.md"
+alias eh="vi $HOME/Projekts/Docusaurus/website/docs/crimson/scratch.md"
 
 # --------------------------------------------------------------------------------------------- #
 
