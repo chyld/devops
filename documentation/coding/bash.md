@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # bash.md
 
 ## variables
@@ -228,4 +232,3 @@ source script.sh
 - `source` runs the script in the current process
 
 ## end of guide
-
