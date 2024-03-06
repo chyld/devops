@@ -86,6 +86,18 @@ alias cllll="c;llll"
 
 # --------------------------------------------------------------------------------------------- #
 
+deploy() {
+    cd "/home/chyld/Projekts/Docusaurus/website"
+    git add .
+    git commit -am "update"
+    git push
+    rm -rf build
+    npm run build
+    rm -rf ../build
+    mv build ..
+    echo "deploy complete"
+}
+
 td() {
     # temp directory - create
     local colors=("blue" "green" "yellow" "orange" "purple" "red" "peach" "pink" "teal" "lavender" "beige" "crimson" "coral" "indigo" "olive" "magenta" "ivory" "cobalt" "amber" "mint")
