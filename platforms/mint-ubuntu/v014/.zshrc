@@ -48,6 +48,8 @@ export EDITOR=nvim
 
 alias dev="cd ~/Code/devops"
 alias dots="cd ~/Code/devops/platforms/mint-ubuntu/v014"
+alias docs="cd $HOME/Projekts/Docusaurus/website/docs/crimson"
+alias share="cd $HOME/Share"
 alias bin="cd ~/.bin"
 alias dl="cd ~/Downloads"
 alias b="cd .."
@@ -68,8 +70,7 @@ alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
 alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
 alias ccc="wl-copy"
-alias h="cd $HOME/Projekts/Docusaurus/website/docs/crimson"
-alias eh="vi $HOME/Projekts/Docusaurus/website/docs/crimson/scratch.md"
+alias note="vi $HOME/Projekts/Docusaurus/website/docs/crimson/scratch.md"
 
 # --------------------------------------------------------------------------------------------- #
 
