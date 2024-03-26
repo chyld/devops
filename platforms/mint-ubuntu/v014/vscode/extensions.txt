@@ -858,3 +858,17 @@ Sun Mar 17 03:01:54 AM PDT 2024
      5	ms-python.vscode-pylance
      6	pkief.material-icon-theme
      7	wesbos.theme-cobalt2
+=========================
+Tue Mar 26 02:54:50 PM PDT 2024
+     1	amazonwebservices.aws-toolkit-vscode
+     2	bradlc.vscode-tailwindcss
+     3	charliermarsh.ruff
+     4	esbenp.prettier-vscode
+     5	inferrinizzard.prettier-sql-vscode
+     6	johnpapa.vscode-peacock
+     7	ms-python.debugpy
+     8	ms-python.python
+     9	ms-python.vscode-pylance
+    10	pkief.material-icon-theme
+    11	prisma.prisma
+    12	wesbos.theme-cobalt2

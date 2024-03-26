@@ -71,6 +71,7 @@ alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
 alias ccc="wl-copy"
 alias note="vi $HOME/Projekts/Docusaurus/website/docs/crimson/scratch.md"
+alias mirror="cat /etc/pacman.d/mirrorlist && sudo reflector --latest 5 --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist"
 
 # --------------------------------------------------------------------------------------------- #
 
