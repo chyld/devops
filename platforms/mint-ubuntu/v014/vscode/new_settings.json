@@ -1,0 +1,73 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "SynthWave '84",
+    "workbench.tree.indent": 30,
+
+    "window.menuBarVisibility": "toggle",
+    "window.restoreWindows": "none",
+    "window.commandCenter": true,
+    "window.titleBarStyle": "custom",
+
+    "editor.fontFamily": "'FiraCode Nerd Font Light'", // use "fonts" alias to find font names
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "all",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.formatOnPaste": true,
+    "editor.insertSpaces": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+
+    "outline.collapseItems": "alwaysCollapse",
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    "peacock.affectTitleBar": true,
+    "peacock.affectActivityBar": false,
+    "peacock.affectStatusBar": false,
+    "peacock.affectSideBarBorder": false,
+    "peacock.affectPanelBorder": false,
+    "peacock.affectTabActiveBorder": false,
+
+    "keyboard.dispatch": "keyCode", // so re-mapped keyboard keys work correctly
+    // -------------------------------------------------
+    // -------------------------------------------------
+    // -------------------------------------------------
+    "[shellscript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "foxundermoon.shell-format",
+        "editor.tabSize": 4
+    },
+    // -------------------------------------------------
+    // -------------------------------------------------
+    // -------------------------------------------------
+    "prettier.tabWidth": 4,
+    "[json][jsonc][jsonl][javascript][typescript][html][css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4
+    },
+    // -------------------------------------------------
+    // -------------------------------------------------
+    // -------------------------------------------------
+    "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.tabSize": 4
+    },
+    "window.customTitleBarVisibility": "auto"
+    // -------------------------------------------------
+    // -------------------------------------------------
+    // -------------------------------------------------
+}
