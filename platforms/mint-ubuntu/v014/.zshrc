@@ -13,7 +13,6 @@ compinit
 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/.bin/sage.sh/sage.sh
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -38,15 +37,10 @@ BIN_PATH=$HOME/.bin
 NODE_PATH=$HOME/.bin/node/bin
 CODE_PATH=$HOME/.bin/vscode/bin
 SCRIPTS_PATH=$HOME/Code/devops/scripts
-# SAGE_PATH=$BIN_PATH/sage.sh
 export PATH=$NODE_PATH:$CODE_PATH:$SCRIPTS_PATH:$PATH
 export FZF_DEFAULT_COMMAND=''
-# export OPENAI_API_KEY=$(cat ~/.openai)
 export EDITOR=nvim
 
-# --------------------------------------------------------------------------------------------- #
-# --------------------------------------------------------------------------------------------- #
-# --------------------------------------------------------------------------------------------- #
 # --------------------------------------------------------------------------------------------- #
 
 source $HOME/.zshrc_aliases
@@ -57,12 +51,6 @@ source $HOME/.zshrc_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 conda activate prometheus
 eval "$(starship init zsh)"
-
-# --------------------------------------------------------------------------------------------- #
-
-# if [ -z "$TMUX" ]; then # $TMUX is ONLY set when it is active.
-#    tmux new-session
-# fi
 
 # --------------------------------------------------------------------------------------------- #
 

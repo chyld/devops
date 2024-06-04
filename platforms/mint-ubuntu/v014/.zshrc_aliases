@@ -19,8 +19,7 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias lg="lazygit"
-alias jl="jupyter lab 1> out.txt 2> err.txt"
-alias backlight="cat /sys/class/leds/smc::kbd_backlight/brightness"
+alias jl="jupyter lab"
 alias fonts="fc-list : family | sort | uniq | nl"
 alias system="inxi -F"
 alias ccc="wl-copy"
@@ -40,3 +39,4 @@ alias  clll="c;lll"
 alias cllll="c;llll"
 
 # --------------------------------------------------------------------------------------------- #
+
