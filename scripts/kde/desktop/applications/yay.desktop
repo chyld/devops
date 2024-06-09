@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Yay
+Comment=Opens terminal and runs yay
+Exec=/home/chyld/Code/devops/scripts/kde/yay.sh
+Icon=go-home
+Terminal=true
+Type=Application
+Categories=Utility;
+

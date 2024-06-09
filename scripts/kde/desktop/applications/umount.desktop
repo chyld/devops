@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=UMount
+Comment=Un-mounts the Share directory
+Exec=/home/chyld/Code/devops/scripts/kde/umount.sh
+Icon=drive-partition
+Terminal=true
+Type=Application
+Categories=Utility;
+

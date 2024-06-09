@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+MimeType=image/webp;
+Actions=convertToPng;
+
+[Desktop Action convertToPng]
+Name=Convert to PNG
+Icon=transform-scale
+Exec=convert %u %u.png
+
