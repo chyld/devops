@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Code
+Exec=/home/chyld/.bin/vscode/bin/code %F
+Icon=/home/chyld/.bin/vscode/resources/app/resources/linux/code.png
+MimeType=text/plain;inode/directory;application/x-zerosize;
+Categories=Development;Office;System;Utility;
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Minecraft Launcher
+GenericName=Minecraft Launcher
+Comment=Official Minecraft Launcher
+Exec=/home/chyld/.bin/minecraft/minecraft-launcher
+Icon=/home/chyld/.bin/minecraft/minecraft-launcher.svg
+Terminal=false
+Categories=Game;Application;
+StartupNotify=true
+
