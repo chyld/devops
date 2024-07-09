@@ -6,5 +6,5 @@ Actions=convertToPng;
 [Desktop Action convertToPng]
 Name=Convert to PNG
 Icon=transform-scale
-Exec=convert %u %u.png
+Exec=magick %u %u.png
 
