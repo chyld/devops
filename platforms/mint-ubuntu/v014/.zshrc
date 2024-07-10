@@ -33,12 +33,13 @@ setopt interactive_comments
 
 BIN=$HOME/.bin/bin
 CODE=$HOME/.bin/vscode/bin
+ZED=$HOME/.bin/zed/bin
 NODE=$HOME/.bin/node/bin
 POSH=$HOME/.bin/posh/bin
 JAVA=$HOME/.bin/java/bin
 MINECRAFT=$HOME/.bin/minecraft
 SCRIPTS=$HOME/Code/devops/scripts
-export PATH=$BIN:$CODE:$NODE:$POSH:$JAVA:$MINECRAFT:$SCRIPTS:$PATH
+export PATH=$BIN:$CODE:$ZED:$NODE:$POSH:$JAVA:$MINECRAFT:$SCRIPTS:$PATH
 export EDITOR=nvim
 
 # ------------------------------------------------------------------------------------------------ #
