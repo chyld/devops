@@ -3,5 +3,5 @@
   name    = Chyld Medford
 
 [credential]
-	helper = manager
+	helper = /usr/local/bin/git-credential-manager
 
