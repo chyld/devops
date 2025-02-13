@@ -12,6 +12,14 @@ alias ll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
 
+path() {
+  echo $PATH | tr ':' '\n' | nl
+}
+
+ez() {
+  vi $HOME/.zshrc
+}
+
 export NVM_DIR="$HOME/.nvm"
 
 . "$NVM_DIR/nvm.sh"
