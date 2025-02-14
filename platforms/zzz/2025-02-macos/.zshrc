@@ -27,3 +27,5 @@ export NVM_DIR="$HOME/.nvm"
 . "$NVM_DIR/nvm.sh"
 . "$HOME/.local/bin/env"
 
+eval "$(starship init zsh)"
+
