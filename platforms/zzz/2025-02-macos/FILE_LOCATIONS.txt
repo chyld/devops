@@ -1,0 +1,16 @@
+FILE LOCATIONS
+
+$HOME
+-----
+.gitconfig
+.tmux.conf
+.zshrc
+
+$HOME/.config
+-------------
+starship.toml
+
+$HOME/.config/ghostty
+---------------------
+config
+
