@@ -14,12 +14,18 @@ alias ll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
 
+. $HOME/.keys
+
 path() {
   echo $PATH | tr ':' '\n' | nl
 }
 
 ez() {
   vi $HOME/.zshrc
+}
+
+aider() {
+  uvx --python 3.12 --from aider-chat aider --model anthropic/claude-3-7-sonnet-20250219 --anthropic-api-key $MY_ANTHROPIC_KEY
 }
 
 export NVM_DIR="$HOME/.nvm"
