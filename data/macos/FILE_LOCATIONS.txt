@@ -14,3 +14,7 @@ $HOME/.config/ghostty
 ---------------------
 config
 
+$HOME/.config/uv
+----------------
+uv.toml
+
