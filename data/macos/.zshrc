@@ -23,9 +23,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # FUNCTIONS
 #-------------------------------------------------
-path() {
-  echo $PATH | tr ':' '\n' | nl
-}
+# path - user script to show $PATH
+# ez   - edit zshrd file
 
 ez() {
   vi $HOME/.zshrc
