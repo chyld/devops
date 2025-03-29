@@ -1,0 +1,13 @@
+FROM ubuntu:latest
+
+RUN apt update && apt upgrade -y
+RUN apt install -y sudo curl tree htop vim tmux psmisc # psmisc -> pstree
+
+RUN useradd -m -s /bin/bash bob
+RUN usermod -aG sudo bob
+RUN echo "bob:bob" | chpasswd
+
+USER bob
+WORKDIR /home/bob
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
