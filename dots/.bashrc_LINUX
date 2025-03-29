@@ -1,0 +1,15 @@
+export GCM_CREDENTIAL_STORE=cache
+export PATH=$HOME/.bin:$PATH
+
+alias c="clear"
+alias b="cd .."
+alias g="git"
+alias l="ls -a"
+alias ll="ls -al"
+alias bin="cd $HOME/.bin"
+alias dl="cd $HOME/Downloads"
+alias dev="cd $HOME/Developer"
+alias dots="cd $HOME/Developer/devops/dots"
+
+eval "$(starship init bash)"
+
