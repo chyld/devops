@@ -18,3 +18,7 @@ $HOME/.config/uv
 ----------------
 uv.toml
 
+scripts
+-------
+symlink scripts to bin folder in $PATH
+
