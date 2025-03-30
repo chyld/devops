@@ -13,13 +13,16 @@ system="$1"
 mkdir -p $HOME/.bin
 mkdir -p $HOME/.config/{ghostty,uv}
 
-# System agnostic
+# System agnostic files
 ln -s $HOME/Developer/devops/dots/.gitconfig             $HOME
 ln -s $HOME/Developer/devops/dots/.tmux.conf             $HOME
 ln -s $HOME/Developer/devops/dots/.bin/*                 $HOME/.bin
 ln -s $HOME/Developer/devops/dots/.config/starship.toml  $HOME/.config
 ln -s $HOME/Developer/devops/dots/.config/ghostty/config $HOME/.config/ghostty
 ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml     $HOME/.config/uv
+
+# System agnostic directories
+ln -s $HOME/Developer/devops/dots/.dockerfiles           $HOME
 
 # System specific 
 case "$system" in
