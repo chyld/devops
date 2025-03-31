@@ -22,7 +22,7 @@ ln -s $HOME/Developer/devops/dots/.config/ghostty/config $HOME/.config/ghostty
 ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml     $HOME/.config/uv
 
 # System agnostic directories
-ln -s $HOME/Developer/devops/dots/.dockerfiles           $HOME
+cp -r $HOME/Developer/devops/dots/.dockerfiles           $HOME
 
 # System specific 
 case "$system" in
