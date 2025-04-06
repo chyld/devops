@@ -5,6 +5,8 @@ alias c="clear"
 alias b="cd .."
 alias g="git"
 
+alias gs="git status"
+
 alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
