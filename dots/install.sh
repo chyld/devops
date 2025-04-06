@@ -20,6 +20,7 @@ ln -s $HOME/Developer/devops/dots/.bin/*                 $HOME/.bin
 ln -s $HOME/Developer/devops/dots/.config/starship.toml  $HOME/.config
 ln -s $HOME/Developer/devops/dots/.config/ghostty/config $HOME/.config/ghostty
 ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml     $HOME/.config/uv
+ln -s $HOME/Developer/devops/dots/.config/mpv/mpv.conf   $HOME/.config/mpv
 
 # System agnostic directories
 cp -r $HOME/Developer/devops/dots/.dockerfiles           $HOME
