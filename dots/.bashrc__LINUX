@@ -1,11 +1,13 @@
 export GCM_CREDENTIAL_STORE=cache
-export PATH=$HOME/.bin:$PATH
+export PATH=$HOME/.bin:$HOME/.bin/nvim/bin:$PATH
 
 alias c="clear"
 alias b="cd .."
 alias g="git"
+alias vi="nvim"
 
 alias gs="git status"
+alias gd="git diff"
 
 alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
