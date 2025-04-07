@@ -19,5 +19,12 @@ alias ll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
 
-eval "$(starship init bash)"
+path() {
+  path.py
+}
 
+eb() {
+  vi $HOME/.bashrc
+}
+
+eval "$(starship init bash)"
