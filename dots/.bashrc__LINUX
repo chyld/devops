@@ -5,9 +5,12 @@ alias c="clear"
 alias b="cd .."
 alias g="git"
 alias vi="nvim"
+alias cat="bat"
+alias find="fd"
 
 alias gs="git status"
 alias gd="git diff"
+alias gl="git log --oneline"
 
 alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
