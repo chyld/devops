@@ -11,7 +11,7 @@ system="$1"
 
 # Make directories
 mkdir -p $HOME/.bin
-mkdir -p $HOME/.config/{ghostty,uv}
+mkdir -p $HOME/.config/{ghostty,uv,mpv}
 mkdir -p $HOME/.local/share/nautilus/scripts
 
 # System agnostic files
