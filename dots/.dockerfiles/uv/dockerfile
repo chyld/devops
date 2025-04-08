@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt update && apt upgrade -y
-RUN apt install -y sudo curl tree htop vim tmux psmisc # psmisc -> pstree
+RUN apt install -y sudo git curl tree htop vim tmux psmisc # psmisc -> pstree
 
 RUN useradd -m -s /bin/bash bob
 RUN usermod -aG sudo bob
