@@ -7,6 +7,7 @@ alias g="git"
 alias vi="nvim"
 alias cat="bat"
 alias find="fd"
+alias grep="rg"
 
 alias gs="git status"
 alias gd="git diff"
