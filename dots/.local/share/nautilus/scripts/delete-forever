@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# view log at /var/log/syslog
+
+IFS=$'\n'
+for file in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS; do
+  rm -rf "$file"
+  logger -t "chyld-delete" "$file was deleted"
+done
