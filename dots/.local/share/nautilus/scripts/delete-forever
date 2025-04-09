@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # view log at /var/log/syslog
+# it is executed at the logged in user
+# the current working directory is the folder you are in currently
 
 IFS=$'\n'
 for file in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS; do
