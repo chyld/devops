@@ -4,8 +4,12 @@
 # journalctl -f
 # nautilus -q && nautilus
 
+# REFERENCE
+# ---------
+# https://gitlab.gnome.org/GNOME/nautilus-python
+
 import subprocess
-from gi.repository import Nautilus, GObject, Gio
+from gi.repository import Nautilus, GObject
 
 class VSCodeExtension(GObject.GObject, Nautilus.MenuProvider):
     def get_background_items(self, folder):
@@ -21,4 +25,4 @@ class VSCodeExtension(GObject.GObject, Nautilus.MenuProvider):
         # this runs when you click on the menu item
         folder_uri = args[0].get_uri()
         folder_path = folder_uri.replace("file://", "")
-        subprocess.Popen(['code', folder_path])
+        subprocess.Popen(['code', '-n', folder_path])
