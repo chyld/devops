@@ -13,6 +13,7 @@ system="$1"
 mkdir -p $HOME/.bin
 mkdir -p $HOME/.config/{ghostty,uv,mpv}
 mkdir -p $HOME/.local/share/nautilus/scripts
+mkdir -p $HOME/.local/share/nautilus-python/extensions
 
 # System agnostic files
 ln -s $HOME/Developer/devops/dots/.gitconfig $HOME
@@ -23,6 +24,7 @@ ln -s $HOME/Developer/devops/dots/.config/ghostty/config $HOME/.config/ghostty
 ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml $HOME/.config/uv
 ln -s $HOME/Developer/devops/dots/.config/mpv/* $HOME/.config/mpv
 ln -s $HOME/Developer/devops/dots/.local/share/nautilus/scripts/* $HOME/.local/share/nautilus/scripts
+ln -s $HOME/Developer/devops/dots/.local/share/nautilus-python/extensions/* $HOME/.local/share/nautilus-python/extensions
 
 # System agnostic directories
 cp -r $HOME/Developer/devops/dots/.dockerfiles $HOME
