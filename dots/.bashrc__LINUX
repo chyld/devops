@@ -1,5 +1,5 @@
 export GCM_CREDENTIAL_STORE=cache
-export PATH=$HOME/.bin:$HOME/.bin/nvim/bin:$HOME/.bin/node/bin:$HOME/.bin/ffmpeg/bin:$PATH
+export PATH=$HOME/.bin:$HOME/.bin/nvim/bin:$HOME/.bin/node/bin:$HOME/.bin/ffmpeg/bin:$HOME/.bin/db/bin:$PATH
 
 alias c="clear"
 alias b="cd .."
