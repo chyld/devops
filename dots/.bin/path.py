@@ -9,11 +9,11 @@
 
 # uv add --script path.py rich
 
-import os
+import sys
 from rich.console import Console
 
-console = Console()
-paths = os.environ['PATH'].split(os.pathsep)
+console = Console(force_terminal=True) # so color works even if you are piping data to python
+paths = sys.stdin.read().split(":")
 
 for i, path in enumerate([p for p in paths if "cache" not in p]):
     if i % 2 == 0:

@@ -28,7 +28,7 @@ alias cll="c && ll"
 alias archy="distrobox enter archy"
 
 path() {
-  echo "$PATH" | tr ":" "\n"
+  echo "$PATH" | path.py
 }
 
 eb() {
