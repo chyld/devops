@@ -25,6 +25,8 @@ alias ll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
 
+alias archy="distrobox enter archy"
+
 path() {
   path.py
 }
@@ -33,4 +35,5 @@ eb() {
   vi $HOME/.bashrc
 }
 
+eval "$(fzf --bash)"
 eval "$(starship init bash)"
