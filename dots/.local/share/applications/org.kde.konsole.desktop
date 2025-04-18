@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/xero/.bin/distrobox/bin/distrobox-enter  -n archy  --   konsole
+Icon=/home/xero/Developer/devops/dots/.icons/command.png
+Categories=Qt;KDE;System;TerminalEmulator;
+StartupNotify=true
+StartupWMClass=konsole
+Name=Konsole (on archy)

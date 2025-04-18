@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Icons -- https://www.flaticon.com/
 # Check if an argument was provided
 if [ $# -eq 0 ]; then
   echo "No arguments provided. Usage: ./install.sh <mac or linux>"
@@ -25,6 +26,7 @@ ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml $HOME/.config/uv
 ln -s $HOME/Developer/devops/dots/.config/mpv/* $HOME/.config/mpv
 ln -s $HOME/Developer/devops/dots/.local/share/nautilus/scripts/* $HOME/.local/share/nautilus/scripts
 ln -s $HOME/Developer/devops/dots/.local/share/nautilus-python/extensions/* $HOME/.local/share/nautilus-python/extensions
+ln -s $HOME/Developer/devops/dots/.local/share/applications/* $HOME/.local/share/applications
 
 # System agnostic directories
 cp -r $HOME/Developer/devops/dots/.dockerfiles $HOME
