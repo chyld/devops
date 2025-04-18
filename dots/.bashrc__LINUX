@@ -35,5 +35,4 @@ eb() {
   vi $HOME/.bashrc
 }
 
-eval "$(fzf --bash)"
 eval "$(starship init bash)"
