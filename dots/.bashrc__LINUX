@@ -26,6 +26,8 @@ alias cl="c && l"
 alias cll="c && ll"
 
 alias archy="distrobox enter archy"
+alias hacker="docker run -t --rm rust-stakeholder"
+alias matrix="unimatrix.py -af -c cyan -l mp"
 
 path() {
   echo "$PATH" | path.py
