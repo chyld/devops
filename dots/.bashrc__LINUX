@@ -2,7 +2,7 @@ BIN_HOME="$HOME/.bin"
 
 export PATH=$BIN_HOME:$BIN_HOME/links:$BIN_HOME/node/bin:$BIN_HOME/distrobox/bin:$BIN_HOME/distrobox/exports:$PATH
 export GCM_CREDENTIAL_STORE=secretservice
-IS_LOADED=1
+IS_LOADED=1 # this is used for tmux, if this variable is not present, then source this file
 
 alias c="clear"
 alias b="cd .."
