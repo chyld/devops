@@ -17,6 +17,7 @@ mkdir -p $HOME/.local/share/nautilus/scripts
 mkdir -p $HOME/.local/share/nautilus-python/extensions
 
 # System agnostic files
+ln -s $HOME/Developer/devops/dots/.profile $HOME
 ln -s $HOME/Developer/devops/dots/.gitconfig $HOME
 ln -s $HOME/Developer/devops/dots/.tmux.conf $HOME
 ln -s $HOME/Developer/devops/dots/.bin/* $HOME/.bin
