@@ -1,0 +1,5 @@
+#!/bin/bash
+
+file="$HOME/.bin/links/links-art.txt"
+mapfile -t urls <"$file"
+google-chrome --new-window "${urls[@]}"

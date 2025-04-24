@@ -1,6 +1,6 @@
 BIN_HOME="$HOME/.bin"
 
-export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/distrobox/bin:$BIN_HOME/distrobox/exports:$PATH
+export PATH=$BIN_HOME:$BIN_HOME/links:$BIN_HOME/node/bin:$BIN_HOME/distrobox/bin:$BIN_HOME/distrobox/exports:$PATH
 export GCM_CREDENTIAL_STORE=cache
 
 alias c="clear"

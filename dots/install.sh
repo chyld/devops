@@ -20,6 +20,7 @@ mkdir -p $HOME/.local/share/nautilus-python/extensions
 ln -s $HOME/Developer/devops/dots/.gitconfig $HOME
 ln -s $HOME/Developer/devops/dots/.tmux.conf $HOME
 ln -s $HOME/Developer/devops/dots/.bin/* $HOME/.bin
+ln -s $HOME/Developer/devops/dots/.bin/links $HOME/.bin
 ln -s $HOME/Developer/devops/dots/.config/starship.toml $HOME/.config
 ln -s $HOME/Developer/devops/dots/.config/ghostty/config $HOME/.config/ghostty
 ln -s $HOME/Developer/devops/dots/.config/uv/uv.toml $HOME/.config/uv
