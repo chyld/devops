@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# view log at /var/log/syslog
+# it is executed as the logged in user
+# the current working directory is the folder you are in currently
+
 IFS=$'\n' read -d '' -r -a files <<<"$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
 printf "Montage file count: ${#files[@]}\n"
 
@@ -9,6 +13,5 @@ out_file="${out_dir}/montage-$(date +%Y%m%d-%H%M%S).jpg"
 printf "Montage output filename: ${out_file}\n"
 
 /home/xero/.bin/distrobox/exports/magick montage "${files[@]}" "$out_file"
-
 notify-send "Montage created" "$out_file"
 xdg-open "$out_file"
