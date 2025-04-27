@@ -5,3 +5,9 @@
 [credential]
  helper   = /usr/local/bin/git-credential-manager
 
+[push]
+  default = current
+
+[pull]
+  default = current
+

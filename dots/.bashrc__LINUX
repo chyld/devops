@@ -12,7 +12,7 @@ alias cat="bat"
 alias find="fd"
 alias grep="rg"
 
-alias gs="git status"
+alias gs="git status --short"
 alias gd="git diff"
 alias gl="git log --oneline"
 

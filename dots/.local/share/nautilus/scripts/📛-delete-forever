@@ -4,7 +4,7 @@
 # it is executed as the logged in user
 # the current working directory is the folder you are in currently
 
-zenity --question --text="Are you sure you want to permanently delete the selected file(s)?" --title="Confirm Delete" --no-wrap
+zenity --question --text="Are you sure you want to permanently delete the selected file(s)?" --title="Confirm Delete" --no-wrap --default-cancel
 if [ $? -ne 0 ]; then
     logger -t "chyld-delete" "Deletion cancelled by user"
     exit 0
