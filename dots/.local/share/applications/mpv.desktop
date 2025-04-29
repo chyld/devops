@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=MPV
-Exec=/home/xero/.bin/distrobox/exports/mpv --player-operation-mode=pseudo-gui -- %U # the "--" means *end of options*
-Terminal=false
-Icon=mpv

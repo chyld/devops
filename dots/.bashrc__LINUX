@@ -1,6 +1,7 @@
 BIN_HOME="$HOME/.bin"
+ALPHA_EXPORTS="$HOME/Distroboxes/alpha/.bin/exports"
 
-export PATH=$BIN_HOME:$BIN_HOME/links:$BIN_HOME/node/bin:$BIN_HOME/distrobox/bin:$BIN_HOME/distrobox/exports:$PATH
+export PATH=$BIN_HOME:$BIN_HOME/links:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$ALPHA_EXPORTS:$PATH
 export GCM_CREDENTIAL_STORE=secretservice
 IS_LOADED=1 # this is used for tmux, if this variable is not present, then source this file
 
@@ -26,7 +27,8 @@ alias ll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
 
-alias archy="distrobox enter archy"
+alias alpha="distrobox enter alpha"
+alias omega="distrobox enter omega"
 alias hacker="docker run -t --rm rust-stakeholder"
 alias matrix="unimatrix.py -af -c cyan -l mp"
 
@@ -39,3 +41,4 @@ eb() {
 }
 
 eval "$(starship init bash)"
+
