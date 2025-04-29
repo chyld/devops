@@ -29,8 +29,8 @@ alias cll="c && ll"
 
 alias alpha="distrobox enter alpha"
 alias omega="distrobox enter omega"
-alias hacker="docker run -t --rm rust-stakeholder"
-alias matrix="unimatrix.py -af -c cyan -l mp"
+alias hacker="docker run -t --rm rust-stakeholder" # https://github.com/giacomo-b/rust-stakeholder
+alias matrix="unimatrix.py -af -c cyan -l mp"      # https://github.com/will8211/unimatrix; clone to get fonts
 
 path() {
   echo "$PATH" | path.py
@@ -41,4 +41,3 @@ eb() {
 }
 
 eval "$(starship init bash)"
-
