@@ -12,6 +12,7 @@ alias vi="nvim"
 alias cat="bat"
 alias find="fd"
 alias grep="rg"
+alias y="yazi"
 
 alias gs="git status --short"
 alias gd="git diff"
