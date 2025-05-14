@@ -32,7 +32,20 @@ alias alpha="distrobox enter alpha"
 alias omega="distrobox enter omega"
 alias hacker="docker run -t --rm rust-stakeholder" # https://github.com/giacomo-b/rust-stakeholder
 alias matrix="unimatrix.py -af -c cyan -l mp"      # https://github.com/will8211/unimatrix; clone to get fonts
-alias cursor="cursor --no-sandbox"
+
+cursor() (
+  # this function is running in a subshell, notice the parens - not braces
+  # it disables job control, which means the PID from cursor starting, will not be displayed
+  # the "echo" will be displayed as normal
+  directory="$1"
+
+  if [ -z "$directory" ]; then
+    echo "directory variable is empty"
+    exit 1
+  fi
+
+  cursor.appimage --no-sandbox "$directory" 1>cursor.log 2>cursor.err &
+)
 
 path() {
   echo "$PATH" | path.py
