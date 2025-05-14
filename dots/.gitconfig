@@ -11,3 +11,6 @@
 [pull]
   default = current
 
+[init]
+  defaultBranch = dev
+

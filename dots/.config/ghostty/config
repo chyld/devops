@@ -1,5 +1,5 @@
 theme = ayu
 font-family = "CaskaydiaCove Nerd Font"
 font-size = 12 
-custom-shader = ghostty-shaders/starfield-colors.glsl
+# custom-shader = ghostty-shaders/temp.glsl
 
