@@ -1,6 +1,7 @@
 BIN_HOME="$HOME/.bin"
 
 export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$PATH
+export GCM_CREDENTIAL_STORE=secretservice
 
 alias c="clear"
 alias b="cd .."
