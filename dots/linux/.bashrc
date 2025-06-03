@@ -18,6 +18,7 @@ alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
 alias dots="cd $HOME/Developer/devops/dots/linux"
+alias conf="cd $HOME/.config"
 
 alias l="eza -a --icons --group-directories-first"
 alias ll="eza -al --icons --group-directories-first"
@@ -35,4 +36,3 @@ eb() {
 }
 
 eval "$(starship init bash)"
-
