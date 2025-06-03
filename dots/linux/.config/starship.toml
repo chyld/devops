@@ -1,7 +1,0 @@
-[character]
-success_symbol = "[ ■](bold bright-white)"
-error_symbol   = "[ ■](bold bright-red)"
-
-[python]
-python_binary = [".venv/bin/python", "python"]
-

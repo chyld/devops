@@ -1,3 +1,0 @@
-#!/bin/bash  
-feh --fullscreen --hide-pointer --auto-zoom --randomize --slideshow-delay 10 ~/Photos
-

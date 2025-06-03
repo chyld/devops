@@ -2,15 +2,9 @@
   email   = chyld.medford@gmail.com
   name    = Chyld Medford
 
-[credential]
-  helper   = /usr/local/bin/git-credential-manager
-
-[push]
-  default = current
-
-[pull]
-  default = current
-
 [init]
   defaultBranch = dev
+
+[credential]
+  helper = /usr/local/bin/git-credential-manager
 
