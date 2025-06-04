@@ -17,7 +17,7 @@ from datetime import datetime
 def generate_hex_directory():
     hex_number = ''.join(random.choices('0123456789abcdef', k=3))
     date_string = datetime.now().strftime('%Y%m%d%H%M%S')
-    final_dir = hex_number + "-" + date_string
+    final_dir = "__" + hex_number + "-" + date_string
     os.mkdir(final_dir)
     print("directory created:", final_dir)
 
