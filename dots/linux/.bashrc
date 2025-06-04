@@ -21,9 +21,11 @@ alias dots="cd $HOME/Developer/devops/dots/linux"
 alias conf="cd $HOME/.config"
 
 alias l="eza -a --icons --group-directories-first"
-alias ll="eza -al --icons --group-directories-first"
+alias ll="eza -aT --icons -L 1"
+alias lll="eza -al --icons --group-directories-first"
 alias cl="c && l"
 alias cll="c && ll"
+alias clll="c && lll"
 
 alias alpha="distrobox enter alpha"
 
