@@ -1,6 +1,6 @@
 BIN_HOME="$HOME/.bin"
 
-export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$PATH
+export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$BIN_HOME/scripts:$PATH
 export GCM_CREDENTIAL_STORE=secretservice
 
 alias c="clear"
@@ -26,6 +26,8 @@ alias cl="c && l"
 alias cll="c && ll"
 
 alias alpha="distrobox enter alpha"
+
+alias xc="x_create.py"
 
 path() {
   echo "$PATH" | tr ":" "\n"
