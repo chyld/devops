@@ -28,9 +28,7 @@ alias cll="c && ll"
 alias clll="c && lll"
 
 alias alpha="distrobox enter alpha"
-
 alias xc="x_create.py"
-
 alias cur="$BIN_HOME/cursor/AppRun --no-sandbox ."
 
 path() {
