@@ -1,0 +1,26 @@
+[mgr]
+show_hidden = true
+
+[opener]
+# Opener for your text editor
+edit = [
+    { run = 'nvim "$@"', block = true },
+]
+
+# Opener for the Nautilus file manager
+file-manager = [
+    { run = 'nautilus "$@"', orphan = true, desc = "Open in file manager" },
+]
+
+[open]
+# --- Rules are checked from top to bottom ---
+rules = [
+    # 1. First, a specific rule for directories
+    { mime = "inode/directory", use = "file-manager" },
+
+    # 2. Next, a rule for any text file
+    { mime = "text/*", use = "edit" },
+
+    # 3. A final fallback for everything else using the system's default app
+    { name = "*", use = "open" },
+]
