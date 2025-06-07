@@ -13,6 +13,7 @@ alias g="git"
 alias d="docker"
 alias vi="nvim"
 alias cat="bat"
+alias y="yazi"
 
 alias gs="git status --short"
 alias gd="git diff"
