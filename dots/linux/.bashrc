@@ -1,6 +1,6 @@
 BIN_HOME="$HOME/.bin"
 
-export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$BIN_HOME/scripts:$PATH
+export PATH=$BIN_HOME:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$BIN_HOME/scripts:$PATH
 
 alias c="clear"
 alias b="cd .."
