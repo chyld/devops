@@ -1,10 +1,11 @@
-BIN_HOME="$HOME/.bin"
+# .bashrc
+#
+# this file runs every time you open a new terminal or window or pane
+# it defines the aliases and functions available in the terminal session
+# ------------------------------------------------------------------------ #
 
-if [[ "$PATH" != *"distrobox"* ]]; then
-  export PATH=$BIN_HOME:$BIN_HOME/npm/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$BIN_HOME/scripts:$PATH
-fi
-
-export NPM_CONFIG_PREFIX="$BIN_HOME/npm"
+# journalctl -b0 | grep chyld
+logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .bashrc"
 
 alias c="clear"
 alias b="cd .."
