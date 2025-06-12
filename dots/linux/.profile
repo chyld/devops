@@ -5,7 +5,6 @@
 # will inherit, like all gui apps or even terminal apps
 # ------------------------------------------------------------------------ #
 
-# journalctl -b0 | grep chyld
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .profile"
 
 BIN_HOME="$HOME/.bin"

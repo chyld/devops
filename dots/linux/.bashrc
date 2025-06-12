@@ -4,7 +4,6 @@
 # it defines the aliases and functions available in the terminal session
 # ------------------------------------------------------------------------ #
 
-# journalctl -b0 | grep chyld
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .bashrc"
 
 alias c="clear"
@@ -37,6 +36,10 @@ alias cllll="c && llll"
 alias alpha="distrobox enter alpha"
 alias xc="x_create.py"
 alias cur="$BIN_HOME/cursor/AppRun --no-sandbox ."
+
+log() {
+  journalctl -b | rg "chyld-debug" | nl
+}
 
 path() {
   echo "$PATH" | tr ":" "\n"
