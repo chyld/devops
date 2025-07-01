@@ -34,8 +34,14 @@ alias clll="c && lll"
 alias cllll="c && llll"
 
 alias alpha="distrobox enter alpha"
-alias xc="x_create.py"
+alias xcg="x_create_generic.py"
+alias xcp="x_create_python.py"
 alias cur="$BIN_HOME/cursor/AppRun --no-sandbox ."
+
+xc() {
+  echo "xcg - generic template"
+  echo "xcp - python template"
+}
 
 log() {
   journalctl -b | rg "chyld-debug" | nl
