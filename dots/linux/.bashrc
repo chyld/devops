@@ -17,6 +17,7 @@ alias y="yazi"
 alias gs="git status --short"
 alias gd="git diff"
 alias gl="git log --oneline"
+alias gwl="git worktree list"
 
 alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
