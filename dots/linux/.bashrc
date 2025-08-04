@@ -18,6 +18,17 @@ alias gs="git status --short"
 alias gd="git diff"
 alias gl="git log --oneline"
 alias gwl="git worktree list"
+gwa() {
+  if [ -z "$1" ]; then
+    echo "Error: Name is required."
+    return 1
+  fi
+
+  local name="$1"
+  local dironly=$(basename $(pwd))
+  git worktree add "../TREE-$dironly-$name" -b "$name"
+  git worktree list
+}
 
 alias bin="cd $HOME/.bin"
 alias dl="cd $HOME/Downloads"
