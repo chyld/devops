@@ -27,10 +27,10 @@ def generate_hex_directory():
     name = get_name()
     hex_number = ''.join(random.choices('0123456789abcdef', k=3))
     date_string = datetime.now().strftime('%Y%m%d.%H%M')
-    final_dir = "xc.p." + name + "." + hex_number + "." + date_string
+    final_dir = "PYTHON." + name + "." + hex_number + "." + date_string
 
-    os.mkdir(final_dir)
-    os.chdir(final_dir)
+    os.makedirs(f"{final_dir}/project")
+    os.chdir(f"{final_dir}/project")
     os.system("uv init")
     os.system("git add .")
     os.system("git commit -m 'Initial commit'")

@@ -27,7 +27,7 @@ def generate_hex_directory():
     name = get_name()
     hex_number = ''.join(random.choices('0123456789abcdef', k=3))
     date_string = datetime.now().strftime('%Y%m%d.%H%M')
-    final_dir = "xc.b." + name + "." + hex_number + "." + date_string
+    final_dir = "BLANK." + name + "." + hex_number + "." + date_string
 
     os.mkdir(final_dir)
     os.chdir(final_dir)
