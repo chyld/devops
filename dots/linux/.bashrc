@@ -49,12 +49,10 @@ alias alpha="distrobox enter alpha"
 alias xcb="x_create_blank.py"
 alias xcg="x_create_generic.py"
 alias xcp="x_create_python.py"
-alias cur="$BIN_HOME/cursor/AppRun --no-sandbox ."
+alias cur="cursor --no-sandbox . 1> /dev/null 2> /dev/null &"
 
 xc() {
-  echo "xcb - blank template"
-  echo "xcg - generic template"
-  echo "xcp - python template"
+  glow "$HOME/.bin/scripts/README.md"
 }
 
 log() {
