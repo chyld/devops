@@ -16,9 +16,15 @@ alias y="yazi"
 
 alias gs="git status --short"
 alias gd="git diff"
-alias gl="git log --oneline"
+alias gl="git log --oneline --graph --decorate"
 alias gwl="git worktree list"
+gc() {
+  # git commit (quick)
+  git add .
+  git commit -am "quick commit"
+}
 gwa() {
+  # git worktree add
   if [ -z "$1" ]; then
     echo "Error: Name is required."
     return 1
