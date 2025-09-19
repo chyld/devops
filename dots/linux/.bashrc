@@ -36,7 +36,7 @@ gwa() {
   git worktree list
 }
 
-alias bin="cd $HOME/.bin"
+alias bin="cd $HOME/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
 alias dots="cd $HOME/Developer/devops/dots/linux"
@@ -58,7 +58,7 @@ alias xcp="x_create_python.py"
 alias cur="cursor --no-sandbox . 1> /dev/null 2> /dev/null &"
 
 xc() {
-  glow "$HOME/.bin/scripts/README.md"
+  glow "$HOME/bin/scripts/README.md"
 }
 
 log() {
@@ -74,3 +74,4 @@ eb() {
 }
 
 eval "$(starship init bash)"
+

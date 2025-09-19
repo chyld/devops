@@ -7,5 +7,5 @@
 
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .profile"
 
-BIN_HOME="$HOME/.bin"
+BIN_HOME="$HOME/bin"
 export PATH=$BIN_HOME:$BIN_HOME/node/bin:$BIN_HOME/exports:$BIN_HOME/distrobox/bin:$BIN_HOME/scripts:$PATH
