@@ -57,7 +57,7 @@ alias xcg="x_create_generic.py"
 alias xcp="x_create_python.py"
 alias cur="cursor --no-sandbox . 1> /dev/null 2> /dev/null &"
 
-xc() {
+help() {
   glow "$HOME/bin/scripts/README.md"
 }
 
@@ -74,4 +74,3 @@ eb() {
 }
 
 eval "$(starship init bash)"
-
