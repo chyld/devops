@@ -7,4 +7,5 @@
 
 [credential]
   helper = /usr/bin/git-credential-manager
+  credentialStore = plaintext
 
