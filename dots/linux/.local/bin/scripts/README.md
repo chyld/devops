@@ -1,16 +1,29 @@
-# Help
+# Developer Cheatsheet
 
-### X Commands
+## 🚀 Project Templates
 
-| Command | Description         |
-|---------|---------------------|
-| `xcb`     | Blank template      |
-| `xcg`     | Generic template    |
-| `xcp`     | Python template     |
+| Command | Description |
+|---------|-------------|
+| `xcb` | Blank |
+| `xcg` | Generic |
+| `xcp` | Python |
 
-### AI Commands
+## 🤖 AI Tools
 
-- `claude`
-- `gemini`
-- `opencode`
+`claude` · `gemini` · `opencode`
+
+## 📁 File & Dev Tools
+
+**Search & Navigation**  
+`fd` · `rg` · `fzf` · `tree` · `eza` · `yazi`
+
+**Media & Processing**  
+`magick` · `ffmpeg`
+
+**Python & Node**  
+`uv` · `uvx` · `node` · `bun`
+
+## 🌐 HTTP & APIs
+
+`xh` · `curl` · `jq`
 
