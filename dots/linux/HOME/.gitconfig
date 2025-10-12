@@ -6,6 +6,5 @@
   defaultBranch = dev
 
 [credential]
-  helper = /usr/local/bin/git-credential-manager
-  credentialStore = plaintext
+  helper = /usr/bin/git-credential-manager
 

@@ -6,6 +6,10 @@
 
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .bashrc"
 
+local_bin=$HOME/.local/bin
+temp_path=$local_bin:$local_bin/node/bin:$local_bin/scripts:$PATH
+export PATH=$(echo "$temp_path" | tr ':' '\n' | awk '!a[$1]++' | paste -sd:) # this will remove duplicate items
+
 alias c="clear"
 alias b="cd .."
 alias g="git"
@@ -36,11 +40,11 @@ gwa() {
   git worktree list
 }
 
-alias bin="cd $HOME/bin"
+alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
 alias dots="cd $HOME/Developer/devops/dots/linux"
-alias conf="cd $HOME/.config"
+alias config="cd $HOME/.config"
 
 alias l="eza -a --icons --group-directories-first"
 alias ll="eza -al --icons --group-directories-first --git --git-repos"
@@ -51,14 +55,12 @@ alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
 
-alias alpha="distrobox enter alpha"
 alias xcb="x_create_blank.py"
 alias xcg="x_create_generic.py"
 alias xcp="x_create_python.py"
-alias cur="cursor --no-sandbox . 1> /dev/null 2> /dev/null &"
 
 help() {
-  glow "$HOME/bin/scripts/README.md"
+  glow "$HOME/.local/bin/scripts/README.md"
 }
 
 log() {
