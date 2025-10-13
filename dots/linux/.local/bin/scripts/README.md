@@ -23,6 +23,9 @@
 **Python & Node**  
 `uv` · `uvx` · `node` · `bun`
 
+System
+`du`
+
 ## 🌐 HTTP & APIs
 
 `xh` · `curl` · `jq`

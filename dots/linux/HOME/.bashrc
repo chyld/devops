@@ -1,15 +1,14 @@
+# ---------------------------------------------------------------------------------------------------------- #
 # .bashrc
 #
 # this file runs every time you open a new terminal or window or pane
 # it defines the aliases and functions available in the terminal session
-# ------------------------------------------------------------------------ #
-
+# ---------------------------------------------------------------------------------------------------------- #
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .bashrc"
-
 local_bin=$HOME/.local/bin
 temp_path=$local_bin:$local_bin/node/bin:$local_bin/scripts:$PATH
 export PATH=$(echo "$temp_path" | tr ':' '\n' | awk '!a[$1]++' | paste -sd:) # this will remove duplicate items
-
+# ---------------------------------------------------------------------------------------------------------- #
 alias c="clear"
 alias b="cd .."
 alias g="git"
@@ -17,16 +16,19 @@ alias d="docker"
 alias vi="nvim"
 alias cat="bat"
 alias y="yazi"
-
+alias du="duf"
+# ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short"
 alias gd="git diff"
 alias gl="git log --oneline --graph --decorate"
 alias gwl="git worktree list"
+
 gc() {
   # git commit (quick)
   git add .
   git commit -am "quick commit"
 }
+
 gwa() {
   # git worktree add
   if [ -z "$1" ]; then
@@ -39,13 +41,13 @@ gwa() {
   git worktree add "../TREE-$dironly-$name" -b "$name"
   git worktree list
 }
-
+# ---------------------------------------------------------------------------------------------------------- #
 alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
 alias dots="cd $HOME/Developer/devops/dots/linux"
 alias config="cd $HOME/.config"
-
+# ---------------------------------------------------------------------------------------------------------- #
 alias l="eza -a --icons --group-directories-first"
 alias ll="eza -al --icons --group-directories-first --git --git-repos"
 alias lll="eza -alT --icons -L 1 --git-repos --no-permissions --no-user --no-time"
@@ -54,7 +56,7 @@ alias cl="c && l"
 alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
-
+# ---------------------------------------------------------------------------------------------------------- #
 alias xcb="x_create_blank.py"
 alias xcg="x_create_generic.py"
 alias xcp="x_create_python.py"
@@ -74,5 +76,6 @@ path() {
 eb() {
   vi $HOME/.bashrc
 }
-
+# ---------------------------------------------------------------------------------------------------------- #
 eval "$(starship init bash)"
+# ---------------------------------------------------------------------------------------------------------- #
