@@ -24,7 +24,7 @@
 `uv` · `uvx` · `node` · `bun`
 
 System
-`du`
+`df`
 
 ## 🌐 HTTP & APIs
 
