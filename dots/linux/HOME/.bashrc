@@ -16,7 +16,7 @@ alias d="docker"
 alias vi="nvim"
 alias cat="bat"
 alias y="yazi"
-alias du="duf"
+alias df="duf"
 # ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short"
 alias gd="git diff"
