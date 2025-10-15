@@ -64,6 +64,7 @@ alias xcp="x_create_python.py"
 help() {
   glow "$HOME/.local/bin/scripts/README.md"
 }
+alias h=help
 
 log() {
   journalctl -b | rg "chyld-debug" | nl
