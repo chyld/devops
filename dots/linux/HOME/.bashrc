@@ -17,6 +17,7 @@ alias vi="nvim"
 alias cat="bat"
 alias y="yazi"
 alias df="duf"
+alias fm="dolphin . &" # file manager (fm)
 # ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short"
 alias gd="git diff"
