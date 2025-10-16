@@ -1,0 +1,10 @@
+[Unit]
+Description=Start the Docker service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/dockerd
+
+[Install]
+WantedBy=graphical.target
+
