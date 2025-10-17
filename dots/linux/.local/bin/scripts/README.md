@@ -2,13 +2,7 @@
 
 ## 🚀 Project Templates
 
-| Command | Description |
-|---------|-------------|
-| `xce` | Empty |
-| `xcg` | Git |
-| `xcp` | Python |
-| `xcv` | Vite |
-| `xcbts` | Better T Stack |
+`xce` Empty · `xcg` Generic · `xcp` Python · `xcv` Vite · `xcbts` Better T Stack
 
 ## 🤖 AI Tools
 

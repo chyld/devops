@@ -115,7 +115,7 @@ xcbts() {
 }
 
 help() {
-  glow "$HOME/.local/bin/scripts/README.md"
+  glow -w 0 "$HOME/.local/bin/scripts/README.md"
 }
 alias h=help
 
