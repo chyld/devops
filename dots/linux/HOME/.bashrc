@@ -58,9 +58,61 @@ alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
 # ---------------------------------------------------------------------------------------------------------- #
-alias xcb="x_create_blank.py"
-alias xcg="x_create_generic.py"
-alias xcp="x_create_python.py"
+xce() {
+  local project_dir=$(x_create_directory.py EMPTY)
+  local full_dir="$HOME/Developer/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  ll
+}
+
+xcg() {
+  local project_dir=$(x_create_directory.py GIT)
+  local full_dir="$HOME/Developer/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  touch README.md
+  git init
+  git add .
+  git commit -m "Repository initialized"
+  ll
+}
+
+xcp() {
+  local project_dir=$(x_create_directory.py PYTHON)
+  local full_dir="$HOME/Developer/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  uv init
+  uv run main.py
+  git add .
+  git commit -m "Repository initialized"
+  cat pyproject.toml
+  ll
+}
+
+xcv() {
+  local project_dir=$(x_create_directory.py VITE)
+  local full_dir="$HOME/Developer/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  npm create vite@latest . -- --no-interactive
+  npm i
+  git init
+  git add .
+  git commit -m "Repository initialized"
+  cat package.json
+  ll
+}
+
+xcbts() {
+  local project_dir=$(x_create_directory.py BTS)
+  local full_dir="$HOME/Developer/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  bun create better-t-stack@latest . --yes
+  ll
+}
 
 help() {
   glow "$HOME/.local/bin/scripts/README.md"

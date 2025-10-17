@@ -1,17 +1,16 @@
 #!/usr/bin/env -S uv run --script
 
 # /// script
-# requires-python = ">=3.13"
+# requires-python = ">=3.14"
 # dependencies = [
-#     "rich",
 # ]
 # ///
 
 import os
+import sys
 import random
 from datetime import datetime
 from pathlib import Path
-from rich import print
 
 def get_name():
     script_dir = Path(__file__).parent
@@ -27,12 +26,9 @@ def generate_hex_directory():
     name = get_name()
     hex_number = ''.join(random.choices('0123456789abcdef', k=3))
     date_string = datetime.now().strftime('%Y%m%d.%H%M')
-    final_dir = "BLANK." + name + "." + hex_number + "." + date_string
+    final_dir = sys.argv[1] + "." + name + "." + hex_number + "." + date_string
 
-    os.mkdir(final_dir)
-    os.chdir(final_dir)
-
-    print(f"\n\nproject created: [bold red underline]{final_dir}[/bold red underline]")
+    print(final_dir)
 
 if __name__ == "__main__":
     generate_hex_directory()

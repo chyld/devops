@@ -4,9 +4,11 @@
 
 | Command | Description |
 |---------|-------------|
-| `xcb` | Blank |
-| `xcg` | Generic |
+| `xce` | Empty |
+| `xcg` | Git |
 | `xcp` | Python |
+| `xcv` | Vite |
+| `xcbts` | Better T Stack |
 
 ## 🤖 AI Tools
 
