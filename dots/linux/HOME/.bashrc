@@ -106,12 +106,24 @@ xcv() {
   ll
 }
 
-xcb() {
+xct() {
   local project_dir=$(x_create_directory.py BTS)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   bun create better-t-stack@latest . --yes
+  ll
+}
+
+xcb() {
+  local project_dir=$(x_create_directory.py BUN)
+  local full_dir="$HOME/Projects/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  bun init --react=shadcn --yes
+  git init
+  git add .
+  git commit -m "Repository initialized"
   ll
 }
 
