@@ -2,7 +2,9 @@
 
 ## 🚀 Project Templates
 
-`xce` Empty · `xcg` Generic · `xcp` Python · `xcv` Vite · `xcbts` Better T Stack
+`xce` Empty · `xcg` Generic · `xcp` Python · `xcv` Vite · `xcb` Better T Stack
+
+`xpp` Purge Projects
 
 ## 🤖 AI Tools
 
@@ -25,4 +27,8 @@ System
 ## 🌐 HTTP & APIs
 
 `xh` · `curl` · `jq`
+
+## Other
+
+`h` Help `eh` Edit Help `eb` Edit Bash
 

@@ -46,6 +46,7 @@ gwa() {
 alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
+alias prj="cd $HOME/Projects"
 alias dots="cd $HOME/Developer/devops/dots/linux"
 alias config="cd $HOME/.config"
 # ---------------------------------------------------------------------------------------------------------- #
@@ -60,7 +61,7 @@ alias cllll="c && llll"
 # ---------------------------------------------------------------------------------------------------------- #
 xce() {
   local project_dir=$(x_create_directory.py EMPTY)
-  local full_dir="$HOME/Developer/$project_dir"
+  local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   ll
@@ -68,7 +69,7 @@ xce() {
 
 xcg() {
   local project_dir=$(x_create_directory.py GIT)
-  local full_dir="$HOME/Developer/$project_dir"
+  local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   touch README.md
@@ -80,7 +81,7 @@ xcg() {
 
 xcp() {
   local project_dir=$(x_create_directory.py PYTHON)
-  local full_dir="$HOME/Developer/$project_dir"
+  local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   uv init
@@ -93,7 +94,7 @@ xcp() {
 
 xcv() {
   local project_dir=$(x_create_directory.py VITE)
-  local full_dir="$HOME/Developer/$project_dir"
+  local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   npm create vite@latest . -- --no-interactive
@@ -105,12 +106,18 @@ xcv() {
   ll
 }
 
-xcbts() {
+xcb() {
   local project_dir=$(x_create_directory.py BTS)
-  local full_dir="$HOME/Developer/$project_dir"
+  local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
   bun create better-t-stack@latest . --yes
+  ll
+}
+
+xpp() {
+  rm -rf ~/Projects/*
+  cd ~/Projects
   ll
 }
 
@@ -118,6 +125,11 @@ help() {
   glow -w 0 "$HOME/.local/bin/scripts/README.md"
 }
 alias h=help
+
+edit_help() {
+  vi "$HOME/.local/bin/scripts/README.md"
+}
+alias eh=edit_help
 
 log() {
   journalctl -b | rg "chyld-debug" | nl
@@ -133,3 +145,6 @@ eb() {
 # ---------------------------------------------------------------------------------------------------------- #
 eval "$(starship init bash)"
 # ---------------------------------------------------------------------------------------------------------- #
+
+# opencode
+export PATH=/home/chyld/.opencode/bin:$PATH
