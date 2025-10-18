@@ -24,10 +24,10 @@ alias gd="git diff"
 alias gl="git log --oneline --graph --decorate"
 alias gwl="git worktree list"
 
-gc() {
-  # git commit (quick)
+gac() {
+  # git add commit
   git add .
-  git commit -am "quick commit"
+  git commit -am "automated commit"
 }
 
 gwa() {
