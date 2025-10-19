@@ -4,7 +4,7 @@
 
 `xce` Empty · `xcg` Generic · `xcp` Python · `xcv` Vite · `xct` Better T Stack · `xcb` Bun
 
-`prj` Projects Directory   `xpp` Purge Projects
+`prj` Projects Directory · `xpp` Purge Projects · `xsp` Save Project
 
 ## 🤖 AI Tools
 

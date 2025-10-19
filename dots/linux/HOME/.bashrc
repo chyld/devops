@@ -133,6 +133,18 @@ xpp() {
   ll
 }
 
+xsp() {
+  local project=$(basename "$(pwd)")
+  local result=$(bun ~/.local/bin/scripts/is_project.js)
+  if [[ "$result" == "1" ]]; then
+    mv "$HOME/Projects/$project" "$HOME/Developer"
+    cd "$HOME/Developer/$project"
+    pwd
+    ll
+    echo "Project $project has been SAVED to Developer"
+  fi
+}
+
 help() {
   glow -w 0 "$HOME/.local/bin/scripts/README.md"
 }
