@@ -2,3 +2,7 @@
 success_symbol = "[ ■](bold bright-white)"
 error_symbol   = "[ ■](bold bright-red)"
 
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
