@@ -21,6 +21,7 @@ alias fm="dolphin . &" # file manager (fm)
 # ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short"
 alias gd="git diff"
+alias gds="git diff --stat"
 alias gl="git log --oneline --graph --decorate"
 alias gwl="git worktree list"
 
