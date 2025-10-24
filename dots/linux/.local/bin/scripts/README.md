@@ -1,14 +1,12 @@
 # Developer Cheatsheet
 
-## 🚀 Project Templates
+## 🚀 Main
 
-`xce` Empty · `xcg` Generic · `xcp` Python · `xcv` Vite · `xct` Better T Stack · `xcb` Bun
-
-`prj` Projects Directory · `xpp` Purge Projects · `xsp` Save Project
+`p` Project Creator · `pp` List all Projects · `t` Temp Directory · `fm` File Manager (KDE)
 
 ## 🤖 AI Tools
 
-`claude` · `gemini` · `opencode`
+`claude` · `gemini` · `opencode` · `kilo`
 
 ## 📁 File & Dev Tools
 
@@ -31,4 +29,3 @@ System
 ## Other
 
 `h` Help `eh` Edit Help `eb` Edit Bash
-

@@ -60,7 +60,39 @@ alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
 # ---------------------------------------------------------------------------------------------------------- #
-xce() {
+
+p() {
+  # "p" for "project"
+  CHOICE=$(gum choose \
+    "1. Empty" \
+    "2. Empty with Git" \
+    "3. UV" \
+    "4. Vite" \
+    "5. Better T Stack" \
+    "6. Bun" \
+    "7. Next.js" \
+    "8. PURGE")
+
+  NUM=$(echo $CHOICE | awk '{print $1}' | tr -d '.')
+
+  case $NUM in
+  1) p_empty ;;
+  2) p_empty_with_git ;;
+  3) p_uv ;;
+  4) p_vite ;;
+  5) p_better_t_stack ;;
+  6) p_bun ;;
+  7) p_next_js ;;
+  8) p_purge ;;
+  esac
+}
+
+pp() {
+  cd $HOME/Projects
+  ll
+}
+
+p_empty() {
   local project_dir=$(x_create_directory.py EMPTY)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
@@ -68,7 +100,7 @@ xce() {
   ll
 }
 
-xcg() {
+p_empty_with_git() {
   local project_dir=$(x_create_directory.py GIT)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
@@ -80,7 +112,7 @@ xcg() {
   ll
 }
 
-xcp() {
+p_uv() {
   local project_dir=$(x_create_directory.py PYTHON)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
@@ -93,48 +125,45 @@ xcp() {
   ll
 }
 
-xcv() {
+p_vite() {
   local project_dir=$(x_create_directory.py VITE)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
-  npm create vite@latest . -- --no-interactive
-  npm i
-  git init
-  git add .
-  git commit -m "Repository initialized"
-  cat package.json
-  ll
+  npm create vite@latest
 }
 
-xct() {
+p_better_t_stack() {
   local project_dir=$(x_create_directory.py BTS)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
-  bun create better-t-stack@latest . --yes
-  ll
+  bun create better-t-stack@latest
 }
 
-xcb() {
+p_bun() {
   local project_dir=$(x_create_directory.py BUN)
   local full_dir="$HOME/Projects/$project_dir"
   mkdir -p "$full_dir"
   cd "$full_dir"
-  bun init --react=shadcn --yes
-  git init
-  git add .
-  git commit -m "Repository initialized"
-  ll
+  bun init
 }
 
-xpp() {
+p_next_js() {
+  local project_dir=$(x_create_directory.py NEXT)
+  local full_dir="$HOME/Projects/$project_dir"
+  mkdir -p "$full_dir"
+  cd "$full_dir"
+  npx create-next-app@latest
+}
+
+p_purge() {
   rm -rf ~/Projects/*
   cd ~/Projects
   ll
 }
 
-xsp() {
+x____________________() {
   local project=$(basename "$(pwd)")
   local result=$(bun ~/.local/bin/scripts/is_project.js)
   if [[ "$result" == "1" ]]; then
@@ -144,6 +173,10 @@ xsp() {
     ll
     echo "Project $project has been SAVED to Developer"
   fi
+}
+# ---------------------------------------------------------------------------------------------------------- #
+t() {
+  cd "$(mktemp -d)"
 }
 
 help() {
@@ -170,6 +203,3 @@ eb() {
 # ---------------------------------------------------------------------------------------------------------- #
 eval "$(starship init bash)"
 # ---------------------------------------------------------------------------------------------------------- #
-
-# opencode
-export PATH=/home/chyld/.opencode/bin:$PATH
