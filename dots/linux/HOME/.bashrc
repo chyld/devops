@@ -69,8 +69,7 @@ p() {
     "4. Vite" \
     "5. Better T Stack" \
     "6. Bun" \
-    "7. Next.js" \
-    "8. PURGE")
+    "7. Next.js")
 
   NUM=$(echo $CHOICE | awk '{print $1}' | tr -d '.')
 
@@ -82,12 +81,17 @@ p() {
   5) p_better_t_stack ;;
   6) p_bun ;;
   7) p_next_js ;;
-  8) p_purge ;;
   esac
 }
 
 pp() {
   cd $HOME/Projects
+  ll
+}
+
+pppp() {
+  rm -rf ~/Projects/*
+  cd ~/Projects
   ll
 }
 
@@ -156,12 +160,6 @@ p_next_js() {
   npx create-next-app@latest
 }
 
-p_purge() {
-  rm -rf ~/Projects/*
-  cd ~/Projects
-  ll
-}
-
 x____________________() {
   local project=$(basename "$(pwd)")
   local result=$(bun ~/.local/bin/scripts/is_project.js)
@@ -183,6 +181,12 @@ tt() {
   ll
 }
 
+tttt() {
+  rm -rf ~/Temp/*
+  cd ~/Temp
+  ll
+}
+# ---------------------------------------------------------------------------------------------------------- #
 help() {
   glow -w 0 "$HOME/.local/bin/scripts/README.md"
 }
