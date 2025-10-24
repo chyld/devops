@@ -60,7 +60,6 @@ alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
 # ---------------------------------------------------------------------------------------------------------- #
-
 p() {
   # "p" for "project"
   CHOICE=$(gum choose \
