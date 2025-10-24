@@ -17,7 +17,7 @@ alias vi="nvim"
 alias cat="bat"
 alias y="yazi"
 alias df="duf"
-alias fm="dolphin . &" # file manager (fm)
+alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do not see the pid when stop and start
 # ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short"
 alias gd="git diff"
