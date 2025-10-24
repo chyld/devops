@@ -2,7 +2,7 @@
 
 ## 🚀 Main
 
-`p` Project Creator · `pp` List all Projects · `t` Temp Directory · `fm` File Manager (KDE)
+`p` Project Creator · `pp` Project List · `t` Temp Directory · `tt` Temp List · `fm` File Manager (KDE)
 
 ## 🤖 AI Tools
 
