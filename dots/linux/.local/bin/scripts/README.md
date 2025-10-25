@@ -4,7 +4,7 @@
 
 `p` Project Creator · `pp` Project List · `pppp` Delete Projects
 `t` Temp Creator · `tt` Temp List · `tttt` Delete Temp
-`fm` File Manager (KDE)
+`fm` File Manager (KDE) · `yt` Download Videos
 
 ## 🤖 AI Tools
 
