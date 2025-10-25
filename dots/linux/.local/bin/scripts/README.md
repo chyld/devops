@@ -2,9 +2,11 @@
 
 ## 🚀 Main
 
-`p` Project Creator · `pp` Project List · `pppp` Delete Projects
-`t` Temp Creator · `tt` Temp List · `tttt` Delete Temp
-`fm` File Manager (KDE) · `yt` Download Videos
+| Command | Description | Command | Description | Command | Description |
+|:-------:|-------------|:-------:|-------------|:-------:|-------------|
+| `p` | Project Creator | `pp` | Project List | `pppp` | Delete Projects |
+| `t` | Temp Creator | `tt` | Temp List | `tttt` | Delete Temp |
+| `fm` | File Manager (KDE) | `yt` | Download Videos | | |
 
 ## 🤖 AI Tools
 
@@ -31,3 +33,4 @@ System
 ## Other
 
 `h` Help `eh` Edit Help `eb` Edit Bash
+
