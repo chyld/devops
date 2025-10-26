@@ -26,9 +26,9 @@
 System
 `df`
 
-## 🌐 HTTP & APIs
+## 🌐 Networking & HTTP & APIs
 
-`xh` · `curl` · `jq`
+`socat` · `http` · `xh` · `curl` · `jq`
 
 ## Other
 
