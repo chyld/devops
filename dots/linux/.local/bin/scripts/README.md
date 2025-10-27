@@ -24,7 +24,7 @@
 `uv` · `uvx` · `node` · `bun`
 
 System
-`df`
+`df` · `rsync`
 
 ## 🌐 Networking & HTTP & APIs
 

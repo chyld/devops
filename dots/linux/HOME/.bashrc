@@ -49,7 +49,7 @@ alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
 alias prj="cd $HOME/Projects"
-alias dots="cd $HOME/Developer/devops/dots/linux"
+alias dots="cd $HOME/Developer/devops"
 alias config="cd $HOME/.config"
 # ---------------------------------------------------------------------------------------------------------- #
 alias l="eza -a --icons --group-directories-first"
