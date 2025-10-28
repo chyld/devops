@@ -6,8 +6,8 @@
 # ---------------------------------------------------------------------------------------------------------- #
 logger -t "chyld-debug" "$(date '+%Y:%m:%d:%H:%M:%S') - .bashrc"
 local_bin=$HOME/.local/bin
-temp_path=$local_bin:$local_bin/node/bin:$local_bin/scripts:$PATH
-export PATH=$(echo "$temp_path" | tr ':' '\n' | awk '!a[$1]++' | paste -sd:) # this will remove duplicate items
+temp_path=$local_bin:$HOME/.opencode/bin:$local_bin/node/bin:$local_bin/scripts:$PATH # opencode binary is in 2 different locations
+export PATH=$(echo "$temp_path" | tr ':' '\n' | awk '!a[$1]++' | paste -sd:)          # this will remove duplicate items
 # ---------------------------------------------------------------------------------------------------------- #
 alias c="clear"
 alias b="cd .."
