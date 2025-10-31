@@ -20,7 +20,7 @@ alias df="duf"
 alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do not see the pid when stop and start
 alias yt="uvx yt-dlp"
 # ---------------------------------------------------------------------------------------------------------- #
-alias gs="git status --short"
+alias gs="git status --short --untracked-files=all"
 alias gd="git diff"
 alias gds="git diff --stat"
 alias gl="git log --oneline --graph --decorate"
@@ -30,6 +30,12 @@ gac() {
   # git add commit
   git add .
   git commit -am "automated commit"
+}
+
+gr() {
+  # git reset
+  git reset --hard HEAD
+  git clean -fd
 }
 
 gwa() {
