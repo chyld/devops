@@ -5,7 +5,7 @@
 | Command | Description | Command | Description | Command | Description | Command | Description |
 |:-------:|-------------|:-------:|-------------|:-------:|-------------|:-------:|-------------|
 | `p` | Project Creator | `pp` | Project List | `pppp` | Delete Projects | | |
-| `t` | Temp Creator | `tt` | Temp List | `tttt` | Delete Temp | `tg` | Temp with Git |
+| `t` | Temp Creator | `tt` | Temp List | `tttt` | Delete Temp | | |
 | `fm` | File Manager (KDE) | `yt` | Download Videos | | | | |
 
 ## 🤖 AI Tools
