@@ -177,6 +177,15 @@ t() {
   cd "$(mktemp -d --tmpdir="$HOME/Temp")"
 }
 
+tg() {
+  cd "$(mktemp -d --tmpdir="$HOME/Temp")"
+  touch README.md
+  git init
+  git add .
+  git commit -m "Repository initialized"
+  ll
+}
+
 tt() {
   cd $HOME/Temp
   ll

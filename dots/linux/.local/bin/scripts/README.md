@@ -8,6 +8,8 @@
 | `t` | Temp Creator | `tt` | Temp List | `tttt` | Delete Temp |
 | `fm` | File Manager (KDE) | `yt` | Download Videos | | |
 
+`tg` Temp with Git
+
 ## 🤖 AI Tools
 
 `claude` · `gemini` · `opencode` · `kilo`
