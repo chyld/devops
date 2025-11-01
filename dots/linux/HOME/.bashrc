@@ -182,10 +182,11 @@ x____________________() {
 t() {
   cd "$(mktemp -d --tmpdir="$HOME/Temp")"
   touch README.md
-  git init
-  git add .
-  git commit -m "Repository initialized"
-  ll
+  (
+    git init
+    git add .
+    git commit -m "Repository initialized"
+  ) 1>/dev/null 2>/dev/null # this sends the entire output of the subshell to /dev/null
 }
 
 tt() {
