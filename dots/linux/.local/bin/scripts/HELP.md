@@ -1,4 +1,4 @@
-# Developer Cheatsheet
+# Master Cheatsheet
 
 ## 🚀 Main
 
@@ -32,5 +32,5 @@ System
 
 ## Other
 
-`h` Help `eh` Edit Help `eb` Edit Bash
+`h` Help `hg` Help GIT `eh` Edit Help `eb` Edit Bash
 

@@ -17,6 +17,7 @@ alias vi="nvim"
 alias cat="bat"
 alias y="yazi"
 alias df="duf"
+alias fd="fd --unrestricted"
 alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do not see the pid when stop and start
 alias yt="uvx yt-dlp"
 # ---------------------------------------------------------------------------------------------------------- #
@@ -201,15 +202,20 @@ tttt() {
 }
 # ---------------------------------------------------------------------------------------------------------- #
 help() {
-  glow -w 0 "$HOME/.local/bin/scripts/README.md"
+  glow -w 0 "$HOME/.local/bin/scripts/HELP.md"
 }
 alias h=help
 
+help_git() {
+  glow -w 0 "$HOME/.local/bin/scripts/HELP_GIT.md"
+}
+alias hg=help_git
+
 edit_help() {
-  vi "$HOME/.local/bin/scripts/README.md"
+  vi "$HOME/.local/bin/scripts/HELP.md"
 }
 alias eh=edit_help
-
+# ---------------------------------------------------------------------------------------------------------- #
 log() {
   journalctl -b | rg "chyld-debug" | nl
 }
