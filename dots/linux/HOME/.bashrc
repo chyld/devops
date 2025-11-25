@@ -19,7 +19,8 @@ alias y="yazi"
 alias df="duf"
 alias fd="fd --unrestricted"
 alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do not see the pid when stop and start
-alias yt="uvx yt-dlp"
+alias yt0="uvx --refresh yt-dlp"
+alias yt1="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50"
 # ---------------------------------------------------------------------------------------------------------- #
 alias gs="git status --short --untracked-files=all"
 alias gd="git diff"
