@@ -168,18 +168,6 @@ p_next_js() {
   cd "$full_dir"
   npx create-next-app@latest
 }
-
-x____________________() {
-  local project=$(basename "$(pwd)")
-  local result=$(bun ~/.local/bin/scripts/is_project.js)
-  if [[ "$result" == "1" ]]; then
-    mv "$HOME/Projects/$project" "$HOME/Developer"
-    cd "$HOME/Developer/$project"
-    pwd
-    ll
-    echo "Project $project has been SAVED to Developer"
-  fi
-}
 # ---------------------------------------------------------------------------------------------------------- #
 t() {
   cd "$(mktemp -d --tmpdir="$HOME/Temp")"
