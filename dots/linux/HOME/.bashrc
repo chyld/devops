@@ -171,6 +171,10 @@ p_next_js() {
 # ---------------------------------------------------------------------------------------------------------- #
 t() {
   cd "$(mktemp -d --tmpdir="$HOME/Temp")"
+}
+
+tg() {
+  cd "$(mktemp -d --tmpdir="$HOME/Temp")"
   touch README.md
   (
     git init
