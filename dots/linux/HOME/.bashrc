@@ -32,8 +32,13 @@ alias gwl="git worktree list"
 
 gac() {
   # git add commit
+  if [[ -z "$1" ]]; then
+    echo "Error: commit message required"
+    echo "Usage: gac \"your commit message\""
+    return 1
+  fi
   git add .
-  git commit -am "automated commit"
+  git commit -m "$1"
 }
 
 gr() {
