@@ -60,6 +60,7 @@ gwa() {
   git worktree list
 }
 # ---------------------------------------------------------------------------------------------------------- #
+alias v="cd $HOME/Void"
 alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
 alias dev="cd $HOME/Developer"
