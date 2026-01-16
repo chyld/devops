@@ -63,19 +63,27 @@ gwa() {
 alias v="cd $HOME/Void"
 alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
-alias dev="cd $HOME/Developer"
+alias dv="cd $HOME/Developer"
 alias prj="cd $HOME/Projects"
 alias dots="cd $HOME/Developer/devops"
 alias config="cd $HOME/.config"
 # ---------------------------------------------------------------------------------------------------------- #
 alias l="eza -a --icons --group-directories-first"
 alias ll="eza -al --icons --group-directories-first --git --git-repos"
-alias lll="eza -alT --icons -L 1 --git-repos --no-permissions --no-user --no-time"
+alias lll="eza -alT --icons -L 1 --no-permissions --no-user --no-time"
 alias llll="tree -Ca -L 3"
 alias cl="c && l"
 alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
+s() { # (s)tatus
+  cd ~
+  clear
+  lll Developer
+  lll Projects
+  lll Temp
+  lll Void
+}
 # ---------------------------------------------------------------------------------------------------------- #
 p() {
   # "p" for "project"
