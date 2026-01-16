@@ -233,5 +233,7 @@ monitor_directory() {
   inotifywait -m -r -e create,modify,delete,move "$1" | rg -vi "google-chrome|docker|nvim|git"
 }
 # ---------------------------------------------------------------------------------------------------------- #
+source /usr/share/nvm/init-nvm.sh
 eval "$(starship init bash)"
 # ---------------------------------------------------------------------------------------------------------- #
+
