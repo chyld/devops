@@ -9,6 +9,7 @@ local_bin=$HOME/.local/bin
 temp_path=$local_bin:$HOME/.opencode/bin:$local_bin/node/bin:$local_bin/scripts:$PATH # opencode binary is in 2 different locations
 export PATH=$(echo "$temp_path" | tr ':' '\n' | awk '!a[$1]++' | paste -sd:)          # this will remove duplicate items
 # ---------------------------------------------------------------------------------------------------------- #
+# BASICS
 alias c="clear"
 alias b="cd .."
 alias g="git"
@@ -19,11 +20,12 @@ alias y="yazi"
 alias df="duf"
 alias fd="fd --unrestricted"
 alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do not see the pid when stop and start
-alias yt0="uvx --refresh yt-dlp"
+alias yt0="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp"
 alias yt1="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50"
 alias yt2="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 --remote-components ejs:github"
 alias ffp="ffprobe -hide_banner"
 # ---------------------------------------------------------------------------------------------------------- #
+# GIT
 alias gs="git status --short --untracked-files=all"
 alias gd="git diff"
 alias gds="git diff --stat"
@@ -60,6 +62,7 @@ gwa() {
   git worktree list
 }
 # ---------------------------------------------------------------------------------------------------------- #
+# TELEPORT
 alias v="cd $HOME/Void"
 alias bin="cd $HOME/.local/bin"
 alias dl="cd $HOME/Downloads"
@@ -68,6 +71,7 @@ alias prj="cd $HOME/Projects"
 alias dots="cd $HOME/Developer/devops"
 alias config="cd $HOME/.config"
 # ---------------------------------------------------------------------------------------------------------- #
+# DIR LISTS
 alias l="eza -a --icons --group-directories-first"
 alias ll="eza -al --icons --group-directories-first --git --git-repos"
 alias lll="eza -alT --icons -L 1 --no-permissions --no-user --no-time"
@@ -76,15 +80,25 @@ alias cl="c && l"
 alias cll="c && ll"
 alias clll="c && lll"
 alias cllll="c && llll"
-s() { # (s)tatus
-  cd ~
+# ---------------------------------------------------------------------------------------------------------- #
+# DEVELOPER
+dev() {
   clear
-  lll Developer
-  lll Projects
-  lll Temp
-  lll Void
+  lll ~/Developer
+  lll ~/Projects
+  lll ~/Temp
+  lll ~/Void
+}
+
+dev_delete_all() {
+  cd ~
+  rm -rf Projects/*
+  rm -rf Temp/*
+  rm -rf Void/*
+  dev
 }
 # ---------------------------------------------------------------------------------------------------------- #
+# PROJECT TEMPLATES
 p() {
   # "p" for "project"
   CHOICE=$(gum choose \
@@ -185,18 +199,9 @@ p_next_js() {
   npx create-next-app@latest
 }
 # ---------------------------------------------------------------------------------------------------------- #
+# TEMPORARY FILES
 t() {
   cd "$(mktemp -d --tmpdir="$HOME/Temp")"
-}
-
-tg() {
-  cd "$(mktemp -d --tmpdir="$HOME/Temp")"
-  touch README.md
-  (
-    git init
-    git add .
-    git commit -m "Repository initialized"
-  ) 1>/dev/null 2>/dev/null # this sends the entire output of the subshell to /dev/null
 }
 
 tt() {
@@ -210,38 +215,34 @@ tttt() {
   ll
 }
 # ---------------------------------------------------------------------------------------------------------- #
+# RUNNING DOCKER
 docker_build_and_run_deb13() {
   cd ~/Developer/devops/containers/debian_13
   ./build.sh
   ./run.sh
 }
+
 docker_run_deb13() {
   cd ~/Developer/devops/containers/debian_13
   ./run.sh
 }
+
 docker_rm_all_containers() {
   docker rm -f $(docker ps -aq)
 }
+
 docker_ls() {
   docker images
   docker ps -a
 }
 # ---------------------------------------------------------------------------------------------------------- #
+# DOCUMENTATION
 help() {
-  glow -w 0 "$HOME/.local/bin/scripts/HELP.md"
+  xdg-open "$HOME/.local/bin/scripts/docs/help.html" 1> /dev/null 2> /dev/null
 }
 alias h=help
-
-help_git() {
-  glow -w 0 "$HOME/.local/bin/scripts/HELP_GIT.md"
-}
-alias hg=help_git
-
-edit_help() {
-  vi "$HOME/.local/bin/scripts/HELP.md"
-}
-alias eh=edit_help
 # ---------------------------------------------------------------------------------------------------------- #
+# UTILITIES
 log() {
   journalctl -b | rg "chyld-debug" | nl
 }
@@ -261,4 +262,3 @@ monitor_directory() {
 source /usr/share/nvm/init-nvm.sh
 eval "$(starship init bash)"
 # ---------------------------------------------------------------------------------------------------------- #
-

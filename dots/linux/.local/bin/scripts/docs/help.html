@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shell Reference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --bg2: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --dim: #8b949e;
+      --cyan: #58a6ff;
+      --green: #3fb950;
+      --orange: #d29922;
+      --pink: #f778ba;
+      --purple: #a371f7;
+      --red: #f85149;
+      --teal: #39d4ba;
+      --blue: #2496ed;
+      --yellow: #e3b341;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 12px;
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 14px;
+      color: var(--cyan);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 11px;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 1.5rem 0 0.75rem 0;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.75rem;
+    }
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 0.4rem 0.6rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .card-body { padding: 0.3rem 0; }
+    .row {
+      display: flex;
+      padding: 0.2rem 0.6rem;
+      gap: 0.75rem;
+    }
+    .row:hover { background: rgba(255,255,255,0.03); }
+    .cmd { min-width: 140px; flex-shrink: 0; }
+    .desc { color: var(--dim); }
+    .divider { height: 1px; background: var(--border); margin: 0.2rem 0.6rem; }
+    .tools { padding: 0.4rem 0.6rem; color: var(--dim); line-height: 1.8; }
+    .tools code { color: var(--text); background: var(--bg); padding: 0.15rem 0.35rem; border-radius: 3px; }
+
+    .c1 .card-header, .c1 .cmd { color: var(--cyan); }
+    .c2 .card-header, .c2 .cmd { color: var(--red); }
+    .c3 .card-header, .c3 .cmd { color: var(--orange); }
+    .c4 .card-header, .c4 .cmd { color: var(--purple); }
+    .c6 .card-header, .c6 .cmd { color: var(--pink); }
+    .c7 .card-header, .c7 .cmd { color: var(--teal); }
+    .c8 .card-header, .c8 .tools code { color: var(--blue); }
+    .c9 .card-header { color: var(--dim); } .c9 .cmd { color: var(--text); }
+    .c10 .card-header { color: var(--yellow); } .c10 .tools code { color: var(--yellow); }
+    .c11 .card-header { color: var(--green); } .c11 .tools code { color: var(--green); }
+    .c12 .card-header { color: var(--purple); } .c12 .tools code { color: var(--purple); }
+  </style>
+</head>
+<body>
+  <h1>~/.bashrc</h1>
+
+  <h2>Aliases & Functions</h2>
+  <div class="grid">
+    <div class="card c1">
+      <div class="card-header">Basics</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">c</span><span class="desc">clear</span></div>
+        <div class="row"><span class="cmd">b</span><span class="desc">cd ..</span></div>
+        <div class="row"><span class="cmd">g / d</span><span class="desc">git / docker</span></div>
+        <div class="row"><span class="cmd">vi</span><span class="desc">nvim</span></div>
+        <div class="row"><span class="cmd">cat</span><span class="desc">bat</span></div>
+        <div class="row"><span class="cmd">y</span><span class="desc">yazi</span></div>
+        <div class="row"><span class="cmd">df</span><span class="desc">duf</span></div>
+        <div class="row"><span class="cmd">fd</span><span class="desc">fd --unrestricted</span></div>
+        <div class="row"><span class="cmd">fm</span><span class="desc">dolphin (bg)</span></div>
+        <div class="row"><span class="cmd">ffp</span><span class="desc">ffprobe</span></div>
+      </div>
+    </div>
+
+    <div class="card c3">
+      <div class="card-header">Git</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">gs</span><span class="desc">status --short</span></div>
+        <div class="row"><span class="cmd">gd / gds</span><span class="desc">diff / diff --stat</span></div>
+        <div class="row"><span class="cmd">gl</span><span class="desc">log --oneline --graph</span></div>
+        <div class="row"><span class="cmd">gwl</span><span class="desc">worktree list</span></div>
+        <div class="divider"></div>
+        <div class="row"><span class="cmd">gac "msg"</span><span class="desc">add . + commit</span></div>
+        <div class="row"><span class="cmd">gr</span><span class="desc">reset --hard + clean</span></div>
+        <div class="row"><span class="cmd">gwa &lt;name&gt;</span><span class="desc">worktree add branch</span></div>
+      </div>
+    </div>
+
+    <div class="card c4">
+      <div class="card-header">Teleport</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">v</span><span class="desc">~/Void</span></div>
+        <div class="row"><span class="cmd">bin</span><span class="desc">~/.local/bin</span></div>
+        <div class="row"><span class="cmd">dl</span><span class="desc">~/Downloads</span></div>
+        <div class="row"><span class="cmd">dv</span><span class="desc">~/Developer</span></div>
+        <div class="row"><span class="cmd">prj</span><span class="desc">~/Projects</span></div>
+        <div class="row"><span class="cmd">dots</span><span class="desc">~/Developer/devops</span></div>
+        <div class="row"><span class="cmd">config</span><span class="desc">~/.config</span></div>
+      </div>
+    </div>
+
+    <div class="card c6">
+      <div class="card-header">Projects</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">p</span><span class="desc">project creator (gum)</span></div>
+        <div class="row"><span class="cmd">pp</span><span class="desc">cd ~/Projects</span></div>
+        <div class="row"><span class="cmd">pppp</span><span class="desc">rm -rf ~/Projects/*</span></div>
+        <div class="row"><span class="cmd">dev</span><span class="desc">show dev dirs</span></div>
+        <div class="row"><span class="cmd">dev_delete_all</span><span class="desc">clear all dev dirs</span></div>
+      </div>
+    </div>
+
+    <div class="card c7">
+      <div class="card-header">Temp</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">t</span><span class="desc">mktemp -d in ~/Temp</span></div>
+        <div class="row"><span class="cmd">tt</span><span class="desc">cd ~/Temp</span></div>
+        <div class="row"><span class="cmd">tttt</span><span class="desc">rm -rf ~/Temp/*</span></div>
+      </div>
+    </div>
+
+    <div class="card c2">
+      <div class="card-header">yt-dlp</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">yt0</span><span class="desc">basic</span></div>
+        <div class="row"><span class="cmd">yt1</span><span class="desc">+ retries, hls-mpegts</span></div>
+        <div class="row"><span class="cmd">yt2</span><span class="desc">+ remote components</span></div>
+      </div>
+    </div>
+
+    <div class="card c8">
+      <div class="card-header">Docker</div>
+      <div class="tools">
+        <code>docker_build_and_run_deb13</code>
+        <code>docker_run_deb13</code>
+        <code>docker_rm_all_containers</code>
+        <code>docker_ls</code>
+      </div>
+    </div>
+
+    <div class="card c9">
+      <div class="card-header">Utilities</div>
+      <div class="card-body">
+        <div class="row"><span class="cmd">eb</span><span class="desc">edit .bashrc</span></div>
+        <div class="row"><span class="cmd">path</span><span class="desc">echo $PATH (newlines)</span></div>
+        <div class="row"><span class="cmd">log</span><span class="desc">journalctl debug</span></div>
+        <div class="row"><span class="cmd">monitor_directory</span><span class="desc">inotifywait</span></div>
+      </div>
+    </div>
+  </div>
+
+  <h2>CLI Tools</h2>
+  <div class="grid">
+    <div class="card c10">
+      <div class="card-header">Media & Images</div>
+      <div class="tools"><code>ffmpeg</code> <code>mpv</code> <code>imagemagick</code></div>
+    </div>
+
+    <div class="card c10">
+      <div class="card-header">File Nav & Search</div>
+      <div class="tools"><code>yazi</code> <code>fd</code> <code>ripgrep</code> <code>fzf</code> <code>rsync</code></div>
+    </div>
+
+    <div class="card c10">
+      <div class="card-header">HTTP Clients</div>
+      <div class="tools"><code>httpie</code> <code>xh</code> <code>curlie</code></div>
+    </div>
+
+    <div class="card c10">
+      <div class="card-header">Data & Inspection</div>
+      <div class="tools"><code>jq</code> <code>hexyl</code></div>
+    </div>
+
+    <div class="card c10">
+      <div class="card-header">System & Debug</div>
+      <div class="tools"><code>duf</code> <code>snapper</code> <code>socat</code> <code>strace</code></div>
+    </div>
+
+    <div class="card c10">
+      <div class="card-header">Development</div>
+      <div class="tools"><code>git</code> <code>docker</code></div>
+    </div>
+  </div>
+
+  <h2>Runtimes & Package Managers</h2>
+  <div class="grid">
+    <div class="card c11">
+      <div class="card-header">JavaScript / TypeScript</div>
+      <div class="tools"><code>nvm</code> <code>node</code> <code>bun</code> <code>deno</code></div>
+    </div>
+
+    <div class="card c11">
+      <div class="card-header">Python</div>
+      <div class="tools"><code>uv</code></div>
+    </div>
+  </div>
+
+  <h2>AI Tools</h2>
+  <div class="grid">
+    <div class="card c12">
+      <div class="card-header">AI Assistants</div>
+      <div class="tools"><code>claude</code> <code>gemini</code> <code>opencode</code> <code>codex</code></div>
+    </div>
+  </div>
+
+</body>
+</html>
