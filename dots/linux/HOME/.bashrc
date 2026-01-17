@@ -210,6 +210,23 @@ tttt() {
   ll
 }
 # ---------------------------------------------------------------------------------------------------------- #
+docker_build_and_run_deb13() {
+  cd ~/Developer/devops/containers/debian_13
+  ./build.sh
+  ./run.sh
+}
+docker_run_deb13() {
+  cd ~/Developer/devops/containers/debian_13
+  ./run.sh
+}
+docker_rm_all_containers() {
+  docker rm -f $(docker ps -aq)
+}
+docker_ls() {
+  docker images
+  docker ps -a
+}
+# ---------------------------------------------------------------------------------------------------------- #
 help() {
   glow -w 0 "$HOME/.local/bin/scripts/HELP.md"
 }
