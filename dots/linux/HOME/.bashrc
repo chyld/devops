@@ -259,6 +259,14 @@ monitor_directory() {
   inotifywait -m -r -e create,modify,delete,move "$1" | rg -vi "google-chrome|docker|nvim|git"
 }
 # ---------------------------------------------------------------------------------------------------------- #
+hytale_server() {
+  ~/.local/share/Hytale/install/release/package/jre/latest/bin/java \
+	  -jar /home/chyld/.local/share/Hytale/install/release/package/game/latest/Server/HytaleServer.jar \
+	  --assets=/home/chyld/.local/share/Hytale/install/release/package/game/latest/Assets.zip \
+	  --mods=/home/chyld/.local/share/Hytale/UserData/Mods \
+	  --bind 0.0.0.0
+}
+# ---------------------------------------------------------------------------------------------------------- #
 source /usr/share/nvm/init-nvm.sh
 eval "$(starship init bash)"
 # ---------------------------------------------------------------------------------------------------------- #
