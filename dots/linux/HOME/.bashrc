@@ -266,6 +266,7 @@ hytale_server() {
 	  --mods=/home/chyld/.local/share/Hytale/UserData/Mods \
 	  --bind 0.0.0.0
 }
+alias hs=hytale_server
 # ---------------------------------------------------------------------------------------------------------- #
 source /usr/share/nvm/init-nvm.sh
 eval "$(starship init bash)"
