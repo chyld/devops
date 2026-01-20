@@ -23,6 +23,7 @@ alias fm="(dolphin . &)" # file manager (fm), runs in a sub-process, so you do n
 alias yt0="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp"
 alias yt1="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50"
 alias yt2="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 --remote-components ejs:github"
+alias yt3="uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 --remote-components ejs:github --cookies-from-browser chrome"
 alias ffp="ffprobe -hide_banner"
 # ---------------------------------------------------------------------------------------------------------- #
 # GIT
