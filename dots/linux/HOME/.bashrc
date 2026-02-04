@@ -202,7 +202,9 @@ p_next_js() {
 # ---------------------------------------------------------------------------------------------------------- #
 # TEMPORARY FILES
 t() {
-  cd "$(mktemp -d --tmpdir="$HOME/Temp")"
+  local dir="$HOME/Temp/$(date '+%Y-%m-%d.%H-%M').$(printf '%03x' $((RANDOM % 4096)))"
+  mkdir -p "$dir"
+  cd "$dir"
 }
 
 tt() {
