@@ -88,18 +88,18 @@ gwa() {
 # ---------------------------------------------------------------------------------------------------------- #
 t() {
   local rnd=$(tr -dc 'A-Za-z0-9' < /dev/urandom | head -c3)
-  local dir="$HOME/Temp/$(date +%m%d-%H%M).$rnd"
+  local dir="$HOME/Temp/$(date +%m%d.%H-%M).$rnd"
   mkdir -p "$dir" && cd "$dir"
 }
 
 tl() {
-  # temp with list
+  # temp list
   cd ~/Temp
   ll
 }
 
 tg() {
-  # temp with git
+  # temp + git
   t
   touch README.md
   git init
@@ -107,32 +107,34 @@ tg() {
   git commit -am "first commit"
 }
 
-tb() {
-  # temp with bun
+# below are "t-apps"
+
+tab() {
+  # temp app with bun
   t
   bun init
 }
 
-tv() {
-  # temp with vite
+tav() {
+  # temp app with vite
   t
   npm create vite@latest
 }
 
-tu() {
-  # temp with uv
+tau() {
+  # temp app with uv
   t
   uv init
 }
 
-tn() {
-  # temp with nextjs
+tan() {
+  # temp app with nextjs
   t
   npx create-next-app@latest
 }
 
-tt() {
-  # temp with t-stack (better)
+tat() {
+  # temp app with t-stack (better)
   t
   bun create better-t-stack@latest
 }
