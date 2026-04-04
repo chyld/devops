@@ -1,0 +1,11 @@
+[user]
+  email   = chyld.medford@gmail.com
+  name    = Chyld Medford
+
+[init]
+  defaultBranch = dev
+
+[credential]
+  helper = /usr/bin/git-credential-manager
+  credentialStore = plaintext
+
