@@ -65,10 +65,12 @@ function dl
 end
 
 function pushdots
+    set orig_dir (pwd)
     cd ~/Code/devops
     git add .
     git commit -am "pushdots"
     git push
+    cd $orig_dir
 end
 
 function v
