@@ -4,6 +4,10 @@ function vi
     nvim $argv
 end
 
+function g 
+    git $argv
+end
+
 function cat
     bat $argv
 end
