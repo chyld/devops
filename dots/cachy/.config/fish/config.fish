@@ -25,14 +25,18 @@ function b
 end
 
 function l
-    eza -al      --icons --group-directories-first $argv
+    eza -a       --icons --group-directories-first $argv
 end
 
 function ll
-    eza -aT -L 2 --icons --group-directories-first $argv
+    eza -al      --icons --group-directories-first $argv
 end
 
 function lll
+    eza -aT -L 2 --icons --group-directories-first $argv
+end
+
+function llll
     eza -aT      --icons --group-directories-first $argv
 end
 
@@ -51,8 +55,20 @@ function clll
     lll
 end
 
+function cllll
+    c
+    llll
+end
+
 function dl
     cd ~/Downloads
+end
+
+function pushdots
+    cd ~/Code/devops
+    git add .
+    git commit -am "pushdots"
+    git push
 end
 
 function v
