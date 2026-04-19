@@ -1,5 +1,9 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
+function oc
+    openclaw $argv
+end
+
 function vi
     nvim $argv
 end
