@@ -1,5 +1,9 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
+function fish_greeting
+    # no greeting, please.
+end
+
 function oc
     openclaw $argv
 end
