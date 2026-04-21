@@ -1,0 +1,9 @@
+working-directory = /home/chyld/Void/HOME
+theme = Cobalt Neon
+cursor-color = #ffffff
+font-size = 10 
+scrollback-limit = 100_000_000
+
+keybind = super+shift+j=write_scrollback_file:open
+keybind = ctrl+shift+j=write_screen_file:open
+
