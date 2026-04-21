@@ -1,0 +1,13 @@
+(defcfg
+  process-unmapped-keys yes
+  linux-dev /dev/input/by-id/usb-Compx_Air84@Lofree-event-kbd
+)
+
+(defsrc
+  caps
+)
+
+(deflayer base
+  esc
+)
+
