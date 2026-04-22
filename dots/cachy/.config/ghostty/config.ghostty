@@ -1,6 +1,6 @@
 working-directory = /home/chyld/Void/HOME
-theme = Dawnfox
-cursor-color = #000000
+theme = Flatland
+cursor-color = #ffffff
 font-size = 10 
 scrollback-limit = 100_000_000
 
