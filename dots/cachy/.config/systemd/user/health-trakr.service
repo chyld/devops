@@ -1,0 +1,15 @@
+[Unit]
+Description=Health Trakr
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Code/health-trakr
+ExecStart=%h/.local/apps/node/bin/bun run index.ts
+Environment=PORT=3000
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+
