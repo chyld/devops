@@ -42,7 +42,7 @@ end
 
 function gac
     git add -A
-    git commit -m "gac fish function"
+    git commit -m "auto commit"
 end
 
 function gl
