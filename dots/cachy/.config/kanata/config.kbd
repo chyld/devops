@@ -1,13 +1,18 @@
 (defcfg
   process-unmapped-keys yes
-  linux-dev /dev/input/by-id/usb-Compx_Air84@Lofree-event-kbd
+  linux-dev /dev/input/by-id/usb-Keychron_Keychron_K3_Max_SE-event-kbd
+)
+
+(defalias
+  ccpy (tap-hold 200 200 c C-c)
+  vpst (tap-hold 200 200 v C-v)
 )
 
 (defsrc
-  caps
+  c v
 )
 
 (deflayer base
-  esc
+  @ccpy @vpst
 )
 
