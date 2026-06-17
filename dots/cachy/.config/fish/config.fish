@@ -139,6 +139,14 @@ function v
     and cd $dirname
 end
 
+function vn
+    set timestamp (date +%y%m%d-%H%M)
+    set dirname $HOME/Void/$timestamp.$argv[1]
+
+    mkdir -p $dirname
+    and cd $dirname
+end
+
 function vl
     cd ~/Void
     ll
@@ -155,3 +163,10 @@ end
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
+
+# >>> grok installer >>>
+fish_add_path $HOME/.grok/bin
+# <<< grok installer <<<
+
+# opencode
+fish_add_path /home/chyld/.opencode/bin
