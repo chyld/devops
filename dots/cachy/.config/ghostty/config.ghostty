@@ -2,11 +2,5 @@ working-directory = /home/chyld/Void/HOME
 theme = Cyberpunk
 cursor-color = #ffffff
 font-size = 10 
-scrollback-limit = 100_000_000
 command = herdr
-
-keybind = super+shift+j=write_scrollback_file:open
-keybind = ctrl+shift+j=write_screen_file:open
-keybind = ctrl+shift+|=new_split:right
-keybind = ctrl+shift+-=new_split:down
 
