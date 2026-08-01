@@ -8,6 +8,13 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
+function ai_update
+    claude update
+    codex update
+    grok update
+    opencode upgrade
+end
+
 function fish_greeting
     # no greeting, please.
 end
