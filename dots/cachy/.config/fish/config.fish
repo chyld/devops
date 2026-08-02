@@ -13,6 +13,7 @@ function ai_update
     codex update
     grok update
     opencode upgrade
+    pi update
 end
 
 function fish_greeting
