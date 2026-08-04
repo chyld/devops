@@ -9,11 +9,23 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 # ------------------------------------------------------------------------------------------------ #
 
 function ai-update
-    claude update
-    codex update
-    grok update
+    claude   --version
+    codex    --version
+    grok     --version
+    opencode --version
+    pi       --version
+
+    claude   update
+    codex    update
+    grok     update
     opencode upgrade
-    pi update
+    pi       update
+
+    claude   --version
+    codex    --version
+    grok     --version
+    opencode --version
+    pi       --version
 end
 
 function full-update
