@@ -15,6 +15,7 @@ function ai-update
     grok     --version
     opencode --version
     pi       --version
+    omp      --version
 
     echo "---------- ---------- ----------"
     claude   update
@@ -22,6 +23,7 @@ function ai-update
     grok     update
     opencode upgrade
     pi       update
+    omp      update
 
     echo "---------- ---------- ----------"
     claude   --version
@@ -29,6 +31,7 @@ function ai-update
     grok     --version
     opencode --version
     pi       --version
+    omp      --version
 end
 
 function full-update
@@ -206,15 +209,17 @@ fnm env --use-on-cd --shell fish | source
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 
-# >>> grok installer >>>
+# grok
 fish_add_path $HOME/.grok/bin
-# <<< grok installer <<<
 
 # opencode
 fish_add_path /home/chyld/.opencode/bin
 
-# Pi
+# pi
 fish_add_path "/home/chyld/.local/share/fnm/node-versions/v26.5.1/installation/bin"
+
+# omp
+fish_add_path "/home/chyld/.bun/bin"
 
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
