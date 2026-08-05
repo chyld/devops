@@ -16,6 +16,7 @@ function ai-update
     opencode --version
     pi       --version
     omp      --version
+    muse     --version
 
     echo "---------- ---------- ----------"
     claude   update
@@ -24,6 +25,7 @@ function ai-update
     opencode upgrade
     pi       update
     omp      update
+    # muse update ???
 
     echo "---------- ---------- ----------"
     claude   --version
@@ -32,6 +34,7 @@ function ai-update
     opencode --version
     pi       --version
     omp      --version
+    muse     --version
 end
 
 function full-update
