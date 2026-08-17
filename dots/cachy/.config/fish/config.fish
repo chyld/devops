@@ -139,9 +139,13 @@ function yt1
     uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp $argv
 end
 
+# --- --- --- --- --- #
 function yt2
     uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 $argv
 end
+
+# yt2 --referer "https://mainsite.com/" "https://example.com/5a53bda8-d60e-4ecd-b52f/playlist.m3u8" 
+# --- --- --- --- --- #
 
 function yt3
     uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 --remote-components ejs:github $argv
