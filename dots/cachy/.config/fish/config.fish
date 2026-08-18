@@ -155,6 +155,10 @@ function yt4
     uvx --refresh --with yt-dlp@git+https://github.com/yt-dlp/yt-dlp.git yt-dlp --hls-use-mpegts --retries infinite --fragment-retries 50 --remote-components ejs:github --cookies-from-browser chrome $argv
 end
 
+function copy_to_truenas
+    rsync -avh --info=progress2 . smbuser@truenas:/mnt/naspool/nassmb/Bucket/
+end
+
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------------------------------ #
