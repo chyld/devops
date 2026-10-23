@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Create a new Void directory and launch a named Herdr session there.
+set -euo pipefail
+
+command -v herdr >/dev/null || { echo "herdr-void: herdr is not on PATH" >&2; exit 1; }
+directory=$("$HOME/Scripts/mkvoid")
+cd -- "$directory"
+exec herdr --session "${directory##*/}"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Create a new Void directory and open a kitty window there.
+set -euo pipefail
+
+command -v kitty >/dev/null || { echo "kitty-void: kitty is not on PATH" >&2; exit 1; }
+directory=$("$HOME/Scripts/mkvoid")
+exec kitty --directory "$directory" --title "${directory##*/}"

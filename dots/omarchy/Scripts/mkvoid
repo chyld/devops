@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Create a temp directory under ~/Void named YYMMDD.hhmm.xxx (xxx = 3 lowercase hex digits).
+# and print its path.
+set -euo pipefail
+
+void_root="$HOME/Void"
+mkdir -p "$void_root"
+
+stamp=$(date +%y%m%d.%H%M)
+
+# Retry on the rare collision within the same minute.
+for _ in {1..20}; do
+  suffix=$(printf '%03x' $((RANDOM % 4096)))
+  directory="$void_root/$stamp.$suffix"
+  if mkdir "$directory" 2>/dev/null; then
+    echo "$directory"
+    exit 0
+  fi
+done
+
+echo "mkvoid: could not create a unique directory in $void_root" >&2
+exit 1
+

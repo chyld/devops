@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# Copy this machine's dotfiles into the devops repo under dots/omarchy, then commit and push.
+set -euo pipefail
+
+repo="$HOME/Projects/devops"
+dest="$repo/dots/omarchy"
+
+# Paths relative to $HOME. Directories are copied recursively.
+paths=(
+  .ssh/config
+  .ssh/id_ed25519.pub
+  .bashrc
+  Scripts
+  .config/hypr/bindings.lua
+)
+
+command -v rsync >/dev/null || { echo "pushdots: rsync is not on PATH" >&2; exit 1; }
+[[ -d $repo/.git ]] || { echo "pushdots: $repo is not a git repo" >&2; exit 1; }
+
+mkdir -p "$dest"
+cd "$HOME"
+
+existing=()
+for path in "${paths[@]}"; do
+  if [[ -e $path ]]; then
+    existing+=("$path")
+  else
+    echo "pushdots: skipping missing ~/$path" >&2
+  fi
+done
+
+# -R keeps each path's layout under $dest; --delete drops files removed from tracked directories.
+rsync -aR --delete --exclude '*.bak.*' "${existing[@]}" "$dest/"
+
+cd "$repo"
+git add -A -- "$dest"
+if git diff --cached --quiet -- "$dest"; then
+  echo "pushdots: no changes"
+  exit 0
+fi
+
+git commit -m "pushdots" -- "$dest"
+git push
