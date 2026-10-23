@@ -12,6 +12,9 @@ paths=(
   .bashrc
   Scripts
   .config/hypr/bindings.lua
+  .config/starship.toml
+  .config/herdr/config.toml
+  .config/kitty/kitty.conf
 )
 
 command -v rsync >/dev/null || { echo "pushdots: rsync is not on PATH" >&2; exit 1; }
