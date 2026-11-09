@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Create a temp directory under ~/Void named YYMMDD.hhmm.xxx (xxx = 3 lowercase hex digits).
-# and print its path.
+# Create a temp directory under ~/Void named YYMMDD.hhmm.<greek letter>.<element> and print its path.
+# The Greek letter and the periodic table element are random; on a collision within the same minute
+# another unused combination is picked.
 set -euo pipefail
 
 void_root="$HOME/Void"
@@ -8,9 +9,36 @@ mkdir -p "$void_root"
 
 stamp=$(date +%y%m%d.%H%M)
 
-# Retry on the rare collision within the same minute.
-for _ in {1..20}; do
-  suffix=$(printf '%03x' $((RANDOM % 4096)))
+letters=(
+  alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu
+  nu xi omicron pi rho sigma tau upsilon phi chi psi omega
+)
+
+elements=(
+  hydrogen helium lithium beryllium boron carbon nitrogen oxygen fluorine neon
+  sodium magnesium aluminum silicon phosphorus sulfur chlorine argon potassium calcium
+  scandium titanium vanadium chromium manganese iron cobalt nickel copper zinc
+  gallium germanium arsenic selenium bromine krypton rubidium strontium yttrium zirconium
+  niobium molybdenum technetium ruthenium rhodium palladium silver cadmium indium tin
+  antimony tellurium iodine xenon cesium barium lanthanum cerium praseodymium neodymium
+  promethium samarium europium gadolinium terbium dysprosium holmium erbium thulium ytterbium
+  lutetium hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury
+  thallium lead bismuth polonium astatine radon francium radium actinium thorium
+  protactinium uranium neptunium plutonium americium curium berkelium californium einsteinium fermium
+  mendelevium nobelium lawrencium rutherfordium dubnium seaborgium bohrium hassium meitnerium darmstadtium
+  roentgenium copernicium nihonium flerovium moscovium livermorium tennessine oganesson
+)
+
+# Build every letter/element combination and try them in random order.
+combos=()
+for letter in "${letters[@]}"; do
+  for element in "${elements[@]}"; do
+    combos+=("$letter.$element")
+  done
+done
+mapfile -t shuffled < <(printf '%s\n' "${combos[@]}" | shuf)
+
+for suffix in "${shuffled[@]}"; do
   directory="$void_root/$stamp.$suffix"
   if mkdir "$directory" 2>/dev/null; then
     echo "$directory"
@@ -18,6 +46,5 @@ for _ in {1..20}; do
   fi
 done
 
-echo "mkvoid: could not create a unique directory in $void_root" >&2
+echo "mkvoid: all ${#combos[@]} names used for $stamp in $void_root" >&2
 exit 1
-

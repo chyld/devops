@@ -28,24 +28,19 @@
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
 
--- Vista plugin
-hl.unbind("SUPER + TAB")
-hl.unbind("SUPER + SHIFT + TAB")
-o.bind("SUPER + TAB", "Vista: next workspace", hl.dsp.global("chyld-vista:next"), { repeating = true })
-o.bind("SUPER + SHIFT + TAB", "Vista: previous workspace", hl.dsp.global("chyld-vista:prev"), { repeating = true })
+local function vista_bind()
+  hl.unbind("SUPER + TAB")
+  hl.unbind("SUPER + SHIFT + TAB")
+  o.bind("SUPER + TAB", "Vista: next workspace", hl.dsp.global("chyld-vista:next"), { repeating = true })
+  o.bind("SUPER + SHIFT + TAB", "Vista: previous workspace", hl.dsp.global("chyld-vista:prev"), { repeating = true })
+end
+vista_bind()
+hl.on("config.reloaded", vista_bind)
 hl.layer_rule({ match = { namespace = "chyld-vista" }, no_anim = true })
 
--- Lock screen
-hl.unbind("SUPER + SHIFT + L")
-o.bind("SUPER + SHIFT + L", "Lock screen explorer", "omarchy-shell lock explore")
-
 -- Open a new Void directory in a kitty window.
-hl.unbind("SUPER + SHIFT + RETURN")
-o.bind("SUPER + SHIFT + RETURN", "Kitty in new Void directory", "~/Scripts/kitty-void")
-
--- Open a new Void directory in a Herdr session
 hl.unbind("SUPER + RETURN")
-o.bind("SUPER + RETURN", "Herdr in new Void directory", "kitty --title herdr -e ~/Scripts/herdr-void")
+o.bind("SUPER + RETURN", "Kitty in new Void directory", "~/Scripts/kitty-void")
 
 
 -- Dictation keys from before Alt + Space and Right Alt became the defaults.
